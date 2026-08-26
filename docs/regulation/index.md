@@ -34,6 +34,11 @@ hide:
     <div class="sil-card-meta">July 2026 · Strategic · Confirmed · Regulatory / AI Governance</div>
     <p>欧州委員会が2026年7月に公表したCybersecurity and Artificial Intelligence Action Planを、AI Model評価、防御能力、Critical OSS、規制連携の観点から整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/nist-sp800-18r2-integrated-system-plans.md">NIST SP 800-18r2 ― Security・Privacy・C-SCRMを別々の計画書にしない</a>
+    <div class="sil-card-meta">June 2026 · Strategic · Confirmed · Governance / Regulatory</div>
+    <p>2026年6月にNISTが最終公開したSP 800-18 Revision 2を基に、System Security Plan、Privacy Plan、C-SCRM Planを統合的に管理する意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

@@ -44,6 +44,36 @@ hide:
     <div class="sil-card-meta">July 2026 · Immediate · Observed · Business Continuity / AI Security</div>
     <p>Sysdigが2026年7月に報告したJADEPUFFERを基に、AI Agentが偵察・資格情報探索・横展開・恐喝を適応的に連鎖させるリスクを整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/autojack-agent-localhost-rce.md">AutoJack ― 「localhostは安全」という前提をAI Agentが崩す</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Observed · AI Governance / Endpoint Security</div>
+    <p>2026年6月にMicrosoftが公表したAutoJackを基に、Browsing AgentとLocal MCP Control Planeの組み合わせがRemote Code Executionへつながるリスクを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="mastra-npm-ai-supply-chain.md">Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Observed · Supply Chain / Credential Risk</div>
+    <p>2026年6月にMicrosoftが報告したMastra npm Supply Chain Compromiseを基に、AI開発FrameworkとDeveloper CredentialのSupply Chain Riskを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="mdash-ai-vulnerability-discovery.md">MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Observed · Operational Security / Software Security</div>
+    <p>2026年6月にMicrosoftが公表したAgentic Vulnerability Detection System MDASHの実運用を基に、AI for Securityが脆弱性管理をどう変えるか整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/nist-ransomware-csf2-profile.md">NIST IR 8374r1 ― Ransomware対策を「製品導入」からCSF 2.0の経営Riskへ</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / Governance</div>
+    <p>2026年6月にNISTが最終公開したIR 8374 Revision 1を基に、Ransomware Risk ManagementをCSF 2.0のGovern・Identify・Protect・Detect・Respond・Recove…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-ot-backup-sp1339.md">NIST SP 1339 ― OT Backupは「取得」ではなくChange ManagementとRecovery Exerciseで守る</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
+    <p>2026年6月にNIST NCCoEが公開したOT Backup Quick Start Guide SP 1339を基に、製造・重要インフラのBackup運用を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="water-ot-secure-remote-access-sp1800-45.md">NIST SP 1800-45 ― OT Remote Accessを「例外VPN」からReference Architectureへ</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
+    <p>2026年6月にNIST NCCoEが最終公開したWater and Wastewater Sector向けSP 1800-45を基に、重要インフラの安全なOT Remote Accessを整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

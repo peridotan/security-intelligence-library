@@ -64,6 +64,31 @@ hide:
     <div class="sil-card-meta">July 2026 · Strategic · Confirmed · Infrastructure / Supply Chain</div>
     <p>NISTが2026年7月に公開したAI Data Center Security Analysis Draft SP 800-239を基に、AI基盤固有のセキュリティ論点を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="autojack-agent-localhost-rce.md">AutoJack ― 「localhostは安全」という前提をAI Agentが崩す</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Observed · AI Governance / Endpoint Security</div>
+    <p>2026年6月にMicrosoftが公表したAutoJackを基に、Browsing AgentとLocal MCP Control Planeの組み合わせがRemote Code Executionへつながるリスクを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="mcp-tool-poisoning-agent-supply-chain.md">MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Assessment · AI Governance / Supply Chain</div>
+    <p>2026年6月のMicrosoft Incident Responseの分析を基に、MCP Tool Descriptionの改変がAI Agentの行動を変えるSupply Chain Riskを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/mastra-npm-ai-supply-chain.md">Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Observed · Supply Chain / Credential Risk</div>
+    <p>2026年6月にMicrosoftが報告したMastra npm Supply Chain Compromiseを基に、AI開発FrameworkとDeveloper CredentialのSupply Chain Riskを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/mdash-ai-vulnerability-discovery.md">MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Observed · Operational Security / Software Security</div>
+    <p>2026年6月にMicrosoftが公表したAgentic Vulnerability Detection System MDASHの実運用を基に、AI for Securityが脆弱性管理をどう変えるか整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="continuous-ai-security-nist-proof.md">NISTが示す「AI Securityは一度設定して終わりではない」理由</a>
+    <div class="sil-card-meta">June 2026 · Strategic · Confirmed · AI Governance / Strategic Risk</div>
+    <p>2026年6月にNISTが公表したRobust AI Securityの数学的議論を基に、固定GuardrailからContinuous Red Team / Update / Resilienceへ移行する意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

@@ -2,6 +2,22 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.8.0
+
+- June 2026 Intelligenceを追加
+- June 2026 Executive Summaryと10 Core Themesを追加
+- AutoJack / localhost Trust Boundary記事を追加
+- MCP Tool Poisoning / Agentic Supply Chain記事を追加
+- NIST Continuous AI Security記事を追加
+- MDASH / AI Vulnerability Discovery記事を追加
+- Mastra npm AI Supply Chain記事を追加
+- NIST IR 8374r1 Ransomware CSF 2.0記事を追加
+- NIST SP 1339 OT Backup記事を追加
+- NIST SP 1800-45 OT Remote Access記事を追加
+- NIST PIV PQC / Crypto Agility記事を追加
+- NIST SP 800-18r2 Integrated System Plans記事を追加
+- v0.7.xのFront Matter駆動Index生成によりHome / Category / Monthly / Topicsへ自動反映
+
 ## v0.7.1
 
 - Fixed a false positive in `check_generated_site.py`.

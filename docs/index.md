@@ -72,6 +72,12 @@ hide:
     <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="monthly/2026-07.md">月次サマリーを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="monthly/2026-06.md">June 2026 Intelligence</a>
+    <div class="sil-card-meta">10 Core Themes · as of 2026-08-26</div>
+    <p>AI AgentのRead→Act化、Continuous AI Security、AI for Security、Software Supply Chain、OT Resilience、PQC Identityを横断した月次Executive Summary。</p>
+    <a class="sil-card-more" href="monthly/2026-06.md">月次サマリーを見る →</a>
+  </article>
 </div>
 <!-- AUTO:HOME_MONTHLY:END -->
 
@@ -89,14 +95,14 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
+<a class="sil-topic" href="topics/index.md#nist">NIST <span class="sil-topic-count">8</span></a>
+<a class="sil-topic" href="topics/index.md#risk-management">Risk Management <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="topics/index.md#ai-security">AI Security <span class="sil-topic-count">4</span></a>
 <a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="topics/index.md#risk-management">Risk Management <span class="sil-topic-count">4</span></a>
 <a class="sil-topic" href="topics/index.md#agentic-ai">Agentic AI <span class="sil-topic-count">3</span></a>
-<a class="sil-topic" href="topics/index.md#ai-security">AI Security <span class="sil-topic-count">3</span></a>
-<a class="sil-topic" href="topics/index.md#passkey">Passkey <span class="sil-topic-count">3</span></a>
-<a class="sil-topic" href="topics/index.md#supply-chain">Supply Chain <span class="sil-topic-count">3</span></a>
-<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">2</span></a>
-<a class="sil-topic" href="topics/index.md#critical-infrastructure">Critical Infrastructure <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="topics/index.md#ai-agent">AI Agent <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="topics/index.md#critical-infrastructure">Critical Infrastructure <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="topics/index.md#ot-security">OT Security <span class="sil-topic-count">3</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->
 

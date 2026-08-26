@@ -44,6 +44,11 @@ hide:
     <div class="sil-card-meta">July 2026 · Near-term · Confirmed · Identity / Change Management</div>
     <p>Microsoftが2026年7月に発表したEntra IDのPasskey既定化とMicrosoft提供SMS・音声認証終了のロードマップを企業Identity移行の観点から整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="pqc-piv-dual-stack.md">NIST PIVのPQC対応 ― Identity Credentialも「Crypto Agility」が必要になる</a>
+    <div class="sil-card-meta">June 2026 · Strategic · Confirmed · Identity / Strategic Risk</div>
+    <p>2026年6月にNISTが公開したPIV StandardsのPQC Working Draftを基に、ML-DSA / ML-KEM導入とClassical/PQC Dual-stack移行の意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

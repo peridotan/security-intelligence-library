@@ -56,6 +56,46 @@ hide:
     <div class="sil-card-meta">July 2026 · Strategic · Confirmed · Infrastructure / Supply Chain</div>
     <p>NISTが2026年7月に公開したAI Data Center Security Analysis Draft SP 800-239を基に、AI基盤固有のセキュリティ論点を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/mcp-tool-poisoning-agent-supply-chain.md">MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Assessment · AI Governance / Supply Chain</div>
+    <p>2026年6月のMicrosoft Incident Responseの分析を基に、MCP Tool Descriptionの改変がAI Agentの行動を変えるSupply Chain Riskを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/mastra-npm-ai-supply-chain.md">Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる</a>
+    <div class="sil-card-meta">June 2026 · Immediate · Observed · Supply Chain / Credential Risk</div>
+    <p>2026年6月にMicrosoftが報告したMastra npm Supply Chain Compromiseを基に、AI開発FrameworkとDeveloper CredentialのSupply Chain Riskを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-ransomware-csf2-profile.md">NIST IR 8374r1 ― Ransomware対策を「製品導入」からCSF 2.0の経営Riskへ</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / Governance</div>
+    <p>2026年6月にNISTが最終公開したIR 8374 Revision 1を基に、Ransomware Risk ManagementをCSF 2.0のGovern・Identify・Protect・Detect・Respond・Recove…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/nist-ot-backup-sp1339.md">NIST SP 1339 ― OT Backupは「取得」ではなくChange ManagementとRecovery Exerciseで守る</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
+    <p>2026年6月にNIST NCCoEが公開したOT Backup Quick Start Guide SP 1339を基に、製造・重要インフラのBackup運用を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/water-ot-secure-remote-access-sp1800-45.md">NIST SP 1800-45 ― OT Remote Accessを「例外VPN」からReference Architectureへ</a>
+    <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
+    <p>2026年6月にNIST NCCoEが最終公開したWater and Wastewater Sector向けSP 1800-45を基に、重要インフラの安全なOT Remote Accessを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/pqc-piv-dual-stack.md">NIST PIVのPQC対応 ― Identity Credentialも「Crypto Agility」が必要になる</a>
+    <div class="sil-card-meta">June 2026 · Strategic · Confirmed · Identity / Strategic Risk</div>
+    <p>2026年6月にNISTが公開したPIV StandardsのPQC Working Draftを基に、ML-DSA / ML-KEM導入とClassical/PQC Dual-stack移行の意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-sp800-18r2-integrated-system-plans.md">NIST SP 800-18r2 ― Security・Privacy・C-SCRMを別々の計画書にしない</a>
+    <div class="sil-card-meta">June 2026 · Strategic · Confirmed · Governance / Regulatory</div>
+    <p>2026年6月にNISTが最終公開したSP 800-18 Revision 2を基に、System Security Plan、Privacy Plan、C-SCRM Planを統合的に管理する意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/continuous-ai-security-nist-proof.md">NISTが示す「AI Securityは一度設定して終わりではない」理由</a>
+    <div class="sil-card-meta">June 2026 · Strategic · Confirmed · AI Governance / Strategic Risk</div>
+    <p>2026年6月にNISTが公表したRobust AI Securityの数学的議論を基に、固定GuardrailからContinuous Red Team / Update / Resilienceへ移行する意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

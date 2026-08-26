@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.8.0
+
+- Added June 2026 Monthly Intelligence with ten core themes.
+- Added production articles on agent trust boundaries, MCP tool poisoning, continuous AI security, AI-powered vulnerability discovery, AI framework supply-chain compromise, ransomware risk management, OT backup, OT remote access, PQC identity migration, and integrated system planning.
+- Existing front-matter-driven indexes automatically incorporate the new month and articles.
+
 ## v0.7.1
 
 - Fixed generated HTML checker false positives caused by Zensical/theme `<article>` elements.

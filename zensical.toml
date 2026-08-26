@@ -1,0 +1,46 @@
+[project]
+site_name = "Security Intelligence Library"
+site_url = "https://peridotan.github.io/security-intelligence-library/"
+site_description = "Cybersecurity, AI, Identity, Regulation and Risk Management intelligence library."
+docs_dir = "docs"
+site_dir = "site"
+repo_url = "https://github.com/peridotan/security-intelligence-library"
+repo_name = "peridotan/security-intelligence-library"
+copyright = "Security Intelligence Library"
+edit_uri = "edit/main/docs/"
+nav = [
+  { "Home" = "index.md" },
+  { "Cybersecurity" = [
+      "cybersecurity/index.md",
+      { "Sample: Credential Attack" = "cybersecurity/credential-attack-sample.md" },
+    ] },
+  { "Identity Security" = [
+      "identity-security/index.md",
+    ] },
+  { "AI Security" = [
+      "ai-security/index.md",
+      { "Sample: Frontier AI" = "ai-security/frontier-ai-cyber-sample.md" },
+    ] },
+  { "Regulation" = [
+      "regulation/index.md",
+    ] },
+  { "Risk Management" = [
+      "risk-management/index.md",
+    ] },
+  { "Article Template" = "about/article-template.md" },
+  { "About" = "about/index.md" },
+]
+
+[project.theme]
+variant = "modern"
+language = "ja"
+features = [
+  "navigation.instant",
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.path",
+  "navigation.indexes",
+  "search.highlight",
+  "content.action.edit",
+  "content.action.view",
+]

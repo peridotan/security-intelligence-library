@@ -362,3 +362,59 @@ a.sil-topic:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* v0.9.1: Home / Topics UX polish */
+.sil-topic-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  margin: 1rem 0 1.6rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 0.7rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.sil-topic-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  color: var(--sil-muted);
+  font-size: 0.86rem;
+}
+
+.sil-topic-stats strong {
+  color: var(--md-default-fg-color);
+  font-size: 1rem;
+}
+
+.sil-topic-cta {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0.48rem 0.8rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sil-topic-cta:hover {
+  text-decoration: none;
+}
+
+.sil-topic-back {
+  margin: 1rem 0 2rem;
+  font-size: 0.86rem;
+}
+
+@media screen and (max-width: 45em) {
+  .sil-topic-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sil-topic-cta {
+    white-space: normal;
+  }
+}

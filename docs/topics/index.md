@@ -9,7 +9,16 @@ hide:
 `Topics`は、カテゴリをまたいで同じ経営・Security論点を読むための**統制された横断分類**です。製品名、技術名、個別攻撃名などの細かなキーワードは [Tags](../tags/index.md) に分離しています。
 
 <!-- AUTO:TOPICS:START -->
-## Topic Directory
+<div class="sil-topic-summary">
+  <div class="sil-topic-stats">
+    <span><strong>30</strong> Articles</span>
+    <span><strong>18</strong> Curated Topics</span>
+    <span><strong>101</strong> Detailed Tags</span>
+  </div>
+  <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
+</div>
+
+## Topic Directory {#topic-directory}
 
 <div class="sil-topic-groups">
 <section class="sil-topic-group">
@@ -19,7 +28,7 @@ hide:
 <a class="sil-topic" href="#mcp-security">MCP Security <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">5</span></a>
 <a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="#ai-enabled-threats">AI-enabled Threats <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">1</span></a>
 </div>
@@ -90,7 +99,7 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 - [EU Cybersecurity & AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う](../regulation/eu-cybersecurity-ai-action-plan.md) — July 2026 · Strategic · Confirmed
 - [Kimi K3のCyber能力評価 ― Open-weight AIを「モデル名」ではなく能力で評価する](../ai-security/kimi-k3-cyber-capabilities.md) — July 2026 · Strategic · Observed
 
-### AI-enabled Threats {#ai-enabled-threats}
+### AI-Enabled Threats {#ai-enabled-threats}
 
 攻撃・Malware・Ransomware・OT標的活動にAIが組み込まれる脅威。
 
@@ -109,6 +118,8 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 脆弱性発見・検知・対応など、防御側でAIを活用するテーマ。
 
 - [MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ](../cybersecurity/mdash-ai-vulnerability-discovery.md) — June 2026 · Near-term · Observed
+
+<div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 
 ## Identity
 
@@ -145,6 +156,8 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 - [NIST PIVのPQC対応 ― Identity Credentialも「Crypto Agility」が必要になる](../identity-security/pqc-piv-dual-stack.md) — June 2026 · Strategic · Confirmed
 
+<div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
+
 ## Cyber Operations
 
 ### Vulnerability Management {#vulnerability-management}
@@ -179,6 +192,8 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 - [MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない](../ai-security/mcp-tool-poisoning-agent-supply-chain.md) — June 2026 · Immediate · Assessment
 - [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](../cybersecurity/mastra-npm-ai-supply-chain.md) — June 2026 · Immediate · Observed
 
+<div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
+
 ## Governance & Risk
 
 ### Third-party Risk / C-SCRM {#third-party-risk-c-scrm}
@@ -211,4 +226,6 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 - [NIST SP 1800-45 ― OT Remote Accessを「例外VPN」からReference Architectureへ](../cybersecurity/water-ot-secure-remote-access-sp1800-45.md) — June 2026 · Near-term · Confirmed
 - [NIST SP 800-18r2 ― Security・Privacy・C-SCRMを別々の計画書にしない](../risk-management/nist-sp800-18r2-integrated-system-plans.md) — June 2026 · Strategic · Confirmed
 - [NISTが示す「AI Securityは一度設定して終わりではない」理由](../ai-security/continuous-ai-security-nist-proof.md) — June 2026 · Strategic · Confirmed
+
+<div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 <!-- AUTO:TOPICS:END -->

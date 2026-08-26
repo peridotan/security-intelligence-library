@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.9.1
+
+- Polished Home messaging for a public-facing audience.
+- Aligned the Home kicker with the `Management View` terminology.
+- Added dynamic article/topic/tag statistics and a Tags CTA to Topics.
+- Added back-to-directory navigation for long Topic pages.
+- Standardized `AI-Enabled Threats` capitalization.
+
 ## v0.9.0
 
 - Split controlled editorial Topics from granular Tags.

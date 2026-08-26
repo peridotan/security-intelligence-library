@@ -15,7 +15,7 @@ groups:
     name: AI Cyber Capability
     description: Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evaluation。
   - id: ai-enabled-threats
-    name: AI-enabled Threats
+    name: AI-Enabled Threats
     description: 攻撃・Malware・Ransomware・OT標的活動にAIが組み込まれる脅威。
   - id: ai-infrastructure
     name: AI Infrastructure

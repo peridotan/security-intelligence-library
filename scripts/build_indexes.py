@@ -237,8 +237,23 @@ def topic_anchor(name):
     value = name.casefold()
     return re.sub(r"[^a-z0-9]+", "-", value).strip("-")
 
+detailed_tag_count = len({
+    str(tag)
+    for a in articles
+    for tag in (a["meta"].get("tags") or [])
+})
+
 topic_parts = [
-    "## Topic Directory",
+    '<div class="sil-topic-summary">',
+    '  <div class="sil-topic-stats">',
+    f'    <span><strong>{len(articles)}</strong> Articles</span>',
+    f'    <span><strong>{len(TOPIC_BY_NAME)}</strong> Curated Topics</span>',
+    f'    <span><strong>{detailed_tag_count}</strong> Detailed Tags</span>',
+    '  </div>',
+    '  <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>',
+    '</div>',
+    "",
+    "## Topic Directory {#topic-directory}",
     "",
     '<div class="sil-topic-groups">',
 ]
@@ -282,6 +297,10 @@ for group in TOPIC_GROUPS:
         else:
             topic_parts.append("_該当記事はまだありません。_")
         topic_parts.append("")
+    topic_parts += [
+        '<div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>',
+        "",
+    ]
 
 replace_block(topic_page, "TOPICS", "\n".join(topic_parts))
 

@@ -6,14 +6,14 @@ hide:
 ---
 
 <section class="sil-hero">
-  <div class="sil-kicker">Cybersecurity · AI · Identity · Regulation · Risk</div>
+  <div class="sil-kicker">Cybersecurity · AI · Identity · Regulation · Management</div>
   <h1>Security Intelligence Library</h1>
-  <p>公開情報に基づく調査・分析を、<strong>Markdownを原本として検索・再利用できる形で蓄積するナレッジベース</strong>です。経営判断に必要な要点と、技術・規制の背景を同じ場所からたどれることを目指します。</p>
+  <p>公開情報に基づくサイバーセキュリティ、AI、Identity、規制の調査・分析を、<strong>経営判断とセキュリティ実務に使えるナレッジとして蓄積するライブラリ</strong>です。技術・脅威・規制を個別に見るのではなく、それらが企業のリスクや意思決定にどうつながるかを整理します。</p>
 </section>
 
 ## Current Intelligence
 
-<div class="sil-section-lead">現在のSource PeriodとUrgencyを基に重要テーマ6件を自動表示しています。月ごとの整理は <a href="monthly/index.md">Monthly Intelligence</a> から確認できます。</div>
+<div class="sil-section-lead">現在注目すべき重要テーマを6件掲載しています。月ごとの動向は <a href="monthly/index.md">Monthly Intelligence</a> から確認できます。</div>
 
 <!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">

@@ -2,6 +2,16 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.9.1
+
+- Home Heroを読者価値中心の説明へ変更
+- Home kickerの `Risk` を `Management` に統一
+- Current Intelligenceの説明を実装仕様ではなく読者向け表現へ変更
+- Topics冒頭に Articles / Curated Topics / Detailed Tags の自動集計を追加
+- TopicsからTagsへの明確なCTAを追加
+- 各Topic Group末尾にTopic Directoryへ戻る導線を追加
+- `AI-enabled Threats` を `AI-Enabled Threats` に表記統一
+
 ## v0.9.0
 
 - `Topics`と`Tags`を分離

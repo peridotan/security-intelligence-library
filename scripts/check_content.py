@@ -8,10 +8,11 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+TOPIC_CONFIG = ROOT / "config" / "topics.yml"
 
 REQ_META = [
     "title", "date", "updated", "reviewed", "review_status", "source_period",
-    "description", "category", "collections", "tags", "audience",
+    "description", "category", "collections", "topics", "tags", "audience",
     "management_impact", "impact_types", "urgency", "evidence", "status",
     "pptx", "media_rights"
 ]
@@ -25,6 +26,13 @@ REVIEW_STATUS = {"Current", "Needs Review", "Superseded", "Archived"}
 MANAGEMENT_IMPACT = {"High", "Medium", "Low"}
 COLLECTIONS = {
     "cybersecurity", "identity-security", "ai-security", "regulation", "risk-management"
+}
+
+_topic_data = yaml.safe_load(TOPIC_CONFIG.read_text(encoding="utf-8")) or {}
+TOPICS = {
+    str(topic["name"])
+    for group in (_topic_data.get("groups") or [])
+    for topic in (group.get("topics") or [])
 }
 errors = []
 
@@ -90,6 +98,22 @@ for path in sorted(DOCS.rglob("*.md")):
         if bad:
             errors.append(f"{rel}: unsupported collections: {', '.join(map(str, bad))}")
 
+    topics = meta.get("topics")
+    if not isinstance(topics, list) or not topics:
+        errors.append(f"{rel}: topics must be a non-empty list")
+    else:
+        unknown_topics = [t for t in topics if t not in TOPICS]
+        if unknown_topics:
+            errors.append(
+                f"{rel}: unsupported topics: {', '.join(map(str, unknown_topics))}"
+            )
+        if len(topics) > 3:
+            errors.append(f"{rel}: use at most 3 curated topics")
+
+    tags = meta.get("tags")
+    if not isinstance(tags, list) or not tags:
+        errors.append(f"{rel}: tags must be a non-empty list")
+
     impact_types = meta.get("impact_types")
     if not isinstance(impact_types, list) or not impact_types:
         errors.append(f"{rel}: impact_types must be a non-empty list")
@@ -100,7 +124,7 @@ for path in sorted(DOCS.rglob("*.md")):
 
     if '<div class="sil-article-meta">' not in body:
         errors.append(f"{rel}: metadata block missing")
-    for label in ("Source Period", "Last Reviewed", "Review Status", "Impact Areas"):
+    for label in ("Source Period", "Last Reviewed", "Review Status", "Topics", "Impact Areas"):
         if f"<span class=\"sil-meta-label\">{label}</span>" not in body:
             errors.append(f"{rel}: generated metadata missing `{label}`")
 
@@ -157,6 +181,7 @@ generated_pages = [
     DOCS / "index.md",
     DOCS / "monthly/index.md",
     DOCS / "topics/index.md",
+    DOCS / "tags/index.md",
     DOCS / "cybersecurity/index.md",
     DOCS / "identity-security/index.md",
     DOCS / "ai-security/index.md",
@@ -175,7 +200,8 @@ for page in generated_pages:
 # Repository governance / rights consistency.
 for required_file in [
     "LICENSE", "LICENSE-CODE.txt", "COPYRIGHT.md", "THIRD_PARTY_NOTICES.md",
-    "RIGHTS_REVIEW.md", "CONTRIBUTING.md", ".github/SECURITY.md"
+    "RIGHTS_REVIEW.md", "CONTRIBUTING.md", ".github/SECURITY.md",
+    "config/topics.yml"
 ]:
     if not (ROOT / required_file).exists():
         errors.append(f"repository: missing `{required_file}`")

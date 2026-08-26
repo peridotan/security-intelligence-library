@@ -12,6 +12,9 @@ collections:
 - cybersecurity
 - ai-security
 - risk-management
+topics:
+- Software Supply Chain
+- Third-party Risk / C-SCRM
 tags:
 - Software Supply Chain
 - npm
@@ -34,7 +37,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる
 
 <div class="sil-article-meta">
@@ -44,6 +46,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / Supply Chain</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Software Supply Chain / Third-party Risk / C-SCRM</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AppSec / Developer Platform</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Supply Chain / Credential Risk / Software Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

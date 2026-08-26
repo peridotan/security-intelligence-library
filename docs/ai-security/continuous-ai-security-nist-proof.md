@@ -11,6 +11,9 @@ category: AI Security / Governance
 collections:
 - ai-security
 - risk-management
+topics:
+- AI Governance
+- Security Governance & Risk Management
 tags:
 - NIST
 - AI Security
@@ -33,7 +36,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # NISTが示す「AI Securityは一度設定して終わりではない」理由
 
 <div class="sil-article-meta">
@@ -43,6 +45,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security / Governance</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Governance / Security Governance &amp; Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Governance / AI Platform</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Strategic Risk / Operational Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

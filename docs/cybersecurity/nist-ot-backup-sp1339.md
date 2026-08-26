@@ -10,6 +10,9 @@ category: Cybersecurity / OT
 collections:
 - cybersecurity
 - risk-management
+topics:
+- OT / Critical Infrastructure
+- Ransomware & Resilience
 tags:
 - NIST
 - OT Security
@@ -32,7 +35,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # NIST SP 1339 ― OT Backupは「取得」ではなくChange ManagementとRecovery Exerciseで守る
 
 <div class="sil-article-meta">
@@ -42,6 +44,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / OT</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">OT / Critical Infrastructure / Ransomware &amp; Resilience</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / OT Security / BCP</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Business Continuity / OT / Safety / Operational Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

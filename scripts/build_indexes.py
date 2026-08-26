@@ -12,6 +12,19 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+TOPIC_CONFIG = ROOT / "config" / "topics.yml"
+
+
+def load_topic_taxonomy():
+    data = yaml.safe_load(TOPIC_CONFIG.read_text(encoding="utf-8")) or {}
+    groups = data.get("groups") or []
+    by_name = {}
+    for group in groups:
+        for topic in group.get("topics") or []:
+            by_name[str(topic["name"])] = topic
+    return groups, by_name
+
+TOPIC_GROUPS, TOPIC_BY_NAME = load_topic_taxonomy()
 
 CATEGORY_INFO = {
     "cybersecurity": ("Cybersecurity", "cybersecurity/index.md"),
@@ -210,66 +223,155 @@ for collection, (_, rel_index) in CATEGORY_INFO.items():
     ) + "\n</div>"
     replace_block(page, "CATEGORY_ARTICLES", html_cards)
 
-# Topics: tags are the source of truth. Multi-article tags get dedicated sections;
-# single-article tags are compactly retained so nothing is lost.
+# Topics: controlled editorial taxonomy. Tags are kept separately as granular keywords.
 topic_page = DOCS / "topics/index.md"
+topic_articles = defaultdict(list)
+for a in articles:
+    for topic in a["meta"].get("topics") or []:
+        topic_articles[str(topic)].append(a)
+
+def topic_anchor(name):
+    item = TOPIC_BY_NAME.get(name)
+    if item and item.get("id"):
+        return str(item["id"])
+    value = name.casefold()
+    return re.sub(r"[^a-z0-9]+", "-", value).strip("-")
+
+topic_parts = [
+    "## Topic Directory",
+    "",
+    '<div class="sil-topic-groups">',
+]
+for group in TOPIC_GROUPS:
+    topic_parts += [
+        '<section class="sil-topic-group">',
+        f'<div class="sil-topic-group-title">{esc(group["name"])}</div>',
+        '<div class="sil-topic-directory">',
+    ]
+    for topic in group.get("topics") or []:
+        name = str(topic["name"])
+        count = len(topic_articles.get(name, []))
+        topic_parts.append(
+            f'<a class="sil-topic" href="#{esc(topic_anchor(name))}">'
+            f'{esc(name)} <span class="sil-topic-count">{count}</span></a>'
+        )
+    topic_parts += ["</div>", "</section>"]
+topic_parts += ["</div>", ""]
+
+for group in TOPIC_GROUPS:
+    topic_parts += [f'## {group["name"]}', ""]
+    for topic in group.get("topics") or []:
+        name = str(topic["name"])
+        desc = str(topic.get("description") or "")
+        rows = sorted(topic_articles.get(name, []), key=article_sort)
+        topic_parts += [
+            f'### {name} {{#{topic_anchor(name)}}}',
+            "",
+            desc,
+            "",
+        ]
+        if rows:
+            for a in rows:
+                m = a["meta"]
+                href = rel_link(topic_page, a["path"])
+                topic_parts.append(
+                    f'- [{m["title"]}]({href}) '
+                    f'— {fmt_period(m.get("source_period"))} · '
+                    f'{m.get("urgency")} · {m.get("evidence")}'
+                )
+        else:
+            topic_parts.append("_該当記事はまだありません。_")
+        topic_parts.append("")
+
+replace_block(topic_page, "TOPICS", "\n".join(topic_parts))
+
+# Tags: detailed keywords remain searchable/discoverable, but are not editorial Topics.
+tags_page = DOCS / "tags/index.md"
 tag_articles = defaultdict(list)
 for a in articles:
     for tag in a["meta"].get("tags") or []:
         tag_articles[str(tag)].append(a)
 
-def topic_sort(item):
+def tag_sort(item):
     tag, rows = item
     return (-len(rows), tag.casefold())
 
-multi = [(tag, rows) for tag, rows in tag_articles.items() if len(rows) >= 2]
-single = [(tag, rows) for tag, rows in tag_articles.items() if len(rows) == 1]
-multi.sort(key=topic_sort)
-single.sort(key=lambda x: x[0].casefold())
+multi_tags = [(tag, rows) for tag, rows in tag_articles.items() if len(rows) >= 2]
+single_tags = [(tag, rows) for tag, rows in tag_articles.items() if len(rows) == 1]
+multi_tags.sort(key=tag_sort)
+single_tags.sort(key=lambda x: x[0].casefold())
 
-def anchor(tag):
+def tag_anchor(tag):
     value = tag.casefold()
     value = re.sub(r"[^a-z0-9]+", "-", value).strip("-")
     if value:
         return value
-    # Stable fallback for non-ASCII-only tags.
     import hashlib
-    return "topic-" + hashlib.sha1(tag.encode("utf-8")).hexdigest()[:10]
+    return "tag-" + hashlib.sha1(tag.encode("utf-8")).hexdigest()[:10]
 
-topic_parts = []
-for tag, rows in multi:
-    topic_parts.append(f'## {tag} {{#{anchor(tag)}}}\n')
+tag_parts = [
+    "## Frequently Used Tags",
+    "",
+    '<div class="sil-topic-directory">',
+]
+for tag, rows in multi_tags:
+    tag_parts.append(
+        f'<a class="sil-topic" href="#{esc(tag_anchor(tag))}">'
+        f'{esc(tag)} <span class="sil-topic-count">{len(rows)}</span></a>'
+    )
+tag_parts += ["</div>", ""]
+
+for tag, rows in multi_tags:
+    tag_parts += [f'## {tag} {{#{tag_anchor(tag)}}}', ""]
     for a in sorted(rows, key=article_sort):
         m = a["meta"]
-        href = rel_link(topic_page, a["path"])
-        topic_parts.append(
+        href = rel_link(tags_page, a["path"])
+        tag_parts.append(
             f'- [{m["title"]}]({href}) '
-            f'— {fmt_period(m.get("source_period"))} · {m.get("urgency")} · {m.get("evidence")}'
+            f'— {fmt_period(m.get("source_period"))} · {m.get("urgency")}'
         )
-    topic_parts.append("")
+    tag_parts.append("")
 
-if single:
-    topic_parts += ["## Other Topics", "", '<div class="sil-topic-directory">']
-    for tag, rows in single:
-        a = rows[0]
-        href = rel_link(topic_page, a["path"])
-        topic_parts.append(
-            f'<a class="sil-topic" href="{esc(href)}">{esc(tag)} <span class="sil-topic-count">1</span></a>'
+if single_tags:
+    tag_parts += [
+        "## One-article Tags",
+        "",
+        "現時点で1記事だけに付いている詳細キーワードです。",
+        "",
+        '<div class="sil-topic-directory">',
+    ]
+    for tag, rows in single_tags:
+        href = rel_link(tags_page, rows[0]["path"])
+        tag_parts.append(
+            f'<a class="sil-topic" href="{esc(href)}">{esc(tag)} '
+            f'<span class="sil-topic-count">1</span></a>'
         )
-    topic_parts += ["</div>", ""]
+    tag_parts += ["</div>", ""]
 
-replace_block(topic_page, "TOPICS", "\n".join(topic_parts))
+replace_block(tags_page, "TAGS", "\n".join(tag_parts))
 
-# Home Featured Topics = top eight multi-article tags, generated from the same tag data.
-featured = multi[:8]
+# Home Featured Topics = most-used curated Topics only.
+topic_rank = []
+for group_index, group in enumerate(TOPIC_GROUPS):
+    for topic_index, topic in enumerate(group.get("topics") or []):
+        name = str(topic["name"])
+        topic_rank.append(
+            (name, len(topic_articles.get(name, [])), group_index, topic_index)
+        )
+topic_rank.sort(key=lambda x: (-x[1], x[2], x[3]))
+featured = [item for item in topic_rank if item[1] > 0][:8]
 featured_html = '<div class="sil-topics">\n' + "\n".join(
-    f'<a class="sil-topic" href="topics/index.md#{anchor(tag)}">{esc(tag)} '
-    f'<span class="sil-topic-count">{len(rows)}</span></a>'
-    for tag, rows in featured
+    f'<a class="sil-topic" href="topics/index.md#{topic_anchor(name)}">'
+    f'{esc(name)} <span class="sil-topic-count">{count}</span></a>'
+    for name, count, _, _ in featured
 ) + "\n</div>"
 replace_block(home, "HOME_TOPICS", featured_html)
 
+used_topic_count = sum(
+    1 for name in TOPIC_BY_NAME if topic_articles.get(name)
+)
 print(
     f"Indexes generated: {len(articles)} articles, "
-    f"{len(monthly_pages)} monthly pages, {len(tag_articles)} topics."
+    f"{len(monthly_pages)} monthly pages, "
+    f"{used_topic_count} curated topics, {len(tag_articles)} tags."
 )

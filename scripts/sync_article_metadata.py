@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 REQUIRED = [
     "title", "date", "updated", "reviewed", "review_status", "source_period",
-    "description", "category", "collections", "tags", "audience",
+    "description", "category", "collections", "topics", "tags", "audience",
     "management_impact", "impact_types", "urgency", "evidence", "status",
     "pptx", "media_rights"
 ]
@@ -24,7 +24,7 @@ def dump_fm(data):
     order = [
         "title", "date", "updated", "reviewed", "review_status",
         "source_period", "event_date", "description", "category", "collections",
-        "tags", "audience", "management_impact", "impact_types",
+        "topics", "tags", "audience", "management_impact", "impact_types",
         "urgency", "evidence", "status", "monthly_include",
         "pptx", "media_rights", "quotation_reviewed", "hide", "search"
     ]
@@ -72,6 +72,7 @@ def meta_block(meta):
         ("Last Reviewed", fmt_date(meta.get("reviewed", "")), None),
         ("Review Status", review, f"sil-review-{rclass}"),
         ("Category", meta.get("category", ""), None),
+        ("Topics", " / ".join(str(x) for x in meta.get("topics", [])), None),
         ("Audience", audience, None),
         ("Impact Areas", impact_types, None),
         ("Management Impact", impact, f"sil-impact-{iclass}"),

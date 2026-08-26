@@ -2,6 +2,24 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.9.0
+
+- `Topics`と`Tags`を分離
+- Topicsを18個の統制されたEditorial Taxonomyへ整理
+- 30記事すべてに1〜3個のcurated `topics`を付与
+- 詳細な製品名・技術名・攻撃名は従来どおり`tags`として保持
+- Topic taxonomyを `config/topics.yml` で一元管理
+- Topicsページを4グループのDirectory + 記事一覧として自動生成
+- `docs/tags/index.md` を追加し101個の詳細Tagを別索引へ移行
+- Home Featured Topicsをcurated Topicsから自動生成
+- 個別記事MetadataにTopicsを表示
+- CIで未知Topic・Topic過多（4個以上）を拒否
+
+### Taxonomy rule
+
+- Topics: 横断的な主要論点。1記事1〜3個。
+- Tags: 製品名、技術名、攻撃手法、標準、固有名詞等の詳細キーワード。
+
 ## v0.8.1
 
 - Homeの `Latest Intelligence` を `Current Intelligence` に変更

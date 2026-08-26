@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.9.0
+
+- Split controlled editorial Topics from granular Tags.
+- Added an 18-topic controlled taxonomy in `config/topics.yml`.
+- Curated 1-3 Topics for all 30 published articles.
+- Rebuilt Topics as a grouped editorial directory.
+- Added a separate generated Tags index for detailed keywords.
+- Added Topics to article metadata and CI validation.
+
 ## v0.8.1
 
 - Renamed Home "Latest Intelligence" to "Current Intelligence".

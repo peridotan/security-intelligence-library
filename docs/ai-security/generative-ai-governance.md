@@ -11,6 +11,10 @@ collections:
 - ai-security
 - regulation
 - risk-management
+topics:
+- AI Governance
+- Regulation & Policy
+- Security Governance & Risk Management
 tags:
 - AI Governance
 - Generative AI
@@ -42,6 +46,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Governance / Regulation &amp; Policy / Security Governance &amp; Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Regulatory / Data / IP</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

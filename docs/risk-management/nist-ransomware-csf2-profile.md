@@ -11,6 +11,9 @@ category: Management View / Ransomware
 collections:
 - risk-management
 - cybersecurity
+topics:
+- Ransomware & Resilience
+- Security Governance & Risk Management
 tags:
 - NIST
 - Ransomware
@@ -33,7 +36,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # NIST IR 8374r1 ― Ransomware対策を「製品導入」からCSF 2.0の経営Riskへ
 
 <div class="sil-article-meta">
@@ -43,6 +45,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Management View / Ransomware</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Ransomware &amp; Resilience / Security Governance &amp; Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk Management / BCP</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Business Continuity / Governance / Operational Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

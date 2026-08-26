@@ -64,7 +64,8 @@ def main():
     output.write_text(text, encoding="utf-8")
     print(output.relative_to(ROOT))
     print(
-        "Next: edit the article, add reliable sources/footnotes, set status: published, "
+        "Next: edit the article, select 1-3 curated `topics` from config/topics.yml, "
+        "add detailed `tags` and reliable sources/footnotes, set status: published, "
         "then run `python scripts/update_content.py`. "
         "Home, category, monthly and topic indexes are generated automatically."
     )

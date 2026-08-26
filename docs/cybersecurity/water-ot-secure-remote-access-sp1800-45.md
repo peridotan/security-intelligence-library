@@ -11,6 +11,9 @@ category: Cybersecurity / Critical Infrastructure
 collections:
 - cybersecurity
 - risk-management
+topics:
+- OT / Critical Infrastructure
+- Security Governance & Risk Management
 tags:
 - NIST
 - OT Security
@@ -33,7 +36,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # NIST SP 1800-45 ― OT Remote Accessを「例外VPN」からReference Architectureへ
 
 <div class="sil-article-meta">
@@ -43,6 +45,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / Critical Infrastructure</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">OT / Critical Infrastructure / Security Governance &amp; Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / OT Security / Infrastructure</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Business Continuity / OT / Safety / Identity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

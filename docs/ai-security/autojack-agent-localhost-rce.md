@@ -11,6 +11,9 @@ category: AI Security / Agent Security
 collections:
 - ai-security
 - cybersecurity
+topics:
+- AI Agent Security
+- MCP Security
 tags:
 - AI Agent
 - MCP
@@ -33,7 +36,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # AutoJack ― 「localhostは安全」という前提をAI Agentが崩す
 
 <div class="sil-article-meta">
@@ -43,6 +45,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security / Agent Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Agent Security / MCP Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Platform / Developer Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Endpoint Security / Operational Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

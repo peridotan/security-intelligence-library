@@ -9,6 +9,7 @@ description: {{DESCRIPTION}}
 category: {{CATEGORY}}
 collections:
   - {{COLLECTION}}
+topics: []
 tags:
   - TBD
 audience:

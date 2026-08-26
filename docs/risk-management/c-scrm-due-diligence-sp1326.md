@@ -10,6 +10,9 @@ description: NISTが2026年7月に最終版を公開したC-SCRM Due Diligence A
 category: Management View / Supply Chain
 collections:
 - risk-management
+topics:
+- Third-party Risk / C-SCRM
+- Security Governance & Risk Management
 tags:
 - NIST
 - C-SCRM
@@ -40,6 +43,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Management View / Supply Chain</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Third-party Risk / C-SCRM / Security Governance &amp; Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Procurement / Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Supply Chain / Third-party Risk / Governance</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

@@ -337,3 +337,28 @@ a.sil-topic:hover {
   gap: 0.45rem;
   margin: 0.6rem 0 1.8rem;
 }
+
+/* v0.9.0: curated Topic taxonomy */
+.sil-topic-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.sil-topic-group {
+  border: 1px solid var(--sil-border);
+  border-radius: 0.7rem;
+  padding: 0.9rem 1rem 0.55rem;
+}
+
+.sil-topic-group-title {
+  font-weight: 700;
+  margin-bottom: 0.55rem;
+}
+
+@media screen and (max-width: 45em) {
+  .sil-topic-groups {
+    grid-template-columns: 1fr;
+  }
+}

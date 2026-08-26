@@ -11,6 +11,10 @@ category: AI Security / Supply Chain
 collections:
 - ai-security
 - risk-management
+topics:
+- AI Agent Security
+- MCP Security
+- Software Supply Chain
 tags:
 - AI Agent
 - MCP
@@ -33,7 +37,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない
 
 <div class="sil-article-meta">
@@ -43,6 +46,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security / Supply Chain</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Agent Security / MCP Security / Software Supply Chain</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Governance / AI Platform</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Supply Chain / Data / IP</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

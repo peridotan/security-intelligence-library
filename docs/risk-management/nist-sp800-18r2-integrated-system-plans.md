@@ -11,6 +11,9 @@ category: Management View / Governance
 collections:
 - risk-management
 - regulation
+topics:
+- Security Governance & Risk Management
+- Third-party Risk / C-SCRM
 tags:
 - NIST
 - Risk Management
@@ -34,7 +37,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # NIST SP 800-18r2 ― Security・Privacy・C-SCRMを別々の計画書にしない
 
 <div class="sil-article-meta">
@@ -44,6 +46,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Management View / Governance</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Security Governance &amp; Risk Management / Third-party Risk / C-SCRM</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk Management / Privacy / Procurement</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Governance / Regulatory / Supply Chain</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

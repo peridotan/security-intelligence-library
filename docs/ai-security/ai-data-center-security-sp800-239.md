@@ -10,6 +10,9 @@ category: AI Security / Infrastructure
 collections:
 - ai-security
 - risk-management
+topics:
+- AI Infrastructure
+- Third-party Risk / C-SCRM
 tags:
 - NIST
 - AI Data Center
@@ -40,6 +43,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security / Infrastructure</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Infrastructure / Third-party Risk / C-SCRM</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Infrastructure / AI Platform</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Infrastructure / Supply Chain / Business Continuity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>

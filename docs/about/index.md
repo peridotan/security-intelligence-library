@@ -43,6 +43,15 @@ Management ImpactとUrgencyは別概念です。
 - **商標・製品名** — 製品名、サービス名、企業名、商標は説明・識別のために使用します。特段の記載がない限り、権利者との提携、承認、推奨を意味しません。
 - **出典へのリンク** — 外部サイトへのリンクは参照目的です。リンク先コンテンツの権利・内容・継続提供を本サイトが保証するものではありません。
 
+## TopicsとTags
+
+本Libraryでは、記事の探索分類を`Topics`と`Tags`に分けます。
+
+- **Topics** — 複数の記事を横断して読むための統制された主要論点。原則1記事あたり1〜3個を付与します。Topic vocabularyは `config/topics.yml` で管理します。
+- **Tags** — 製品名、技術名、攻撃手法、標準、固有名詞等の詳細キーワード。検索・詳細索引のために柔軟に追加します。
+
+Topicsをむやみに増やさず、細かな概念はTagsへ置くことで、記事数が増えても横断探索の入口を安定させます。
+
 ## 記事Metadataと鮮度管理
 
 記事の`Published`は本サイトで公開した日、`Source Period`はその記事が扱う情報・出来事の主な対象月です。過去月を後から整理した記事では、この2つの日付が異なる場合があります。
@@ -58,7 +67,7 @@ Management ImpactとUrgencyは別概念です。
 
 ## コンテンツ生成と保守
 
-各記事のFront MatterをSingle Source of Truthとし、HomeのLatest Intelligence、Category一覧、Monthly IntelligenceのCore Themes、Topicsを自動生成します。
+各記事のFront MatterをSingle Source of Truthとし、HomeのCurrent Intelligence、Category一覧、Monthly IntelligenceのCore Themes、Topics、Tags索引を自動生成します。
 
 外部リンク確認と記事のReview期限確認は、GitHub Actionsで週次実行する設計です。外部サイトのBot対策や一時障害による403・429・5xx等は警告として扱い、404・410等の明確なリンク切れと区別します。
 
@@ -74,7 +83,7 @@ Management ImpactとUrgencyは別概念です。
 8. 関連記事
 9. 参考情報
 
-MetadataはFront Matterを**Single Source of Truth**とし、公開日、更新日、カテゴリ、想定読者、Management Impact、Urgency、Evidenceをビルド時に同期します。PowerPointリンクは `pptx` が設定された記事にのみ表示します。
+MetadataはFront Matterを**Single Source of Truth**とし、公開日、更新日、カテゴリ、Topics、想定読者、Management Impact、Urgency、Evidenceをビルド時に同期します。PowerPointリンクは `pptx` が設定された記事にのみ表示します。
 
 ## AI利用方針
 

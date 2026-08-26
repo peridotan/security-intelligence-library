@@ -23,6 +23,8 @@ hide:
     <div class="sil-card-meta">2026-08-10 · Management Impact: High</div>
     <p>Pass-ta-keyとPass-the-Passkeyから、同期Passkey・端末侵害・UV・回復フローのリスクを整理。</p>
   </article>
+  <article class="sil-card"><a class="sil-card-title" href="passkey-enrollment-recovery-attacks.md">Passkey登録・回復フローへの攻撃</a><div class="sil-card-meta">July 2026 · Management Impact: High</div><p>Authenticatorを破らず、Enrollment / Recoveryの正規手続きを悪用。</p></article>
+  <article class="sil-card"><a class="sil-card-title" href="entra-passkeys-default.md">Entra IDがPasskeyを既定へ</a><div class="sil-card-meta">July 2026 · Management Impact: High</div><p>SMS / VoiceからPhishing-resistant MFAへの企業移行を設計する。</p></article>
 </div>
 
 ## Focus Areas

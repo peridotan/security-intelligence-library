@@ -63,6 +63,12 @@ hide:
     <p>攻撃速度、Identity、Agentic AI、OT、AI Malware、AI規制、重要インフラを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="monthly/2026-08.md">8月の全テーマを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="monthly/2026-07.md">July 2026 Intelligence</a>
+    <div class="sil-card-meta">9 Core Themes</div>
+    <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
+    <a class="sil-card-more" href="monthly/2026-07.md">7月の全テーマを見る →</a>
+  </article>
 </div>
 
 ## Explore by Category

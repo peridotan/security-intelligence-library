@@ -2,6 +2,21 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.6.0
+
+- July 2026 Intelligenceを追加
+- July 2026 Executive Summaryと9 Core Themesを追加
+- JADEPUFFER / Agentic Ransomware記事を追加
+- OpenAI / Hugging Face Cyber評価インシデント記事を追加
+- Passkey Enrollment / Recovery Attack記事を追加
+- Entra ID Passkey既定化記事を追加
+- Kimi K3 Cyber Capability評価記事を追加
+- NIST SP 800-239 AI Data Center Security記事を追加
+- NIST SP 1326 C-SCRM Due Diligence記事を追加
+- EU Cybersecurity & AI Action Plan記事を追加
+- AD FS / SharePoint実悪用Zero-day記事を追加
+- Category / Topics / Monthly Archive / Navigationを更新
+
 ## v0.5.3
 
 - AI利用方針を「利用する場合があります」から「利用しています」へ明確化

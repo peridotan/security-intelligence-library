@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6.0
+
+- Added July 2026 Monthly Intelligence archive with nine core themes.
+- Added nine production intelligence articles covering agentic ransomware, identity lifecycle attacks, passkey migration, AI cyber capability evaluation, AI infrastructure security, C-SCRM, EU AI/cyber policy, and exploited trust-infrastructure vulnerabilities.
+- Updated category indexes, Topics, Home monthly archive, and Zensical navigation.
+
 ## v0.5.3
 
 - Clarified affirmative AI-use disclosure and human editorial responsibility.

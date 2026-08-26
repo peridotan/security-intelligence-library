@@ -22,6 +22,7 @@ hide:
   <article class="sil-card"><a class="sil-card-title" href="../cybersecurity/ai-generated-plc-attacks.md">AI × OT / PLC Risk</a><p>OT攻撃準備の高速化をSafety・Availability・BCPまで含む経営リスクとして捉える。</p></article>
   <article class="sil-card"><a class="sil-card-title" href="../ai-security/frontier-ai-cyber-capabilities.md">Frontier AIのサイバー能力</a><p>攻撃能力そのものより、防御側の時間・復旧能力・優先順位を経営課題として捉える。</p></article>
   <article class="sil-card"><a class="sil-card-title" href="../ai-security/generative-ai-governance.md">生成AI利活用ガバナンス</a><p>過剰統制と統制不足の両方を避け、リスクベースで安全な活用を進める。</p></article>
+  <article class="sil-card"><a class="sil-card-title" href="c-scrm-due-diligence-sp1326.md">NIST SP 1326 C-SCRM Due Diligence</a><p>Supplier Securityを契約後の監査から契約前の意思決定へ移す。</p></article>
 </div>
 
 ## Management Lens

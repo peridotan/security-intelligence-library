@@ -1,101 +1,24 @@
 # Security Intelligence Library
 
-Markdownを原本として、サイバーセキュリティ、AI、Identity、規制、リスクマネジメントの調査・分析を蓄積するWebナレッジベースです。
+Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
-## Architecture
+## v0.5.0
 
-```text
-Research / Source Material
-          ↓
-       Markdown
-       (Master)
-       ↙     ↘
-GitHub Pages  PowerPoint
-```
+- HomeをLatest Intelligence 6件に整理
+- Monthly Intelligence Archiveを追加
+- August 2026 Executive Summaryを追加
+- Topicsをクリック可能に変更
+- AboutをEditorial Policyへ拡張
+- Source Tier / Evidence / Urgency / AI利用 / Correction / Disclaimerを明文化
+- Front MatterをMetadataのSingle Source of Truthに変更
+- 空のPPT導線を非表示化
+- 主要主張にInline Footnoteを追加
+- CIでFront Matter、必須章、内部リンク、参考URLを検証
 
-## v0.4.0
-
-August 2026 Intelligenceとして6本を追加し、正式記事は合計11本になりました。トップページでは8月26日時点のコア10テーマをまとめて表示します。
-
-新規記事:
-
-- 脆弱性悪用の猶予は48時間以下へ
-- Agentic AIの安全設計
-- AI生成スクリプトがPLC標的活動に登場
-- AI Enabled Malwareの現実
-- EU AI Actが執行フェーズへ
-- 重要インフラのサイバーセキュリティが「統一基準」へ
-
-## v0.3.0
-
-5本の正式記事を投入しました。
-
-- Frontier AIのサイバー能力が「Critical」に近づく意味
-- AI Agent Identity / NHI
-- Large-Scale Credential Attacks
-- Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkey
-- 生成AI利活用ガバナンス
-
-記事は公開情報を基に、Executive Summary / なぜ今なのか / 経営インパクト / 日本企業への示唆 / 推奨アクション / 用語解説 / 参考情報の共通構成で整理しています。
-
-## Local preview
-
-Python 3.10+ が必要です。
+## Local check
 
 ```bash
-python -m venv .venv
-source .venv/Scripts/activate   # Git Bash on Windows
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-zensical serve --open
+python scripts/sync_article_metadata.py
+python scripts/check_content.py
+zensical build --clean --strict
 ```
-
-ローカルサイトは通常 `http://localhost:8000/` で表示されます。
-
-## Create a new article
-
-```bash
-python scripts/new_article.py ai-security frontier-ai-cyber-risk "Frontier AIのサイバー能力と経営リスク" --description "AIサイバー能力の進展を経営視点で整理"
-```
-
-利用可能なカテゴリ:
-
-- `cybersecurity`
-- `identity-security`
-- `ai-security`
-- `regulation`
-- `risk-management`
-
-作成後、本文と出典を確認し、公開準備ができた記事だけ `zensical.toml` の `nav` に追加します。
-
-## GitHub Pages deployment
-
-Repository **Settings > Pages > Build and deployment > Source** は **GitHub Actions** を使用します。
-
-`main` へのpushごとに `.github/workflows/docs.yml` が自動実行され、成功すると以下へ公開されます。
-
-https://peridotan.github.io/security-intelligence-library/
-
-## Security / publishing rule
-
-このリポジトリは公開情報専用です。以下はコミットしないでください。
-
-- 顧客情報
-- 社内限定資料
-- NDA対象情報
-- APIキー、トークン、パスワード、秘密鍵
-- 公開許可のないPowerPoint/PDF
-
-## Version
-
-- v0.4.0: 2026-08-26
-- v0.3.1: 2026-08-26
-- v0.3.0: 2026-08-26
-- v0.2.1: 2026-08-26
-- v0.2.0: 2026-08-26
-- v0.1.0: 2026-08-26
-
-
-## Compatibility note (v0.3.1)
-
-Legacy sample article URLs are retained as compatibility aliases and redirect to the production articles.

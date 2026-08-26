@@ -5,19 +5,21 @@ updated: 2026-08-26
 description: AI AgentとNon-Human Identityを、人・Agent・Credential・Actionの監査可能な連鎖として管理するための考え方を整理する。
 category: Identity Security
 tags:
-  - Identity Security
-  - AI Agent
-  - NHI
-  - PAM
-  - Secrets Management
-  - Agentic AI
+- Identity Security
+- AI Agent
+- NHI
+- PAM
+- Secrets Management
+- Agentic AI
 audience:
-  - Executive
-  - CISO
-  - IAM Architect
+- Executive
+- CISO
+- IAM Architect
 management_impact: High
+urgency: Near-term
+evidence: Assessment
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する
@@ -28,13 +30,15 @@ pptx: ""
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / IAM Architect</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Assessment</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-AI Agentは、単に回答を返すアプリケーションではなく、SaaS、クラウド、コードリポジトリ、業務システムへ接続し、**人の代わりに操作を実行する主体**になりつつあります。そのため「AgentそのもののIdentity」と「Agentが利用するNHI・Credential」を分けて管理し、誰の委任で、どの権限を使い、何を実行したかを追跡できる設計が必要です。
+AI Agentは、単に回答を返すアプリケーションではなく、SaaS、クラウド、コードリポジトリ、業務システムへ接続し、**人の代わりに操作を実行する主体**になりつつあります。そのため「AgentそのもののIdentity」と「Agentが利用するNHI・Credential」を分けて管理し、誰の委任で、どの権限を使い、何を実行したかを追跡できる設計が必要です。[^source]
 
 目標は、**Human → Agent → NHI / Credential → Action** の連鎖を監査可能にすることです。新しい専用製品を先に選ぶのではなく、既存のIAM、PAM、Secrets Management、SIEMをAgentまで拡張し、委任・最小権限・短命資格情報・実行時統制・監査の原則を先に定めます。
 
@@ -154,9 +158,6 @@ Just-in-Time Credential。必要な操作時に限定して発行される短期
 - [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md)
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -168,3 +169,5 @@ Just-in-Time Credential。必要な操作時に限定して発行される短期
   https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 - OWASP Gen AI Security Project, Agentic Security Initiative  
   https://genai.owasp.org/initiatives/agentic-security-initiative/
+
+[^source]: 1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20). https://1password.com/blog/how-agentic-ai-is-redefining-identity-security

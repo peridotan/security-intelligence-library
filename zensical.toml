@@ -2,43 +2,34 @@
 site_name = "Security Intelligence Library"
 site_url = "https://peridotan.github.io/security-intelligence-library/"
 site_description = "Cybersecurity, AI, Identity, Regulation and Risk Management intelligence library."
+site_author = "Security Intelligence Library"
 docs_dir = "docs"
 site_dir = "site"
 repo_url = "https://github.com/peridotan/security-intelligence-library"
 repo_name = "peridotan/security-intelligence-library"
-copyright = "Security Intelligence Library"
+copyright = "&copy; 2026 Security Intelligence Library"
 edit_uri = "edit/main/docs/"
-extra_css = [
-  "stylesheets/extra.css",
-]
+extra_css = ["stylesheets/extra.css"]
 nav = [
   { "Home" = "index.md" },
-  { "Cybersecurity" = [
-      "cybersecurity/index.md",
+  { "Monthly Intelligence" = ["monthly/index.md", { "August 2026" = "monthly/2026-08.md" }] },
+  { "Cybersecurity" = ["cybersecurity/index.md",
       { "Exploitation Window 48h" = "cybersecurity/exploitation-window-48-hours.md" },
       { "AI-generated PLC Activity" = "cybersecurity/ai-generated-plc-attacks.md" },
-      { "Large-Scale Credential Attacks" = "cybersecurity/large-scale-credential-attacks.md" },
-    ] },
-  { "Identity Security" = [
-      "identity-security/index.md",
+      { "Large-Scale Credential Attacks" = "cybersecurity/large-scale-credential-attacks.md" }] },
+  { "Identity Security" = ["identity-security/index.md",
       { "AI Agent Identity / NHI" = "identity-security/ai-agent-identity-nhi.md" },
-      { "Passkey Security" = "identity-security/pass-the-passkey.md" },
-    ] },
-  { "AI Security" = [
-      "ai-security/index.md",
+      { "Passkey Security" = "identity-security/pass-the-passkey.md" }] },
+  { "AI Security" = ["ai-security/index.md",
       { "Agentic AI Security" = "ai-security/agentic-ai-security-controls.md" },
       { "AI Enabled Malware" = "ai-security/ai-enabled-malware-reality.md" },
       { "Frontier AI Cyber" = "ai-security/frontier-ai-cyber-capabilities.md" },
-      { "Generative AI Governance" = "ai-security/generative-ai-governance.md" },
-    ] },
-  { "Regulation" = [
-      "regulation/index.md",
+      { "Generative AI Governance" = "ai-security/generative-ai-governance.md" }] },
+  { "Regulation" = ["regulation/index.md",
       { "EU AI Act Enforcement" = "regulation/eu-ai-act-enforcement-2026.md" },
-      { "Japan Critical Infrastructure" = "regulation/japan-critical-infrastructure-unified-standard.md" },
-    ] },
-  { "Risk Management" = [
-      "risk-management/index.md",
-    ] },
+      { "Japan Critical Infrastructure" = "regulation/japan-critical-infrastructure-unified-standard.md" }] },
+  { "Management View" = "risk-management/index.md" },
+  { "Topics" = "topics/index.md" },
   { "About" = "about/index.md" },
 ]
 
@@ -46,14 +37,10 @@ nav = [
 variant = "modern"
 language = "ja"
 features = [
-  "navigation.instant",
-  "navigation.tabs",
-  "navigation.sections",
-  "navigation.path",
-  "navigation.indexes",
-  "search.highlight",
-  "content.action.edit",
-  "content.action.view",
+  "navigation.instant", "navigation.tabs", "navigation.sections",
+  "navigation.path", "navigation.indexes", "navigation.footer",
+  "search.highlight", "content.action.edit", "content.action.view",
+  "content.footnote.tooltips",
 ]
 
 [project.markdown_extensions]
@@ -61,3 +48,9 @@ attr_list = {}
 md_in_html = {}
 admonition = {}
 tables = {}
+footnotes = {}
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/peridotan/security-intelligence-library"
+name = "Security Intelligence Library on GitHub"

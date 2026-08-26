@@ -5,34 +5,39 @@ updated: 2026-08-26
 description: Siemens S7 PLCを狙うAI生成の悪用スクリプトに関する共同警告から、OT/ICS防御への示唆を整理する。
 category: Cybersecurity
 tags:
-  - OT Security
-  - ICS
-  - PLC
-  - AI
-  - Critical Infrastructure
+- OT Security
+- ICS
+- PLC
+- AI
+- Critical Infrastructure
 audience:
-  - Executive
-  - CISO
-  - OT Security
+- Executive
+- CISO
+- OT Security
 management_impact: High
+urgency: Immediate
+evidence: Observed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / OT</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / OT Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-NSAなどの米政府機関は2026年8月19日、米国内のSiemens S7 Series PLCを対象とした**偵察・能力開発にAI生成の悪用スクリプトが使われている**と警告しました。スクリプトは正規の監視ツールを装う形で利用され、製造、エネルギー、水、化学、食品など複数の重要分野が対象とされています。
+NSAなどの米政府機関は2026年8月19日、米国内のSiemens S7 Series PLCを対象とした**偵察・能力開発にAI生成の悪用スクリプトが使われている**と警告しました。スクリプトは正規の監視ツールを装う形で利用され、製造、エネルギー、水、化学、食品など複数の重要分野が対象とされています。[^source]
 
 一次情報が示しているのは、AIによる大規模な物理破壊が成功したという話ではありません。重要なのは、従来は専門知識が必要だったPLC向けの探索・スクリプト作成をAIが補助し、**OTを狙う攻撃準備のコストと速度が変わり得る**ことです。
 
@@ -127,9 +132,6 @@ AIの影響がまず出やすいのは、前半の調査、コード作成、試
 - [脆弱性悪用の猶予は48時間以下へ](exploitation-window-48-hours.md)
 - [重要インフラのサイバーセキュリティが「統一基準」へ](../regulation/japan-critical-infrastructure-unified-standard.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -137,3 +139,5 @@ AIの影響がまず出やすいのは、前半の調査、コード作成、試
   https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4578318/nsa-and-others-release-report-on-active-threats-of-programmable-logic-controlle/
 - NSA, Cybersecurity Advisories & Guidance  
   https://www.nsa.gov/Cybersecurity/Cybersecurity-Advisories-Guidance/
+
+[^source]: NSA, NSA and Others Release Report on Active Threats of Programmable Logic Controllers (2026-08-19). https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4578318/nsa-and-others-release-report-on-active-threats-of-programmable-logic-controlle/

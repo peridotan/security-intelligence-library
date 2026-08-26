@@ -5,35 +5,40 @@ updated: 2026-08-26
 description: 2026年7月決定の重要インフラ統一基準と8月公表の安全基準等策定ガイドライン案を、企業への実務影響から整理する。
 category: Regulation
 tags:
-  - Japan
-  - Critical Infrastructure
-  - Cybersecurity Regulation
-  - Risk Management
-  - Supply Chain
+- Japan
+- Critical Infrastructure
+- Cybersecurity Regulation
+- Risk Management
+- Supply Chain
 audience:
-  - Executive
-  - CISO
-  - Risk Management
-  - Compliance
+- Executive
+- CISO
+- Risk Management
+- Compliance
 management_impact: High
+urgency: Near-term
+evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # 重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation / Japan</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk / Compliance</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk Management / Compliance</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-2026年7月31日、日本のサイバーセキュリティ戦略本部は**「重要インフラのサイバーセキュリティ対策のための統一基準」**を決定しました。10月1日の施行が予定されています。続いて8月5日、国家サイバー統括室は、所管省庁や業界団体が安全基準等を策定する際に参照する**「安全基準等策定ガイドライン（案）」**を公表しました。
+2026年7月31日、日本のサイバーセキュリティ戦略本部は**「重要インフラのサイバーセキュリティ対策のための統一基準」**を決定しました。10月1日の施行が予定されています。続いて8月5日、国家サイバー統括室は、所管省庁や業界団体が安全基準等を策定する際に参照する**「安全基準等策定ガイドライン（案）」**を公表しました。[^source]
 
 今回の変化は、15の重要インフラ分野でばらつきのあった取組を、**組織統治、経営リスク、サプライチェーン、監査・モニタリング、演習・継続的改善**という共通ベースラインへ寄せる方向性です。
 
@@ -119,9 +124,6 @@ pptx: ""
 - [AI生成スクリプトがPLC標的活動に登場](../cybersecurity/ai-generated-plc-attacks.md)
 - [脆弱性悪用の猶予は48時間以下へ](../cybersecurity/exploitation-window-48-hours.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -133,3 +135,5 @@ pptx: ""
   https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&Mode=0&id=060260805
 - 国家サイバー統括室, 重要インフラのサイバーセキュリティ対策のための統一基準  
   https://www.cyber.go.jp/pdf/policy/infra/pubcom_res_jyuhurakijun.pdf
+
+[^source]: 国家サイバー統括室, 重要インフラ対策関連 ― 重要インフラ統一基準について. https://www.cyber.go.jp/policy/group/infra/policy.html

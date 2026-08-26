@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.5.0
+
+- Added Monthly Intelligence archive and August 2026 executive summary.
+- Reduced Home to latest six intelligence articles.
+- Added clickable Topics navigation.
+- Expanded Editorial Policy.
+- Added Evidence and Urgency metadata.
+- Made front matter the metadata source of truth.
+- Added conditional PowerPoint rendering.
+- Enabled inline footnotes and tooltips.
+- Added CI content-quality checks.
+- Reframed Risk Management as Management View.
+
 ## v0.4.0
 
 - Added six production intelligence articles for August 2026.

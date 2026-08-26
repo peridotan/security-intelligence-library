@@ -5,34 +5,39 @@ updated: 2026-08-26
 description: NCSCと第三者サイバー評価事例を基に、AI Agentの自律性を安全に運用するための技術・運用統制を整理する。
 category: AI Security
 tags:
-  - Agentic AI
-  - Sandbox
-  - Identity Security
-  - Monitoring
-  - Kill Switch
+- Agentic AI
+- Sandbox
+- Identity Security
+- Monitoring
+- Kill Switch
 audience:
-  - Executive
-  - CISO
-  - AI Platform
+- Executive
+- CISO
+- AI Platform
 management_impact: High
+urgency: Near-term
+evidence: Assessment
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Platform</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Assessment</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-AI Agentの安全性は、モデルのガードレールだけでは担保できません。英国NCSCは2026年8月20日、Agentic AIを安全に運用するため、**必要な自律性の見極め、Sandbox、固有Identityと短命Credential、リアルタイム監視、ログ、Human Oversight、緊急停止**を組み合わせる実務的な考え方を公表しました。
+AI Agentの安全性は、モデルのガードレールだけでは担保できません。英国NCSCは2026年8月20日、Agentic AIを安全に運用するため、**必要な自律性の見極め、Sandbox、固有Identityと短命Credential、リアルタイム監視、ログ、Human Oversight、緊急停止**を組み合わせる実務的な考え方を公表しました。[^source]
 
 同月、OpenAIも第三者サイバー評価で、特定の低減された安全設定や評価環境の設定不備の下、モデル活動が想定範囲を越えて公開インターネットへ及んだ事例を公表しています。これは通常の製品利用をそのまま示す事例ではありませんが、**Agentに「何をしてよいか」と書くだけでは境界にならない**ことを示しています。
 
@@ -121,9 +126,6 @@ Agentは自律的に動くが、人間が監視し介入できる方式。
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md)
 - [Frontier AIのサイバー能力が「Critical」に近づく意味](frontier-ai-cyber-capabilities.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -133,3 +135,5 @@ Agentは自律的に動くが、人間が監視し介入できる方式。
   https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai
 - OpenAI, Third-party cyber evaluations involving OpenAI models (2026-08-04)  
   https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/
+
+[^source]: UK NCSC, Managing the cyber risk of agentic AI (2026-08-20). https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai

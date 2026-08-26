@@ -53,7 +53,7 @@ def main() -> None:
 
     output.write_text(text, encoding="utf-8")
     print(output.relative_to(ROOT))
-    print("Next: edit the article, add reliable source URLs, then add it to zensical.toml nav when ready to publish.")
+    print("Next: edit the article, add reliable source URLs and inline footnotes, set status: published, run metadata sync and content checks, then add it to zensical.toml nav.")
 
 
 if __name__ == "__main__":

@@ -5,19 +5,21 @@ updated: 2026-08-26
 description: 2026年に公開されたPass-ta-keyとPass-the-Passkeyを整理し、Passkeyの暗号方式ではなく実装・端末・回復フローが攻撃面になることを解説する。
 category: Identity Security
 tags:
-  - Identity Security
-  - Passkey
-  - FIDO2
-  - WebAuthn
-  - Google Password Manager
-  - Endpoint Security
+- Identity Security
+- Passkey
+- FIDO2
+- WebAuthn
+- Google Password Manager
+- Endpoint Security
 audience:
-  - CISO
-  - IAM Architect
-  - Security Engineer
+- CISO
+- IAM Architect
+- Security Engineer
 management_impact: High
+urgency: Near-term
+evidence: Observed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkeyから学ぶ
@@ -28,13 +30,15 @@ pptx: ""
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">CISO / IAM Architect / Security Engineer</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-2026年に公開されたPasskey関連研究は、「Passkeyの公開鍵暗号が破られた」ことを示すものではありません。主に狙われたのは、**侵害済み端末上の実装、同期PasskeyのCloud Authenticator、User Verification (UV) の扱い、オンボーディングや回復フロー、ログやメモリ**です。
+2026年に公開されたPasskey関連研究は、「Passkeyの公開鍵暗号が破られた」ことを示すものではありません。主に狙われたのは、**侵害済み端末上の実装、同期PasskeyのCloud Authenticator、User Verification (UV) の扱い、オンボーディングや回復フロー、ログやメモリ**です。[^source]
 
 特にUnit 42のPass-ta-key研究はGoogle Password Manager / Chrome / Windowsを対象に、端末上にマルウェアが存在する前提で、User Verificationを迂回したり、同期Passkeyを復号可能にしたりする攻撃を示しました。一方、SpecterOpsの「Pass-the-Passkey」はWebAuthn/FIDO2の実装・認証フローを対象とした別系統の研究群です。
 
@@ -129,9 +133,6 @@ WebAuthn/Passkeyを使って利用者を認証するWebサイトやサービス�
 
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -143,3 +144,5 @@ WebAuthn/Passkeyを使って利用者を認証するWebサイトやサービス�
   https://developers.google.com/codelabs/passkey-form-autofill
 - NIST SP 800-63B-4, Digital Identity Guidelines: Authentication and Authenticator Management  
   https://doi.org/10.6028/NIST.SP.800-63B-4
+
+[^source]: Palo Alto Networks Unit 42, Pass the Passkey: A Novel Attack Surface in Passwordless Authentication (2026-08-03). https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/

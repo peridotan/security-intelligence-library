@@ -5,18 +5,20 @@ updated: 2026-08-26
 description: 生成AI利活用ガバナンスを、利用類型・リスク・統制・教育・モニタリングの観点から企業向けに整理する。
 category: AI Security
 tags:
-  - AI Governance
-  - Generative AI
-  - Risk Management
-  - Security for AI
-  - Regulation
+- AI Governance
+- Generative AI
+- Risk Management
+- Security for AI
+- Regulation
 audience:
-  - Executive
-  - CISO
-  - Risk Management
+- Executive
+- CISO
+- Risk Management
 management_impact: High
+urgency: Near-term
+evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # 生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る
@@ -24,16 +26,18 @@ pptx: ""
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-14</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security / Governance</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-生成AIガバナンスは、「機密情報を入力しない」「回答を鵜呑みにしない」という利用規約だけでは機能しません。利用が広がるほど、個人利用、業務組込み、AI Agent、モデル開発などでリスクが異なり、**同じ禁止事項を全ケースに当てはめると、過剰統制か統制不足のどちらか**になります。
+生成AIガバナンスは、「機密情報を入力しない」「回答を鵜呑みにしない」という利用規約だけでは機能しません。利用が広がるほど、個人利用、業務組込み、AI Agent、モデル開発などでリスクが異なり、**同じ禁止事項を全ケースに当てはめると、過剰統制か統制不足のどちらか**になります。[^source]
 
 企業が作るべきなのは、利用目的とリスクに応じて、使えるサービス、入力できるデータ、必要なレビュー、外部公開、権限、ログ、インシデント対応を決める**リスクベースの利用ガバナンス**です。METIのAI事業者ガイドライン第1.2版、NIST AI RMF / Generative AI Profile、OECDのResponsible AI Due Diligenceなども、AIをライフサイクル全体で継続的に管理する方向性を示しています。
 
@@ -149,6 +153,12 @@ pptx: ""
 
 <div class="sil-action-box" markdown>
 
+## 日本企業への示唆
+
+日本企業では、生成AI利用を一律禁止するのではなく、**利用類型ごとにリスクと統制を変える**設計が現実的です。一般利用、AIアプリケーション、AI Agent、モデル開発・運用では、データ、権限、監査、Human Oversightの重点が異なります。
+
+また、法務・セキュリティ・IT・事業部門が別々のルールを持つと運用が複雑になるため、AI Inventory、許可された利用環境、データ分類、例外承認、インシデント対応を共通プロセスとして統合することが重要です。
+
 ## 推奨アクション
 
 1. **AI利用台帳を作る** — サービス、Use Case、Owner、データ、外部接続、重要度を記録する。
@@ -189,9 +199,6 @@ AIの判断・操作の一部に人間の確認や承認を組み込む設計。
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md)
 - [Frontier AIのサイバー能力が「Critical」に近づく意味](frontier-ai-cyber-capabilities.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -205,3 +212,5 @@ AIの判断・操作の一部に人間の確認や承認を組み込む設計。
   https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf
 - OWASP Gen AI Security Project, Top 10 for Agentic Applications for 2026  
   https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+
+[^source]: 経済産業省 / IPA・AISI, AI事業者ガイドライン 第1.2版 (2026-03-31). https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html

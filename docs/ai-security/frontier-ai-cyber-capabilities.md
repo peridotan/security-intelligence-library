@@ -5,17 +5,19 @@ updated: 2026-08-26
 description: Frontier AIのサイバー能力がCritical閾値に近づく状況を、攻撃速度・防御時間・経営リスクの観点から整理する。
 category: AI Security
 tags:
-  - AI Security
-  - Frontier AI
-  - Cybersecurity
-  - Risk Management
-  - Daybreak
+- AI Security
+- Frontier AI
+- Cybersecurity
+- Risk Management
+- Daybreak
 audience:
-  - Executive
-  - CISO
+- Executive
+- CISO
 management_impact: High
+urgency: Strategic
+evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # Frontier AIのサイバー能力が「Critical」に近づく意味
@@ -26,13 +28,15 @@ pptx: ""
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-Frontier AIのサイバー能力は、「AIが攻撃コードを書ける」という段階から、**長い攻撃工程を自律的に進め、未知の脆弱性を発見・悪用する能力をどこまで持つか**という段階へ移りつつあります。OpenAIは2026年8月、開発中モデルAstraについてPreparedness FrameworkのCybersecurity「Critical」を排除できないとの予備評価を公表しました。
+Frontier AIのサイバー能力は、「AIが攻撃コードを書ける」という段階から、**長い攻撃工程を自律的に進め、未知の脆弱性を発見・悪用する能力をどこまで持つか**という段階へ移りつつあります。OpenAIは2026年8月、開発中モデルAstraについてPreparedness FrameworkのCybersecurity「Critical」を排除できないとの予備評価を公表しました。[^source]
 
 経営上の重要点は、AI専用の新製品を急いで導入することではありません。**攻撃側の時間短縮に対して、防御側の発見・修正・封じ込め・復旧時間をどこまで縮められるか**が競争条件になります。まずは、実悪用状況・外部露出・資産重要度に基づく優先順位、Identity防御、復旧検証など、既存の基礎統制を高速化することが重要です。
 
@@ -110,9 +114,6 @@ OpenAIの枠組みにおける高いサイバー能力の閾値。Criticalは、
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md)
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -124,3 +125,5 @@ OpenAIの枠組みにおける高いサイバー能力の閾値。Criticalは、
   https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/
 - OpenAI, Our updated Preparedness Framework  
   https://openai.com/index/updating-our-preparedness-framework/
+
+[^source]: OpenAI, Responding to the next frontier of critical cyber capabilities (2026-08-07). https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/

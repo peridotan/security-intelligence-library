@@ -1,12 +1,15 @@
 ---
-title: Risk Management
+title: Management View
 tags:
   - Risk Management
 hide:
   - toc
 ---
 
-# Risk Management
+# Management View
+
+このページは独立した技術カテゴリではなく、Cybersecurity / Identity / AI / Regulationを**事業継続、規制、サプライチェーン、残余リスクという経営視点で横断するビュー**です。
+
 
 <div class="sil-category-intro"><p>サイバーリスクを単独で捉えず、事業継続、サプライチェーン、規制、人材、AIなどを含む<strong>経営リスクとして統合的に整理</strong>します。</p></div>
 

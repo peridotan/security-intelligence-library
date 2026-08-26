@@ -5,35 +5,40 @@ updated: 2026-08-26
 description: EU AI Actの2026年8月2日適用・執行強化とArticle 50透明性義務を日本企業向けに整理する。
 category: Regulation
 tags:
-  - EU AI Act
-  - AI Governance
-  - Transparency
-  - Regulation
-  - Generative AI
+- EU AI Act
+- AI Governance
+- Transparency
+- Regulation
+- Generative AI
 audience:
-  - Executive
-  - CISO
-  - Legal
-  - AI Governance
+- Executive
+- CISO
+- Legal
+- AI Governance
 management_impact: High
+urgency: Immediate
+evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation / AI</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / Legal / AI Governance</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Legal / AI Governance</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-2026年8月2日から、EU AI Actの執行権限が本格的に動き始め、Article 50の**AI Transparency義務**が適用されました。チャットボット等ではAIとの対話であることを利用者へ知らせ、AI生成・改変コンテンツには一定の場合にMachine-readable MarkingやLabelingが求められます。
+2026年8月2日から、EU AI Actの執行権限が本格的に動き始め、Article 50の**AI Transparency義務**が適用されました。チャットボット等ではAIとの対話であることを利用者へ知らせ、AI生成・改変コンテンツには一定の場合にMachine-readable MarkingやLabelingが求められます。[^source]
 
 日本企業にとって重要なのは、「EU向けAI製品を作っている会社だけ」の話ではない点です。EUでAI機能を提供・導入する企業は、自社がProviderかDeployerか、どのAI Systemが対象か、誰がLabelingや通知を担うかを整理する必要があります。
 
@@ -125,9 +130,6 @@ AI Systemを開発し、自らの名称・商標で市場投入・サービス�
 - [生成AI利活用ガバナンス](../ai-security/generative-ai-governance.md)
 - [Agentic AIの安全設計](../ai-security/agentic-ai-security-controls.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
@@ -139,3 +141,5 @@ AI Systemを開発し、自らの名称・商標で市場投入・サービス�
   https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act
 - European Commission, The enforcement framework of the AI Act  
   https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act
+
+[^source]: European Commission, Commission starts enforcing AI Act rules and new transparency requirements on 2 August (2026-07-31). https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august

@@ -1,1 +1,2 @@
-zensical==0.0.57
+zensical
+PyYAML>=6,<7

@@ -5,20 +5,22 @@ updated: 2026-08-26
 description: Unit 42の大規模資格情報攻撃レポートを基に、確認済み事実と攻撃者主張を分け、Identity Security対策を整理する。
 category: Cybersecurity
 tags:
-  - Cybersecurity
-  - Identity Security
-  - Credential Attack
-  - Password Spraying
-  - MFA Fatigue
-  - Microsoft Entra
-  - Edge Device
+- Cybersecurity
+- Identity Security
+- Credential Attack
+- Password Spraying
+- MFA Fatigue
+- Microsoft Entra
+- Edge Device
 audience:
-  - Executive
-  - CISO
-  - Security Operations
+- Executive
+- CISO
+- Security Operations
 management_impact: High
+urgency: Immediate
+evidence: Mixed
 status: published
-pptx: ""
+pptx: ''
 ---
 
 # Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security
@@ -26,16 +28,18 @@ pptx: ""
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-19</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / Identity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Security Operations</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Mixed</span></div>
 </div>
 
 <div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
-Unit 42は2026年8月18日、Large-Scale Credential AttacksのThreat Briefを更新し、TheHatmanとFortiBleedに関する情報を整理しました。重要なのは、攻撃者が必ずしも新しいマルウェアやゼロデイで侵入するとは限らず、**漏えい資格情報を集め、Password Sprayingを行い、Edge DeviceやクラウドIdentityへ「正規ログイン」する**攻撃が大規模化していることです。
+Unit 42は2026年8月18日、Large-Scale Credential AttacksのThreat Briefを更新し、TheHatmanとFortiBleedに関する情報を整理しました。重要なのは、攻撃者が必ずしも新しいマルウェアやゼロデイで侵入するとは限らず、**漏えい資格情報を集め、Password Sprayingを行い、Edge DeviceやクラウドIdentityへ「正規ログイン」する**攻撃が大規模化していることです。[^source]
 
 TheHatmanについては、Microsoft Entraテナントから情報を窃取した、MFA FatigueやPassword Sprayingを使った、という点は**攻撃者自身の主張であり、Unit 42は侵入経路を検証できていません**。この区別を保ったまま、Passkey、Conditional Access、ITDR、PAM、NHI、ヘルプデスク回復、漏えいCredential監視を一つのIdentity Securityモデルとして統合することが重要です。
 
@@ -100,7 +104,11 @@ TheHatmanについては、Microsoft Entraテナントから情報を窃取し�
 | 特権 | 一般Credentialから管理権限へ拡大 | PAM・PIMの成熟度が被害規模を左右する |
 | 監査 | 正常ログインと悪用の区別が難しい | Identity telemetryと行動分析が重要 |
 
-## 日本企業向けIdentity Securityモデル
+## 日本企業への示唆
+
+日本企業では、Credential AttackをMFA製品単体の問題ではなく、**認証・端末・特権・回復・漏えい資格情報・NHIを横断するIdentity Securityの問題**として扱う必要があります。特にヘルプデスク回復、Edge Device、特権経路、漏えい資格情報の再利用を同じ攻撃チェーン上で確認することが重要です。
+
+### 日本企業向けIdentity Securityモデル
 
 ### 1. Prevent ― 盗まれても使いにくくする
 
@@ -159,11 +167,10 @@ Identity Threat Detection and Response。Identityの設定・権限・認証イ�
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md)
 - [Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkeyから学ぶ](../identity-security/pass-the-passkey.md)
 
-## PowerPoint
-
-対応する公開可能なPowerPoint版は、今後このページからリンクします。
 
 ## 参考情報
 
 - Palo Alto Networks Unit 42, Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18, 2026)  
   https://unit42.paloaltonetworks.com/large-scale-credential-attacks/
+
+[^source]: Palo Alto Networks Unit 42, Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18, 2026). https://unit42.paloaltonetworks.com/large-scale-credential-attacks/

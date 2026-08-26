@@ -89,6 +89,26 @@ hide:
     <div class="sil-card-meta">June 2026 · Strategic · Confirmed · AI Governance / Strategic Risk</div>
     <p>2026年6月にNISTが公表したRobust AI Securityの数学的議論を基に、固定GuardrailからContinuous Red Team / Update / Resilienceへ移行する意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="openai-running-codex-safely.md">Coding Agentをどう守るか ― OpenAIのCodex運用から見るAgent Runtime Security</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年5月8日に公開したRunning Codex safely at OpenAIを基に、Sandbox、承認、Network Access、Credential、Telemetryを統合したCoding Agent Se…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-ai-agent-security-rfi-analysis.md">NIST AI Agent Security分析 ― 従来のCybersecurity原則だけでは足りない理由</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Operational Security</div>
+    <p>NIST/CAISIが2026年5月18日に公表したAI Agent Security RFI回答分析を基に、Agent固有の脅威と政府・企業に必要な対応を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/singapore-agentic-ai-governance-v15.md">Singapore Agentic AI Governance v1.5 ― 「自律性をRisk Tierで制限する」実装例</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>Singapore IMDAが2026年5月20日に更新したModel AI Governance Framework for Agentic AIを基に、Risk Bounding、人の責任、Multi-agent、Third-party…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="openai-trusted-access-cyber.md">Cyber能力へのAccess Control ― OpenAI Trusted Accessが示す「能力 × Identity」の統制</a>
+    <div class="sil-card-meta">May 2026 · Strategic · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年5月7日に拡張したTrusted Access for Cyberを基に、高度なCyber CapabilityへのAccessをIdentity、Organization Verification、利用目的、監視で制…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

@@ -74,6 +74,36 @@ hide:
     <div class="sil-card-meta">June 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
     <p>2026年6月にNIST NCCoEが最終公開したWater and Wastewater Sector向けSP 1800-45を基に、重要インフラの安全なOT Remote Accessを整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/aitm-token-compromise-code-of-conduct.md">AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Observed · Identity / Financial Fraud</div>
+    <p>Microsoftが2026年5月4日に公表したCode of Conductを装う多段Phishing Campaignを基に、AiTM、Token Theft、Phishing-resistant MFAの重要性を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="f5-confluence-edge-to-identity.md">Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Observed · Operational Security / Identity</div>
+    <p>Microsoftが2026年5月22日に報告したF5 BIG-IPからConfluenceへPivotしたLinux intrusionを基に、Edge Device、Legacy、Credential、Identityを一続きで守る必要性…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="mini-shai-hulud-antv.md">Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Observed · Supply Chain / Credential Risk</div>
+    <p>Microsoftが2026年5月20日に公表した@antv npm Supply Chain攻撃を基に、Maintainer Account、Transitive Dependency、CI/CD Secret、Cloud Credenti…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-project-yata-shield.md">Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Confirmed · Regulatory / Business Continuity</div>
+    <p>2026年5月18日に国家サイバー統括室等が公表したProject YATA-Shieldを基に、高性能AIで加速する脆弱性発見・攻撃への政府横断対応を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/fsa-frontier-ai-short-term-response.md">金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Confirmed · Regulatory / Business Continuity</div>
+    <p>2026年5月22日に金融庁・日本銀行等が金融機関へ要請したFrontier AIによる脅威変化への短期対応を、脆弱性管理・Vendor・BCP・経営判断の観点から整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-manufacturing-response-recovery-sp1800-41.md">NIST SP 1800-41 Draft ― OTでは「防ぐ」だけでなくResponse / Recoveryを設計する</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
+    <p>NIST NCCoEが2026年5月21日に公開した製造業向けResponse / Recovery Guide SP 1800-41 Draftを基に、ICS/OTでの復旧設計とOperational Resilienceを整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

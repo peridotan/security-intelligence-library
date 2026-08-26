@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.10.0
+
+- Added May 2026 Monthly Intelligence with ten core themes.
+- Added articles covering Japan's Project YATA-Shield, FSA frontier-AI patch readiness, NIST agent security, Singapore agentic governance, coding-agent runtime controls, trusted access to cyber-capable AI, npm/CI-CD supply-chain attacks, edge-to-identity compromise, AiTM token theft, and OT response/recovery.
+- Reused the curated Topics / detailed Tags architecture introduced in v0.9.x.
+
 ## v0.9.1
 
 - Polished Home messaging for a public-facing audience.

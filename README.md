@@ -2,6 +2,22 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.10.0
+
+- May 2026 Intelligenceを追加
+- May 2026 Executive Summaryと10 Core Themesを追加
+- Project YATA-Shield記事を追加
+- 金融庁 Frontier AI短期対応記事を追加
+- NIST AI Agent Security RFI分析記事を追加
+- Singapore Agentic AI Governance v1.5記事を追加
+- OpenAI Codex Runtime Security記事を追加
+- OpenAI Trusted Access for Cyber記事を追加
+- Mini Shai-Hulud / @antv Supply Chain記事を追加
+- F5 / Confluence Edge-to-Identity攻撃記事を追加
+- AiTM Token Compromise記事を追加
+- NIST SP 1800-41 OT Response / Recovery記事を追加
+- v0.9系のTopics / Tags / Current Intelligence自動生成をそのまま利用
+
 ## v0.9.1
 
 - Home Heroを読者価値中心の説明へ変更

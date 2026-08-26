@@ -95,14 +95,14 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">8</span></a>
-<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">7</span></a>
-<a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">5</span></a>
-<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">5</span></a>
-<a class="sil-topic" href="topics/index.md#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="topics/index.md#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">4</span></a>
+<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">11</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">11</span></a>
+<a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">8</span></a>
+<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">7</span></a>
+<a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">7</span></a>
+<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="topics/index.md#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">5</span></a>
+<a class="sil-topic" href="topics/index.md#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">5</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->
 

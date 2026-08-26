@@ -28,5 +28,11 @@ hide:
     <p>AI AgentのRead→Act化、Continuous AI Security、AI for Security、Software Supply Chain、OT Resilience、PQC Identityを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-06.md">月次サマリーを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="2026-05.md">May 2026 Intelligence</a>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
+    <p>日本政府・金融庁のFrontier AI対応、Agent Security、Cyber Capability Access、CI/CD Supply Chain、Edge-to-Identity、OT Recoveryを横断した月次Executive Summary。</p>
+    <a class="sil-card-more" href="2026-05.md">月次サマリーを見る →</a>
+  </article>
 </div>
 <!-- AUTO:MONTHLY_INDEX:END -->

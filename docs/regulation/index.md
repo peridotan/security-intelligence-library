@@ -39,6 +39,21 @@ hide:
     <div class="sil-card-meta">June 2026 · Strategic · Confirmed · Governance / Regulatory</div>
     <p>2026年6月にNISTが最終公開したSP 800-18 Revision 2を基に、System Security Plan、Privacy Plan、C-SCRM Planを統合的に管理する意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="japan-project-yata-shield.md">Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Confirmed · Regulatory / Business Continuity</div>
+    <p>2026年5月18日に国家サイバー統括室等が公表したProject YATA-Shieldを基に、高性能AIで加速する脆弱性発見・攻撃への政府横断対応を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="fsa-frontier-ai-short-term-response.md">金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Confirmed · Regulatory / Business Continuity</div>
+    <p>2026年5月22日に金融庁・日本銀行等が金融機関へ要請したFrontier AIによる脅威変化への短期対応を、脆弱性管理・Vendor・BCP・経営判断の観点から整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="singapore-agentic-ai-governance-v15.md">Singapore Agentic AI Governance v1.5 ― 「自律性をRisk Tierで制限する」実装例</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>Singapore IMDAが2026年5月20日に更新したModel AI Governance Framework for Agentic AIを基に、Risk Bounding、人の責任、Multi-agent、Third-party…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

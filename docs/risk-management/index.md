@@ -96,6 +96,41 @@ hide:
     <div class="sil-card-meta">June 2026 · Strategic · Confirmed · AI Governance / Strategic Risk</div>
     <p>2026年6月にNISTが公表したRobust AI Securityの数学的議論を基に、固定GuardrailからContinuous Red Team / Update / Resilienceへ移行する意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/mini-shai-hulud-antv.md">Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Observed · Supply Chain / Credential Risk</div>
+    <p>Microsoftが2026年5月20日に公表した@antv npm Supply Chain攻撃を基に、Maintainer Account、Transitive Dependency、CI/CD Secret、Cloud Credenti…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-project-yata-shield.md">Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Confirmed · Regulatory / Business Continuity</div>
+    <p>2026年5月18日に国家サイバー統括室等が公表したProject YATA-Shieldを基に、高性能AIで加速する脆弱性発見・攻撃への政府横断対応を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/fsa-frontier-ai-short-term-response.md">金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Confirmed · Regulatory / Business Continuity</div>
+    <p>2026年5月22日に金融庁・日本銀行等が金融機関へ要請したFrontier AIによる脅威変化への短期対応を、脆弱性管理・Vendor・BCP・経営判断の観点から整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/nist-ai-agent-security-rfi-analysis.md">NIST AI Agent Security分析 ― 従来のCybersecurity原則だけでは足りない理由</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Operational Security</div>
+    <p>NIST/CAISIが2026年5月18日に公表したAI Agent Security RFI回答分析を基に、Agent固有の脅威と政府・企業に必要な対応を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/nist-manufacturing-response-recovery-sp1800-41.md">NIST SP 1800-41 Draft ― OTでは「防ぐ」だけでなくResponse / Recoveryを設計する</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
+    <p>NIST NCCoEが2026年5月21日に公開した製造業向けResponse / Recovery Guide SP 1800-41 Draftを基に、ICS/OTでの復旧設計とOperational Resilienceを整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/singapore-agentic-ai-governance-v15.md">Singapore Agentic AI Governance v1.5 ― 「自律性をRisk Tierで制限する」実装例</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>Singapore IMDAが2026年5月20日に更新したModel AI Governance Framework for Agentic AIを基に、Risk Bounding、人の責任、Multi-agent、Third-party…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/openai-trusted-access-cyber.md">Cyber能力へのAccess Control ― OpenAI Trusted Accessが示す「能力 × Identity」の統制</a>
+    <div class="sil-card-meta">May 2026 · Strategic · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年5月7日に拡張したTrusted Access for Cyberを基に、高度なCyber CapabilityへのAccessをIdentity、Organization Verification、利用目的、監視で制…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

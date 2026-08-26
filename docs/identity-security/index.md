@@ -49,6 +49,26 @@ hide:
     <div class="sil-card-meta">June 2026 · Strategic · Confirmed · Identity / Strategic Risk</div>
     <p>2026年6月にNISTが公開したPIV StandardsのPQC Working Draftを基に、ML-DSA / ML-KEM導入とClassical/PQC Dual-stack移行の意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="aitm-token-compromise-code-of-conduct.md">AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Observed · Identity / Financial Fraud</div>
+    <p>Microsoftが2026年5月4日に公表したCode of Conductを装う多段Phishing Campaignを基に、AiTM、Token Theft、Phishing-resistant MFAの重要性を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/f5-confluence-edge-to-identity.md">Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点</a>
+    <div class="sil-card-meta">May 2026 · Immediate · Observed · Operational Security / Identity</div>
+    <p>Microsoftが2026年5月22日に報告したF5 BIG-IPからConfluenceへPivotしたLinux intrusionを基に、Edge Device、Legacy、Credential、Identityを一続きで守る必要性…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/openai-running-codex-safely.md">Coding Agentをどう守るか ― OpenAIのCodex運用から見るAgent Runtime Security</a>
+    <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年5月8日に公開したRunning Codex safely at OpenAIを基に、Sandbox、承認、Network Access、Credential、Telemetryを統合したCoding Agent Se…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/openai-trusted-access-cyber.md">Cyber能力へのAccess Control ― OpenAI Trusted Accessが示す「能力 × Identity」の統制</a>
+    <div class="sil-card-meta">May 2026 · Strategic · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年5月7日に拡張したTrusted Access for Cyberを基に、高度なCyber CapabilityへのAccessをIdentity、Organization Verification、利用目的、監視で制…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

@@ -8,22 +8,16 @@ hide:
 
 # AI Security
 
-<div class="sil-category-intro" markdown>
-
-Security for AI、AI for Security、AI Agent、生成AIガバナンスなど、AIとセキュリティの交差領域を扱います。**AIそのものを守る視点と、AIによって防御・攻撃が変わる視点を分けて整理**します。
-
-</div>
+<div class="sil-category-intro"><p>Security for AI、AI for Security、AI Agent、生成AIガバナンスなど、AIとセキュリティの交差領域を扱います。<strong>AIそのものを守る視点と、AIによって防御・攻撃が変わる視点を分けて整理</strong>します。</p></div>
 
 ## Articles
 
-<div class="grid cards" markdown>
-
--   **[Frontier AIのサイバー能力が閾値を超え始める](frontier-ai-cyber-sample.md)**
-
-    <span class="sil-card-meta">2026-08-20 · Management Impact: High</span>
-
-    AIによる攻撃速度・規模の変化と、防御側に求められる時間軸の再設計。
-
+<div class="sil-cards sil-cards-2">
+  <article class="sil-card">
+    <a class="sil-card-title" href="frontier-ai-cyber-sample.md">Frontier AIのサイバー能力が閾値を超え始める</a>
+    <div class="sil-card-meta">2026-08-20 · Management Impact: High</div>
+    <p>AIによる攻撃速度・規模の変化と、防御側に求められる時間軸の再設計。</p>
+  </article>
 </div>
 
 ## Focus Areas

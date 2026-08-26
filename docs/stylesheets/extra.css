@@ -1,4 +1,4 @@
-/* Security Intelligence Library v0.2.0 */
+/* Security Intelligence Library v0.2.1 */
 
 :root {
   --sil-navy: #17324d;
@@ -10,30 +10,36 @@
   --sil-surface: #f7f9fb;
 }
 
-/* Slightly wider content area for portal/index pages. */
 .md-grid {
   max-width: 1360px;
 }
 
+/* Keep the document itself in a normal vertical flow. */
+.md-typeset {
+  display: block;
+}
+
 /* Homepage hero */
 .sil-hero {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0.4rem 0 2rem;
   padding: 2.1rem 2.2rem;
   border: 1px solid var(--sil-border);
   border-radius: 0.8rem;
-  background: linear-gradient(135deg, var(--sil-blue-soft), var(--md-default-bg-color));
+  background: var(--sil-blue-soft);
 }
 
 .sil-hero h1 {
-  margin-top: 0;
-  margin-bottom: 0.55rem;
+  margin: 0 0 0.55rem;
   color: var(--sil-navy);
   font-weight: 750;
 }
 
 .sil-hero p {
   max-width: 54rem;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 1.03rem;
   line-height: 1.75;
 }
@@ -47,25 +53,71 @@
   text-transform: uppercase;
 }
 
-/* Cards */
-.grid.cards > ul > li,
-.grid.cards > ol > li {
-  border-color: var(--sil-border);
+/* Custom cards: intentionally does not use Zensical's .grid/.cards classes. */
+.sil-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin: 0.8rem 0 2rem;
+}
+
+.sil-cards-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sil-category-cards {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.sil-card {
+  display: block;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 1.05rem 1.1rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 0.7rem;
+  background: var(--md-default-bg-color);
+}
+
+.sil-card:hover {
+  border-color: var(--sil-blue);
+}
+
+.sil-card p {
+  margin: 0.55rem 0 0;
+  line-height: 1.65;
+}
+
+.sil-card-title,
+.sil-card-title-static {
+  display: block;
+  color: var(--sil-navy);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.sil-card-title:hover {
+  color: var(--sil-blue);
 }
 
 .sil-card-meta {
   display: block;
-  margin: 0.35rem 0 0.65rem;
+  margin: 0.4rem 0 0.55rem;
   color: var(--sil-muted);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
+  line-height: 1.5;
 }
 
-.sil-card-summary {
-  min-height: 3.2rem;
-  color: var(--md-default-fg-color--light);
+.sil-card-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: 650;
 }
 
 .sil-section-lead {
+  display: block;
   max-width: 58rem;
   margin-top: -0.35rem;
   color: var(--sil-muted);
@@ -76,6 +128,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  width: 100%;
   margin: 0.6rem 0 1.8rem;
 }
 
@@ -102,9 +155,7 @@
   background: var(--sil-surface);
 }
 
-.sil-meta-item {
-  min-width: 0;
-}
+.sil-meta-item { min-width: 0; }
 
 .sil-meta-label {
   display: block;
@@ -132,24 +183,16 @@
   font-weight: 700;
 }
 
-.sil-impact-high {
-  background: #f7e7e7;
-  color: #8b2d2d;
-}
-
-.sil-impact-medium {
-  background: #f5f0df;
-  color: #765d14;
-}
-
-.sil-impact-low {
-  background: #e8f2eb;
-  color: #2d6540;
-}
+.sil-impact-high { background: #f7e7e7; color: #8b2d2d; }
+.sil-impact-medium { background: #f5f0df; color: #765d14; }
+.sil-impact-low { background: #e8f2eb; color: #2d6540; }
 
 /* Executive summary / action boxes */
 .sil-executive-summary,
 .sil-action-box {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   margin: 1rem 0 1.5rem;
   padding: 1.1rem 1.25rem;
   border-left: 0.25rem solid var(--sil-blue);
@@ -158,26 +201,38 @@
 }
 
 .sil-executive-summary > :first-child,
-.sil-action-box > :first-child {
-  margin-top: 0;
-}
+.sil-action-box > :first-child { margin-top: 0; }
 
 .sil-executive-summary > :last-child,
-.sil-action-box > :last-child {
-  margin-bottom: 0;
-}
+.sil-action-box > :last-child { margin-bottom: 0; }
 
 /* Category landing pages */
 .sil-category-intro {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0.4rem 0 1.5rem;
   padding: 1rem 1.1rem;
   border-left: 0.22rem solid var(--sil-navy-2);
   background: var(--sil-surface);
 }
 
+.sil-category-intro p { margin: 0; }
+
+@media screen and (max-width: 56rem) {
+  .sil-cards-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 44.984375em) {
   .sil-hero {
     padding: 1.35rem 1.15rem;
+  }
+
+  .sil-cards,
+  .sil-category-cards {
+    grid-template-columns: 1fr;
   }
 
   .sil-article-meta {

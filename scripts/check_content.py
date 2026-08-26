@@ -49,6 +49,20 @@ for path in sorted(DOCS.rglob("*.md")):
         for u in urls:
             if not urlparse(u).netloc: errors.append(f"{rel}: malformed URL `{u}`")
 
+
+# Repository legal/licensing consistency checks.
+for required_file in ["LICENSE", "COPYRIGHT.md", "THIRD_PARTY_NOTICES.md"]:
+    if not (ROOT / required_file).exists():
+        errors.append(f"repository: missing `{required_file}`")
+
+config_text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
+if "© 2026 peridotan. All rights reserved." not in config_text and "&copy; 2026 peridotan. All rights reserved." not in config_text:
+    errors.append("repository: footer copyright notice is not standardized")
+
+about_text = (DOCS / "about/index.md").read_text(encoding="utf-8")
+if "## Copyright and Licensing" not in about_text:
+    errors.append("docs/about/index.md: missing Copyright and Licensing section")
+
 if errors:
     print("Content checks failed:")
     for e in errors: print("-",e)

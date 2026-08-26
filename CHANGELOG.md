@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.5.2
+
+- Added MIT license for software portions of the repository.
+- Added `COPYRIGHT.md` to separate editorial-content rights from software licensing.
+- Added `THIRD_PARTY_NOTICES.md`.
+- Added Copyright and Licensing policy to About.
+- Updated the site footer to `© 2026 peridotan. All rights reserved.`.
+
 ## v0.5.1
 
 - Stacked article metadata into one column at <= 420px.

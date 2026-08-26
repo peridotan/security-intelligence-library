@@ -2,6 +2,15 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.5.2
+
+- Editorial Contentは `© 2026 peridotan. All rights reserved.` として権利を保持
+- Software部分にMIT Licenseを適用
+- `COPYRIGHT.md` を追加し、記事とコードの権利関係を明確化
+- `THIRD_PARTY_NOTICES.md` を追加
+- About / Editorial PolicyにCopyright and Licensingを追加
+- FooterのCopyright holderを `peridotan` に統一
+
 ## v0.5.1
 
 - 420px以下では記事Metadataを1列表示
@@ -29,3 +38,12 @@ python scripts/sync_article_metadata.py
 python scripts/check_content.py
 zensical build --clean --strict
 ```
+
+
+## Licensing
+
+- Editorial content under `docs/`: © 2026 peridotan. All rights reserved.
+- Software/configuration portions: MIT License
+- Third-party materials: subject to their respective licenses and rights
+
+See `COPYRIGHT.md`, `LICENSE`, and `THIRD_PARTY_NOTICES.md`.

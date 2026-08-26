@@ -64,6 +64,22 @@ MetadataはFront Matterを**Single Source of Truth**とし、公開日、更新�
 
 誤りやリンク切れの連絡は [GitHub Issues](https://github.com/peridotan/security-intelligence-library/issues) からお願いします。
 
+## Copyright and Licensing
+
+本サイトのオリジナルな記事・分析・解説・表などのEditorial Contentは、別途明示される場合を除き、
+
+**© 2026 peridotan. All rights reserved.**
+
+です。
+
+記事コンテンツの再配布、転載、商用再利用、二次利用について包括的な許諾は行っていません。引用・参照等は適用法令の範囲で行ってください。
+
+一方、リポジトリ内のスクリプト、GitHub Actions、スタイルシート、設定ファイルなどの**Software部分にはMIT License**を適用します。詳細はリポジトリの `LICENSE` と `COPYRIGHT.md` を参照してください。
+
+第三者の商標、製品名、サービス名、引用元資料、リンク先コンテンツ、フォント、ライブラリ等の権利は、それぞれの権利者に帰属します。既知の第三者コンポーネントは `THIRD_PARTY_NOTICES.md` に整理しています。
+
+本サイトのCopyright表示は、引用・要約・参照している第三者資料そのものの権利を主張するものではありません。
+
 ## Disclaimer
 
 本サイトは公開情報を整理した一般的な情報提供を目的とし、法的助言、セキュリティ保証、監査意見、投資助言を提供するものではありません。規制・契約・セキュリティ判断は、対象組織の状況と最新の一次情報を確認したうえで行ってください。

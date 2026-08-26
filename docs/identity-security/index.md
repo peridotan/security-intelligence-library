@@ -10,6 +10,21 @@ hide:
 
 <div class="sil-category-intro"><p>MFA、Passkey、PAM、IGA、ITDR、Non-Human Identity（NHI）、AI Agent Identityなど、<strong>人・端末・ワークロード・AI AgentのIdentity</strong>を横断して扱います。</p></div>
 
+## Articles
+
+<div class="sil-cards sil-cards-2">
+  <article class="sil-card">
+    <a class="sil-card-title" href="ai-agent-identity-nhi.md">AI Agent Identity / NHI</a>
+    <div class="sil-card-meta">2026-08-26 · Management Impact: High</div>
+    <p>AI Agentを操作主体として識別し、Human・Agent・Credential・Actionを監査可能につなぐ。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="pass-the-passkey.md">Passkeyは破られたのか</a>
+    <div class="sil-card-meta">2026-08-10 · Management Impact: High</div>
+    <p>Pass-ta-keyとPass-the-Passkeyから、同期Passkey・端末侵害・UV・回復フローのリスクを整理。</p>
+  </article>
+</div>
+
 ## Focus Areas
 
 <div class="sil-cards sil-cards-2">

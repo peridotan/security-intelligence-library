@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.3.0 - 2026-08-26
+
+### Added
+- Added five production articles based on public primary and authoritative sources:
+  - Frontier AI cyber capabilities and the Cyber Critical threshold
+  - AI Agent Identity / Non-Human Identity (NHI)
+  - Large-Scale Credential Attacks
+  - Pass-ta-key / Pass-the-Passkey
+  - Generative AI usage governance
+- Added cross-links between related Cybersecurity, Identity, AI Security, Regulation and Risk Management topics.
+- Added source URLs and explicit distinctions between verified facts and unverified attacker claims where applicable.
+
+### Changed
+- Replaced sample articles with production article URLs.
+- Updated homepage Latest Intelligence cards to show five real articles.
+- Updated all category landing pages and navigation.
+- Updated AI governance references to AI Guidelines for Business Ver. 1.2 (2026-03-31).
+
+### Removed
+- Removed `frontier-ai-cyber-sample.md`.
+- Removed `credential-attack-sample.md`.
+
 ## v0.2.1 - 2026-08-26
 
 ### Fixed
@@ -9,7 +31,6 @@
 
 ### Compatibility
 - GitHub Pages workflow is unchanged from v0.2.0.
-- Article URLs and navigation structure are unchanged.
 
 ## v0.2.0 - 2026-08-26
 

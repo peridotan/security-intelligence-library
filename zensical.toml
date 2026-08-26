@@ -15,14 +15,17 @@ nav = [
   { "Home" = "index.md" },
   { "Cybersecurity" = [
       "cybersecurity/index.md",
-      { "Credential Attacks" = "cybersecurity/credential-attack-sample.md" },
+      { "Large-Scale Credential Attacks" = "cybersecurity/large-scale-credential-attacks.md" },
     ] },
   { "Identity Security" = [
       "identity-security/index.md",
+      { "AI Agent Identity / NHI" = "identity-security/ai-agent-identity-nhi.md" },
+      { "Passkey Security" = "identity-security/pass-the-passkey.md" },
     ] },
   { "AI Security" = [
       "ai-security/index.md",
-      { "Frontier AI" = "ai-security/frontier-ai-cyber-sample.md" },
+      { "Frontier AI Cyber" = "ai-security/frontier-ai-cyber-capabilities.md" },
+      { "Generative AI Governance" = "ai-security/generative-ai-governance.md" },
     ] },
   { "Regulation" = [
       "regulation/index.md",

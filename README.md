@@ -13,15 +13,17 @@ Research / Source Material
 GitHub Pages  PowerPoint
 ```
 
-## v0.2.0
+## v0.3.0
 
-- トップページをポータル型レイアウトへ変更
-- Latest Intelligence / Category cards / Featured Topics を追加
-- `Article Template` を上部ナビゲーションから非表示化
-- 記事メタデータを標準化（公開日、更新日、カテゴリ、想定読者、Management Impact）
-- Executive Summary / 推奨アクションを視覚的に強調
-- カテゴリページをカード形式に改善
-- カスタムCSSを追加
+5本の正式記事を投入しました。
+
+- Frontier AIのサイバー能力が「Critical」に近づく意味
+- AI Agent Identity / NHI
+- Large-Scale Credential Attacks
+- Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkey
+- 生成AI利活用ガバナンス
+
+記事は公開情報を基に、Executive Summary / なぜ今なのか / 経営インパクト / 日本企業への示唆 / 推奨アクション / 用語解説 / 参考情報の共通構成で整理しています。
 
 ## Local preview
 
@@ -73,5 +75,7 @@ https://peridotan.github.io/security-intelligence-library/
 
 ## Version
 
+- v0.3.0: 2026-08-26
+- v0.2.1: 2026-08-26
 - v0.2.0: 2026-08-26
 - v0.1.0: 2026-08-26

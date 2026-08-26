@@ -14,9 +14,9 @@ hide:
 
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
-    <a class="sil-card-title" href="credential-attack-sample.md">Large-Scale Credential Attacks</a>
+    <a class="sil-card-title" href="large-scale-credential-attacks.md">Large-Scale Credential Attacks</a>
     <div class="sil-card-meta">2026-08-19 · Management Impact: High</div>
-    <p>資格情報攻撃をIdentity Security全体の問題として捉えるためのサンプル記事。</p>
+    <p>確認済み事実とTheHatmanの主張を分離し、Password Spraying、Edge Device、Entraを一つのIdentity攻撃チェーンとして整理。</p>
   </article>
 </div>
 

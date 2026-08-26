@@ -13,6 +13,19 @@ Research / Source Material
 GitHub Pages  PowerPoint
 ```
 
+## v0.4.0
+
+August 2026 Intelligenceとして6本を追加し、正式記事は合計11本になりました。トップページでは8月26日時点のコア10テーマをまとめて表示します。
+
+新規記事:
+
+- 脆弱性悪用の猶予は48時間以下へ
+- Agentic AIの安全設計
+- AI生成スクリプトがPLC標的活動に登場
+- AI Enabled Malwareの現実
+- EU AI Actが執行フェーズへ
+- 重要インフラのサイバーセキュリティが「統一基準」へ
+
 ## v0.3.0
 
 5本の正式記事を投入しました。
@@ -75,6 +88,8 @@ https://peridotan.github.io/security-intelligence-library/
 
 ## Version
 
+- v0.4.0: 2026-08-26
+- v0.3.1: 2026-08-26
 - v0.3.0: 2026-08-26
 - v0.2.1: 2026-08-26
 - v0.2.0: 2026-08-26

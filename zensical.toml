@@ -15,6 +15,8 @@ nav = [
   { "Home" = "index.md" },
   { "Cybersecurity" = [
       "cybersecurity/index.md",
+      { "Exploitation Window 48h" = "cybersecurity/exploitation-window-48-hours.md" },
+      { "AI-generated PLC Activity" = "cybersecurity/ai-generated-plc-attacks.md" },
       { "Large-Scale Credential Attacks" = "cybersecurity/large-scale-credential-attacks.md" },
     ] },
   { "Identity Security" = [
@@ -24,11 +26,15 @@ nav = [
     ] },
   { "AI Security" = [
       "ai-security/index.md",
+      { "Agentic AI Security" = "ai-security/agentic-ai-security-controls.md" },
+      { "AI Enabled Malware" = "ai-security/ai-enabled-malware-reality.md" },
       { "Frontier AI Cyber" = "ai-security/frontier-ai-cyber-capabilities.md" },
       { "Generative AI Governance" = "ai-security/generative-ai-governance.md" },
     ] },
   { "Regulation" = [
       "regulation/index.md",
+      { "EU AI Act Enforcement" = "regulation/eu-ai-act-enforcement-2026.md" },
+      { "Japan Critical Infrastructure" = "regulation/japan-critical-infrastructure-unified-standard.md" },
     ] },
   { "Risk Management" = [
       "risk-management/index.md",

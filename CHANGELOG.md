@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.0
+
+- Added six production intelligence articles for August 2026.
+- Added an August 2026 Intelligence collection of ten core themes to the home page.
+- Added vulnerability exploitation-window, agentic AI security controls, PLC/OT targeting, AI-enabled malware, EU AI Act enforcement, and Japan critical-infrastructure articles.
+- Updated Cybersecurity, AI Security, Regulation, and Risk Management landing pages.
+- Updated navigation for the new production articles.
+
 ## v0.3.1
 
 - Added compatibility pages for URLs used by the former sample articles.

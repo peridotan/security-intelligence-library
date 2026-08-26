@@ -2,6 +2,12 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.7.1
+
+- Fixed a false positive in `check_generated_site.py`.
+- Zensical/theme-generated `<article>` elements are no longer counted against `sil-card` elements.
+- Generated HTML validation now tracks only Security Intelligence Library card elements.
+
 ## v0.7.0
 
 - Front MatterをSingle Source of TruthとしてHome / Category / Monthly / Topicsを自動生成

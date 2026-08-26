@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.7.1
+
+- Fixed generated HTML checker false positives caused by Zensical/theme `<article>` elements.
+- Card balance validation now scopes itself to `sil-card` article elements.
+
 ## v0.7.0
 
 - Introduced front-matter-driven generation for Home, category indexes, monthly archives, monthly core-theme cards, and Topics.

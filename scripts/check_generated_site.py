@@ -86,8 +86,6 @@ if not html_files:
 
 for page in html_files:
     text = page.read_text(encoding="utf-8", errors="replace")
-    if text.count('<article class="sil-card"') != text.count("</article>") and "sil-card" in text:
-        errors.append(f"{page.relative_to(ROOT)}: unbalanced sil-card article tags")
 
     # Detect the exact v0.6.0 failure mode in rendered HTML.
     if re.search(r'<div class="sil-card-meta">(?:(?!</div>).)*<article\b', text, re.S):
@@ -95,6 +93,13 @@ for page in html_files:
 
     parser = Checker(page.relative_to(ROOT))
     parser.feed(text)
+
+    # Validate only our own sil-card elements. Zensical/the theme may add
+    # unrelated <article> elements, so global <article> tag counts are not a
+    # valid balance check.
+    if any(parser.article_stack):
+        errors.append(f"{page.relative_to(ROOT)}: unclosed sil-card <article>")
+
     for href in parser.hrefs:
         target = resolve_href(page, href)
         if target is not None and not target.exists():

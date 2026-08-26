@@ -79,3 +79,8 @@ https://peridotan.github.io/security-intelligence-library/
 - v0.2.1: 2026-08-26
 - v0.2.0: 2026-08-26
 - v0.1.0: 2026-08-26
+
+
+## Compatibility note (v0.3.1)
+
+Legacy sample article URLs are retained as compatibility aliases and redirect to the production articles.

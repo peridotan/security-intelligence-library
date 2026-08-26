@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.3.1
+
+- Added compatibility pages for URLs used by the former sample articles.
+- `/cybersecurity/credential-attack-sample/` now redirects to `large-scale-credential-attacks`.
+- `/ai-security/frontier-ai-cyber-sample/` now redirects to `frontier-ai-cyber-capabilities`.
+- This prevents stale browser navigation, old bookmarks, and cached links from returning 404 after the v0.3.0 content migration.
+
 ## v0.3.0 - 2026-08-26
 
 ### Added

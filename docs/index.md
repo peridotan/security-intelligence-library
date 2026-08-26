@@ -1,45 +1,87 @@
 ---
 title: Security Intelligence Library
 description: サイバーセキュリティ、AI、Identity、規制、リスクマネジメントの調査・分析を蓄積するナレッジベース。
+hide:
+  - toc
 ---
+
+<div class="sil-hero" markdown>
+
+<div class="sil-kicker">Cybersecurity · AI · Identity · Regulation · Risk</div>
 
 # Security Intelligence Library
 
-サイバーセキュリティ、AI／生成AI、Identity Security、規制・ガイドライン、リスクマネジメントに関する調査・分析を、**検索・再利用できる形で蓄積するナレッジベース**です。
+公開情報に基づく調査・分析を、**Markdownを原本として検索・再利用できる形で蓄積するナレッジベース**です。経営判断に必要な要点と、技術・規制の背景を同じ場所からたどれることを目指します。
 
-## このサイトの使い方
+</div>
 
-- **検索する** — 右上の検索からテーマ・製品名・技術用語を横断検索
-- **カテゴリから探す** — Cybersecurity / Identity Security / AI Security / Regulation / Risk Management
-- **タグから絞る** — 各記事のタグは検索から利用可能
-- **説明資料に展開する** — 記事を原本として、必要に応じてPowerPointへ再構成
+## Latest Intelligence
 
-## コンテンツの基本構成
+<div class="sil-section-lead">直近の調査テーマから、経営インパクトや実務上の示唆が大きいものを掲載します。</div>
 
-各記事は、原則として以下の観点で整理します。
+<div class="grid cards" markdown>
 
-1. Executive Summary
-2. なぜ今なのか
-3. 何が起きているのか
-4. 経営インパクト
-5. 日本企業への示唆
-6. 推奨アクション
-7. 用語解説
-8. 参考情報
+-   **[Frontier AIのサイバー能力が閾値を超え始める](ai-security/frontier-ai-cyber-sample.md)**
 
-## Categories
+    <span class="sil-card-meta">2026-08-20 · AI Security · Management Impact: High</span>
 
-| Category | 主なテーマ |
-| --- | --- |
-| [Cybersecurity](cybersecurity/index.md) | 脆弱性、ランサムウェア、Threat Intelligence、攻撃動向 |
-| [Identity Security](identity-security/index.md) | MFA、Passkey、PAM、NHI、AI Agent Identity |
-| [AI Security](ai-security/index.md) | Security for AI、AI for Security、AI Governance |
-| [Regulation](regulation/index.md) | 国内外の規制、ガイドライン、標準 |
-| [Risk Management](risk-management/index.md) | 経営リスク、BCP、サプライチェーン、統合リスク管理 |
+    <div class="sil-card-summary">AIのサイバー能力向上を、攻撃速度・規模・防御側の時間軸という経営リスクの観点から整理します。</div>
 
-## 最新記事
+    [記事を読む →](ai-security/frontier-ai-cyber-sample.md)
 
-- [Frontier AIのサイバー能力が閾値を超え始める（サンプル）](ai-security/frontier-ai-cyber-sample.md)
-- [Large-Scale Credential Attacks（サンプル）](cybersecurity/credential-attack-sample.md)
+-   **[Large-Scale Credential Attacks](cybersecurity/credential-attack-sample.md)**
 
-> この初期版には構成確認用のサンプル記事を収録しています。実運用では、調査済みの記事へ順次置き換えます。
+    <span class="sil-card-meta">2026-08-19 · Cybersecurity / Identity · Management Impact: High</span>
+
+    <div class="sil-card-summary">資格情報攻撃を単発の認証事故ではなく、Identity Security全体で捉えるための論点を整理します。</div>
+
+    [記事を読む →](cybersecurity/credential-attack-sample.md)
+
+</div>
+
+## Explore by Category
+
+<div class="grid cards" markdown>
+
+-   **[Cybersecurity](cybersecurity/index.md)**
+
+    脆弱性、ランサムウェア、Threat Intelligence、攻撃動向、Security Operations。
+
+-   **[Identity Security](identity-security/index.md)**
+
+    MFA、Passkey、PAM、ITDR、NHI、AI Agent Identity、回復フロー。
+
+-   **[AI Security](ai-security/index.md)**
+
+    Security for AI、AI for Security、AI Agent、生成AIガバナンス。
+
+-   **[Regulation](regulation/index.md)**
+
+    国内外のサイバー・AI・データ保護・重要インフラ関連の規制とガイドライン。
+
+-   **[Risk Management](risk-management/index.md)**
+
+    サイバーを事業継続、サプライチェーン、人材、規制と統合した経営リスクとして整理。
+
+</div>
+
+## Featured Topics
+
+<div class="sil-topics">
+<span class="sil-topic">AI Agent</span>
+<span class="sil-topic">NHI</span>
+<span class="sil-topic">Passkey</span>
+<span class="sil-topic">Identity Security</span>
+<span class="sil-topic">Generative AI Governance</span>
+<span class="sil-topic">Vulnerability Management</span>
+<span class="sil-topic">Cyber Risk Management</span>
+</div>
+
+## How to use this library
+
+- **横断検索** — 右上の検索からテーマ、製品名、技術用語を検索
+- **カテゴリから探索** — Cybersecurity / Identity Security / AI Security / Regulation / Risk Management
+- **記事を原本として再利用** — 必要に応じてPowerPointや説明資料へ再構成
+- **公開情報専用** — 顧客情報、社内限定情報、NDA対象情報、秘密情報は掲載しない
+
+詳しい運用方針は [About](about/index.md) を参照してください。

@@ -1,22 +1,43 @@
 ---
 title: Large-Scale Credential Attacks
 date: 2026-08-19
-description: 大規模な資格情報攻撃をIdentity Securityの観点から整理するサンプル記事。
+updated: 2026-08-26
+description: 大規模な資格情報攻撃を、Identity Securityと経営リスクの観点から整理するサンプル記事。
+category: Cybersecurity
 tags:
   - Cybersecurity
   - Identity Security
   - Credential Attack
-  - MFA
+  - Risk Management
+audience:
+  - Executive
+  - CISO
+management_impact: High
 status: sample
+pptx: ""
 ---
 
 # Large-Scale Credential Attacks
 
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-19</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / Identity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+</div>
+
+
 > **Sample** — Webサイトの構成確認用です。正式版では一次情報を再確認し、確認済み事実と攻撃者側の主張を明確に分離します。
+
+<div class="sil-executive-summary" markdown>
 
 ## Executive Summary
 
 資格情報を狙う攻撃では、単一の認証方式だけを見るのではなく、漏えい資格情報、Password Spraying、MFA、端末・Edge Device、Identity Provider、アカウント回復までを一つの攻撃チェーンとして捉える必要があります。
+
+
+</div>
 
 ## なぜ今なのか
 
@@ -35,6 +56,8 @@ status: sample
 
 Identity侵害はクラウド、SaaS、VPN、管理者権限など複数環境へ連鎖しやすく、単なる「パスワード問題」ではありません。Identityを独立したセキュリティ境界として管理する必要があります。
 
+<div class="sil-action-box" markdown>
+
 ## 推奨アクション
 
 - Passkeyなどフィッシング耐性認証の採用
@@ -44,6 +67,9 @@ Identity侵害はクラウド、SaaS、VPN、管理者権限など複数環境�
 - NHIの棚卸しと資格情報管理
 - ヘルプデスク回復フローの本人確認強化
 - 漏えい資格情報の継続監視
+
+
+</div>
 
 ## 参考情報
 

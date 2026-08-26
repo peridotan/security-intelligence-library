@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a new article from the standard template."""
+"""Create a new article from the standard Security Intelligence Library template."""
 
 from __future__ import annotations
 
@@ -44,14 +44,16 @@ def main() -> None:
     if output.exists():
         raise SystemExit(f"already exists: {output}")
 
+    today = date.today().isoformat()
     text = TEMPLATE.read_text(encoding="utf-8")
     text = text.replace("{{TITLE}}", args.title)
-    text = text.replace("{{DATE}}", date.today().isoformat())
+    text = text.replace("{{DATE}}", today)
     text = text.replace("{{DESCRIPTION}}", args.description)
     text = text.replace("{{CATEGORY}}", CATEGORIES[args.category])
 
     output.write_text(text, encoding="utf-8")
     print(output.relative_to(ROOT))
+    print("Next: edit the article, add reliable source URLs, then add it to zensical.toml nav when ready to publish.")
 
 
 if __name__ == "__main__":

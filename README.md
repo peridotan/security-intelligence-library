@@ -13,6 +13,16 @@ Research / Source Material
 GitHub Pages  PowerPoint
 ```
 
+## v0.2.0
+
+- トップページをポータル型レイアウトへ変更
+- Latest Intelligence / Category cards / Featured Topics を追加
+- `Article Template` を上部ナビゲーションから非表示化
+- 記事メタデータを標準化（公開日、更新日、カテゴリ、想定読者、Management Impact）
+- Executive Summary / 推奨アクションを視覚的に強調
+- カテゴリページをカード形式に改善
+- カスタムCSSを追加
+
 ## Local preview
 
 Python 3.10+ が必要です。
@@ -41,17 +51,15 @@ python scripts/new_article.py ai-security frontier-ai-cyber-risk "Frontier AIの
 - `regulation`
 - `risk-management`
 
-作成後、`zensical serve` で確認し、必要に応じて `zensical.toml` の `nav` に記事を追加します。
+作成後、本文と出典を確認し、公開準備ができた記事だけ `zensical.toml` の `nav` に追加します。
 
 ## GitHub Pages deployment
 
-1. GitHubで `security-intelligence-library` リポジトリを作成
-2. このディレクトリの内容を `main` ブランチへpush
-3. Repository **Settings > Pages > Build and deployment > Source** を **GitHub Actions** に設定
-4. Actions の `Publish Security Intelligence Library` が成功することを確認
-5. `https://peridotan.github.io/security-intelligence-library/` を開く
+Repository **Settings > Pages > Build and deployment > Source** は **GitHub Actions** を使用します。
 
-以降、`main` へのpushごとに自動ビルド・公開されます。
+`main` へのpushごとに `.github/workflows/docs.yml` が自動実行され、成功すると以下へ公開されます。
+
+https://peridotan.github.io/security-intelligence-library/
 
 ## Security / publishing rule
 
@@ -65,4 +73,5 @@ python scripts/new_article.py ai-security frontier-ai-cyber-risk "Frontier AIの
 
 ## Version
 
-Initial scaffold: 2026-08-26
+- v0.2.0: 2026-08-26
+- v0.1.0: 2026-08-26

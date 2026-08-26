@@ -2,6 +2,14 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.8.1
+
+- Homeの `Latest Intelligence` を `Current Intelligence` に変更
+- Monthly Intelligenceの `as of` 表示を `Reviewed` に変更
+- Monthly metadataを `as_of` から `reviewed` へ移行
+- Mastra npm Supply Chain記事の出典をMicrosoft専用一次情報へ変更
+- Mastra記事にSocketの独立技術分析を追加
+
 ## v0.8.0
 
 - June 2026 Intelligenceを追加

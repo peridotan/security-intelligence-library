@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.8.1
+
+- Renamed Home "Latest Intelligence" to "Current Intelligence".
+- Replaced monthly "as of" labels with explicit "Reviewed" dates.
+- Migrated monthly front matter from `as_of` to `reviewed`.
+- Replaced the Mastra npm archive reference with Microsoft's dedicated incident analysis.
+- Added Socket's independent Mastra technical analysis as a secondary source.
+
 ## v0.8.0
 
 - Added June 2026 Monthly Intelligence with ten core themes.

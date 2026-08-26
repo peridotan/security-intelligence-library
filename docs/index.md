@@ -11,9 +11,9 @@ hide:
   <p>公開情報に基づく調査・分析を、<strong>Markdownを原本として検索・再利用できる形で蓄積するナレッジベース</strong>です。経営判断に必要な要点と、技術・規制の背景を同じ場所からたどれることを目指します。</p>
 </section>
 
-## Latest Intelligence
+## Current Intelligence
 
-<div class="sil-section-lead">直近のSource PeriodとUrgencyを基に重要テーマ6件を自動表示しています。月ごとの整理は <a href="monthly/index.md">Monthly Intelligence</a> から確認できます。</div>
+<div class="sil-section-lead">現在のSource PeriodとUrgencyを基に重要テーマ6件を自動表示しています。月ごとの整理は <a href="monthly/index.md">Monthly Intelligence</a> から確認できます。</div>
 
 <!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">
@@ -62,19 +62,19 @@ hide:
 <div class="sil-cards">
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-08.md">August 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · as of 2026-08-26</div>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
     <p>攻撃速度、Identity、Agentic AI、OT、AI Malware、AI規制、重要インフラを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="monthly/2026-08.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-07.md">July 2026 Intelligence</a>
-    <div class="sil-card-meta">9 Core Themes · as of 2026-08-26</div>
+    <div class="sil-card-meta">9 Core Themes · Reviewed 2026-08-26</div>
     <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="monthly/2026-07.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-06.md">June 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · as of 2026-08-26</div>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
     <p>AI AgentのRead→Act化、Continuous AI Security、AI for Security、Software Supply Chain、OT Resilience、PQC Identityを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="monthly/2026-06.md">月次サマリーを見る →</a>
   </article>

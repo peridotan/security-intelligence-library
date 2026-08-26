@@ -12,19 +12,19 @@ hide:
 <div class="sil-cards">
   <article class="sil-card">
     <a class="sil-card-title" href="2026-08.md">August 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · as of 2026-08-26</div>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
     <p>攻撃速度、Identity、Agentic AI、OT、AI Malware、AI規制、重要インフラを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-08.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-07.md">July 2026 Intelligence</a>
-    <div class="sil-card-meta">9 Core Themes · as of 2026-08-26</div>
+    <div class="sil-card-meta">9 Core Themes · Reviewed 2026-08-26</div>
     <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-07.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-06.md">June 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · as of 2026-08-26</div>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
     <p>AI AgentのRead→Act化、Continuous AI Security、AI for Security、Software Supply Chain、OT Resilience、PQC Identityを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-06.md">月次サマリーを見る →</a>
   </article>

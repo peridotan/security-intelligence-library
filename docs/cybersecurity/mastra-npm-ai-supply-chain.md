@@ -110,6 +110,7 @@ npm PackageのInstall後に自動実行されるScript Lifecycle hook。
 
 ## 参考情報
 
-- [Microsoft Security Blog, npm research archive containing the Mastra compromise](https://www.microsoft.com/en-us/security/blog/tag/npm/)
+- [Microsoft Security Blog, From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet](https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/)
+- [Socket, 140+ Mastra npm Packages Compromised in Coordinated Supply Chain Attack](https://socket.dev/blog/mastra-npm-packages-compromised)
 
-[^source]: [Microsoft Security Blog, npm research archive containing the Mastra compromise](https://www.microsoft.com/en-us/security/blog/tag/npm/)
+[^source]: [Microsoft Security Blog, From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet](https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/)

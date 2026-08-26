@@ -177,12 +177,14 @@ def month_card(m, page):
     href = esc(rel_link(page, m["path"]))
     title = esc(meta.get("title") or f"{fmt_period(m['period'])} Intelligence")
     summary = esc(shorten(meta.get("summary") or meta.get("description") or "", 145))
-    as_of = fmt_date(meta.get("as_of") or meta.get("updated") or "")
-    as_of_part = f" · as of {as_of}" if as_of else ""
+    reviewed = fmt_date(
+        meta.get("reviewed") or meta.get("as_of") or meta.get("updated") or ""
+    )
+    reviewed_part = f" · Reviewed {reviewed}" if reviewed else ""
     return "\n".join([
         '  <article class="sil-card">',
         f'    <a class="sil-card-title" href="{href}">{title}</a>',
-        f'    <div class="sil-card-meta">{m["count"]} Core Themes{esc(as_of_part)}</div>',
+        f'    <div class="sil-card-meta">{m["count"]} Core Themes{esc(reviewed_part)}</div>',
         f'    <p>{summary}</p>',
         f'    <a class="sil-card-more" href="{href}">月次サマリーを見る →</a>',
         '  </article>',

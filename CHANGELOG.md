@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.5.3
+
+- Clarified affirmative AI-use disclosure and human editorial responsibility.
+- Added quotation, media, trademark, privacy, and non-endorsement policies.
+- Split repository licensing into a dispatcher `LICENSE` and unmodified MIT `LICENSE-CODE.txt`.
+- Added `RIGHTS_REVIEW.md`, `CONTRIBUTING.md`, and `.github/SECURITY.md`.
+- Disabled Google Fonts autoloading.
+- Pinned Zensical 0.0.56, PyYAML 6.0.3, and Python 3.14 in CI.
+- Added Dependabot for pip and GitHub Actions.
+- Excluded redirect compatibility pages from internal search.
+- Added CI rights guardrails for embedded media, quotations, and scripts.
+
 ## v0.5.2
 
 - Added MIT license for software portions of the repository.

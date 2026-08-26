@@ -2,6 +2,22 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.5.3
+
+- AI利用方針を「利用する場合があります」から「利用しています」へ明確化
+- Human Editorial Responsibilityを明文化
+- 引用・画像・商標の利用ルールを追加
+- Privacy方針を追加し、Google Fonts自動読み込みを無効化
+- トップレベルLICENSEの曖昧さを解消し、MIT本文を `LICENSE-CODE.txt` に分離
+- AI生成物・事実・第三者資料に対するCopyright表示の限界を明文化
+- `RIGHTS_REVIEW.md` を追加
+- Editorial Contentの外部PRを原則非受付とし、権利帰属の曖昧さを回避
+- `CONTRIBUTING.md` / `.github/SECURITY.md` / Dependabot設定を追加
+- Zensical / PyYAML / Pythonを固定し、ビルド再現性を改善
+- Google Fontsへの外部通信を停止
+- Redirect用旧URLページを検索対象外化
+- CIに画像・埋込メディア・直接引用のRights Guardrailを追加
+
 ## v0.5.2
 
 - Editorial Contentは `© 2026 peridotan. All rights reserved.` として権利を保持
@@ -43,7 +59,7 @@ zensical build --clean --strict
 ## Licensing
 
 - Editorial content under `docs/`: © 2026 peridotan. All rights reserved.
-- Software/configuration portions: MIT License
+- Software/configuration portions: MIT License (`LICENSE-CODE.txt`)
 - Third-party materials: subject to their respective licenses and rights
 
-See `COPYRIGHT.md`, `LICENSE`, and `THIRD_PARTY_NOTICES.md`.
+See `COPYRIGHT.md`, `LICENSE`, `LICENSE-CODE.txt`, `RIGHTS_REVIEW.md`, and `THIRD_PARTY_NOTICES.md`.

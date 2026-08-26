@@ -2,6 +2,9 @@
 title: Large-Scale Credential Attacks
 hide:
   - toc
+  - tags
+search:
+  exclude: true
 ---
 
 <script>

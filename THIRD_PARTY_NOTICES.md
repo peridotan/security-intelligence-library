@@ -1,46 +1,55 @@
 # Third-Party Notices
 
-This project uses or references third-party software, fonts, and content.
-The following list is provided for attribution and license awareness.
+This file documents direct dependencies and intentionally configured
+third-party components relevant to the Security Intelligence Library.
+
+It is not an exhaustive inventory of every transitive component bundled by
+upstream packages. Transitive dependencies and bundled assets remain governed
+by the notices and licenses distributed by their upstream projects.
 
 ## Zensical
 
 - Project: Zensical
-- Role: Static documentation/site generator
-- License: MIT License
-- Website: https://zensical.org/
-- Copyright and license terms remain with the Zensical project and contributors.
+- Role: Static site generator and theme
+- Version pinned by this repository: 0.0.56
+- License: MIT
+- Project: https://github.com/zensical/zensical
+- License information: https://github.com/zensical/zensical
+
+Zensical and its contributors retain their rights in Zensical and in components
+distributed by the Zensical project. The generated footer keeps the
+"Made with Zensical" attribution visible.
 
 ## PyYAML
 
 - Project: PyYAML
 - Role: YAML parsing used by repository maintenance scripts
-- License: MIT License
-- Website: https://pyyaml.org/
-- Copyright and license terms remain with the PyYAML project and contributors.
+- Version pinned by this repository: 6.0.3
+- License: MIT
+- Project: https://github.com/yaml/pyyaml
+- License information: https://github.com/yaml/pyyaml
 
-## Inter
+## Fonts
 
-- Project: Inter
-- Role: Web font loaded by the generated site/theme where applicable
-- License: SIL Open Font License 1.1
-- Website: https://rsms.me/inter/
-- Copyright and license terms remain with the font author(s) and project.
+The site config disables Zensical's automatic Google Fonts loading
+(`font = false`) and uses system-font fallbacks. Therefore the site does not
+intentionally request Inter or JetBrains Mono from Google Fonts.
 
-## JetBrains Mono
+If fonts are self-hosted or externally loaded in the future, their applicable
+font license and attribution requirements must be reviewed before deployment.
 
-- Project: JetBrains Mono
-- Role: Monospace font used by the generated site/theme where applicable
-- License: SIL Open Font License 1.1
-- Website: https://www.jetbrains.com/lp/mono/
-- Copyright and license terms remain with JetBrains and contributors.
+## Icons and Theme Assets
+
+Icons and other assets supplied by Zensical are governed by Zensical and the
+licenses/notices of the upstream assets that Zensical distributes. This
+repository does not relicense those assets.
 
 ## Third-Party Sources Cited in Articles
 
 Articles link to governments, regulators, standards bodies, vendors, research
-organizations, and media sources. Those source documents are not relicensed by
-this repository. Copyright, trademark, database, and other rights in those
-materials remain with their respective owners.
+organizations, media, and other public sources. Those source documents are not
+relicensed by this repository. Copyright, trademark, database, contractual, and
+other rights in those materials remain with their respective owners.
 
-This file is informational and is not intended to replace the license texts of
-the corresponding third-party projects.
+Links are provided for reference and do not imply endorsement, affiliation, or
+permission to republish the linked material.

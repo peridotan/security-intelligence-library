@@ -50,18 +50,72 @@ for path in sorted(DOCS.rglob("*.md")):
             if not urlparse(u).netloc: errors.append(f"{rel}: malformed URL `{u}`")
 
 
-# Repository legal/licensing consistency checks.
-for required_file in ["LICENSE", "COPYRIGHT.md", "THIRD_PARTY_NOTICES.md"]:
+# Repository governance / rights consistency checks.
+for required_file in [
+    "LICENSE", "LICENSE-CODE.txt", "COPYRIGHT.md", "THIRD_PARTY_NOTICES.md",
+    "RIGHTS_REVIEW.md", "CONTRIBUTING.md", ".github/SECURITY.md"
+]:
     if not (ROOT / required_file).exists():
         errors.append(f"repository: missing `{required_file}`")
 
 config_text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
-if "© 2026 peridotan. All rights reserved." not in config_text and "&copy; 2026 peridotan. All rights reserved." not in config_text:
+if "&copy; 2026 peridotan. All rights reserved." not in config_text:
     errors.append("repository: footer copyright notice is not standardized")
+if 'font = false' not in config_text:
+    errors.append("repository: Google Fonts autoload must remain disabled for privacy")
+if '"content.action.edit"' in config_text:
+    errors.append("repository: editorial edit action should remain disabled")
 
 about_text = (DOCS / "about/index.md").read_text(encoding="utf-8")
-if "## Copyright and Licensing" not in about_text:
-    errors.append("docs/about/index.md: missing Copyright and Licensing section")
+for section in [
+    "## AI利用方針",
+    "## 引用・画像・商標の扱い",
+    "## Privacy / 外部通信",
+    "## Copyright and Licensing",
+]:
+    if section not in about_text:
+        errors.append(f"docs/about/index.md: missing `{section}`")
+if "生成AIを利用しています" not in about_text:
+    errors.append("docs/about/index.md: AI usage must be stated in affirmative form")
+
+requirements = (ROOT / "requirements.txt").read_text(encoding="utf-8").splitlines()
+for req in [r for r in requirements if r.strip() and not r.lstrip().startswith("#")]:
+    if "==" not in req:
+        errors.append(f"requirements.txt: dependency must be pinned exactly: `{req}`")
+
+# Published-content rights guardrails.
+for path in sorted(DOCS.rglob("*.md")):
+    if "about" in path.parts:
+        continue
+    text = path.read_text(encoding="utf-8")
+    try:
+        meta, body = split_fm(text)
+    except yaml.YAMLError:
+        continue
+    if not (meta and meta.get("status") == "published" and path.name != "index.md" and "sample" not in path.name):
+        continue
+
+    rel = path.relative_to(ROOT)
+    has_media = bool(
+        re.search(r"!\[[^\]]*\]\([^)]+\)", body)
+        or re.search(r"<(?:img|video|audio|iframe|embed|object)\b", body, flags=re.I)
+    )
+    media_rights = str(meta.get("media_rights", "none")).lower()
+    allowed_media = {"original", "licensed", "permission", "public-domain"}
+    if has_media and media_rights not in allowed_media:
+        errors.append(
+            f"{rel}: embedded media requires front matter `media_rights` "
+            f"({', '.join(sorted(allowed_media))})"
+        )
+
+    # Direct blockquotes require an explicit manual review marker.
+    has_quote = bool(re.search(r"(?m)^\s*>\s+\S", body) or re.search(r"<blockquote\b", body, flags=re.I))
+    if has_quote and meta.get("quotation_reviewed") is not True:
+        errors.append(f"{rel}: direct quotation requires `quotation_reviewed: true`")
+
+    # Published articles should never contain executable inline scripts.
+    if re.search(r"<script\b", body, flags=re.I):
+        errors.append(f"{rel}: executable script is not allowed in published editorial content")
 
 if errors:
     print("Content checks failed:")

@@ -14,6 +14,7 @@ urgency: Near-term
 evidence: Assessment
 status: draft
 pptx: ""
+media_rights: none
 ---
 
 # {{TITLE}}

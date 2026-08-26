@@ -2,7 +2,7 @@
 site_name = "Security Intelligence Library"
 site_url = "https://peridotan.github.io/security-intelligence-library/"
 site_description = "Cybersecurity, AI, Identity, Regulation and Risk Management intelligence library."
-site_author = "Security Intelligence Library"
+site_author = "peridotan"
 docs_dir = "docs"
 site_dir = "site"
 repo_url = "https://github.com/peridotan/security-intelligence-library"
@@ -34,12 +34,13 @@ nav = [
 ]
 
 [project.theme]
+font = false
 variant = "modern"
 language = "ja"
 features = [
   "navigation.instant", "navigation.tabs", "navigation.sections",
   "navigation.path", "navigation.indexes", "navigation.footer",
-  "search.highlight", "content.action.edit", "content.action.view",
+  "search.highlight", "content.action.view",
   "content.footnote.tooltips",
 ]
 

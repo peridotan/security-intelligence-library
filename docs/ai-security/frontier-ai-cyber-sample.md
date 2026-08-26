@@ -2,6 +2,9 @@
 title: Frontier AI Cyber Capabilities
 hide:
   - toc
+  - tags
+search:
+  exclude: true
 ---
 
 <script>

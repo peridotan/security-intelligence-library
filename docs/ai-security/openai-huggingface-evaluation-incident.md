@@ -2,9 +2,14 @@
 title: OpenAI / Hugging Face評価インシデント ― AI Cyber評価環境をどう隔離するか
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: 2026年7月のOpenAIとHugging Faceのモデル評価中セキュリティインシデントを、評価環境・Sandbox・Network
   Isolation・第三者連携の観点から整理する。
 category: AI Security
+collections:
+- ai-security
 tags:
 - Frontier AI
 - Cyber Evaluation
@@ -16,21 +21,26 @@ audience:
 - AI Platform
 - Security Research
 management_impact: High
+impact_types:
+- AI Governance
+- Infrastructure
 urgency: Immediate
 evidence: Confirmed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # OpenAI / Hugging Face評価インシデント ― AI Cyber評価環境をどう隔離するか
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Platform / Security Research</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Infrastructure</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

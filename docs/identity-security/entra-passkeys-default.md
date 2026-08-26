@@ -2,8 +2,13 @@
 title: Microsoft Entra IDがPasskeyを既定へ ― SMS / Voice MFA終了に向けた移行設計
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: Microsoftが2026年7月に発表したEntra IDのPasskey既定化とMicrosoft提供SMS・音声認証終了のロードマップを企業Identity移行の観点から整理する。
 category: Identity Security
+collections:
+- identity-security
 tags:
 - Microsoft Entra ID
 - Passkey
@@ -15,21 +20,26 @@ audience:
 - IAM
 - IT Operations
 management_impact: High
+impact_types:
+- Identity
+- Change Management
 urgency: Near-term
 evidence: Confirmed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # Microsoft Entra IDがPasskeyを既定へ ― SMS / Voice MFA終了に向けた移行設計
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / IAM / IT Operations</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Identity / Change Management</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

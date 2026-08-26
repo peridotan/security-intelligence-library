@@ -2,9 +2,15 @@
 title: 2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: MicrosoftとIPAが2026年7月に確認したAD FSおよびSharePointの実悪用脆弱性を、Patch Tuesdayの件数ではなくTrust
   Infrastructureの優先順位で整理する。
 category: Cybersecurity / Identity
+collections:
+- cybersecurity
+- identity-security
 tags:
 - AD FS
 - SharePoint
@@ -16,21 +22,26 @@ audience:
 - IAM
 - Infrastructure
 management_impact: High
+impact_types:
+- Identity
+- Business Continuity
 urgency: Immediate
 evidence: Confirmed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # 2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / Identity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / IAM / Infrastructure</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Identity / Business Continuity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.7.0
+
+- Introduced front-matter-driven generation for Home, category indexes, monthly archives, monthly core-theme cards, and Topics.
+- Fixed malformed Monthly Intelligence card markup introduced in v0.6.0.
+- Added Source Period, Last Reviewed, Review Status, collections, and impact areas to article metadata.
+- Simplified primary navigation to index pages only.
+- Added one-command content refresh via `scripts/update_content.py`.
+- Added conservative weekly external-link checking and review-freshness monitoring.
+- Added generated-HTML validation after the Zensical build.
+- Added source-level checks for generated card structure.
+
 ## v0.6.0
 
 - Added July 2026 Monthly Intelligence archive with nine core themes.

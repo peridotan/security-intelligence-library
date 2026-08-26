@@ -2,8 +2,14 @@
 title: AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-08
 description: Siemens S7 PLCを狙うAI生成の悪用スクリプトに関する共同警告から、OT/ICS防御への示唆を整理する。
 category: Cybersecurity
+collections:
+- cybersecurity
+- risk-management
 tags:
 - OT Security
 - ICS
@@ -15,19 +21,26 @@ audience:
 - CISO
 - OT Security
 management_impact: High
+impact_types:
+- Business Continuity
+- OT / Safety
 urgency: Immediate
 evidence: Observed
 status: published
 pptx: ''
+media_rights: none
 ---
-
 # AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / OT Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Business Continuity / OT / Safety</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>

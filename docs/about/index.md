@@ -43,6 +43,25 @@ Management ImpactとUrgencyは別概念です。
 - **商標・製品名** — 製品名、サービス名、企業名、商標は説明・識別のために使用します。特段の記載がない限り、権利者との提携、承認、推奨を意味しません。
 - **出典へのリンク** — 外部サイトへのリンクは参照目的です。リンク先コンテンツの権利・内容・継続提供を本サイトが保証するものではありません。
 
+## 記事Metadataと鮮度管理
+
+記事の`Published`は本サイトで公開した日、`Source Period`はその記事が扱う情報・出来事の主な対象月です。過去月を後から整理した記事では、この2つの日付が異なる場合があります。
+
+`Last Reviewed`は内容と主要出典を最後に見直した日、`Review Status`は記事の鮮度状態を示します。
+
+- **Current** — 現時点で継続利用できる内容
+- **Needs Review** — 制度・製品・脅威状況の変化を踏まえて再確認が必要
+- **Superseded** — より新しい記事・制度・仕様に置き換えられた
+- **Archived** — 歴史的記録として保持している
+
+`Management Impact`は本Libraryへの掲載候補を選ぶ際の重要度を示すため、Highに集中する傾向があります。記事間の違いは`Impact Areas`、`Urgency`、`Evidence`を併せて確認してください。
+
+## コンテンツ生成と保守
+
+各記事のFront MatterをSingle Source of Truthとし、HomeのLatest Intelligence、Category一覧、Monthly IntelligenceのCore Themes、Topicsを自動生成します。
+
+外部リンク確認と記事のReview期限確認は、GitHub Actionsで週次実行する設計です。外部サイトのBot対策や一時障害による403・429・5xx等は警告として扱い、404・410等の明確なリンク切れと区別します。
+
 ## 標準記事構成
 
 1. Executive Summary

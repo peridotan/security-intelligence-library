@@ -2,6 +2,29 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.7.0
+
+- Front MatterをSingle Source of TruthとしてHome / Category / Monthly / Topicsを自動生成
+- Monthly Intelligence一覧のHTML構造不具合を解消
+- PublishedとSource Periodを分離して記事Metadataに表示
+- `reviewed` / `review_status` を追加し鮮度管理を導入
+- `impact_types` を追加しManagement ImpactがHighに集中しても差分を把握可能に
+- Primary Navigationから個別記事を外し、記事数増加に耐える構造へ変更
+- `scripts/update_content.py` を追加し記事追加後の更新作業を1コマンド化
+- 週次External Link CheckerとReview Freshness Checkを追加
+- CIで生成後HTMLの構造・内部リンクを検証
+- RedirectやEditorial / Rights Guardrailは継続
+
+### Content workflow
+
+```bash
+python scripts/new_article.py ai-security example-slug "記事タイトル" --source-period 2026-09
+# 記事を編集して status: published に変更
+python scripts/update_content.py
+```
+
+個別記事を`zensical.toml`やCategory / Topics / Homeへ手作業で追加する必要はありません。
+
 ## v0.6.0
 
 - July 2026 Intelligenceを追加

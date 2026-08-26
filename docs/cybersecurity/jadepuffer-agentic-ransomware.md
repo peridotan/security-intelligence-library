@@ -2,8 +2,14 @@
 title: JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: Sysdigが2026年7月に報告したJADEPUFFERを基に、AI Agentが偵察・資格情報探索・横展開・恐喝を適応的に連鎖させるリスクを整理する。
 category: Cybersecurity / AI Security
+collections:
+- cybersecurity
+- ai-security
 tags:
 - Agentic AI
 - Ransomware
@@ -15,21 +21,27 @@ audience:
 - SOC
 - AI Platform
 management_impact: High
+impact_types:
+- Business Continuity
+- AI Security
+- Credential Risk
 urgency: Immediate
 evidence: Observed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity / AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / SOC / AI Platform</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Business Continuity / AI Security / Credential Risk</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>

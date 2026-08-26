@@ -2,14 +2,21 @@
 title: {{TITLE}}
 date: {{DATE}}
 updated: {{DATE}}
+reviewed: {{DATE}}
+review_status: Current
+source_period: {{SOURCE_PERIOD}}
 description: {{DESCRIPTION}}
 category: {{CATEGORY}}
+collections:
+  - {{COLLECTION}}
 tags:
   - TBD
 audience:
   - Executive
   - CISO
 management_impact: High
+impact_types:
+  - Operational Security
 urgency: Near-term
 evidence: Assessment
 status: draft

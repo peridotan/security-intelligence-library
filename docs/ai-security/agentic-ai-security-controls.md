@@ -2,8 +2,13 @@
 title: Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-08
 description: NCSCと第三者サイバー評価事例を基に、AI Agentの自律性を安全に運用するための技術・運用統制を整理する。
 category: AI Security
+collections:
+- ai-security
 tags:
 - Agentic AI
 - Sandbox
@@ -15,19 +20,27 @@ audience:
 - CISO
 - AI Platform
 management_impact: High
+impact_types:
+- AI Governance
+- Operational Security
+- Identity
 urgency: Near-term
 evidence: Assessment
 status: published
 pptx: ''
+media_rights: none
 ---
-
 # Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Platform</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Operational Security / Identity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Assessment</span></div>

@@ -23,24 +23,41 @@ jobs:
     steps:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
+
       - name: Checkout
         uses: actions/checkout@v7
+
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.14"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Generate derived indexes
+        run: python scripts/build_indexes.py
+
       - name: Synchronize article metadata
         run: python scripts/sync_article_metadata.py
-      - name: Check content quality
+
+      - name: Check content quality and rights
         run: python scripts/check_content.py
+
+      - name: Verify generated source is committed
+        run: git diff --exit-code -- docs
+
       - name: Build site
         run: zensical build --clean --strict
+
+      - name: Check generated HTML
+        run: python scripts/check_generated_site.py
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

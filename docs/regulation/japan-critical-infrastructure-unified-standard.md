@@ -2,8 +2,14 @@
 title: 重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-08
 description: 2026年7月決定の重要インフラ統一基準と8月公表の安全基準等策定ガイドライン案を、企業への実務影響から整理する。
 category: Regulation
+collections:
+- regulation
+- risk-management
 tags:
 - Japan
 - Critical Infrastructure
@@ -16,19 +22,27 @@ audience:
 - Risk Management
 - Compliance
 management_impact: High
+impact_types:
+- Regulatory
+- Business Continuity
+- Supply Chain
 urgency: Near-term
 evidence: Confirmed
 status: published
 pptx: ''
+media_rights: none
 ---
-
 # 重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Risk Management / Compliance</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Regulatory / Business Continuity / Supply Chain</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

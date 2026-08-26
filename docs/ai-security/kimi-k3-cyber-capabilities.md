@@ -2,8 +2,13 @@
 title: Kimi K3のCyber能力評価 ― Open-weight AIを「モデル名」ではなく能力で評価する
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: UK AISIと米国CAISI/NISTが2026年7月に公表したKimi K3 Cyber Capability評価を基に、企業がAIモデルの攻撃能力をどう評価すべきか整理する。
 category: AI Security
+collections:
+- ai-security
 tags:
 - Kimi K3
 - Cyber Capability
@@ -15,21 +20,26 @@ audience:
 - AI Governance
 - Security Research
 management_impact: High
+impact_types:
+- AI Governance
+- Model Risk
 urgency: Strategic
 evidence: Observed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # Kimi K3のCyber能力評価 ― Open-weight AIを「モデル名」ではなく能力で評価する
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Governance / Security Research</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Governance / Model Risk</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>

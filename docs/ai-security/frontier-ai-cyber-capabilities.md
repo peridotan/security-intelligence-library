@@ -2,8 +2,14 @@
 title: Frontier AIのサイバー能力が「Critical」に近づく意味
 date: 2026-08-20
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-08
 description: Frontier AIのサイバー能力がCritical閾値に近づく状況を、攻撃速度・防御時間・経営リスクの観点から整理する。
 category: AI Security
+collections:
+- ai-security
+- risk-management
 tags:
 - AI Security
 - Frontier AI
@@ -14,19 +20,26 @@ audience:
 - Executive
 - CISO
 management_impact: High
+impact_types:
+- Strategic Risk
+- Operational Security
 urgency: Strategic
 evidence: Confirmed
 status: published
 pptx: ''
+media_rights: none
 ---
-
 # Frontier AIのサイバー能力が「Critical」に近づく意味
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-20</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Strategic Risk / Operational Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

@@ -2,9 +2,15 @@
 title: EU Cybersecurity & AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: 欧州委員会が2026年7月に公表したCybersecurity and Artificial Intelligence Action Planを、AI
   Model評価、防御能力、Critical OSS、規制連携の観点から整理する。
 category: Regulation / AI Security
+collections:
+- regulation
+- ai-security
 tags:
 - European Union
 - AI Security
@@ -16,21 +22,26 @@ audience:
 - AI Governance
 - Regulation
 management_impact: High
+impact_types:
+- Regulatory
+- AI Governance
 urgency: Strategic
 evidence: Confirmed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # EU Cybersecurity & AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation / AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Governance / Regulation</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Regulatory / AI Governance</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

@@ -2,9 +2,14 @@
 title: Passkey時代の次の攻撃面 ― 登録・回復フローを狙うSocial Engineering
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: Okta Threat Intelligenceが2026年7月に報告したPasskey登録・セルフサービス回復フローへの攻撃を基に、フィッシング耐性MFA導入後のIdentity
   Securityを整理する。
 category: Identity Security
+collections:
+- identity-security
 tags:
 - Passkey
 - Account Recovery
@@ -16,21 +21,26 @@ audience:
 - IAM
 - Helpdesk
 management_impact: High
+impact_types:
+- Identity
+- Operational Security
 urgency: Immediate
 evidence: Observed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # Passkey時代の次の攻撃面 ― 登録・回復フローを狙うSocial Engineering
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / IAM / Helpdesk</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Identity / Operational Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>

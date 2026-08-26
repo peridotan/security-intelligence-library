@@ -2,8 +2,14 @@
 title: NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: NISTが2026年7月に公開したAI Data Center Security Analysis Draft SP 800-239を基に、AI基盤固有のセキュリティ論点を整理する。
 category: AI Security / Infrastructure
+collections:
+- ai-security
+- risk-management
 tags:
 - NIST
 - AI Data Center
@@ -15,21 +21,27 @@ audience:
 - Infrastructure
 - AI Platform
 management_impact: High
+impact_types:
+- Infrastructure
+- Supply Chain
+- Business Continuity
 urgency: Strategic
 evidence: Confirmed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security / Infrastructure</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Infrastructure / AI Platform</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Infrastructure / Supply Chain / Business Continuity</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

@@ -2,9 +2,14 @@
 title: NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ
 date: 2026-08-26
 updated: 2026-08-26
+reviewed: '2026-08-26'
+review_status: Current
+source_period: 2026-07
 description: NISTが2026年7月に最終版を公開したC-SCRM Due Diligence Assessment Quick-Start Guide
   SP 1326を企業調達・Vendor Risk Managementの観点から整理する。
 category: Management View / Supply Chain
+collections:
+- risk-management
 tags:
 - NIST
 - C-SCRM
@@ -16,21 +21,27 @@ audience:
 - Procurement
 - Risk Management
 management_impact: High
+impact_types:
+- Supply Chain
+- Third-party Risk
+- Governance
 urgency: Near-term
 evidence: Confirmed
 status: published
 pptx: ''
 media_rights: none
-source_period: 2026-07
 ---
-
 # NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ
 
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">July 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Management View / Supply Chain</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Procurement / Risk Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Supply Chain / Third-party Risk / Governance</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>

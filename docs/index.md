@@ -13,63 +13,67 @@ hide:
 
 ## Latest Intelligence
 
-<div class="sil-section-lead">最新の重要テーマ6件を表示しています。月ごとの全テーマは <a href="monthly/2026-08.md">Monthly Intelligence</a> から確認できます。</div>
+<div class="sil-section-lead">直近のSource PeriodとUrgencyを基に重要テーマ6件を自動表示しています。月ごとの整理は <a href="monthly/index.md">Monthly Intelligence</a> から確認できます。</div>
 
+<!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/exploitation-window-48-hours.md">脆弱性悪用の猶予は48時間以下へ</a>
-    <div class="sil-card-meta">2026-08-26 · Cybersecurity · Urgency: Immediate</div>
-    <p>公開PoC後の悪用高速化を受け、パッチ件数ではなく高リスク露出の「残存時間」で管理する。</p>
-    <a class="sil-card-more" href="cybersecurity/exploitation-window-48-hours.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="ai-security/agentic-ai-security-controls.md">Agentic AIの安全設計</a>
-    <div class="sil-card-meta">2026-08-26 · AI Security · Urgency: Near-term</div>
-    <p>Sandbox、Agent Identity、短命Credential、監視、Human Oversight、Kill Switchを統合する。</p>
-    <a class="sil-card-more" href="ai-security/agentic-ai-security-controls.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/ai-generated-plc-attacks.md">AI生成スクリプトがPLC標的活動に登場</a>
-    <div class="sil-card-meta">2026-08-26 · Cybersecurity / OT · Urgency: Immediate</div>
-    <p>OTを狙う偵察・能力開発にAI生成スクリプトが現れた意味を、確認済み事実と含意に分けて整理。</p>
+    <a class="sil-card-title" href="cybersecurity/ai-generated-plc-attacks.md">AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点</a>
+    <div class="sil-card-meta">August 2026 · Cybersecurity · Urgency: Immediate</div>
+    <p>Siemens S7 PLCを狙うAI生成の悪用スクリプトに関する共同警告から、OT/ICS防御への示唆を整理する。</p>
     <a class="sil-card-more" href="cybersecurity/ai-generated-plc-attacks.md">記事を読む →</a>
   </article>
   <article class="sil-card">
-    <a class="sil-card-title" href="ai-security/ai-enabled-malware-reality.md">AI Enabled Malwareの現実</a>
-    <div class="sil-card-meta">2026-08-26 · AI Security · Evidence: Observed</div>
-    <p>405検体と実Endpoint観測12検体というデータから、AI Malwareを過大評価も過小評価もせず読む。</p>
-    <a class="sil-card-more" href="ai-security/ai-enabled-malware-reality.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="regulation/eu-ai-act-enforcement-2026.md">EU AI Actが執行フェーズへ</a>
-    <div class="sil-card-meta">2026-08-26 · Regulation · Urgency: Immediate</div>
-    <p>Article 50透明性義務と執行開始を、Provider / Deployerの実務対応から整理。</p>
+    <a class="sil-card-title" href="regulation/eu-ai-act-enforcement-2026.md">EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか</a>
+    <div class="sil-card-meta">August 2026 · Regulation · Urgency: Immediate</div>
+    <p>EU AI Actの2026年8月2日適用・執行強化とArticle 50透明性義務を日本企業向けに整理する。</p>
     <a class="sil-card-more" href="regulation/eu-ai-act-enforcement-2026.md">記事を読む →</a>
   </article>
   <article class="sil-card">
-    <a class="sil-card-title" href="regulation/japan-critical-infrastructure-unified-standard.md">重要インフラのサイバーセキュリティが「統一基準」へ</a>
-    <div class="sil-card-meta">2026-08-26 · Regulation / Japan · Evidence: Confirmed</div>
-    <p>統一基準と安全基準等策定ガイドライン案から、重要インフラとサプライチェーンへの波及を読む。</p>
-    <a class="sil-card-more" href="regulation/japan-critical-infrastructure-unified-standard.md">記事を読む →</a>
+    <a class="sil-card-title" href="cybersecurity/large-scale-credential-attacks.md">Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security</a>
+    <div class="sil-card-meta">August 2026 · Cybersecurity · Urgency: Immediate</div>
+    <p>Unit 42の大規模資格情報攻撃レポートを基に、確認済み事実と攻撃者主張を分け、Identity Security対策を整理する。</p>
+    <a class="sil-card-more" href="cybersecurity/large-scale-credential-attacks.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="cybersecurity/exploitation-window-48-hours.md">脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える</a>
+    <div class="sil-card-meta">August 2026 · Cybersecurity · Urgency: Immediate</div>
+    <p>公開PoC後48時間以内に悪用が集中する観測を踏まえ、脆弱性管理を件数ではなく露出と残存時間で再設計する。</p>
+    <a class="sil-card-more" href="cybersecurity/exploitation-window-48-hours.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="identity-security/ai-agent-identity-nhi.md">AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する</a>
+    <div class="sil-card-meta">August 2026 · Identity Security · Urgency: Near-term</div>
+    <p>AI AgentとNon-Human Identityを、人・Agent・Credential・Actionの監査可能な連鎖として管理するための考え方を整理する。</p>
+    <a class="sil-card-more" href="identity-security/ai-agent-identity-nhi.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="ai-security/ai-enabled-malware-reality.md">AI Enabled Malwareの現実 ― 「405検体・97%」をどう読むか</a>
+    <div class="sil-card-meta">August 2026 · AI Security · Urgency: Near-term</div>
+    <p>Unit 42の405検体分析を基に、AI-enabled malwareの実環境での観測と誇張されやすい点を整理する。</p>
+    <a class="sil-card-more" href="ai-security/ai-enabled-malware-reality.md">記事を読む →</a>
   </article>
 </div>
+<!-- AUTO:HOME_LATEST:END -->
 
 ## Monthly Intelligence
 
+<!-- AUTO:HOME_MONTHLY:START -->
 <div class="sil-cards">
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-08.md">August 2026 Intelligence</a>
     <div class="sil-card-meta">10 Core Themes · as of 2026-08-26</div>
     <p>攻撃速度、Identity、Agentic AI、OT、AI Malware、AI規制、重要インフラを横断した月次Executive Summary。</p>
-    <a class="sil-card-more" href="monthly/2026-08.md">8月の全テーマを見る →</a>
+    <a class="sil-card-more" href="monthly/2026-08.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-07.md">July 2026 Intelligence</a>
-    <div class="sil-card-meta">9 Core Themes</div>
+    <div class="sil-card-meta">9 Core Themes · as of 2026-08-26</div>
     <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
-    <a class="sil-card-more" href="monthly/2026-07.md">7月の全テーマを見る →</a>
+    <a class="sil-card-more" href="monthly/2026-07.md">月次サマリーを見る →</a>
   </article>
 </div>
+<!-- AUTO:HOME_MONTHLY:END -->
 
 ## Explore by Category
 
@@ -83,16 +87,18 @@ hide:
 
 ## Featured Topics
 
+<!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#ai-agent">AI Agent</a>
-<a class="sil-topic" href="topics/index.md#nhi">NHI</a>
-<a class="sil-topic" href="topics/index.md#passkey">Passkey</a>
-<a class="sil-topic" href="topics/index.md#identity-security">Identity Security</a>
-<a class="sil-topic" href="topics/index.md#generative-ai-governance">Generative AI Governance</a>
-<a class="sil-topic" href="topics/index.md#frontier-ai">Frontier AI</a>
-<a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks</a>
-<a class="sil-topic" href="topics/index.md#cyber-risk-management">Cyber Risk Management</a>
+<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">4</span></a>
+<a class="sil-topic" href="topics/index.md#risk-management">Risk Management <span class="sil-topic-count">4</span></a>
+<a class="sil-topic" href="topics/index.md#agentic-ai">Agentic AI <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="topics/index.md#ai-security">AI Security <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="topics/index.md#passkey">Passkey <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="topics/index.md#supply-chain">Supply Chain <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="topics/index.md#critical-infrastructure">Critical Infrastructure <span class="sil-topic-count">2</span></a>
 </div>
+<!-- AUTO:HOME_TOPICS:END -->
 
 ## How to use this library
 

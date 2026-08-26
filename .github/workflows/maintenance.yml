@@ -1,0 +1,65 @@
+name: Weekly Library Maintenance
+
+on:
+  schedule:
+    - cron: "20 22 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check external links
+        id: links
+        continue-on-error: true
+        run: python scripts/check_external_links.py --output external-link-report.md
+
+      - name: Check review freshness
+        id: freshness
+        continue-on-error: true
+        run: python scripts/check_review_freshness.py --output review-freshness-report.md
+
+      - name: Publish maintenance summary
+        if: always()
+        run: |
+          cat external-link-report.md >> "$GITHUB_STEP_SUMMARY"
+          printf "\n\n" >> "$GITHUB_STEP_SUMMARY"
+          cat review-freshness-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update maintenance issue
+        if: steps.links.outcome == 'failure' || steps.freshness.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat external-link-report.md review-freshness-report.md > maintenance-report.md
+          ISSUE=$(gh issue list --state open --search '"Weekly library maintenance findings" in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$ISSUE" ]; then
+            gh issue comment "$ISSUE" --body-file maintenance-report.md
+          else
+            gh issue create --title "Weekly library maintenance findings" --body-file maintenance-report.md
+          fi
+
+      - name: Close resolved maintenance issue
+        if: steps.links.outcome == 'success' && steps.freshness.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ISSUE=$(gh issue list --state open --search '"Weekly library maintenance findings" in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$ISSUE" ]; then
+            gh issue close "$ISSUE" --comment "The latest weekly maintenance run found no hard broken links and no overdue article reviews."
+          fi

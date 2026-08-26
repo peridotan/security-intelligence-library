@@ -1,4 +1,4 @@
-/* Security Intelligence Library v0.5.1 */
+/* Security Intelligence Library v0.7.0 */
 
 :root {
   --sil-navy: #17324d;
@@ -305,4 +305,35 @@ a.sil-topic:hover {
   .sil-action-box {
     padding: 1rem 1rem;
   }
+}
+
+/* v0.7.0: freshness and generated-topic affordances */
+.sil-review-current,
+.sil-review-needs-review,
+.sil-review-superseded,
+.sil-review-archived {
+  display: inline-block;
+  padding: 0.12rem 0.52rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.sil-review-current { background: #e8f2eb; color: #2d6540; }
+.sil-review-needs-review { background: #f5f0df; color: #765d14; }
+.sil-review-superseded,
+.sil-review-archived { background: #eceff2; color: #59636d; }
+
+.sil-topic-count {
+  margin-left: 0.2rem;
+  color: var(--sil-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.sil-topic-directory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.6rem 0 1.8rem;
 }

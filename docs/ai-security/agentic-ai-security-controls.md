@@ -129,11 +129,7 @@ Agentは自律的に動くが、人間が監視し介入できる方式。
 
 ## 参考情報
 
-- UK NCSC, Managing the cyber risk of agentic AI (2026-08-20)  
-  https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai
-- UK NCSC, Thinking carefully before adopting agentic AI (2026-05-15)  
-  https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai
-- OpenAI, Third-party cyber evaluations involving OpenAI models (2026-08-04)  
-  https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/
-
-[^source]: UK NCSC, Managing the cyber risk of agentic AI (2026-08-20). https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai
+- [UK NCSC, Managing the cyber risk of agentic AI (2026-08-20)](https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai)
+- [UK NCSC, Thinking carefully before adopting agentic AI (2026-05-15)](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai)
+- [OpenAI, Third-party cyber evaluations involving OpenAI models (2026-08-04)](https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/)
+[^source]: [UK NCSC, Managing the cyber risk of agentic AI (2026-08-20)](https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai)

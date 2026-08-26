@@ -127,13 +127,8 @@ pptx: ''
 
 ## 参考情報
 
-- 国家サイバー統括室, 重要インフラ対策関連 ― 重要インフラ統一基準について  
-  https://www.cyber.go.jp/policy/group/infra/policy.html
-- 国家サイバー統括室, 「安全基準等策定ガイドライン（案）」に関する意見の募集について (2026-08-05)  
-  https://www.cyber.go.jp/policy/group/infra/pubcom_jyuhurakijun_guideline2026.html
-- e-Gov, 「安全基準等策定ガイドライン（案）」に関する意見の募集について  
-  https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&Mode=0&id=060260805
-- 国家サイバー統括室, 重要インフラのサイバーセキュリティ対策のための統一基準  
-  https://www.cyber.go.jp/pdf/policy/infra/pubcom_res_jyuhurakijun.pdf
-
-[^source]: 国家サイバー統括室, 重要インフラ対策関連 ― 重要インフラ統一基準について. https://www.cyber.go.jp/policy/group/infra/policy.html
+- [国家サイバー統括室, 重要インフラ対策関連 ― 重要インフラ統一基準について](https://www.cyber.go.jp/policy/group/infra/policy.html)
+- [国家サイバー統括室, 「安全基準等策定ガイドライン（案）」に関する意見の募集について (2026-08-05)](https://www.cyber.go.jp/policy/group/infra/pubcom_jyuhurakijun_guideline2026.html)
+- [e-Gov, 「安全基準等策定ガイドライン（案）」に関する意見の募集について](https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&Mode=0&id=060260805)
+- [国家サイバー統括室, 重要インフラのサイバーセキュリティ対策のための統一基準](https://www.cyber.go.jp/pdf/policy/infra/pubcom_res_jyuhurakijun.pdf)
+[^source]: [国家サイバー統括室, 重要インフラ対策関連 ― 重要インフラ統一基準について](https://www.cyber.go.jp/policy/group/infra/policy.html)

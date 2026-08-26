@@ -161,13 +161,8 @@ Just-in-Time Credential。必要な操作時に限定して発行される短期
 
 ## 参考情報
 
-- 1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20)  
-  https://1password.com/blog/how-agentic-ai-is-redefining-identity-security
-- Cloud Security Alliance, Defining Non-Human Identity (2026-07-22)  
-  https://cloudsecurityalliance.org/artifacts/defining-non-human-identity
-- OWASP Gen AI Security Project, Top 10 for Agentic Applications for 2026  
-  https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
-- OWASP Gen AI Security Project, Agentic Security Initiative  
-  https://genai.owasp.org/initiatives/agentic-security-initiative/
-
-[^source]: 1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20). https://1password.com/blog/how-agentic-ai-is-redefining-identity-security
+- [1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20)](https://1password.com/blog/how-agentic-ai-is-redefining-identity-security)
+- [Cloud Security Alliance, Defining Non-Human Identity (2026-07-22)](https://cloudsecurityalliance.org/artifacts/defining-non-human-identity)
+- [OWASP Gen AI Security Project, Top 10 for Agentic Applications for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
+- [OWASP Gen AI Security Project, Agentic Security Initiative](https://genai.owasp.org/initiatives/agentic-security-initiative/)
+[^source]: [1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20)](https://1password.com/blog/how-agentic-ai-is-redefining-identity-security)

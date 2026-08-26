@@ -1,4 +1,4 @@
-/* Security Intelligence Library v0.5.0 */
+/* Security Intelligence Library v0.5.1 */
 
 :root {
   --sil-navy: #17324d;
@@ -257,4 +257,52 @@ a.sil-topic:hover {
   border: 1px solid var(--sil-border);
   border-radius: 0.45rem;
   font-weight: 700;
+}
+
+/* v0.5.1: mobile article polish */
+@media screen and (max-width: 26.25em) {
+  /* Metadata is easier to scan vertically on narrow phones. */
+  .sil-article-meta {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  /* Let wide Markdown tables scroll horizontally instead of crushing columns. */
+  .md-typeset table:not([class]) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: normal;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    min-width: 9rem;
+    vertical-align: top;
+  }
+
+  .md-typeset table:not([class]) th:first-child,
+  .md-typeset table:not([class]) td:first-child {
+    min-width: 6.5rem;
+  }
+
+  /*
+   * Zensical's mobile floating TOC can overlap article tables and action boxes.
+   * On very narrow screens the primary navigation remains available, so hide
+   * the secondary TOC surface and its mobile trigger.
+   */
+  .md-sidebar--secondary,
+  .md-nav--secondary,
+  [data-md-component="toc"] {
+    display: none !important;
+  }
+
+  .sil-executive-summary,
+  .sil-action-box {
+    padding: 1rem 1rem;
+  }
 }

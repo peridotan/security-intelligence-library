@@ -50,7 +50,6 @@ pptx: ""
 
 ## 参考情報
 
-- Primary source
-  https://example.com/
+- [Primary source](https://example.com/)
 
-[^source]: Primary source. https://example.com/
+[^source]: [Primary source](https://example.com/)

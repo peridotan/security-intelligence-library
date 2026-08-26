@@ -202,15 +202,9 @@ AIの判断・操作の一部に人間の確認や承認を組み込む設計。
 
 ## 参考情報
 
-- 経済産業省 / IPA・AISI, AI事業者ガイドライン 第1.2版 (2026-03-31)  
-  https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html
-- NIST, AI Risk Management Framework  
-  https://www.nist.gov/itl/ai-risk-management-framework
-- NIST AI 600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile  
-  https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
-- OECD, Due Diligence Guidance for Responsible AI (2026)  
-  https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf
-- OWASP Gen AI Security Project, Top 10 for Agentic Applications for 2026  
-  https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
-
-[^source]: 経済産業省 / IPA・AISI, AI事業者ガイドライン 第1.2版 (2026-03-31). https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html
+- [経済産業省 / IPA・AISI, AI事業者ガイドライン 第1.2版 (2026-03-31)](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html)
+- [NIST, AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- [NIST AI 600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence)
+- [OECD, Due Diligence Guidance for Responsible AI (2026)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf)
+- [OWASP Gen AI Security Project, Top 10 for Agentic Applications for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
+[^source]: [経済産業省 / IPA・AISI, AI事業者ガイドライン 第1.2版 (2026-03-31)](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html)

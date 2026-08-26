@@ -170,7 +170,5 @@ Identity Threat Detection and Response。Identityの設定・権限・認証イ�
 
 ## 参考情報
 
-- Palo Alto Networks Unit 42, Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18, 2026)  
-  https://unit42.paloaltonetworks.com/large-scale-credential-attacks/
-
-[^source]: Palo Alto Networks Unit 42, Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18, 2026). https://unit42.paloaltonetworks.com/large-scale-credential-attacks/
+- [Palo Alto Networks Unit 42, Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18, 2026)](https://unit42.paloaltonetworks.com/large-scale-credential-attacks/)
+[^source]: [Palo Alto Networks Unit 42, Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18, 2026)](https://unit42.paloaltonetworks.com/large-scale-credential-attacks/)

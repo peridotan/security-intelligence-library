@@ -117,13 +117,8 @@ OpenAIの枠組みにおける高いサイバー能力の閾値。Criticalは、
 
 ## 参考情報
 
-- OpenAI, Responding to the next frontier of critical cyber capabilities (2026-08-07)  
-  https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/
-- OpenAI, Pacing model development in an era of cyber-critical capabilities (2026-08-18)  
-  https://openai.com/index/pacing-model-development-cyber-capabilities/
-- OpenAI, Expanding Daybreak as the Cyber Defense Window Narrows (2026-08-10)  
-  https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/
-- OpenAI, Our updated Preparedness Framework  
-  https://openai.com/index/updating-our-preparedness-framework/
-
-[^source]: OpenAI, Responding to the next frontier of critical cyber capabilities (2026-08-07). https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/
+- [OpenAI, Responding to the next frontier of critical cyber capabilities (2026-08-07)](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/)
+- [OpenAI, Pacing model development in an era of cyber-critical capabilities (2026-08-18)](https://openai.com/index/pacing-model-development-cyber-capabilities/)
+- [OpenAI, Expanding Daybreak as the Cyber Defense Window Narrows (2026-08-10)](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/)
+- [OpenAI, Our updated Preparedness Framework](https://openai.com/index/updating-our-preparedness-framework/)
+[^source]: [OpenAI, Responding to the next frontier of critical cyber capabilities (2026-08-07)](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/)

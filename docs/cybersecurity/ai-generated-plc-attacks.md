@@ -135,9 +135,6 @@ AIの影響がまず出やすいのは、前半の調査、コード作成、試
 
 ## 参考情報
 
-- NSA, NSA and Others Release Report on Active Threats of Programmable Logic Controllers (2026-08-19)  
-  https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4578318/nsa-and-others-release-report-on-active-threats-of-programmable-logic-controlle/
-- NSA, Cybersecurity Advisories & Guidance  
-  https://www.nsa.gov/Cybersecurity/Cybersecurity-Advisories-Guidance/
-
-[^source]: NSA, NSA and Others Release Report on Active Threats of Programmable Logic Controllers (2026-08-19). https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4578318/nsa-and-others-release-report-on-active-threats-of-programmable-logic-controlle/
+- [NSA, NSA and Others Release Report on Active Threats of Programmable Logic Controllers (2026-08-19)](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4578318/nsa-and-others-release-report-on-active-threats-of-programmable-logic-controlle/)
+- [NSA, Cybersecurity Advisories & Guidance](https://www.nsa.gov/Cybersecurity/Cybersecurity-Advisories-Guidance/)
+[^source]: [NSA, NSA and Others Release Report on Active Threats of Programmable Logic Controllers (2026-08-19)](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4578318/nsa-and-others-release-report-on-active-threats-of-programmable-logic-controlle/)

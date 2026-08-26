@@ -136,13 +136,8 @@ WebAuthn/Passkeyを使って利用者を認証するWebサイトやサービス�
 
 ## 参考情報
 
-- Palo Alto Networks Unit 42, Pass the Passkey: A Novel Attack Surface in Passwordless Authentication (2026-08-03)  
-  https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/
-- SpecterOps, Pass-the-Passkey Family of Attacks  
-  https://github.com/SpecterOps/pass-the-passkey
-- Google for Developers, Implement passkeys with form autofill in a web app  
-  https://developers.google.com/codelabs/passkey-form-autofill
-- NIST SP 800-63B-4, Digital Identity Guidelines: Authentication and Authenticator Management  
-  https://doi.org/10.6028/NIST.SP.800-63B-4
-
-[^source]: Palo Alto Networks Unit 42, Pass the Passkey: A Novel Attack Surface in Passwordless Authentication (2026-08-03). https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/
+- [Palo Alto Networks Unit 42, Pass the Passkey: A Novel Attack Surface in Passwordless Authentication (2026-08-03)](https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/)
+- [SpecterOps, Pass-the-Passkey Family of Attacks](https://github.com/SpecterOps/pass-the-passkey)
+- [Google for Developers, Implement passkeys with form autofill in a web app](https://developers.google.com/codelabs/passkey-form-autofill)
+- [NIST SP 800-63B-4, Digital Identity Guidelines: Authentication and Authenticator Management](https://doi.org/10.6028/NIST.SP.800-63B-4)
+[^source]: [Palo Alto Networks Unit 42, Pass the Passkey: A Novel Attack Surface in Passwordless Authentication (2026-08-03)](https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/)

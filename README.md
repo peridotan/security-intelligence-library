@@ -2,6 +2,13 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.5.1
+
+- 420px以下では記事Metadataを1列表示
+- Markdown表を横スクロール可能にし、狭い列への過剰な折返しを抑制
+- 狭幅モバイルでは浮動TOCを非表示にして本文との重なりを回避
+- 参考情報を生URL表示から「情報源タイトル＝リンク」形式へ整理
+
 ## v0.5.0
 
 - HomeをLatest Intelligence 6件に整理

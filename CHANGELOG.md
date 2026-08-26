@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.5.1
+
+- Stacked article metadata into one column at <= 420px.
+- Made Markdown tables horizontally scrollable on narrow screens.
+- Hid the mobile secondary/floating table-of-contents surface at <= 420px to avoid content overlap.
+- Converted reference lists and generated footnotes to compact linked source titles.
+
 ## v0.5.0
 
 - Added Monthly Intelligence archive and August 2026 executive summary.

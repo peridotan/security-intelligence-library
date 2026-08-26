@@ -133,13 +133,8 @@ AI Systemを開発し、自らの名称・商標で市場投入・サービス�
 
 ## 参考情報
 
-- European Commission, Commission starts enforcing AI Act rules and new transparency requirements on 2 August (2026-07-31)  
-  https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august
-- European Commission, Guidelines on transparency obligations for providers and deployers of certain AI systems  
-  https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations
-- European Commission, Transparency obligations under Article 50 of the AI Act - FAQ  
-  https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act
-- European Commission, The enforcement framework of the AI Act  
-  https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act
-
-[^source]: European Commission, Commission starts enforcing AI Act rules and new transparency requirements on 2 August (2026-07-31). https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august
+- [European Commission, Commission starts enforcing AI Act rules and new transparency requirements on 2 August (2026-07-31)](https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august)
+- [European Commission, Guidelines on transparency obligations for providers and deployers of certain AI systems](https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations)
+- [European Commission, Transparency obligations under Article 50 of the AI Act - FAQ](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)
+- [European Commission, The enforcement framework of the AI Act](https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act)
+[^source]: [European Commission, Commission starts enforcing AI Act rules and new transparency requirements on 2 August (2026-07-31)](https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august)

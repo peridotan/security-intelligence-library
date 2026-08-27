@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.0
+
+- Added April 2026 Monthly Intelligence with ten core themes.
+- Added coverage of Claude Mythos Preview, AI-enabled threat operations, device-code phishing, the Axios supply-chain compromise, Advanced Account Security, EUDI Wallet certification, NIST IoT lifecycle guidance, NIST PQC key-generation guidance, Japan's SCS evaluation scheme, and the April critical-infrastructure unified-standard draft.
+- Marked the April critical-infrastructure draft article as `Superseded` and linked readers to the July final-standard article.
+
 ## v0.10.0
 
 - Added May 2026 Monthly Intelligence with ten core themes.

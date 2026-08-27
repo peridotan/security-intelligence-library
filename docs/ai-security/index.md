@@ -109,6 +109,21 @@ hide:
     <div class="sil-card-meta">May 2026 · Strategic · Confirmed · AI Governance / Identity</div>
     <p>OpenAIが2026年5月7日に拡張したTrusted Access for Cyberを基に、高度なCyber CapabilityへのAccessをIdentity、Organization Verification、利用目的、監視で制…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="claude-mythos-preview-cyber-capability.md">Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Observed · AI Governance / Vulnerability Risk</div>
+    <p>Anthropicが2026年4月7日に公表したClaude Mythos PreviewのCybersecurity評価を基に、Zero-day発見、Exploit Development、Project Glasswingと企業防御への意…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/ai-embedded-threat-operations.md">AIは「自律攻撃」以前に攻撃工程へ埋め込まれている ― Microsoftの4月観測</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Observed · Threat Landscape / Identity</div>
+    <p>Microsoftが2026年4月2日に公表したThreat Landscape分析を基に、AIがReconnaissance、Phishing、Malware、Post-compromiseへ組み込まれる一方、完全自律攻撃はまだ典型ではない…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/openai-advanced-account-security.md">Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Identity / AI Governance</div>
+    <p>OpenAIが2026年4月30日に公表したAdvanced Account Securityを基に、Passkey、Passwordless、Recovery、Session、High-risk Capabilityを統合したIdentit…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

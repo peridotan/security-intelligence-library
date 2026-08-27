@@ -54,6 +54,21 @@ hide:
     <div class="sil-card-meta">May 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
     <p>Singapore IMDAが2026年5月20日に更新したModel AI Governance Framework for Agentic AIを基に、Risk Bounding、人の責任、Multi-agent、Third-party…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/japan-scs-evaluation-operationalization.md">SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Supply Chain / Governance</div>
+    <p>IPAが2026年4月21日に公開したSCS評価制度サイトと要求事項を基に、★3・★4、専門家確認、第三者評価、取引先管理への意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/eudi-wallet-certification.md">EUDI Wallet Certification ― Digital Identityを「実装」から「認証・保証」へ</a>
+    <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Identity / Regulatory</div>
+    <p>ENISAが2026年4月3日に公開Consultationを開始したEU Digital Identity Wallet向けCybersecurity Certification Schemeを基に、Digital IdentityのSec…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="japan-critical-infrastructure-unified-standard-draft.md">重要インフラ統一基準（案）― 自主的取組から「共通Baseline＋PDCA」へ</a>
+    <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Regulatory / Critical Infrastructure</div>
+    <p>国家サイバー統括室が2026年4月21日に意見募集を開始した重要インフラ統一基準（案）を、7月の最終決定前の歴史的スナップショットとして整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

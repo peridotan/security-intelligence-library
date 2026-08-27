@@ -104,6 +104,31 @@ hide:
     <div class="sil-card-meta">May 2026 · Near-term · Confirmed · Business Continuity / OT / Safety</div>
     <p>NIST NCCoEが2026年5月21日に公開した製造業向けResponse / Recovery Guide SP 1800-41 Draftを基に、ICS/OTでの復旧設計とOperational Resilienceを整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/ai-enabled-device-code-phishing.md">AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Observed · Identity / Financial Fraud</div>
+    <p>Microsoftが2026年4月6日に報告したDevice Code Phishing Campaignを基に、Dynamic Code Generation、OAuth Token、MFA、Device Registrationを含む攻撃…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="openai-axios-signing-supply-chain.md">Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Confirmed · Supply Chain / Software Trust</div>
+    <p>OpenAIが2026年4月10日に公表したAxios Developer Tool侵害への対応を基に、GitHub Actions、Build Dependency、Signing Material、Certificate Rotation…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/claude-mythos-preview-cyber-capability.md">Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Observed · AI Governance / Vulnerability Risk</div>
+    <p>Anthropicが2026年4月7日に公表したClaude Mythos PreviewのCybersecurity評価を基に、Zero-day発見、Exploit Development、Project Glasswingと企業防御への意…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="ai-embedded-threat-operations.md">AIは「自律攻撃」以前に攻撃工程へ埋め込まれている ― Microsoftの4月観測</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Observed · Threat Landscape / Identity</div>
+    <p>Microsoftが2026年4月2日に公表したThreat Landscape分析を基に、AIがReconnaissance、Phishing、Malware、Post-compromiseへ組み込まれる一方、完全自律攻撃はまだ典型ではない…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/nist-iot-product-lifecycle-ir8259r1.md">NIST IR 8259r1 ― IoT Securityは「出荷前」ではなくEnd-of-LifeまでのProduct責任</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Product Security / Supply Chain</div>
+    <p>NISTが2026年4月20日に公開したIR 8259r1を基に、IoT Product SecurityをPre-marketからPost-market、Support、EOLまで管理する考え方を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

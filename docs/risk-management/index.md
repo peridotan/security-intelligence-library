@@ -131,6 +131,36 @@ hide:
     <div class="sil-card-meta">May 2026 · Strategic · Confirmed · AI Governance / Identity</div>
     <p>OpenAIが2026年5月7日に拡張したTrusted Access for Cyberを基に、高度なCyber CapabilityへのAccessをIdentity、Organization Verification、利用目的、監視で制…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/openai-axios-signing-supply-chain.md">Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Confirmed · Supply Chain / Software Trust</div>
+    <p>OpenAIが2026年4月10日に公表したAxios Developer Tool侵害への対応を基に、GitHub Actions、Build Dependency、Signing Material、Certificate Rotation…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/claude-mythos-preview-cyber-capability.md">Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Observed · AI Governance / Vulnerability Risk</div>
+    <p>Anthropicが2026年4月7日に公表したClaude Mythos PreviewのCybersecurity評価を基に、Zero-day発見、Exploit Development、Project Glasswingと企業防御への意…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-iot-product-lifecycle-ir8259r1.md">NIST IR 8259r1 ― IoT Securityは「出荷前」ではなくEnd-of-LifeまでのProduct責任</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Product Security / Supply Chain</div>
+    <p>NISTが2026年4月20日に公開したIR 8259r1を基に、IoT Product SecurityをPre-marketからPost-market、Support、EOLまで管理する考え方を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="japan-scs-evaluation-operationalization.md">SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Supply Chain / Governance</div>
+    <p>IPAが2026年4月21日に公開したSCS評価制度サイトと要求事項を基に、★3・★4、専門家確認、第三者評価、取引先管理への意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/nist-key-generation-pqc-sp800-133r3.md">NIST SP 800-133r3 Draft ― PQC移行はAlgorithmだけでなくKey Generation / HSMまで変える</a>
+    <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Cryptography / Identity</div>
+    <p>NISTが2026年4月17日に公開したSP 800-133 Revision 3 Draftを基に、PQC、KEM、Seed Expansion、Hybrid ImplementationがKey Management基盤へ与える影響を整理…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-critical-infrastructure-unified-standard-draft.md">重要インフラ統一基準（案）― 自主的取組から「共通Baseline＋PDCA」へ</a>
+    <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Regulatory / Critical Infrastructure</div>
+    <p>国家サイバー統括室が2026年4月21日に意見募集を開始した重要インフラ統一基準（案）を、7月の最終決定前の歴史的スナップショットとして整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

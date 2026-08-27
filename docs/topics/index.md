@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>40</strong> Articles</span>
+    <span><strong>50</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>142</strong> Detailed Tags</span>
+    <span><strong>194</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -27,8 +27,8 @@ hide:
 <a class="sil-topic" href="#ai-agent-security">AI Agent Security <span class="sil-topic-count">8</span></a>
 <a class="sil-topic" href="#mcp-security">MCP Security <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">7</span></a>
-<a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">5</span></a>
-<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">7</span></a>
+<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">4</span></a>
 <a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">1</span></a>
 </div>
@@ -36,27 +36,27 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Identity</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">11</span></a>
-<a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">15</span></a>
+<a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">5</span></a>
+<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">2</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">5</span></a>
-<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">4</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Governance &amp; Risk</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">5</span></a>
-<a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">7</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">11</span></a>
+<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">8</span></a>
+<a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">10</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">15</span></a>
 </div>
 </section>
 </div>
@@ -104,6 +104,8 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 - [EU Cybersecurity & AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う](../regulation/eu-cybersecurity-ai-action-plan.md) — July 2026 · Strategic · Confirmed
 - [Kimi K3のCyber能力評価 ― Open-weight AIを「モデル名」ではなく能力で評価する](../ai-security/kimi-k3-cyber-capabilities.md) — July 2026 · Strategic · Observed
 - [Cyber能力へのAccess Control ― OpenAI Trusted Accessが示す「能力 × Identity」の統制](../ai-security/openai-trusted-access-cyber.md) — May 2026 · Strategic · Confirmed
+- [Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月](../ai-security/claude-mythos-preview-cyber-capability.md) — April 2026 · Immediate · Observed
+- [Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る](../identity-security/openai-advanced-account-security.md) — April 2026 · Near-term · Confirmed
 
 ### AI-Enabled Threats {#ai-enabled-threats}
 
@@ -112,6 +114,7 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 - [AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点](../cybersecurity/ai-generated-plc-attacks.md) — August 2026 · Immediate · Observed
 - [AI Enabled Malwareの現実 ― 「405検体・97%」をどう読むか](../ai-security/ai-enabled-malware-reality.md) — August 2026 · Near-term · Observed
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
+- [AIは「自律攻撃」以前に攻撃工程へ埋め込まれている ― Microsoftの4月観測](../cybersecurity/ai-embedded-threat-operations.md) — April 2026 · Near-term · Observed
 
 ### AI Infrastructure {#ai-infrastructure}
 
@@ -144,6 +147,10 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 - [Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点](../cybersecurity/f5-confluence-edge-to-identity.md) — May 2026 · Immediate · Observed
 - [Coding Agentをどう守るか ― OpenAIのCodex運用から見るAgent Runtime Security](../ai-security/openai-running-codex-safely.md) — May 2026 · Near-term · Confirmed
 - [Cyber能力へのAccess Control ― OpenAI Trusted Accessが示す「能力 × Identity」の統制](../ai-security/openai-trusted-access-cyber.md) — May 2026 · Strategic · Confirmed
+- [AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする](../identity-security/ai-enabled-device-code-phishing.md) — April 2026 · Immediate · Observed
+- [Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る](../identity-security/openai-advanced-account-security.md) — April 2026 · Near-term · Confirmed
+- [EUDI Wallet Certification ― Digital Identityを「実装」から「認証・保証」へ](../identity-security/eudi-wallet-certification.md) — April 2026 · Strategic · Confirmed
+- [NIST SP 800-133r3 Draft ― PQC移行はAlgorithmだけでなくKey Generation / HSMまで変える](../identity-security/nist-key-generation-pqc-sp800-133r3.md) — April 2026 · Strategic · Confirmed
 
 ### Passkey & Phishing-resistant MFA {#passkey-phishing-resistant-mfa}
 
@@ -153,6 +160,7 @@ Passkey / FIDO2と、登録・回復を含むフィッシング耐性認証。
 - [Passkey時代の次の攻撃面 ― 登録・回復フローを狙うSocial Engineering](../identity-security/passkey-enrollment-recovery-attacks.md) — July 2026 · Immediate · Observed
 - [Microsoft Entra IDがPasskeyを既定へ ― SMS / Voice MFA終了に向けた移行設計](../identity-security/entra-passkeys-default.md) — July 2026 · Near-term · Confirmed
 - [AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing](../identity-security/aitm-token-compromise-code-of-conduct.md) — May 2026 · Immediate · Observed
+- [Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る](../identity-security/openai-advanced-account-security.md) — April 2026 · Near-term · Confirmed
 
 ### Credential Attacks {#credential-attacks}
 
@@ -162,12 +170,15 @@ Password Spraying、MFA Fatigue、漏えい資格情報、Recovery悪用。
 - [Passkey時代の次の攻撃面 ― 登録・回復フローを狙うSocial Engineering](../identity-security/passkey-enrollment-recovery-attacks.md) — July 2026 · Immediate · Observed
 - [AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing](../identity-security/aitm-token-compromise-code-of-conduct.md) — May 2026 · Immediate · Observed
 - [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate · Observed
+- [AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする](../identity-security/ai-enabled-device-code-phishing.md) — April 2026 · Immediate · Observed
+- [AIは「自律攻撃」以前に攻撃工程へ埋め込まれている ― Microsoftの4月観測](../cybersecurity/ai-embedded-threat-operations.md) — April 2026 · Near-term · Observed
 
 ### PQC / Crypto Agility {#pqc-crypto-agility}
 
 Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 - [NIST PIVのPQC対応 ― Identity Credentialも「Crypto Agility」が必要になる](../identity-security/pqc-piv-dual-stack.md) — June 2026 · Strategic · Confirmed
+- [NIST SP 800-133r3 Draft ― PQC移行はAlgorithmだけでなくKey Generation / HSMまで変える](../identity-security/nist-key-generation-pqc-sp800-133r3.md) — April 2026 · Strategic · Confirmed
 
 <div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 
@@ -183,6 +194,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 - [Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点](../cybersecurity/f5-confluence-edge-to-identity.md) — May 2026 · Immediate · Observed
 - [Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化](../regulation/japan-project-yata-shield.md) — May 2026 · Immediate · Confirmed
 - [金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する](../regulation/fsa-frontier-ai-short-term-response.md) — May 2026 · Immediate · Confirmed
+- [Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月](../ai-security/claude-mythos-preview-cyber-capability.md) — April 2026 · Immediate · Observed
 
 ### Ransomware & Resilience {#ransomware-resilience}
 
@@ -202,6 +214,7 @@ OT / ICS、重要インフラ、Remote Access、Recovery、Safety。
 - [NIST SP 1339 ― OT Backupは「取得」ではなくChange ManagementとRecovery Exerciseで守る](../cybersecurity/nist-ot-backup-sp1339.md) — June 2026 · Near-term · Confirmed
 - [NIST SP 1800-45 ― OT Remote Accessを「例外VPN」からReference Architectureへ](../cybersecurity/water-ot-secure-remote-access-sp1800-45.md) — June 2026 · Near-term · Confirmed
 - [NIST SP 1800-41 Draft ― OTでは「防ぐ」だけでなくResponse / Recoveryを設計する](../cybersecurity/nist-manufacturing-response-recovery-sp1800-41.md) — May 2026 · Near-term · Confirmed
+- [重要インフラ統一基準（案）― 自主的取組から「共通Baseline＋PDCA」へ](../regulation/japan-critical-infrastructure-unified-standard-draft.md) — April 2026 · Strategic · Confirmed
 
 ### Software Supply Chain {#software-supply-chain}
 
@@ -210,6 +223,7 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 - [MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない](../ai-security/mcp-tool-poisoning-agent-supply-chain.md) — June 2026 · Immediate · Assessment
 - [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](../cybersecurity/mastra-npm-ai-supply-chain.md) — June 2026 · Immediate · Observed
 - [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate · Observed
+- [Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した](../cybersecurity/openai-axios-signing-supply-chain.md) — April 2026 · Immediate · Confirmed
 
 <div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 
@@ -224,6 +238,9 @@ Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 - [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](../cybersecurity/mastra-npm-ai-supply-chain.md) — June 2026 · Immediate · Observed
 - [NIST SP 800-18r2 ― Security・Privacy・C-SCRMを別々の計画書にしない](../risk-management/nist-sp800-18r2-integrated-system-plans.md) — June 2026 · Strategic · Confirmed
 - [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate · Observed
+- [Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した](../cybersecurity/openai-axios-signing-supply-chain.md) — April 2026 · Immediate · Confirmed
+- [NIST IR 8259r1 ― IoT Securityは「出荷前」ではなくEnd-of-LifeまでのProduct責任](../risk-management/nist-iot-product-lifecycle-ir8259r1.md) — April 2026 · Near-term · Confirmed
+- [SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ](../risk-management/japan-scs-evaluation-operationalization.md) — April 2026 · Near-term · Confirmed
 
 ### Regulation & Policy {#regulation-policy}
 
@@ -236,6 +253,9 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 - [Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化](../regulation/japan-project-yata-shield.md) — May 2026 · Immediate · Confirmed
 - [金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する](../regulation/fsa-frontier-ai-short-term-response.md) — May 2026 · Immediate · Confirmed
 - [Singapore Agentic AI Governance v1.5 ― 「自律性をRisk Tierで制限する」実装例](../regulation/singapore-agentic-ai-governance-v15.md) — May 2026 · Near-term · Confirmed
+- [SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ](../risk-management/japan-scs-evaluation-operationalization.md) — April 2026 · Near-term · Confirmed
+- [EUDI Wallet Certification ― Digital Identityを「実装」から「認証・保証」へ](../identity-security/eudi-wallet-certification.md) — April 2026 · Strategic · Confirmed
+- [重要インフラ統一基準（案）― 自主的取組から「共通Baseline＋PDCA」へ](../regulation/japan-critical-infrastructure-unified-standard-draft.md) — April 2026 · Strategic · Confirmed
 
 ### Security Governance & Risk Management {#security-governance-risk}
 
@@ -252,6 +272,10 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 - [Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化](../regulation/japan-project-yata-shield.md) — May 2026 · Immediate · Confirmed
 - [金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する](../regulation/fsa-frontier-ai-short-term-response.md) — May 2026 · Immediate · Confirmed
 - [Cyber能力へのAccess Control ― OpenAI Trusted Accessが示す「能力 × Identity」の統制](../ai-security/openai-trusted-access-cyber.md) — May 2026 · Strategic · Confirmed
+- [Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月](../ai-security/claude-mythos-preview-cyber-capability.md) — April 2026 · Immediate · Observed
+- [NIST IR 8259r1 ― IoT Securityは「出荷前」ではなくEnd-of-LifeまでのProduct責任](../risk-management/nist-iot-product-lifecycle-ir8259r1.md) — April 2026 · Near-term · Confirmed
+- [SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ](../risk-management/japan-scs-evaluation-operationalization.md) — April 2026 · Near-term · Confirmed
+- [重要インフラ統一基準（案）― 自主的取組から「共通Baseline＋PDCA」へ](../regulation/japan-critical-infrastructure-unified-standard-draft.md) — April 2026 · Strategic · Confirmed
 
 <div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 <!-- AUTO:TOPICS:END -->

@@ -2,6 +2,21 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.11.0
+
+- April 2026 Intelligenceを追加
+- April 2026 Executive Summaryと10 Core Themesを追加
+- Claude Mythos Preview / Project GlasswingのCyber Capability記事を追加
+- AIが攻撃Lifecycleへ組み込まれるThreat Landscape記事を追加
+- AI-enabled Device Code Phishing記事を追加
+- Axios Supply Chain / Code Signing Trust記事を追加
+- OpenAI Advanced Account Security記事を追加
+- EUDI Wallet Cybersecurity Certification記事を追加
+- NIST IR 8259r1 IoT Product Lifecycle Security記事を追加
+- NIST SP 800-133r3 PQC Key Generation記事を追加
+- 日本のSCS評価制度の実装段階記事を追加
+- 重要インフラ統一基準（案）のHistorical Snapshot記事を追加
+
 ## v0.10.0
 
 - May 2026 Intelligenceを追加

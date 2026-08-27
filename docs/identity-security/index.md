@@ -69,6 +69,26 @@ hide:
     <div class="sil-card-meta">May 2026 · Strategic · Confirmed · AI Governance / Identity</div>
     <p>OpenAIが2026年5月7日に拡張したTrusted Access for Cyberを基に、高度なCyber CapabilityへのAccessをIdentity、Organization Verification、利用目的、監視で制…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="ai-enabled-device-code-phishing.md">AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする</a>
+    <div class="sil-card-meta">April 2026 · Immediate · Observed · Identity / Financial Fraud</div>
+    <p>Microsoftが2026年4月6日に報告したDevice Code Phishing Campaignを基に、Dynamic Code Generation、OAuth Token、MFA、Device Registrationを含む攻撃…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="openai-advanced-account-security.md">Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る</a>
+    <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Identity / AI Governance</div>
+    <p>OpenAIが2026年4月30日に公表したAdvanced Account Securityを基に、Passkey、Passwordless、Recovery、Session、High-risk Capabilityを統合したIdentit…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="eudi-wallet-certification.md">EUDI Wallet Certification ― Digital Identityを「実装」から「認証・保証」へ</a>
+    <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Identity / Regulatory</div>
+    <p>ENISAが2026年4月3日に公開Consultationを開始したEU Digital Identity Wallet向けCybersecurity Certification Schemeを基に、Digital IdentityのSec…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-key-generation-pqc-sp800-133r3.md">NIST SP 800-133r3 Draft ― PQC移行はAlgorithmだけでなくKey Generation / HSMまで変える</a>
+    <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Cryptography / Identity</div>
+    <p>NISTが2026年4月17日に公開したSP 800-133 Revision 3 Draftを基に、PQC、KEM、Seed Expansion、Hybrid ImplementationがKey Management基盤へ与える影響を整理…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

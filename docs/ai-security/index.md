@@ -124,6 +124,21 @@ hide:
     <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Identity / AI Governance</div>
     <p>OpenAIが2026年4月30日に公表したAdvanced Account Securityを基に、Passkey、Passwordless、Recovery、Session、High-risk Capabilityを統合したIdentit…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/ai-as-tradecraft-march-2026.md">AI as Tradecraft ― 攻撃者は「自律攻撃」より先にAIを日常の攻撃運用へ組み込んだ</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Observed · Threat Landscape / Security Operations</div>
+    <p>Microsoftが2026年3月6日に公表したThreat Intelligenceを基に、Threat ActorがAIをReconnaissance、Social Engineering、Malware、Post-compromiseへ…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-ai-guidelines-business-v12.md">AI事業者ガイドライン第1.2版 ― AI Governanceを「原則」から実践Toolへ更新</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>総務省・経済産業省が2026年3月31日にとりまとめたAI事業者ガイドライン第1.2版と活用の手引き等を基に、日本企業のAI Governance運用への意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-deployed-ai-monitoring.md">NIST AI 800-4 ― AI Governanceは「導入前審査」よりPost-deployment Monitoringが難しい</a>
+    <div class="sil-card-meta">March 2026 · Strategic · Confirmed · AI Governance / Compliance</div>
+    <p>NISTが2026年3月9日に公表したDeployed AI SystemsのMonitoring課題を基に、Functionality、Operations、Human Factors、Security、Compliance、Large-s…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

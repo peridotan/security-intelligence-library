@@ -40,5 +40,11 @@ hide:
     <p>Frontier AIのExploit能力上昇、AI組込み型攻撃、Token Abuse、Supply Chain、Phishing-resistant Identity、PQC、日本のSCS・重要インフラ制度を横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-04.md">月次サマリーを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="2026-03.md">March 2026 Intelligence</a>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <p>AI Tradecraft、AiTM / Vishing、AI Monitoring、Digital Identity、Cyber ERM、SCS、Software Supplier Responsibility、Recovery Denialを横断したQ2直前の月次Executive…</p>
+    <a class="sil-card-more" href="2026-03.md">月次サマリーを見る →</a>
+  </article>
 </div>
 <!-- AUTO:MONTHLY_INDEX:END -->

@@ -129,6 +129,31 @@ hide:
     <div class="sil-card-meta">April 2026 · Near-term · Confirmed · Product Security / Supply Chain</div>
     <p>NISTが2026年4月20日に公開したIR 8259r1を基に、IoT Product SecurityをPre-marketからPost-market、Support、EOLまで管理する考え方を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="m-trends-2026-speed-identity-recovery.md">M-Trends 2026 ― 攻撃の「22秒化」とRecovery Denialが示す次の防御モデル</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Mandiantが2026年3月23日に公表したM-Trends 2026を基に、Access Hand-offの高速化、Voice Phishing、SaaS Identity、Recovery Denial、Edge Persistenc…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/teams-vishing-quick-assist.md">Teams Vishing ― 「IT Supportを信じる」ことがInitial Accessになる</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Identity / Social Engineering</div>
+    <p>Microsoft Incident Responseが2026年3月16日に公表したTeams Voice Phishing事例を基に、Quick Assist、正規Tool Abuse、Credential Theft、Session H…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/tycoon2fa-aitm-phaas.md">Tycoon2FA ― MFA突破がPhishing-as-a-Serviceとして「産業化」した</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Identity / Financial Fraud</div>
+    <p>Microsoftが2026年3月4日に公表したTycoon2FA分析を基に、AiTM、Session Cookie Theft、短命Infrastructure、PhaaSによるMFA突破のScale化を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="ai-as-tradecraft-march-2026.md">AI as Tradecraft ― 攻撃者は「自律攻撃」より先にAIを日常の攻撃運用へ組み込んだ</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Observed · Threat Landscape / Security Operations</div>
+    <p>Microsoftが2026年3月6日に公表したThreat Intelligenceを基に、Threat ActorがAIをReconnaissance、Social Engineering、Malware、Post-compromiseへ…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-cyber-infrastructure-provider-guideline.md">サイバーインフラ事業者ガイドライン ― Software Securityを「Vendor責任＋Customer責任」で設計する</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Confirmed · Supply Chain / Product Security</div>
+    <p>経済産業省と国家サイバー統括室が2026年3月31日に策定したサイバーインフラ事業者向けガイドラインを基に、Software SupplierとCustomerの責務、調達、評価Checklistの意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

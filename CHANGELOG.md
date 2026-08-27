@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.14.0
+
+- Added March 2026 Monthly Intelligence with ten core themes.
+- Added coverage of AI-as-tradecraft, Tycoon2FA, Teams vishing, deployed-AI monitoring, Japan AI Guidelines for Business v1.2, NIST mDL guidance, CSF/ERM/workforce integration, Japan's SCS policy, cyber-infrastructure provider responsibilities, and M-Trends 2026.
+- Added selective MITRE ATT&CK® mapping for Tycoon2FA and Teams vishing.
+- Extended the controlled ATT&CK catalog with T1566.004 and T1219.002.
+
 ## v0.13.0
 
 - Added Quarterly Review as a first-class synthesis layer.

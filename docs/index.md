@@ -111,14 +111,14 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">15</span></a>
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">15</span></a>
-<a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">10</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">22</span></a>
+<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">13</span></a>
+<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">10</span></a>
+<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">9</span></a>
+<a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">9</span></a>
 <a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">8</span></a>
-<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">8</span></a>
-<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="topics/index.md#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">7</span></a>
-<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">7</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->
 

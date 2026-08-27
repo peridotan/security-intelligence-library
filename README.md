@@ -2,6 +2,23 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.14.0
+
+- March 2026 Intelligenceを追加
+- March 2026 Executive Summaryと10 Core Themesを追加
+- AI as Tradecraft記事を追加
+- Tycoon2FA / AiTM PhaaS記事を追加
+- Teams Vishing / Quick Assist記事を追加
+- NIST Deployed AI Monitoring記事を追加
+- AI事業者ガイドライン第1.2版記事を追加
+- NIST SP 1800-42 mDL for Financial Institutions記事を追加
+- NIST SP 1308 Cyber Risk / ERM / Workforce記事を追加
+- SCS評価制度の制度構築方針記事を追加
+- サイバーインフラ事業者ガイドライン記事を追加
+- M-Trends 2026記事を追加
+- Tycoon2FAとTeams VishingにSelective MITRE ATT&CK® Mappingを追加
+- ATT&CK catalogへT1566.004 / T1219.002を追加
+
 ## v0.13.0
 
 - `Quarterly Review`を新設

@@ -89,6 +89,26 @@ hide:
     <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Cryptography / Identity</div>
     <p>NISTが2026年4月17日に公開したSP 800-133 Revision 3 Draftを基に、PQC、KEM、Seed Expansion、Hybrid ImplementationがKey Management基盤へ与える影響を整理…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/m-trends-2026-speed-identity-recovery.md">M-Trends 2026 ― 攻撃の「22秒化」とRecovery Denialが示す次の防御モデル</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Mandiantが2026年3月23日に公表したM-Trends 2026を基に、Access Hand-offの高速化、Voice Phishing、SaaS Identity、Recovery Denial、Edge Persistenc…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="teams-vishing-quick-assist.md">Teams Vishing ― 「IT Supportを信じる」ことがInitial Accessになる</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Identity / Social Engineering</div>
+    <p>Microsoft Incident Responseが2026年3月16日に公表したTeams Voice Phishing事例を基に、Quick Assist、正規Tool Abuse、Credential Theft、Session H…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="tycoon2fa-aitm-phaas.md">Tycoon2FA ― MFA突破がPhishing-as-a-Serviceとして「産業化」した</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Identity / Financial Fraud</div>
+    <p>Microsoftが2026年3月4日に公表したTycoon2FA分析を基に、AiTM、Session Cookie Theft、短命Infrastructure、PhaaSによるMFA突破のScale化を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-mdl-financial-institutions.md">NIST SP 1800-42 Draft ― Digital Identityを金融の実取引へ持ち込むReference Architecture</a>
+    <div class="sil-card-meta">March 2026 · Strategic · Confirmed · Identity / Fraud</div>
+    <p>NIST NCCoEが2026年3月18日に公開した金融機関向けmDL実装Draftを基に、Verifiable Digital Credential、Threat Model、Privacy、Interoperabilityの意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

@@ -133,3 +133,15 @@ techniques:
     tactics:
     - Impact
     url: https://attack.mitre.org/techniques/T1657/
+  T1566.004:
+    name: Spearphishing Voice
+    domain: Enterprise
+    tactics:
+    - Initial Access
+    url: https://attack.mitre.org/techniques/T1566/004/
+  T1219.002:
+    name: Remote Desktop Software
+    domain: Enterprise
+    tactics:
+    - Command and Control
+    url: https://attack.mitre.org/techniques/T1219/002/

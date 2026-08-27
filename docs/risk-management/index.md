@@ -161,6 +161,41 @@ hide:
     <div class="sil-card-meta">April 2026 · Strategic · Confirmed · Regulatory / Critical Infrastructure</div>
     <p>国家サイバー統括室が2026年4月21日に意見募集を開始した重要インフラ統一基準（案）を、7月の最終決定前の歴史的スナップショットとして整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/m-trends-2026-speed-identity-recovery.md">M-Trends 2026 ― 攻撃の「22秒化」とRecovery Denialが示す次の防御モデル</a>
+    <div class="sil-card-meta">March 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Mandiantが2026年3月23日に公表したM-Trends 2026を基に、Access Hand-offの高速化、Voice Phishing、SaaS Identity、Recovery Denial、Edge Persistenc…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-ai-guidelines-business-v12.md">AI事業者ガイドライン第1.2版 ― AI Governanceを「原則」から実践Toolへ更新</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>総務省・経済産業省が2026年3月31日にとりまとめたAI事業者ガイドライン第1.2版と活用の手引き等を基に、日本企業のAI Governance運用への意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-csf2-erm-workforce-sp1308.md">NIST SP 1308 ― Cyber Risk・ERM・Workforceを一つの経営判断へつなぐ</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Confirmed · Enterprise Risk / Workforce</div>
+    <p>NISTが2026年3月23日にFinal化したSP 1308を基に、CSF 2.0、Enterprise Risk Management、Cybersecurity Workforce Managementを統合する考え方を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-scs-policy-march-2026.md">SCS評価制度「制度構築方針」― Supplier Securityを取引条件として共通言語化する</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Confirmed · Supply Chain / Procurement</div>
+    <p>経済産業省と国家サイバー統括室が2026年3月27日に公表したSCS評価制度の制度構築方針を基に、★3・★4、任意制度、Supply Chain Securityの取引実務への意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-cyber-infrastructure-provider-guideline.md">サイバーインフラ事業者ガイドライン ― Software Securityを「Vendor責任＋Customer責任」で設計する</a>
+    <div class="sil-card-meta">March 2026 · Near-term · Confirmed · Supply Chain / Product Security</div>
+    <p>経済産業省と国家サイバー統括室が2026年3月31日に策定したサイバーインフラ事業者向けガイドラインを基に、Software SupplierとCustomerの責務、調達、評価Checklistの意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/nist-deployed-ai-monitoring.md">NIST AI 800-4 ― AI Governanceは「導入前審査」よりPost-deployment Monitoringが難しい</a>
+    <div class="sil-card-meta">March 2026 · Strategic · Confirmed · AI Governance / Compliance</div>
+    <p>NISTが2026年3月9日に公表したDeployed AI SystemsのMonitoring課題を基に、Functionality、Operations、Human Factors、Security、Compliance、Large-s…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/nist-mdl-financial-institutions.md">NIST SP 1800-42 Draft ― Digital Identityを金融の実取引へ持ち込むReference Architecture</a>
+    <div class="sil-card-meta">March 2026 · Strategic · Confirmed · Identity / Fraud</div>
+    <p>NIST NCCoEが2026年3月18日に公開した金融機関向けmDL実装Draftを基に、Verifiable Digital Credential、Threat Model、Privacy、Interoperabilityの意味を整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

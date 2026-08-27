@@ -13,6 +13,7 @@ extra_css = ["stylesheets/extra.css"]
 nav = [
   { "Home" = "index.md" },
   { "Monthly Intelligence" = "monthly/index.md" },
+  { "Quarterly Review" = "quarterly/index.md" },
   { "Cybersecurity" = "cybersecurity/index.md" },
   { "Identity Security" = "identity-security/index.md" },
   { "AI Security" = "ai-security/index.md" },

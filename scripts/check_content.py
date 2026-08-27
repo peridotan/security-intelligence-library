@@ -242,10 +242,65 @@ for path in sorted(DOCS.rglob("*.md")):
                 f"{rel}: flow-like text code block found; use `.sil-flow` markup instead"
             )
 
+
+# Quarterly review pages are synthesis pages, not production articles.
+quarterly_dir = DOCS / "quarterly"
+if quarterly_dir.exists():
+    for path in sorted(quarterly_dir.glob("20??-q?.md")):
+        text = path.read_text(encoding="utf-8")
+        try:
+            meta, body = split_fm(text)
+        except yaml.YAMLError as exc:
+            errors.append(f"{path.relative_to(ROOT)}: invalid YAML: {exc}")
+            continue
+        rel = path.relative_to(ROOT)
+        if not meta or meta.get("review_type") != "quarterly":
+            errors.append(f"{rel}: quarterly review requires `review_type: quarterly`")
+            continue
+        if not re.fullmatch(r"\d{4}-Q[1-4]", str(meta.get("period", ""))):
+            errors.append(f"{rel}: quarterly period must be YYYY-QN")
+        months = meta.get("months")
+        if not isinstance(months, list) or len(months) != 3:
+            errors.append(f"{rel}: quarterly review requires exactly 3 months")
+        else:
+            for month in months:
+                if not re.fullmatch(r"\d{4}-\d{2}", str(month)):
+                    errors.append(f"{rel}: invalid quarterly month `{month}`")
+                monthly_path = DOCS / "monthly" / f"{month}.md"
+                if not monthly_path.exists():
+                    errors.append(f"{rel}: missing monthly source `{month}`")
+        for key in ("title", "description", "summary", "reviewed"):
+            if not meta.get(key):
+                errors.append(f"{rel}: missing `{key}`")
+        try:
+            date.fromisoformat(as_iso(meta.get("reviewed")))
+        except Exception:
+            errors.append(f"{rel}: `reviewed` must be YYYY-MM-DD")
+        for section in (
+            "## Executive Summary", "## Q2の7つの構造変化",
+            "## Management Priorities", "## Evidence Basis"
+        ):
+            if section not in body:
+                errors.append(f"{rel}: missing `{section}`")
+
+        # Internal links for quarterly review pages.
+        for target in re.findall(r"\[[^\]]+\]\(([^)]+)\)", body):
+            if target.startswith(("http://", "https://", "mailto:", "#")):
+                continue
+            raw = target.split("#", 1)[0]
+            if not raw:
+                continue
+            tp = (path.parent / raw).resolve()
+            if tp.suffix == "":
+                tp = tp.with_suffix(".md")
+            if not tp.exists():
+                errors.append(f"{rel}: broken internal link `{target}`")
+
 # Generated-source blocks must exist and must not contain the v0.6.0 nesting bug.
 generated_pages = [
     DOCS / "index.md",
     DOCS / "monthly/index.md",
+    DOCS / "quarterly/index.md",
     DOCS / "topics/index.md",
     DOCS / "tags/index.md",
     DOCS / "cybersecurity/index.md",
@@ -272,7 +327,16 @@ for required_file in [
     if not (ROOT / required_file).exists():
         errors.append(f"repository: missing `{required_file}`")
 
+home_text = (DOCS / "index.md").read_text(encoding="utf-8")
+if "<!-- AUTO:HOME_QUARTERLY:START -->" not in home_text:
+    errors.append("docs/index.md: quarterly Home block missing")
+quarterly_index_text = (DOCS / "quarterly/index.md").read_text(encoding="utf-8")
+if "<!-- AUTO:QUARTERLY_INDEX:START -->" not in quarterly_index_text:
+    errors.append("docs/quarterly/index.md: quarterly index block missing")
+
 config_text = (ROOT / "zensical.toml").read_text(encoding="utf-8")
+if '{ "Quarterly Review" = "quarterly/index.md" },' not in config_text:
+    errors.append("repository: Quarterly Review navigation entry missing")
 if "&copy; 2026 peridotan. All rights reserved." not in config_text:
     errors.append("repository: footer copyright notice is not standardized")
 if 'font = false' not in config_text:

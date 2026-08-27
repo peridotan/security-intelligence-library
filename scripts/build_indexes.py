@@ -214,6 +214,59 @@ home_monthly = '<div class="sil-cards">\n' + "\n".join(
 ) + "\n</div>"
 replace_block(home, "HOME_MONTHLY", home_monthly)
 
+
+# Quarterly reviews: higher-level synthesis pages are not counted as articles.
+quarterly_pages = []
+quarterly_dir = DOCS / "quarterly"
+if quarterly_dir.exists():
+    for page in sorted(quarterly_dir.glob("20??-q?.md")):
+        meta, body = split_fm(page.read_text(encoding="utf-8"))
+        if not meta or meta.get("review_type") != "quarterly":
+            continue
+        quarterly_pages.append({
+            "path": page,
+            "meta": meta,
+            "period": str(meta.get("period") or page.stem.upper()),
+        })
+
+def quarter_key(v):
+    s = str(v or "")
+    m = re.fullmatch(r"(\d{4})-Q([1-4])", s, flags=re.I)
+    return (int(m.group(1)), int(m.group(2))) if m else (0, 0)
+
+quarterly_pages.sort(key=lambda q: quarter_key(q["period"]), reverse=True)
+
+def quarter_card(q, page, compact=False):
+    meta = q["meta"]
+    href = esc(rel_link(page, q["path"]))
+    title = esc(meta.get("title") or f"{q['period']} Security Intelligence Review")
+    summary = esc(shorten(meta.get("summary") or meta.get("description") or "", 175))
+    months = [str(x) for x in (meta.get("months") or [])]
+    reviewed = fmt_date(meta.get("reviewed") or "")
+    month_label = " · ".join(fmt_period(x) for x in months)
+    meta_line = month_label
+    if reviewed:
+        meta_line += f" · Reviewed {reviewed}"
+    return "\n".join([
+        '  <article class="sil-card">',
+        f'    <a class="sil-card-title" href="{href}">{title}</a>',
+        f'    <div class="sil-card-meta">{esc(meta_line)}</div>',
+        f'    <p>{summary}</p>',
+        f'    <a class="sil-card-more" href="{href}">四半期レビューを見る →</a>',
+        '  </article>',
+    ])
+
+quarterly_index = DOCS / "quarterly/index.md"
+quarterly_html = '<div class="sil-cards sil-cards-2 sil-quarter-cards">\n' + "\n".join(
+    quarter_card(q, quarterly_index) for q in quarterly_pages
+) + "\n</div>"
+replace_block(quarterly_index, "QUARTERLY_INDEX", quarterly_html)
+
+home_quarterly = '<div class="sil-cards sil-cards-2 sil-quarter-cards">\n' + "\n".join(
+    quarter_card(q, home, compact=True) for q in quarterly_pages[:2]
+) + "\n</div>"
+replace_block(home, "HOME_QUARTERLY", home_quarterly)
+
 # Category indexes from article collections.
 for collection, (_, rel_index) in CATEGORY_INFO.items():
     page = DOCS / rel_index
@@ -392,5 +445,6 @@ used_topic_count = sum(
 print(
     f"Indexes generated: {len(articles)} articles, "
     f"{len(monthly_pages)} monthly pages, "
+    f"{len(quarterly_pages)} quarterly reviews, "
     f"{used_topic_count} curated topics, {len(tag_articles)} tags."
 )

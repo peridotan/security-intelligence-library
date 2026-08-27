@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.13.0
+
+- Added Quarterly Review as a first-class synthesis layer.
+- Added Q2 2026 Security Intelligence Review based on 30 April-June core themes.
+- Compressed Q2 into seven structural shifts and management priorities.
+- Added generated quarterly review cards to Home and the Quarterly Review index.
+- Added validation for quarterly metadata, source months, required sections, and internal links.
+
 ## v0.12.0
 
 - Added selective MITRE ATT&CK® mapping to eight attack/campaign articles.

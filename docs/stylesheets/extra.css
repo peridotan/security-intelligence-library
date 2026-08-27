@@ -562,3 +562,43 @@ a.sil-topic:hover {
   font-size: 0.72rem;
   line-height: 1.45;
 }
+
+/* v0.13.0: Quarterly Review */
+.sil-quarter-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.15rem;
+  margin: 0.85rem 0 1.7rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 0.65rem;
+  background: var(--sil-surface);
+  color: var(--sil-muted);
+  font-size: 0.82rem;
+}
+
+.sil-quarter-stats strong {
+  margin-right: 0.18rem;
+  color: var(--md-default-fg-color);
+  font-size: 1.05rem;
+}
+
+.sil-quarter-trajectory {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sil-quarter-cards .sil-card {
+  border-left: 0.18rem solid var(--sil-blue);
+}
+
+@media screen and (max-width: 70rem) {
+  .sil-quarter-trajectory {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .sil-quarter-stats {
+    gap: 0.45rem 0.8rem;
+  }
+}

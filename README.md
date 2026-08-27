@@ -2,6 +2,17 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.13.0
+
+- `Quarterly Review`を新設
+- Q2 2026 Security Intelligence Reviewを追加
+- April / May / Juneの30 Core Themesを7つの構造変化へ再分析
+- Q2 ReviewにEvidence Mix（Confirmed 20 / Observed 9 / Assessment 1）を表示
+- Homeに最新Quarterly Reviewを自動表示
+- Quarterly Review一覧をFront Matterから自動生成
+- Primary NavigationにQuarterly Reviewを追加
+- CIでQuarter metadata、3か月のMonthly Source、必須Section、内部Linkを検証
+
 ## v0.12.0
 
 - MITRE ATT&CK® Mappingを全記事ではなくAttack / Campaign記事へ選択的に導入

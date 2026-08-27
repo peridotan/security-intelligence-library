@@ -58,6 +58,13 @@ Technique vocabularyとLinkは `config/mitre_attack.yml` で一元管理し、�
 MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation.  
 © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
 
+## Monthly IntelligenceとQuarterly Review
+
+- **Monthly Intelligence** — その月に公開・更新された重要テーマをCore Themesとして残し、個別の変化を追跡します。
+- **Quarterly Review** — 3か月分のCore Themesを再分析し、記事件数ではなく構造変化、経営上の意味、次の確認事項へ圧縮します。
+
+Quarterly Reviewは個別記事のEvidence Levelを上書きせず、Confirmed / Observed / Assessmentの区別を維持したまま横断分析します。
+
 ## TopicsとTags
 
 本Libraryでは、記事の探索分類を`Topics`と`Tags`に分けます。

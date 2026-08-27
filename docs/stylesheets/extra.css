@@ -566,21 +566,27 @@ a.sil-topic:hover {
 /* v0.13.0: Quarterly Review */
 .sil-quarter-stats {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem 1.15rem;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 0.55rem;
   margin: 0.85rem 0 1.7rem;
-  padding: 0.85rem 1rem;
+  padding: 0.8rem 0.85rem;
   border: 1px solid var(--sil-border);
   border-radius: 0.65rem;
   background: var(--sil-surface);
   color: var(--sil-muted);
-  font-size: 0.82rem;
+  font-size: 0.72rem;
+}
+
+.sil-quarter-stats span {
+  white-space: nowrap;
 }
 
 .sil-quarter-stats strong {
-  margin-right: 0.18rem;
+  margin-right: 0.14rem;
   color: var(--md-default-fg-color);
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .sil-quarter-trajectory {
@@ -591,7 +597,18 @@ a.sil-topic:hover {
   border-left: 0.18rem solid var(--sil-blue);
 }
 
+.sil-quarter-reviewed {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 70rem) {
+  .sil-quarter-stats {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.45rem 0.8rem;
+    font-size: 0.78rem;
+  }
+
   .sil-quarter-trajectory {
     grid-template-columns: 1fr;
   }

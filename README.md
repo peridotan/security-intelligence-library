@@ -2,6 +2,13 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.17.1
+
+- Quarterly Review一覧のReviewed日付を途中改行しない表示へ修正
+- Quarterly ReviewのStatsをDesktopで1行表示に調整
+- Tablet / Mobileでは従来どおり自然に折り返すResponsive表示を維持
+- Content / Evidence / Quarterly analysisの内容変更なし
+
 ## v0.17.0
 
 - Q1 2026 Security Intelligence Reviewを追加

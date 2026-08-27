@@ -244,13 +244,13 @@ def quarter_card(q, page, compact=False):
     months = [str(x) for x in (meta.get("months") or [])]
     reviewed = fmt_date(meta.get("reviewed") or "")
     month_label = " · ".join(fmt_period(x) for x in months)
-    meta_line = month_label
+    meta_html = esc(month_label)
     if reviewed:
-        meta_line += f" · Reviewed {reviewed}"
+        meta_html += f' · <span class="sil-quarter-reviewed">Reviewed {esc(reviewed)}</span>'
     return "\n".join([
         '  <article class="sil-card">',
         f'    <a class="sil-card-title" href="{href}">{title}</a>',
-        f'    <div class="sil-card-meta">{esc(meta_line)}</div>',
+        f'    <div class="sil-card-meta">{meta_html}</div>',
         f'    <p>{summary}</p>',
         f'    <a class="sil-card-more" href="{href}">四半期レビューを見る →</a>',
         '  </article>',

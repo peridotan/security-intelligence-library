@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.1
+
+- Prevented quarterly review dates from breaking inside `Reviewed YYYY-MM-DD`.
+- Compacted quarterly statistics into a single desktop row while preserving responsive wrapping.
+- No editorial or evidence changes.
+
 ## v0.17.0
 
 - Added Q1 2026 Security Intelligence Review based on 30 January-March core themes.

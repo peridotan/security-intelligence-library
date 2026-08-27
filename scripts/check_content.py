@@ -197,6 +197,12 @@ for path in sorted(DOCS.rglob("*.md")):
     if re.search(r"<script\b", body, flags=re.I):
         errors.append(f"{rel}: executable script is not allowed")
 
+    for block in re.findall(r"```text\s*\n(.*?)\n```", body, flags=re.S):
+        if "↓" in block or "→" in block or "▼" in block:
+            errors.append(
+                f"{rel}: flow-like text code block found; use `.sil-flow` markup instead"
+            )
+
 # Generated-source blocks must exist and must not contain the v0.6.0 nesting bug.
 generated_pages = [
     DOCS / "index.md",

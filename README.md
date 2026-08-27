@@ -2,6 +2,14 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.11.2
+
+- 攻撃チェーン／Process Flowを `text` コードブロックから専用Flow UIへ変更
+- OT攻撃、Vulnerability Window、Credential Attack、AI Agent Identityの4図を移行
+- Branch / Panel / Loopを含むFlow表示を追加
+- MobileではBranch / Panelを1列へ自動Stack
+- CIで矢印付き `text` コードブロックを検出し、Flow UI利用を促す
+
 ## v0.11.1
 
 - Monthly Intelligence一覧をDesktop 3列 / Tablet 2列 / Mobile 1列へ整理

@@ -96,20 +96,27 @@ AI AgentとNHIは重なる場合がありますが、同一概念ではありま
 
 ## 目標アーキテクチャ
 
-```text
-Human
-  │  委任・承認
-  ▼
-AI Agent Identity
-  │  JIT / 短命Credential要求
-  ▼
-Credential Broker / PAM / Secrets
-  │  最小権限Token
-  ▼
-Target System / API / SaaS
-  │
-  └── Audit → Human / Agent / Credential / Action を関連付け
-```
+<div class="sil-flow" role="group" aria-label="AI Agent identity architecture flow">
+  <div class="sil-flow-step">
+    <strong>Human</strong>
+    <span>委任・承認</span>
+  </div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step">
+    <strong>AI Agent Identity</strong>
+    <span>JIT / 短命Credential要求</span>
+  </div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step">
+    <strong>Credential Broker / PAM / Secrets</strong>
+    <span>最小権限Token</span>
+  </div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step sil-flow-step-action">
+    <strong>Target System / API / SaaS</strong>
+  </div>
+  <div class="sil-flow-loop">Audit → Human / Agent / Credential / Action を関連付け</div>
+</div>
 
 特に重要なのは**Standing Privilegeを減らすこと**です。長期有効なAPI Keyや広すぎるService AccountをAgentへ渡すと、Agentの誤動作、Prompt Injection、Credential漏えいのいずれでも被害範囲が大きくなります。
 

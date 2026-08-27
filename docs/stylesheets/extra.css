@@ -463,3 +463,82 @@ a.sil-topic:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* v0.11.2: semantic attack / process flow visualization */
+.sil-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.32rem;
+  max-width: 48rem;
+  margin: 1rem auto 1.4rem;
+}
+
+.sil-flow-step,
+.sil-flow-panel {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 0.55rem;
+  background: var(--md-default-bg-color);
+  text-align: center;
+}
+
+.sil-flow-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.16rem;
+}
+
+.sil-flow-step span {
+  color: var(--sil-muted);
+  font-size: 0.86rem;
+}
+
+.sil-flow-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.sil-flow-panel > div {
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 0.4rem;
+}
+
+.sil-flow-arrow {
+  align-self: center;
+  color: var(--sil-muted);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.sil-flow-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.sil-flow-step-impact,
+.sil-flow-step-action {
+  font-weight: 700;
+}
+
+.sil-flow-loop {
+  align-self: center;
+  max-width: 90%;
+  padding: 0.38rem 0.7rem;
+  color: var(--sil-muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .sil-flow-panel,
+  .sil-flow-branches {
+    grid-template-columns: 1fr;
+  }
+}

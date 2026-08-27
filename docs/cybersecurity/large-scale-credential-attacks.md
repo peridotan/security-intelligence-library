@@ -85,29 +85,29 @@ TheHatmanについては、Microsoft Entraテナントから情報を窃取し�
 
 ## 攻撃チェーンとして整理する
 
-```text
-過去の漏えいCredential / 攻撃で得たCredential
-                │
-                ▼
-        Password Spraying
-                │
-        ┌───────┴────────┐
-        ▼                ▼
-  Edge Device        Cloud Identity
- Fortinet等           Microsoft Entra等
-        │                │
-        └───────┬────────┘
-                ▼
-    MFA / Recovery / Sessionの突破を試行
-                │
-                ▼
-     設定ファイル・Secret・追加Credential
-                │
-                ▼
-   オフライン解析 / 権限昇格 / 永続化
-                │
-                └────→ 新たなCredentialを次の攻撃へ再利用
-```
+<div class="sil-flow" role="group" aria-label="Credential attack chain">
+  <div class="sil-flow-step"><strong>過去の漏えいCredential / 攻撃で得たCredential</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>Password Spraying</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-branches">
+    <div class="sil-flow-step">
+      <strong>Edge Device</strong>
+      <span>Fortinet等</span>
+    </div>
+    <div class="sil-flow-step">
+      <strong>Cloud Identity</strong>
+      <span>Microsoft Entra等</span>
+    </div>
+  </div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>MFA / Recovery / Sessionの突破を試行</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>設定ファイル・Secret・追加Credential</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>オフライン解析 / 権限昇格 / 永続化</strong></div>
+  <div class="sil-flow-loop">↺ 新たなCredentialを次の攻撃へ再利用</div>
+</div>
 
 ここで重要なのは、**Credential AttackとEdge Device Attackを別々に管理しないこと**です。設定ファイルからCredentialが得られると、ネットワーク機器の侵害がIdentity侵害へ変わり、逆にIdentity侵害から管理インターフェースへ横展開できます。
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.11.2
+
+- Replaced flow-like `text` code blocks with semantic attack/process flow UI.
+- Migrated four existing flow diagrams.
+- Added responsive branch, panel, and loop flow styles.
+- Added CI validation to prevent flow diagrams from regressing to plain code blocks.
+
 ## v0.11.1
 
 - Changed the Monthly Intelligence archive to a responsive 3/2/1-column grid.

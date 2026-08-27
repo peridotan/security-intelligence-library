@@ -86,19 +86,19 @@ NSAの警告はSiemens S7に焦点を当てていますが、同機関は**PLC�
 
 ## OTでAIが変える可能性のある工程
 
-```text
-Asset Discovery
-      ↓
-Protocol / Product Research
-      ↓
-Script Generation & Adaptation
-      ↓
-Reconnaissance
-      ↓
-Access / Manipulation Attempt
-      ↓
-Physical Process Impact
-```
+<div class="sil-flow" role="group" aria-label="OT attack process flow">
+  <div class="sil-flow-step"><strong>Asset Discovery</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>Protocol / Product Research</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>Script Generation &amp; Adaptation</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>Reconnaissance</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step"><strong>Access / Manipulation Attempt</strong></div>
+  <div class="sil-flow-arrow">↓</div>
+  <div class="sil-flow-step sil-flow-step-impact"><strong>Physical Process Impact</strong></div>
+</div>
 
 AIの影響がまず出やすいのは、前半の調査、コード作成、試行錯誤です。物理プロセスへの安全な操作・破壊には依然として設備固有の理解が必要ですが、**入口までの工数が下がるだけでも防御側の負担は増えます。**
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.14.1
+
+- Added March 2026 as a compact Pre-Q2 Signals layer in the Q2 2026 Quarterly Review.
+- Added optional `prelude_month` metadata and validation against the monthly archive.
+- Polished the June trajectory wording to `運用Architectureへ`.
+
 ## v0.14.0
 
 - Added March 2026 Monthly Intelligence with ten core themes.

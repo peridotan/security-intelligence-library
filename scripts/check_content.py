@@ -260,6 +260,14 @@ if quarterly_dir.exists():
         if not re.fullmatch(r"\d{4}-Q[1-4]", str(meta.get("period", ""))):
             errors.append(f"{rel}: quarterly period must be YYYY-QN")
         months = meta.get("months")
+        prelude_month = str(meta.get("prelude_month", "") or "").strip()
+        if prelude_month:
+            if not re.fullmatch(r"\d{4}-\d{2}", prelude_month):
+                errors.append(f"{rel}: invalid prelude_month `{prelude_month}`")
+            elif not (DOCS / "monthly" / f"{prelude_month}.md").exists():
+                errors.append(f"{rel}: missing prelude monthly source `{prelude_month}`")
+            if "sil-prequarter" not in body:
+                errors.append(f"{rel}: prelude_month is set but Pre-quarter Signals block is missing")
         if not isinstance(months, list) or len(months) != 3:
             errors.append(f"{rel}: quarterly review requires exactly 3 months")
         else:

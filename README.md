@@ -2,6 +2,13 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.14.1
+
+- Q2 2026 Quarterly Reviewへ `Pre-Q2 Signals · March 2026` を追加
+- MarchのAI / Identity / Supply Chain / Resilienceの4 SignalsをQ2へ接続
+- `prelude_month` metadataを追加し、対応するMonthly Sourceの存在をCIで検証
+- June trajectory cardの表現を `運用Architectureへ` に簡潔化
+
 ## v0.14.0
 
 - March 2026 Intelligenceを追加

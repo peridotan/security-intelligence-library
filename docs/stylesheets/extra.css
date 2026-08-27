@@ -602,3 +602,56 @@ a.sil-topic:hover {
     gap: 0.45rem 0.8rem;
   }
 }
+
+/* v0.14.1: pre-quarter signal context */
+.sil-prequarter {
+  margin: 1rem 0 1.7rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--sil-border);
+  border-left: 0.2rem solid var(--sil-blue);
+  border-radius: 0.65rem;
+  background: var(--sil-surface);
+}
+
+.sil-prequarter-kicker {
+  margin-bottom: 0.2rem;
+  color: var(--sil-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+}
+
+.sil-prequarter-title {
+  margin-bottom: 0.72rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.sil-prequarter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.48rem 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.sil-prequarter-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+}
+
+.sil-prequarter-grid span {
+  color: var(--sil-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.sil-prequarter-link {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .sil-prequarter-grid {
+    grid-template-columns: 1fr;
+  }
+}

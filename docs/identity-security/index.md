@@ -109,6 +109,21 @@ hide:
     <div class="sil-card-meta">March 2026 · Strategic · Confirmed · Identity / Fraud</div>
     <p>NIST NCCoEが2026年3月18日に公開した金融機関向けmDL実装Draftを基に、Verifiable Digital Credential、Threat Model、Privacy、Interoperabilityの意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/unit42-global-ir-2026.md">Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Palo Alto Networks Unit 42が2026年2月17日に公開したGlobal Incident Response Reportを基に、72分の攻撃速度、Identity、SaaS Supply Chain、Multi-su…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-agent-identity-standards-february.md">NISTがAI Agentを「Identity＋Standards」の問題として定義し始めた</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · Identity / AI Governance</div>
+    <p>NISTが2026年2月に公開したAI Agent Identity and Authorization Concept PaperとAI Agent Standards Initiativeを基に、識別・認可・監査・Non-repudiat…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/openai-trusted-access-cyber-february.md">Trusted Access for Cyber ― 高いCyber Capabilityを「IdentityとTrust」で段階開放する</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年2月5日に発表したTrusted Access for Cyberを基に、Frontier Cyber CapabilityのAccess Control、Identity Verification、Enterpris…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

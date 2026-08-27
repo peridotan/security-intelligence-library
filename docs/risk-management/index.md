@@ -196,6 +196,46 @@ hide:
     <div class="sil-card-meta">March 2026 · Strategic · Confirmed · Identity / Fraud</div>
     <p>NIST NCCoEが2026年3月18日に公開した金融機関向けmDL実装Draftを基に、Verifiable Digital Credential、Threat Model、Privacy、Interoperabilityの意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/dell-recoverpoint-zero-day-trust-plane.md">Dell RecoverPoint Zero-day ― 「Recovery製品」自体が長期Persistenceの足場になる</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · Business Continuity / Infrastructure</div>
+    <p>Mandiant / GTIGが2026年2月17日に公表したDell RecoverPoint for Virtual MachinesのCVE-2026-22769悪用を基に、Recovery Infrastructure、Default…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/anthropic-llm-discovered-zero-days.md">LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · AI Governance / Vulnerability Risk</div>
+    <p>Anthropicが2026年2月5日に公表したClaude Opus 4.6のZero-day探索結果を基に、500件超のHigh-severity Finding、Disclosure / Patch Capacity、Human Val…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/unit42-global-ir-2026.md">Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Palo Alto Networks Unit 42が2026年2月17日に公開したGlobal Incident Response Reportを基に、72分の攻撃速度、Identity、SaaS Supply Chain、Multi-su…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/japan-it-product-procurement-security-v21.md">IT製品調達セキュリティ要件リスト第2.1版 ― ProcurementをSecurity Controlとして使う</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Confirmed · Procurement / Product Security</div>
+    <p>2026年2月6日に更新されたIT製品の調達におけるセキュリティ要件リスト第2.1版とIPAガイドブックを基に、調達段階でSecurity Requirementを定義する意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-data-classification-sp1800-39.md">NIST SP 1800-39 Draft ― Zero Trust・PQC・Secure AIの前に「Dataを見つけて分類する」</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Confirmed · Data Security / AI Governance</div>
+    <p>NISTが2026年2月12日に公開したSP 1800-39 Draftを基に、Unstructured DataのDiscovery / ClassificationがZero Trust、Quantum-safe Cryptography…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/eu-ict-supply-chain-security-toolbox.md">EU ICT Supply Chain Security Toolbox ― Supplier Riskを「SecurityだけでなくDependency」で評価する</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · Supply Chain / Regulatory</div>
+    <p>EUが2026年2月13日に公表したICT Supply Chain Security Toolboxを基に、Critical Supplier、Multi-vendor Strategy、High-risk Supplier Depende…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/nist-ai800-3-evaluation-uncertainty.md">NIST AI 800-3 ― AI Benchmarkの「1つのScore」を経営判断に使いすぎない</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Measurement</div>
+    <p>NISTが2026年2月19日に公表したAI 800-3を基に、Benchmark Accuracy、Generalized Accuracy、不確実性、AI Capability評価の読み方を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/openai-trusted-access-cyber-february.md">Trusted Access for Cyber ― 高いCyber Capabilityを「IdentityとTrust」で段階開放する</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年2月5日に発表したTrusted Access for Cyberを基に、Frontier Cyber CapabilityのAccess Control、Identity Verification、Enterpris…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

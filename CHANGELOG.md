@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.15.0
+
+- Added February 2026 Monthly Intelligence with ten core themes.
+- Added coverage of LLM-discovered zero-days, capability-aware cyber access, AI agent identity/standards, AI evaluation uncertainty, adversarial AI, accelerated cross-surface incidents, recovery infrastructure compromise, data classification, EU ICT supply-chain security, and Japanese IT procurement security requirements.
+
 ## v0.14.1
 
 - Added March 2026 as a compact Pre-Q2 Signals layer in the Q2 2026 Quarterly Review.

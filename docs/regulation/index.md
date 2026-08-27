@@ -84,6 +84,16 @@ hide:
     <div class="sil-card-meta">March 2026 · Near-term · Confirmed · Supply Chain / Product Security</div>
     <p>経済産業省と国家サイバー統括室が2026年3月31日に策定したサイバーインフラ事業者向けガイドラインを基に、Software SupplierとCustomerの責務、調達、評価Checklistの意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="japan-it-product-procurement-security-v21.md">IT製品調達セキュリティ要件リスト第2.1版 ― ProcurementをSecurity Controlとして使う</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Confirmed · Procurement / Product Security</div>
+    <p>2026年2月6日に更新されたIT製品の調達におけるセキュリティ要件リスト第2.1版とIPAガイドブックを基に、調達段階でSecurity Requirementを定義する意味を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="eu-ict-supply-chain-security-toolbox.md">EU ICT Supply Chain Security Toolbox ― Supplier Riskを「SecurityだけでなくDependency」で評価する</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · Supply Chain / Regulatory</div>
+    <p>EUが2026年2月13日に公表したICT Supply Chain Security Toolboxを基に、Critical Supplier、Multi-vendor Strategy、High-risk Supplier Depende…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

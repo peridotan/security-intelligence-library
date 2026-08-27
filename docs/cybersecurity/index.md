@@ -154,6 +154,31 @@ hide:
     <div class="sil-card-meta">March 2026 · Near-term · Confirmed · Supply Chain / Product Security</div>
     <p>経済産業省と国家サイバー統括室が2026年3月31日に策定したサイバーインフラ事業者向けガイドラインを基に、Software SupplierとCustomerの責務、調達、評価Checklistの意味を整理する。</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="dell-recoverpoint-zero-day-trust-plane.md">Dell RecoverPoint Zero-day ― 「Recovery製品」自体が長期Persistenceの足場になる</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · Business Continuity / Infrastructure</div>
+    <p>Mandiant / GTIGが2026年2月17日に公表したDell RecoverPoint for Virtual MachinesのCVE-2026-22769悪用を基に、Recovery Infrastructure、Default…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/anthropic-llm-discovered-zero-days.md">LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · AI Governance / Vulnerability Risk</div>
+    <p>Anthropicが2026年2月5日に公表したClaude Opus 4.6のZero-day探索結果を基に、500件超のHigh-severity Finding、Disclosure / Patch Capacity、Human Val…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="unit42-global-ir-2026.md">Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Palo Alto Networks Unit 42が2026年2月17日に公開したGlobal Incident Response Reportを基に、72分の攻撃速度、Identity、SaaS Supply Chain、Multi-su…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="gtig-ai-threat-tracker-february.md">GTIG AI Threat Tracker ― AIは攻撃Toolであると同時に「盗まれるAsset」になった</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Observed · AI Security / Intellectual Property</div>
+    <p>Google Threat Intelligence Groupの2026年2月AI Threat Trackerを基に、Model Extraction / Distillation、Threat ActorのAI利用、AI-enabled…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/nist-data-classification-sp1800-39.md">NIST SP 1800-39 Draft ― Zero Trust・PQC・Secure AIの前に「Dataを見つけて分類する」</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Confirmed · Data Security / AI Governance</div>
+    <p>NISTが2026年2月12日に公開したSP 1800-39 Draftを基に、Unstructured DataのDiscovery / ClassificationがZero Trust、Quantum-safe Cryptography…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

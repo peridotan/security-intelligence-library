@@ -2,6 +2,21 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.15.0
+
+- February 2026 Intelligenceを追加
+- February 2026 Executive Summaryと10 Core Themesを追加
+- Anthropic LLM-discovered Zero-days記事を追加
+- OpenAI Trusted Access for Cyber（February）記事を追加
+- NIST Agent Identity + Standards記事を追加
+- NIST AI 800-3 Evaluation Uncertainty記事を追加
+- GTIG AI Threat Tracker（February）記事を追加
+- Unit 42 Global Incident Response 2026記事を追加
+- Dell RecoverPoint Zero-day / Recovery Infrastructure記事を追加
+- NIST SP 1800-39 Data Classification記事を追加
+- EU ICT Supply Chain Security Toolbox記事を追加
+- IT製品調達セキュリティ要件リスト第2.1版記事を追加
+
 ## v0.14.1
 
 - Q2 2026 Quarterly Reviewへ `Pre-Q2 Signals · March 2026` を追加

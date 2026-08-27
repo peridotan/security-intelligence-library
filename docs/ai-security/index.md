@@ -139,6 +139,36 @@ hide:
     <div class="sil-card-meta">March 2026 · Strategic · Confirmed · AI Governance / Compliance</div>
     <p>NISTが2026年3月9日に公表したDeployed AI SystemsのMonitoring課題を基に、Functionality、Operations、Human Factors、Security、Compliance、Large-s…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="anthropic-llm-discovered-zero-days.md">LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める</a>
+    <div class="sil-card-meta">February 2026 · Immediate · Observed · AI Governance / Vulnerability Risk</div>
+    <p>Anthropicが2026年2月5日に公表したClaude Opus 4.6のZero-day探索結果を基に、500件超のHigh-severity Finding、Disclosure / Patch Capacity、Human Val…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/gtig-ai-threat-tracker-february.md">GTIG AI Threat Tracker ― AIは攻撃Toolであると同時に「盗まれるAsset」になった</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Observed · AI Security / Intellectual Property</div>
+    <p>Google Threat Intelligence Groupの2026年2月AI Threat Trackerを基に、Model Extraction / Distillation、Threat ActorのAI利用、AI-enabled…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/nist-data-classification-sp1800-39.md">NIST SP 1800-39 Draft ― Zero Trust・PQC・Secure AIの前に「Dataを見つけて分類する」</a>
+    <div class="sil-card-meta">February 2026 · Near-term · Confirmed · Data Security / AI Governance</div>
+    <p>NISTが2026年2月12日に公開したSP 1800-39 Draftを基に、Unstructured DataのDiscovery / ClassificationがZero Trust、Quantum-safe Cryptography…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-ai800-3-evaluation-uncertainty.md">NIST AI 800-3 ― AI Benchmarkの「1つのScore」を経営判断に使いすぎない</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Measurement</div>
+    <p>NISTが2026年2月19日に公表したAI 800-3を基に、Benchmark Accuracy、Generalized Accuracy、不確実性、AI Capability評価の読み方を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/nist-agent-identity-standards-february.md">NISTがAI Agentを「Identity＋Standards」の問題として定義し始めた</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · Identity / AI Governance</div>
+    <p>NISTが2026年2月に公開したAI Agent Identity and Authorization Concept PaperとAI Agent Standards Initiativeを基に、識別・認可・監査・Non-repudiat…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="openai-trusted-access-cyber-february.md">Trusted Access for Cyber ― 高いCyber Capabilityを「IdentityとTrust」で段階開放する</a>
+    <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Identity</div>
+    <p>OpenAIが2026年2月5日に発表したTrusted Access for Cyberを基に、Frontier Cyber CapabilityのAccess Control、Identity Verification、Enterpris…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

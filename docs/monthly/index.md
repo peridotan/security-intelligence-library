@@ -46,5 +46,11 @@ hide:
     <p>AI Tradecraft、AiTM / Vishing、AI Monitoring、Digital Identity、Cyber ERM、SCS、Software Supplier Responsibility、Recovery Denialを横断したQ2直前の月次Executive…</p>
     <a class="sil-card-more" href="2026-03.md">月次サマリーを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="2026-02.md">February 2026 Intelligence</a>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <p>Frontier AIのZero-day探索、Trusted Cyber Access、Agent Identity / Standards、AI評価、攻撃速度・Identity・Supply Chain、Recovery Infrastructure、Data Classificati…</p>
+    <a class="sil-card-more" href="2026-02.md">月次サマリーを見る →</a>
+  </article>
 </div>
 <!-- AUTO:MONTHLY_INDEX:END -->

@@ -2,6 +2,22 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.16.0
+
+- January 2026 Intelligenceを追加
+- January 2026 Executive Summaryと10 Core Themesを追加
+- NIST CAISI AI Agent Security RFI記事を追加
+- Microsoft AI Agent Runtime Defense記事を追加
+- OpenAI AI Agent Link / URL Data Exfiltration記事を追加
+- LangGrinch / AI Application Supply Chain記事を追加
+- Microsoft Data Security Index 2026記事を追加
+- ShinyHunters-branded SaaS Data Theft記事を追加
+- Complex Routing / Domain Spoofing記事を追加
+- RedVDS Cybercrime Infrastructure記事を追加
+- EU Cybersecurity Package 2026記事を追加
+- 経済安全保障経営ガイドライン記事を追加
+- ShinyHunters記事にSelective MITRE ATT&CK® Mappingを追加
+
 ## v0.15.0
 
 - February 2026 Intelligenceを追加

@@ -124,6 +124,16 @@ hide:
     <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Identity</div>
     <p>OpenAIが2026年2月5日に発表したTrusted Access for Cyberを基に、Frontier Cyber CapabilityのAccess Control、Identity Verification、Enterpris…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="complex-routing-domain-spoofing.md">Domain Spoofing via Complex Routing ― 「社内ドメインだから安全」というTrustをMail設計が崩す</a>
+    <div class="sil-card-meta">January 2026 · Immediate · Observed · Identity / Email Security</div>
+    <p>Microsoft Threat Intelligenceが2026年1月6日に公開したComplex RoutingとSpoof Protection Misconfigurationの悪用を基に、DMARC、SPF、Third-party…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="shinyhunters-saas-data-theft.md">ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む</a>
+    <div class="sil-card-meta">January 2026 · Immediate · Observed · Identity / SaaS Security</div>
+    <p>Mandiant / GTIGが2026年1月30日に公開したShinyHunters-branded SaaS Data Theftを基に、Vishing、SSO Credential、MFA Device Enrollment、SaaS…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

@@ -179,6 +179,31 @@ hide:
     <div class="sil-card-meta">February 2026 · Near-term · Confirmed · Data Security / AI Governance</div>
     <p>NISTが2026年2月12日に公開したSP 1800-39 Draftを基に、Unstructured DataのDiscovery / ClassificationがZero Trust、Quantum-safe Cryptography…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/complex-routing-domain-spoofing.md">Domain Spoofing via Complex Routing ― 「社内ドメインだから安全」というTrustをMail設計が崩す</a>
+    <div class="sil-card-meta">January 2026 · Immediate · Observed · Identity / Email Security</div>
+    <p>Microsoft Threat Intelligenceが2026年1月6日に公開したComplex RoutingとSpoof Protection Misconfigurationの悪用を基に、DMARC、SPF、Third-party…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/langgrinch-ai-application-supply-chain.md">LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる</a>
+    <div class="sil-card-meta">January 2026 · Immediate · Confirmed · Software Security / AI Security</div>
+    <p>Microsoftが2026年1月30日に公開したLangChain Core CVE-2025-68664のCase Studyを基に、AI Framework、Serialization Injection、Secret Exposure…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/shinyhunters-saas-data-theft.md">ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む</a>
+    <div class="sil-card-meta">January 2026 · Immediate · Observed · Identity / SaaS Security</div>
+    <p>Mandiant / GTIGが2026年1月30日に公開したShinyHunters-branded SaaS Data Theftを基に、Vishing、SSO Credential、MFA Device Enrollment、SaaS…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/microsoft-agent-runtime-defense.md">AI Agent Runtime Defense ― Tool Invocationを「Code Execution」と同じHigh-risk Eventとして守る</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Assessment · AI Governance / Operational Security</div>
+    <p>Microsoft Defender Security Researchが2026年1月23日に公開したAgent Runtime Securityの研究を基に、Tool Invocation、Generative Orchestration…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="redvds-cybercrime-infrastructure.md">RedVDS ― CybercrimeのScaleを支える「安価なInfrastructure-as-a-Service」</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Observed · Threat Landscape / Financial Fraud</div>
+    <p>Microsoft Threat Intelligenceが2026年1月14日に公開したRedVDS調査を基に、VDS InfrastructureがBEC、Mass Phishing、Account Takeover、Financial…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

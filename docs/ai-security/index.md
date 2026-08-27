@@ -169,6 +169,31 @@ hide:
     <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Identity</div>
     <p>OpenAIが2026年2月5日に発表したTrusted Access for Cyberを基に、Frontier Cyber CapabilityのAccess Control、Identity Verification、Enterpris…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="langgrinch-ai-application-supply-chain.md">LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる</a>
+    <div class="sil-card-meta">January 2026 · Immediate · Confirmed · Software Security / AI Security</div>
+    <p>Microsoftが2026年1月30日に公開したLangChain Core CVE-2025-68664のCase Studyを基に、AI Framework、Serialization Injection、Secret Exposure…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="openai-agent-link-data-exfiltration.md">AI Agent Link Safety ― URLそのものがData Exfiltration Channelになる</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Confirmed · AI Governance / Data Security</div>
+    <p>OpenAIが2026年1月28日に公開したAI AgentのURL-based Data Exfiltration対策を基に、Prompt Injection、Redirect、Public URL Verification、User Co…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="microsoft-agent-runtime-defense.md">AI Agent Runtime Defense ― Tool Invocationを「Code Execution」と同じHigh-risk Eventとして守る</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Assessment · AI Governance / Operational Security</div>
+    <p>Microsoft Defender Security Researchが2026年1月23日に公開したAgent Runtime Securityの研究を基に、Tool Invocation、Generative Orchestration…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/microsoft-data-security-index-2026.md">Data Security Index 2026 ― AI導入Riskの中心が「Tool利用」からData Flowへ移る</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Observed · Data Security / AI Governance</div>
+    <p>Microsoftが2026年1月29日に公開したData Security Indexを基に、生成AI関連Data Incident、AI-specific Control、DSPM、AI for Data SecurityのSurvey結…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-caisi-agent-security-rfi-january.md">NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義</a>
+    <div class="sil-card-meta">January 2026 · Strategic · Confirmed · AI Governance / Operational Security</div>
+    <p>NIST CAISIが2026年1月12日に公開したAI Agent Security RFIを基に、Indirect Prompt Injection、Data Poisoning、Agent Access、Monitoring、Secur…</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

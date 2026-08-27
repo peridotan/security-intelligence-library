@@ -94,6 +94,16 @@ hide:
     <div class="sil-card-meta">February 2026 · Strategic · Confirmed · Supply Chain / Regulatory</div>
     <p>EUが2026年2月13日に公表したICT Supply Chain Security Toolboxを基に、Critical Supplier、Multi-vendor Strategy、High-risk Supplier Depende…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="eu-cybersecurity-package-january-2026.md">EU Cybersecurity Package 2026 ― Cybersecurity ActとNIS2を「Supply Chain＋Simplification」で再設計</a>
+    <div class="sil-card-meta">January 2026 · Strategic · Confirmed · Regulatory / Supply Chain</div>
+    <p>欧州委員会が2026年1月20日に提案したCybersecurity Packageを基に、改正Cybersecurity Act、ICT Supply Chain Framework、Certification、ENISA強化、NIS2簡素…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/japan-economic-security-management-guidelines.md">経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う</a>
+    <div class="sil-card-meta">January 2026 · Strategic · Confirmed · Enterprise Risk / Supply Chain</div>
+    <p>経済産業省が2026年1月23日に公表した経済安全保障経営ガイドライン第1版を基に、自律性・不可欠性、Risk Scenario、Governance、Supply Chain、Technology Protectionを経営視点で整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

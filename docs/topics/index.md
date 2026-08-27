@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>70</strong> Articles</span>
+    <span><strong>80</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>286</strong> Detailed Tags</span>
+    <span><strong>336</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -24,9 +24,9 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">AI Security</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#ai-agent-security">AI Agent Security <span class="sil-topic-count">9</span></a>
+<a class="sil-topic" href="#ai-agent-security">AI Agent Security <span class="sil-topic-count">13</span></a>
 <a class="sil-topic" href="#mcp-security">MCP Security <span class="sil-topic-count">2</span></a>
-<a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">13</span></a>
+<a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">11</span></a>
 <a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">2</span></a>
@@ -36,27 +36,27 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Identity</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">20</span></a>
+<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">22</span></a>
 <a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">10</span></a>
+<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">13</span></a>
 <a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">3</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">9</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">10</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">5</span></a>
+<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Governance &amp; Risk</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">13</span></a>
-<a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">15</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">28</span></a>
+<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">16</span></a>
+<a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">17</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">33</span></a>
 </div>
 </section>
 </div>
@@ -76,6 +76,10 @@ AI Agentの自律性、Tool利用、Sandbox、Identity、停止・監視を横�
 - [NIST AI Agent Security分析 ― 従来のCybersecurity原則だけでは足りない理由](../ai-security/nist-ai-agent-security-rfi-analysis.md) — May 2026 · Near-term · Confirmed
 - [Singapore Agentic AI Governance v1.5 ― 「自律性をRisk Tierで制限する」実装例](../regulation/singapore-agentic-ai-governance-v15.md) — May 2026 · Near-term · Confirmed
 - [NISTがAI Agentを「Identity＋Standards」の問題として定義し始めた](../identity-security/nist-agent-identity-standards-february.md) — February 2026 · Strategic · Confirmed
+- [LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる](../ai-security/langgrinch-ai-application-supply-chain.md) — January 2026 · Immediate · Confirmed
+- [AI Agent Link Safety ― URLそのものがData Exfiltration Channelになる](../ai-security/openai-agent-link-data-exfiltration.md) — January 2026 · Near-term · Confirmed
+- [AI Agent Runtime Defense ― Tool Invocationを「Code Execution」と同じHigh-risk Eventとして守る](../ai-security/microsoft-agent-runtime-defense.md) — January 2026 · Near-term · Assessment
+- [NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義](../ai-security/nist-caisi-agent-security-rfi-january.md) — January 2026 · Strategic · Confirmed
 
 ### MCP Security {#mcp-security}
 
@@ -101,6 +105,10 @@ MCP Server / Tool / Metadata / Local Control Planeに関するSecurity。
 - [NIST AI 800-3 ― AI Benchmarkの「1つのScore」を経営判断に使いすぎない](../ai-security/nist-ai800-3-evaluation-uncertainty.md) — February 2026 · Strategic · Confirmed
 - [NISTがAI Agentを「Identity＋Standards」の問題として定義し始めた](../identity-security/nist-agent-identity-standards-february.md) — February 2026 · Strategic · Confirmed
 - [Trusted Access for Cyber ― 高いCyber Capabilityを「IdentityとTrust」で段階開放する](../ai-security/openai-trusted-access-cyber-february.md) — February 2026 · Strategic · Confirmed
+- [AI Agent Link Safety ― URLそのものがData Exfiltration Channelになる](../ai-security/openai-agent-link-data-exfiltration.md) — January 2026 · Near-term · Confirmed
+- [AI Agent Runtime Defense ― Tool Invocationを「Code Execution」と同じHigh-risk Eventとして守る](../ai-security/microsoft-agent-runtime-defense.md) — January 2026 · Near-term · Assessment
+- [Data Security Index 2026 ― AI導入Riskの中心が「Tool利用」からData Flowへ移る](../risk-management/microsoft-data-security-index-2026.md) — January 2026 · Near-term · Observed
+- [NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義](../ai-security/nist-caisi-agent-security-rfi-january.md) — January 2026 · Strategic · Confirmed
 
 ### AI Cyber Capability {#ai-cyber-capability}
 
@@ -171,6 +179,8 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 - [NIST SP 1800-42 Draft ― Digital Identityを金融の実取引へ持ち込むReference Architecture](../identity-security/nist-mdl-financial-institutions.md) — March 2026 · Strategic · Confirmed
 - [NISTがAI Agentを「Identity＋Standards」の問題として定義し始めた](../identity-security/nist-agent-identity-standards-february.md) — February 2026 · Strategic · Confirmed
 - [Trusted Access for Cyber ― 高いCyber Capabilityを「IdentityとTrust」で段階開放する](../ai-security/openai-trusted-access-cyber-february.md) — February 2026 · Strategic · Confirmed
+- [Domain Spoofing via Complex Routing ― 「社内ドメインだから安全」というTrustをMail設計が崩す](../identity-security/complex-routing-domain-spoofing.md) — January 2026 · Immediate · Observed
+- [ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む](../identity-security/shinyhunters-saas-data-theft.md) — January 2026 · Immediate · Observed
 
 ### Passkey & Phishing-resistant MFA {#passkey-phishing-resistant-mfa}
 
@@ -197,6 +207,9 @@ Password Spraying、MFA Fatigue、漏えい資格情報、Recovery悪用。
 - [Teams Vishing ― 「IT Supportを信じる」ことがInitial Accessになる](../identity-security/teams-vishing-quick-assist.md) — March 2026 · Immediate · Observed
 - [Tycoon2FA ― MFA突破がPhishing-as-a-Serviceとして「産業化」した](../identity-security/tycoon2fa-aitm-phaas.md) — March 2026 · Immediate · Observed
 - [Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」](../cybersecurity/unit42-global-ir-2026.md) — February 2026 · Immediate · Observed
+- [Domain Spoofing via Complex Routing ― 「社内ドメインだから安全」というTrustをMail設計が崩す](../identity-security/complex-routing-domain-spoofing.md) — January 2026 · Immediate · Observed
+- [ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む](../identity-security/shinyhunters-saas-data-theft.md) — January 2026 · Immediate · Observed
+- [RedVDS ― CybercrimeのScaleを支える「安価なInfrastructure-as-a-Service」](../cybersecurity/redvds-cybercrime-infrastructure.md) — January 2026 · Near-term · Observed
 
 ### PQC / Crypto Agility {#pqc-crypto-agility}
 
@@ -223,6 +236,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 - [Claude Mythos Preview ― AIのExploit Development能力が一段上がった4月](../ai-security/claude-mythos-preview-cyber-capability.md) — April 2026 · Immediate · Observed
 - [Dell RecoverPoint Zero-day ― 「Recovery製品」自体が長期Persistenceの足場になる](../cybersecurity/dell-recoverpoint-zero-day-trust-plane.md) — February 2026 · Immediate · Observed
 - [LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める](../ai-security/anthropic-llm-discovered-zero-days.md) — February 2026 · Immediate · Observed
+- [LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる](../ai-security/langgrinch-ai-application-supply-chain.md) — January 2026 · Immediate · Confirmed
 
 ### Ransomware & Resilience {#ransomware-resilience}
 
@@ -255,6 +269,7 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 - [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate · Observed
 - [Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した](../cybersecurity/openai-axios-signing-supply-chain.md) — April 2026 · Immediate · Confirmed
 - [サイバーインフラ事業者ガイドライン ― Software Securityを「Vendor責任＋Customer責任」で設計する](../regulation/japan-cyber-infrastructure-provider-guideline.md) — March 2026 · Near-term · Confirmed
+- [LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる](../ai-security/langgrinch-ai-application-supply-chain.md) — January 2026 · Immediate · Confirmed
 
 <div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 
@@ -277,6 +292,9 @@ Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 - [Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」](../cybersecurity/unit42-global-ir-2026.md) — February 2026 · Immediate · Observed
 - [IT製品調達セキュリティ要件リスト第2.1版 ― ProcurementをSecurity Controlとして使う](../regulation/japan-it-product-procurement-security-v21.md) — February 2026 · Near-term · Confirmed
 - [EU ICT Supply Chain Security Toolbox ― Supplier Riskを「SecurityだけでなくDependency」で評価する](../regulation/eu-ict-supply-chain-security-toolbox.md) — February 2026 · Strategic · Confirmed
+- [ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む](../identity-security/shinyhunters-saas-data-theft.md) — January 2026 · Immediate · Observed
+- [EU Cybersecurity Package 2026 ― Cybersecurity ActとNIS2を「Supply Chain＋Simplification」で再設計](../regulation/eu-cybersecurity-package-january-2026.md) — January 2026 · Strategic · Confirmed
+- [経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う](../risk-management/japan-economic-security-management-guidelines.md) — January 2026 · Strategic · Confirmed
 
 ### Regulation & Policy {#regulation-policy}
 
@@ -297,6 +315,8 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 - [サイバーインフラ事業者ガイドライン ― Software Securityを「Vendor責任＋Customer責任」で設計する](../regulation/japan-cyber-infrastructure-provider-guideline.md) — March 2026 · Near-term · Confirmed
 - [IT製品調達セキュリティ要件リスト第2.1版 ― ProcurementをSecurity Controlとして使う](../regulation/japan-it-product-procurement-security-v21.md) — February 2026 · Near-term · Confirmed
 - [EU ICT Supply Chain Security Toolbox ― Supplier Riskを「SecurityだけでなくDependency」で評価する](../regulation/eu-ict-supply-chain-security-toolbox.md) — February 2026 · Strategic · Confirmed
+- [EU Cybersecurity Package 2026 ― Cybersecurity ActとNIS2を「Supply Chain＋Simplification」で再設計](../regulation/eu-cybersecurity-package-january-2026.md) — January 2026 · Strategic · Confirmed
+- [経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う](../risk-management/japan-economic-security-management-guidelines.md) — January 2026 · Strategic · Confirmed
 
 ### Security Governance & Risk Management {#security-governance-risk}
 
@@ -330,6 +350,11 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 - [NIST SP 1800-39 Draft ― Zero Trust・PQC・Secure AIの前に「Dataを見つけて分類する」](../risk-management/nist-data-classification-sp1800-39.md) — February 2026 · Near-term · Confirmed
 - [EU ICT Supply Chain Security Toolbox ― Supplier Riskを「SecurityだけでなくDependency」で評価する](../regulation/eu-ict-supply-chain-security-toolbox.md) — February 2026 · Strategic · Confirmed
 - [NIST AI 800-3 ― AI Benchmarkの「1つのScore」を経営判断に使いすぎない](../ai-security/nist-ai800-3-evaluation-uncertainty.md) — February 2026 · Strategic · Confirmed
+- [Data Security Index 2026 ― AI導入Riskの中心が「Tool利用」からData Flowへ移る](../risk-management/microsoft-data-security-index-2026.md) — January 2026 · Near-term · Observed
+- [RedVDS ― CybercrimeのScaleを支える「安価なInfrastructure-as-a-Service」](../cybersecurity/redvds-cybercrime-infrastructure.md) — January 2026 · Near-term · Observed
+- [EU Cybersecurity Package 2026 ― Cybersecurity ActとNIS2を「Supply Chain＋Simplification」で再設計](../regulation/eu-cybersecurity-package-january-2026.md) — January 2026 · Strategic · Confirmed
+- [NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義](../ai-security/nist-caisi-agent-security-rfi-january.md) — January 2026 · Strategic · Confirmed
+- [経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う](../risk-management/japan-economic-security-management-guidelines.md) — January 2026 · Strategic · Confirmed
 
 <div class="sil-topic-back"><a href="#topic-directory">↑ Topic Directoryへ戻る</a></div>
 <!-- AUTO:TOPICS:END -->

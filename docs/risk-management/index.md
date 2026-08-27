@@ -236,6 +236,36 @@ hide:
     <div class="sil-card-meta">February 2026 · Strategic · Confirmed · AI Governance / Identity</div>
     <p>OpenAIが2026年2月5日に発表したTrusted Access for Cyberを基に、Frontier Cyber CapabilityのAccess Control、Identity Verification、Enterpris…</p>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/openai-agent-link-data-exfiltration.md">AI Agent Link Safety ― URLそのものがData Exfiltration Channelになる</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Confirmed · AI Governance / Data Security</div>
+    <p>OpenAIが2026年1月28日に公開したAI AgentのURL-based Data Exfiltration対策を基に、Prompt Injection、Redirect、Public URL Verification、User Co…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="microsoft-data-security-index-2026.md">Data Security Index 2026 ― AI導入Riskの中心が「Tool利用」からData Flowへ移る</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Observed · Data Security / AI Governance</div>
+    <p>Microsoftが2026年1月29日に公開したData Security Indexを基に、生成AI関連Data Incident、AI-specific Control、DSPM、AI for Data SecurityのSurvey結…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/redvds-cybercrime-infrastructure.md">RedVDS ― CybercrimeのScaleを支える「安価なInfrastructure-as-a-Service」</a>
+    <div class="sil-card-meta">January 2026 · Near-term · Observed · Threat Landscape / Financial Fraud</div>
+    <p>Microsoft Threat Intelligenceが2026年1月14日に公開したRedVDS調査を基に、VDS InfrastructureがBEC、Mass Phishing、Account Takeover、Financial…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/eu-cybersecurity-package-january-2026.md">EU Cybersecurity Package 2026 ― Cybersecurity ActとNIS2を「Supply Chain＋Simplification」で再設計</a>
+    <div class="sil-card-meta">January 2026 · Strategic · Confirmed · Regulatory / Supply Chain</div>
+    <p>欧州委員会が2026年1月20日に提案したCybersecurity Packageを基に、改正Cybersecurity Act、ICT Supply Chain Framework、Certification、ENISA強化、NIS2簡素…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/nist-caisi-agent-security-rfi-january.md">NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義</a>
+    <div class="sil-card-meta">January 2026 · Strategic · Confirmed · AI Governance / Operational Security</div>
+    <p>NIST CAISIが2026年1月12日に公開したAI Agent Security RFIを基に、Indirect Prompt Injection、Data Poisoning、Agent Access、Monitoring、Secur…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="japan-economic-security-management-guidelines.md">経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う</a>
+    <div class="sil-card-meta">January 2026 · Strategic · Confirmed · Enterprise Risk / Supply Chain</div>
+    <p>経済産業省が2026年1月23日に公表した経済安全保障経営ガイドライン第1版を基に、自律性・不可欠性、Risk Scenario、Governance、Supply Chain、Technology Protectionを経営視点で整理する。</p>
+  </article>
 </div>
 <!-- AUTO:CATEGORY_ARTICLES:END -->
 

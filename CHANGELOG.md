@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.16.0
+
+- Added January 2026 Monthly Intelligence with ten core themes.
+- Added coverage of NIST AI-agent security, runtime enforcement, URL-based agent exfiltration, AI application supply-chain risk, AI/data security, SaaS identity theft, domain spoofing through complex mail routing, cybercrime infrastructure, the EU Cybersecurity Package, and Japan's Economic Security Management Guidelines.
+- Added selective MITRE ATT&CK® mapping for ShinyHunters-branded SaaS data theft.
+
 ## v0.15.0
 
 - Added February 2026 Monthly Intelligence with ten core themes.

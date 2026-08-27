@@ -52,5 +52,11 @@ hide:
     <p>Frontier AIのZero-day探索、Trusted Cyber Access、Agent Identity / Standards、AI評価、攻撃速度・Identity・Supply Chain、Recovery Infrastructure、Data Classificati…</p>
     <a class="sil-card-more" href="2026-02.md">月次サマリーを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="2026-01.md">January 2026 Intelligence</a>
+    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <p>AI Agent Securityの独立、Runtime / Link / Frameworkまで広がるAI攻撃面、Identity / SaaS Trustの悪用、Cybercrime Infrastructure、EU・日本のSupply Chain / 経済安全保障を横断した月次E…</p>
+    <a class="sil-card-more" href="2026-01.md">月次サマリーを見る →</a>
+  </article>
 </div>
 <!-- AUTO:MONTHLY_INDEX:END -->

@@ -6,7 +6,24 @@ hide:
 
 # About / Editorial Policy
 
-Security Intelligence Libraryは、公開情報に基づくサイバーセキュリティ、Identity、AI Security、規制・リスクマネジメントの調査・分析を、Markdownで蓄積する静的ナレッジベースです。
+## このLibraryについて
+
+Security Intelligence Libraryは、公開情報に基づくサイバーセキュリティ、AI、Identity、規制・リスクマネジメントの調査・分析を、**経営判断とセキュリティ実務に使えるナレッジとして蓄積する静的ナレッジベース**です。
+
+技術・脅威・規制を個別のニュースとして並べるのではなく、それらが企業のリスク、Security Operating Model、投資、優先順位、意思決定にどうつながるかを整理します。記事はMarkdownを原本とし、個別分析をMonthly Intelligence、Quarterly Reviewへ再編集することで、短期の出来事と中期の構造変化を同じLibraryから追跡できるようにしています。
+
+本Libraryでは、事実・観測・分析をできるだけ混同しないため、`Confirmed`、`Observed`、`Mixed`、`Assessment`のEvidence分類を用います。重要な事実、数値、制度変更、技術仕様は一次情報または信頼できる公開情報で確認し、主要な根拠へたどれる形で残します。
+
+### 各ページの役割
+
+| ページ | 役割 |
+| --- | --- |
+| **Home** | 現在注目すべきSecurity Intelligenceへの入口 |
+| **Monthly Intelligence** | その月に何が重要だったかをCore Themesとして整理 |
+| **Quarterly Review** | 3か月を横断し、何が構造的に変わったかを再分析 |
+| **Cybersecurity / Identity Security / AI Security / Regulation / Management View** | Domain別に記事を探索 |
+| **Topics / Tags** | 複数記事を主要論点・詳細Keywordから横断探索 |
+| **About** | Editorial Policy、Evidence、AI利用、権利、鮮度管理等の方法論を説明 |
 
 ## Editorial Policy
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.2
+
+- Simplified the Home hero into a concise value proposition.
+- Moved the detailed library purpose and methodology context to About / Editorial Policy.
+- Added a clear page-role map for Home, Monthly, Quarterly, domain indexes, Topics/Tags, and About.
+- No article, evidence, monthly, or quarterly analysis changes.
+
 ## v0.17.1
 
 - Prevented quarterly review dates from breaking inside `Reviewed YYYY-MM-DD`.

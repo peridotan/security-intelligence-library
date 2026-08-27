@@ -7,8 +7,8 @@ hide:
 
 <section class="sil-hero">
   <div class="sil-kicker">Cybersecurity · AI · Identity · Regulation · Management</div>
-  <h1>Security Intelligence Library</h1>
-  <p>公開情報に基づくサイバーセキュリティ、AI、Identity、規制の調査・分析を、<strong>経営判断とセキュリティ実務に使えるナレッジとして蓄積するライブラリ</strong>です。技術・脅威・規制を個別に見るのではなく、それらが企業のリスクや意思決定にどうつながるかを整理します。</p>
+  <h1>Security Intelligence for Decision Making</h1>
+  <p>サイバーセキュリティ、AI、Identity、規制の変化を、<strong>経営判断とセキュリティ実務につながる形で整理するナレッジベース。</strong></p>
 </section>
 
 ## Current Intelligence

@@ -24,8 +24,8 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  margin: 0.4rem 0 2rem;
-  padding: 2.1rem 2.2rem;
+  margin: 0.4rem 0 1.8rem;
+  padding: 1.8rem 2.2rem;
   border: 1px solid var(--sil-border);
   border-radius: 0.8rem;
   background: var(--sil-blue-soft);
@@ -38,10 +38,10 @@
 }
 
 .sil-hero p {
-  max-width: 54rem;
+  max-width: 50rem;
   margin: 0;
   font-size: 1.03rem;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .sil-kicker {

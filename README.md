@@ -2,6 +2,15 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.17.2
+
+- Home Heroを短いValue Propositionへ変更
+- Hero titleを `Security Intelligence for Decision Making` へ変更
+- 詳細なLibrary説明をAbout / Editorial Policyへ移動
+- AboutにHome / Monthly / Quarterly / Domain / Topicsの役割分担を追加
+- Heroの余白を短文化に合わせて微調整
+- Article / Evidence / Monthly / Quarterly contentの変更なし
+
 ## v0.17.1
 
 - Quarterly Review一覧のReviewed日付を途中改行しない表示へ修正

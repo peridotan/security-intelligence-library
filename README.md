@@ -2,6 +2,15 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.17.0
+
+- Q1 2026 Security Intelligence Reviewを追加
+- January / February / Marchの30 Core Themesを7つの構造変化へ再分析
+- Q1 Evidence Mix（Confirmed 17 / Observed 12 / Assessment 1）を表示
+- Q1 → Q2のTrust Architecture進化を整理
+- Quarterly CIの必須Section検証をQ1〜Q4共通ロジックへ改善
+- Quarterly Review一覧とHomeへQ1 Reviewを自動反映
+
 ## v0.16.0
 
 - January 2026 Intelligenceを追加

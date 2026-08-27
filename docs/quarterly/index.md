@@ -16,5 +16,11 @@ hide:
     <p>Frontier AI、AI Agent、Identity、Software Supply Chain、OT Resilience、Security Assurance、PQCの7構造変化を四半期視点で整理。</p>
     <a class="sil-card-more" href="2026-q2.md">四半期レビューを見る →</a>
   </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="2026-q1.md">Q1 2026 Security Intelligence Review</a>
+    <div class="sil-card-meta">January 2026 · February 2026 · March 2026 · Reviewed 2026-08-27</div>
+    <p>AI Agent、AI Cyber Capability、Identity Trust、Cybercrime Industrialization、Data Security、Supply Chain、Recovery / Enterprise Riskの7構造変化を四半期視点で整理。</p>
+    <a class="sil-card-more" href="2026-q1.md">四半期レビューを見る →</a>
+  </article>
 </div>
 <!-- AUTO:QUARTERLY_INDEX:END -->

@@ -284,10 +284,14 @@ if quarterly_dir.exists():
             date.fromisoformat(as_iso(meta.get("reviewed")))
         except Exception:
             errors.append(f"{rel}: `reviewed` must be YYYY-MM-DD")
-        for section in (
-            "## Executive Summary", "## Q2の7つの構造変化",
-            "## Management Priorities", "## Evidence Basis"
-        ):
+        quarter = str(meta.get("period", "")).split("-", 1)[-1]
+        required_quarter_sections = (
+            "## Executive Summary",
+            f"## {quarter}の7つの構造変化",
+            "## Management Priorities",
+            "## Evidence Basis",
+        )
+        for section in required_quarter_sections:
             if section not in body:
                 errors.append(f"{rel}: missing `{section}`")
 

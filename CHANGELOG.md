@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.0
+
+- Added Q1 2026 Security Intelligence Review based on 30 January-March core themes.
+- Compressed Q1 into seven structural shifts spanning agents, cyber capability, identity trust, cybercrime industrialization, data, supply chain, and recovery/enterprise risk.
+- Added a Q1-to-Q2 transition section.
+- Generalized quarterly required-section validation for Q1-Q4.
+
 ## v0.16.0
 
 - Added January 2026 Monthly Intelligence with ten core themes.

@@ -78,6 +78,21 @@ for path in sorted(DOCS.rglob("*.md")):
         errors.append(f"{rel}: invalid evidence `{meta.get('evidence')}`")
     if meta.get("review_status") not in REVIEW_STATUS:
         errors.append(f"{rel}: invalid review_status `{meta.get('review_status')}`")
+
+    if meta.get("review_status") == "Superseded":
+        successor = str(meta.get("superseded_by", "") or "").strip()
+        if not successor:
+            errors.append(f"{rel}: Superseded article requires `superseded_by`")
+        elif successor.startswith(("http://", "https://")):
+            if not urlparse(successor).netloc:
+                errors.append(f"{rel}: malformed superseded_by URL `{successor}`")
+        else:
+            successor_path = (path.parent / successor.split("#", 1)[0]).resolve()
+            if successor_path.suffix == "":
+                successor_path = successor_path.with_suffix(".md")
+            if not successor_path.exists():
+                errors.append(f"{rel}: broken superseded_by `{successor}`")
+
     if meta.get("management_impact") not in MANAGEMENT_IMPACT:
         errors.append(f"{rel}: invalid management_impact `{meta.get('management_impact')}`")
 
@@ -127,6 +142,12 @@ for path in sorted(DOCS.rglob("*.md")):
     for label in ("Source Period", "Last Reviewed", "Review Status", "Topics", "Impact Areas"):
         if f"<span class=\"sil-meta-label\">{label}</span>" not in body:
             errors.append(f"{rel}: generated metadata missing `{label}`")
+
+    if meta.get("review_status") == "Superseded":
+        if '<div class="sil-superseded-banner"' not in body:
+            errors.append(f"{rel}: Superseded article banner missing")
+        if "Historical Snapshot" not in body:
+            errors.append(f"{rel}: Superseded article banner label missing")
 
     if not str(meta.get("pptx", "") or "").strip() and "## PowerPoint" in body:
         errors.append(f"{rel}: PowerPoint placeholder must be hidden")

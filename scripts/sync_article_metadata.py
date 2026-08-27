@@ -22,7 +22,7 @@ def split_fm(text):
 
 def dump_fm(data):
     order = [
-        "title", "date", "updated", "reviewed", "review_status",
+        "title", "date", "updated", "reviewed", "review_status", "superseded_by",
         "source_period", "event_date", "description", "category", "collections",
         "topics", "tags", "audience", "management_impact", "impact_types",
         "urgency", "evidence", "status", "monthly_include",
@@ -97,6 +97,24 @@ def meta_block(meta):
         ]
     return "\n".join(rows) + "\n\n"
 
+def superseded_banner(meta):
+    if str(meta.get("review_status", "")) != "Superseded":
+        return ""
+
+    target = str(meta.get("superseded_by", "") or "").strip()
+    if not target:
+        return ""
+
+    return "\n".join([
+        '<div class="sil-superseded-banner" role="note">',
+        '  <div class="sil-superseded-label">Historical Snapshot</div>',
+        '  <p>このページは過去時点の内容を記録したものです。現在の要件・推奨事項については、後継・最終版の記事を参照してください。</p>',
+        f'  <a class="sil-superseded-link" href="{esc(target)}">後継・最終版の記事を見る →</a>',
+        '</div>',
+        '',
+        ''
+    ])
+
 for path in sorted(DOCS.rglob("*.md")):
     text = path.read_text(encoding="utf-8")
     if "about" in path.parts:
@@ -128,13 +146,26 @@ for path in sorted(DOCS.rglob("*.md")):
         count=1,
         flags=re.S
     )
+    body = re.sub(
+        r'\n<div class="sil-superseded-banner"[^>]*>.*?</div>\s*',
+        "\n",
+        body,
+        count=1,
+        flags=re.S
+    )
 
     h1 = re.search(r"(?m)^# .+$", body)
     summary = body.find('<div class="sil-executive-summary"')
     if not h1 or summary < 0:
         raise SystemExit(f"{path}: H1 or Executive Summary wrapper missing")
 
-    body = body[:h1.end()] + "\n\n" + meta_block(meta) + body[summary:].lstrip()
+    body = (
+        body[:h1.end()]
+        + "\n\n"
+        + meta_block(meta)
+        + superseded_banner(meta)
+        + body[summary:].lstrip()
+    )
     path.write_text(dump_fm(meta) + body, encoding="utf-8")
 
 print("Article metadata synchronized.")

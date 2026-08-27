@@ -204,7 +204,7 @@ def month_card(m, page):
     ])
 
 monthly_index = DOCS / "monthly/index.md"
-monthly_html = '<div class="sil-cards">\n' + "\n".join(
+monthly_html = '<div class="sil-cards sil-monthly-grid">\n' + "\n".join(
     month_card(m, monthly_index) for m in monthly_pages
 ) + "\n</div>"
 replace_block(monthly_index, "MONTHLY_INDEX", monthly_html)

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.1
+
+- Changed the Monthly Intelligence archive to a responsive 3/2/1-column grid.
+- Added an automatically generated Historical Snapshot banner for superseded articles.
+- Added `superseded_by` metadata and validation so superseded guidance links to its successor.
+
 ## v0.11.0
 
 - Added April 2026 Monthly Intelligence with ten core themes.

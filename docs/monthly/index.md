@@ -9,7 +9,7 @@ hide:
 各月の重要テーマを、ニュース件数ではなく**経営・セキュリティ実務に意味のある論点**へ再編集して残します。月次一覧とCore Theme件数は記事Metadataから自動生成されます。
 
 <!-- AUTO:MONTHLY_INDEX:START -->
-<div class="sil-cards">
+<div class="sil-cards sil-monthly-grid">
   <article class="sil-card">
     <a class="sil-card-title" href="2026-08.md">August 2026 Intelligence</a>
     <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>

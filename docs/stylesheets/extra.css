@@ -418,3 +418,48 @@ a.sil-topic:hover {
     white-space: normal;
   }
 }
+
+/* v0.11.1: archive grid and superseded-content affordances */
+.sil-monthly-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sil-superseded-banner {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 1.35rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--sil-border);
+  border-left: 0.22rem solid var(--sil-muted);
+  border-radius: 0.45rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.sil-superseded-label {
+  margin-bottom: 0.3rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sil-superseded-banner p {
+  margin: 0 0 0.45rem;
+  line-height: 1.6;
+}
+
+.sil-superseded-link {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 70rem) {
+  .sil-monthly-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .sil-monthly-grid {
+    grid-template-columns: 1fr;
+  }
+}

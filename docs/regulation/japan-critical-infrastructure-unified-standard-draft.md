@@ -4,6 +4,7 @@ date: 2026-08-27
 updated: 2026-08-27
 reviewed: 2026-08-27
 review_status: Superseded
+superseded_by: japan-critical-infrastructure-unified-standard.md
 source_period: 2026-04
 description: 国家サイバー統括室が2026年4月21日に意見募集を開始した重要インフラ統一基準（案）を、7月の最終決定前の歴史的スナップショットとして整理する。
 category: Regulation / Critical Infrastructure
@@ -37,7 +38,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # 重要インフラ統一基準（案）― 自主的取組から「共通Baseline＋PDCA」へ
 
 <div class="sil-article-meta">
@@ -53,6 +53,12 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
+</div>
+
+<div class="sil-superseded-banner" role="note">
+  <div class="sil-superseded-label">Historical Snapshot</div>
+  <p>このページは過去時点の内容を記録したものです。現在の要件・推奨事項については、後継・最終版の記事を参照してください。</p>
+  <a class="sil-superseded-link" href="japan-critical-infrastructure-unified-standard.md">後継・最終版の記事を見る →</a>
 </div>
 
 <div class="sil-executive-summary" markdown>

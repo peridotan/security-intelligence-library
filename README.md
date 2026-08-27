@@ -2,6 +2,14 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.11.1
+
+- Monthly Intelligence一覧をDesktop 3列 / Tablet 2列 / Mobile 1列へ整理
+- `review_status: Superseded` 記事にHistorical Snapshot Bannerを自動表示
+- Superseded記事から後継・最終版記事へ明示的に誘導
+- `superseded_by` metadataを追加
+- CIでSuperseded記事の後継リンクとBanner生成を検証
+
 ## v0.11.0
 
 - April 2026 Intelligenceを追加

@@ -9,6 +9,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 TOPIC_CONFIG = ROOT / "config" / "topics.yml"
+ATTACK_CONFIG = ROOT / "config" / "mitre_attack.yml"
 
 REQ_META = [
     "title", "date", "updated", "reviewed", "review_status", "source_period",
@@ -34,6 +35,9 @@ TOPICS = {
     for group in (_topic_data.get("groups") or [])
     for topic in (group.get("topics") or [])
 }
+_attack_data = yaml.safe_load(ATTACK_CONFIG.read_text(encoding="utf-8")) or {}
+ATTACK_TECHNIQUES = _attack_data.get("techniques") or {}
+ATTACK_BASIS = {"Source-labeled", "Analyst-mapped"}
 errors = []
 
 def split_fm(text):
@@ -129,6 +133,31 @@ for path in sorted(DOCS.rglob("*.md")):
     if not isinstance(tags, list) or not tags:
         errors.append(f"{rel}: tags must be a non-empty list")
 
+    mitre = meta.get("mitre_attack")
+    if mitre is not None:
+        if not isinstance(mitre, list) or not mitre:
+            errors.append(f"{rel}: mitre_attack must be a non-empty list when present")
+        else:
+            if len(mitre) > 8:
+                errors.append(f"{rel}: use at most 8 MITRE ATT&CK mappings")
+            seen_attack_ids = set()
+            for item in mitre:
+                if not isinstance(item, dict):
+                    errors.append(f"{rel}: each mitre_attack entry must be an object")
+                    continue
+                tid = str(item.get("id", "") or "").strip()
+                basis = str(item.get("basis", "") or "").strip()
+                note = str(item.get("note", "") or "").strip()
+                if tid not in ATTACK_TECHNIQUES:
+                    errors.append(f"{rel}: unsupported MITRE ATT&CK id `{tid}`")
+                if tid in seen_attack_ids:
+                    errors.append(f"{rel}: duplicate MITRE ATT&CK id `{tid}`")
+                seen_attack_ids.add(tid)
+                if basis not in ATTACK_BASIS:
+                    errors.append(f"{rel}: invalid MITRE ATT&CK basis `{basis}`")
+                if len(note) < 8:
+                    errors.append(f"{rel}: MITRE ATT&CK mapping `{tid}` requires a context note")
+
     impact_types = meta.get("impact_types")
     if not isinstance(impact_types, list) or not impact_types:
         errors.append(f"{rel}: impact_types must be a non-empty list")
@@ -148,6 +177,16 @@ for path in sorted(DOCS.rglob("*.md")):
             errors.append(f"{rel}: Superseded article banner missing")
         if "Historical Snapshot" not in body:
             errors.append(f"{rel}: Superseded article banner label missing")
+
+    if meta.get("mitre_attack"):
+        if body.count("<!-- AUTO:MITRE:START -->") != 1:
+            errors.append(f"{rel}: generated MITRE ATT&CK mapping block missing or duplicated")
+        if "## MITRE ATT&CK® Mapping" not in body:
+            errors.append(f"{rel}: MITRE ATT&CK mapping heading missing")
+        if "© 2026 The MITRE Corporation." not in body:
+            errors.append(f"{rel}: MITRE ATT&CK copyright notice missing")
+    elif "<!-- AUTO:MITRE:START -->" in body:
+        errors.append(f"{rel}: MITRE ATT&CK block exists without mitre_attack metadata")
 
     if not str(meta.get("pptx", "") or "").strip() and "## PowerPoint" in body:
         errors.append(f"{rel}: PowerPoint placeholder must be hidden")
@@ -228,7 +267,7 @@ for page in generated_pages:
 for required_file in [
     "LICENSE", "LICENSE-CODE.txt", "COPYRIGHT.md", "THIRD_PARTY_NOTICES.md",
     "RIGHTS_REVIEW.md", "CONTRIBUTING.md", ".github/SECURITY.md",
-    "config/topics.yml"
+    "config/topics.yml", "config/mitre_attack.yml"
 ]:
     if not (ROOT / required_file).exists():
         errors.append(f"repository: missing `{required_file}`")

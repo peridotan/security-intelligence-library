@@ -19,6 +19,19 @@ tags:
 - Ransomware
 - Langflow
 - Security for AI
+mitre_attack:
+- id: T1190
+  basis: Analyst-mapped
+  note: Internet-facing LangflowのCVE-2025-3248悪用によるInitial Accessに対応。
+- id: T1485
+  basis: Analyst-mapped
+  note: Production DatabaseやAI / ML Assetの破壊・削除に対応。
+- id: T1486
+  basis: Analyst-mapped
+  note: Database暗号化およびENCFORGEによるAI / ML File暗号化に対応。
+- id: T1657
+  basis: Analyst-mapped
+  note: Ransom / Extortionを金銭目的のImpactとして整理。
 audience:
 - Executive
 - CISO
@@ -80,6 +93,27 @@ Sysdig Threat Research Teamは2026年7月、インターネット公開された
 6. 暗号化・削除・恐喝へ移行
 
 ここでの防御上のポイントは、LLM固有のPrompt Injection対策だけではありません。**AI基盤を通常の高権限アプリケーション基盤として扱うこと**が必要です。
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1190 Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/) | Initial Access | Analyst-mapped | Internet-facing LangflowのCVE-2025-3248悪用によるInitial Accessに対応。 |
+| [T1485 Data Destruction](https://attack.mitre.org/techniques/T1485/) | Impact | Analyst-mapped | Production DatabaseやAI / ML Assetの破壊・削除に対応。 |
+| [T1486 Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | Impact | Analyst-mapped | Database暗号化およびENCFORGEによるAI / ML File暗号化に対応。 |
+| [T1657 Financial Theft](https://attack.mitre.org/techniques/T1657/) | Impact | Analyst-mapped | Ransom / Extortionを金銭目的のImpactとして整理。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

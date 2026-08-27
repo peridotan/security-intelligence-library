@@ -21,6 +21,10 @@ tags:
 - Mastra
 - AI Framework
 - Developer Security
+mitre_attack:
+- id: T1195.001
+  basis: Analyst-mapped
+  note: npm Maintainer / Dependency侵害とpostinstall PayloadによるSoftware Dependency Chainの悪用に対応。
 audience:
 - Executive
 - CISO
@@ -71,6 +75,24 @@ AI開発は多数のOpen Source Package、Agent Framework、Connector、SDKへ�
 ## 何が起きているのか
 
 本件ではMastra関連Package群へ悪意あるDependencyが混入し、Package Install時にPayload実行へつながるSupply Chain Patternが観測されました。重要なのはPackageのNameやPublisherを信頼するだけでなく、Version、Provenance、Maintainer Access、Install Script、Downstream Dependencyまで継続的に検証する必要がある点です。
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1195.001 Compromise Software Dependencies and Development Tools](https://attack.mitre.org/techniques/T1195/001/) | Initial Access | Analyst-mapped | npm Maintainer / Dependency侵害とpostinstall PayloadによるSoftware Dependency Chainの悪用に対応。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

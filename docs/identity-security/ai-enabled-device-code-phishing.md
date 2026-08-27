@@ -23,6 +23,19 @@ tags:
 - Access Token
 - Refresh Token
 - Device Registration
+mitre_attack:
+- id: T1566.002
+  basis: Analyst-mapped
+  note: Phishing LinkからDevice Code認証Flowへ誘導するInitial Accessに対応。
+- id: T1528
+  basis: Analyst-mapped
+  note: 被害者の認証後にAccess / Refresh Tokenを攻撃者側Sessionへ取得する行動に対応。
+- id: T1098.005
+  basis: Analyst-mapped
+  note: 侵害後に新しいDeviceを登録し、長期Accessへつなげた観測に対応。
+- id: T1114.003
+  basis: Analyst-mapped
+  note: 悪意あるInbox RuleによるMail転送・隠蔽・継続Collectionに対応。
 audience:
 - CISO
 - IAM
@@ -39,7 +52,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする
 
 <div class="sil-article-meta">
@@ -80,6 +92,27 @@ Device Code FlowはSmart TVやCLI等、Keyboard入力が難しいDevice向けの
 5. VictimがPassword / MFAを含む正規認証を実施
 6. Attack BackendがAccess Tokenを取得
 7. Device Registration、Inbox Rule、Mail Exfiltration等へ展開
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1566.002 Spearphishing Link](https://attack.mitre.org/techniques/T1566/002/) | Initial Access | Analyst-mapped | Phishing LinkからDevice Code認証Flowへ誘導するInitial Accessに対応。 |
+| [T1528 Steal Application Access Token](https://attack.mitre.org/techniques/T1528/) | Credential Access | Analyst-mapped | 被害者の認証後にAccess / Refresh Tokenを攻撃者側Sessionへ取得する行動に対応。 |
+| [T1098.005 Device Registration](https://attack.mitre.org/techniques/T1098/005/) | Persistence, Privilege Escalation | Analyst-mapped | 侵害後に新しいDeviceを登録し、長期Accessへつなげた観測に対応。 |
+| [T1114.003 Email Forwarding Rule](https://attack.mitre.org/techniques/T1114/003/) | Collection | Analyst-mapped | 悪意あるInbox RuleによるMail転送・隠蔽・継続Collectionに対応。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

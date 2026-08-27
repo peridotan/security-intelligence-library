@@ -7,6 +7,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+ATTACK_CONFIG = ROOT / "config" / "mitre_attack.yml"
+_attack_data = yaml.safe_load(ATTACK_CONFIG.read_text(encoding="utf-8")) or {}
+ATTACK_TECHNIQUES = _attack_data.get("techniques") or {}
 REQUIRED = [
     "title", "date", "updated", "reviewed", "review_status", "source_period",
     "description", "category", "collections", "topics", "tags", "audience",
@@ -24,7 +27,7 @@ def dump_fm(data):
     order = [
         "title", "date", "updated", "reviewed", "review_status", "superseded_by",
         "source_period", "event_date", "description", "category", "collections",
-        "topics", "tags", "audience", "management_impact", "impact_types",
+        "topics", "tags", "mitre_attack", "audience", "management_impact", "impact_types",
         "urgency", "evidence", "status", "monthly_include",
         "pptx", "media_rights", "quotation_reviewed", "hide", "search"
     ]
@@ -97,6 +100,57 @@ def meta_block(meta):
         ]
     return "\n".join(rows) + "\n\n"
 
+def md_cell(v):
+    return str(v).replace("|", "\\|").replace("\n", " ").strip()
+
+def mitre_attack_block(meta):
+    entries = meta.get("mitre_attack") or []
+    if not entries:
+        return ""
+
+    rows = [
+        "<!-- AUTO:MITRE:START -->",
+        "## MITRE ATT&CK® Mapping",
+        "",
+        '<div class="sil-mitre-note" markdown>',
+        "",
+        "この表は、攻撃・Campaignの理解に有用な場合だけ表示します。"
+        "`Source-labeled` は一次情報がATT&CK IDを明示したもの、"
+        "`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。"
+        "後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。",
+        "",
+        "</div>",
+        "",
+        "| Technique | Tactic | Basis | Article context |",
+        "| --- | --- | --- | --- |",
+    ]
+
+    for item in entries:
+        tid = str(item.get("id", "")).strip()
+        basis = str(item.get("basis", "")).strip()
+        note = str(item.get("note", "")).strip()
+        info = ATTACK_TECHNIQUES.get(tid) or {}
+        name = str(info.get("name", "")).strip()
+        url = str(info.get("url", "")).strip()
+        tactics = ", ".join(str(x) for x in (info.get("tactics") or []))
+        technique = f"[{tid} {name}]({url})" if url else f"{tid} {name}"
+        rows.append(
+            f"| {technique} | {md_cell(tactics)} | {md_cell(basis)} | {md_cell(note)} |"
+        )
+
+    rows += [
+        "",
+        '<div class="sil-mitre-legal">',
+        "MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. "
+        "© 2026 The MITRE Corporation. This work is reproduced and distributed with the "
+        "permission of The MITRE Corporation.",
+        "</div>",
+        "<!-- AUTO:MITRE:END -->",
+        "",
+        "",
+    ]
+    return "\n".join(rows)
+
 def superseded_banner(meta):
     if str(meta.get("review_status", "")) != "Superseded":
         return ""
@@ -153,6 +207,13 @@ for path in sorted(DOCS.rglob("*.md")):
         count=1,
         flags=re.S
     )
+    body = re.sub(
+        r"\n?<!-- AUTO:MITRE:START -->.*?<!-- AUTO:MITRE:END -->\s*",
+        "\n",
+        body,
+        count=1,
+        flags=re.S
+    )
 
     h1 = re.search(r"(?m)^# .+$", body)
     summary = body.find('<div class="sil-executive-summary"')
@@ -166,6 +227,14 @@ for path in sorted(DOCS.rglob("*.md")):
         + superseded_banner(meta)
         + body[summary:].lstrip()
     )
+
+    mitre = mitre_attack_block(meta)
+    if mitre:
+        marker = "\n## 経営インパクト"
+        if marker not in body:
+            raise SystemExit(f"{path}: Management Impact section missing")
+        body = body.replace(marker, "\n" + mitre + "## 経営インパクト", 1)
+
     path.write_text(dump_fm(meta) + body, encoding="utf-8")
 
 print("Article metadata synchronized.")

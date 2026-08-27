@@ -2,6 +2,17 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.12.0
+
+- MITRE ATT&CK® Mappingを全記事ではなくAttack / Campaign記事へ選択的に導入
+- 8記事に初期Mappingを追加
+- `Source-labeled` と `Analyst-mapped` を明確に区別
+- ATT&CK Technique catalogを `config/mitre_attack.yml` で一元管理
+- Mapping表をFront Matterから自動生成
+- 独自Attack / Process Flowは読者向け図解として維持
+- CIでTechnique ID、重複、Mapping Basis、Context Note、Legal Noticeを検証
+- MITRE ATT&CK® Terms of Use / Trademark / Copyright noticeをThird-Party Noticesへ追加
+
 ## v0.11.2
 
 - 攻撃チェーン／Process Flowを `text` コードブロックから専用Flow UIへ変更

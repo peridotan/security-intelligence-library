@@ -12,6 +12,7 @@ collections:
 topics: []
 tags:
   - TBD
+mitre_attack: []
 audience:
   - Executive
   - CISO
@@ -41,7 +42,9 @@ media_rights: none
 
 ## Attack / Process Flow（必要な場合）
 
-攻撃チェーンや処理フローは `text` のコードブロックではなく、`.sil-flow` の専用表示を利用します。コードそのものを掲載する場合にのみコードブロックを使います。
+攻撃チェーンや処理フローは `text` のコードブロックではなく、`.sil-flow` の専用表示を利用します。
+
+MITRE ATT&CK® Mappingは全記事へ付与せず、攻撃・Campaign分析で対応付けが実質的に役立つ場合だけ `mitre_attack` を設定します。 一次情報がIDまで明示した場合は `Source-labeled`、Library側の対応付けは `Analyst-mapped` とします。 根拠が弱いTechniqueを無理に割り当てません。コードそのものを掲載する場合にのみコードブロックを使います。
 
 ## 経営インパクト
 

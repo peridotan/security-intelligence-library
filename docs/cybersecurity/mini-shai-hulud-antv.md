@@ -23,6 +23,16 @@ tags:
 - CI/CD
 - SLSA
 - Credential Theft
+mitre_attack:
+- id: T1195.001
+  basis: Analyst-mapped
+  note: 侵害されたnpm Maintainer / PackageとLifecycle Scriptを利用したDependency Chain侵害に対応。
+- id: T1552.001
+  basis: Analyst-mapped
+  note: .awsやVault Token Path等のCredential File探索に対応。
+- id: T1528
+  basis: Analyst-mapped
+  note: GitHub / npm / Kubernetes等のAccess Token取得・再利用に対応。
 audience:
 - CISO
 - DevSecOps
@@ -39,7 +49,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する
 
 <div class="sil-article-meta">
@@ -81,6 +90,26 @@ Maintainer Accountが侵害されると、正規Package Updateを通じて多数
 4. npm install時のScriptでPayload実行
 5. CI/CD / Cloud / Developer Credentialを探索
 6. Stolen Tokenを利用してRepository / Packageへ拡大
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1195.001 Compromise Software Dependencies and Development Tools](https://attack.mitre.org/techniques/T1195/001/) | Initial Access | Analyst-mapped | 侵害されたnpm Maintainer / PackageとLifecycle Scriptを利用したDependency Chain侵害に対応。 |
+| [T1552.001 Credentials In Files](https://attack.mitre.org/techniques/T1552/001/) | Credential Access | Analyst-mapped | .awsやVault Token Path等のCredential File探索に対応。 |
+| [T1528 Steal Application Access Token](https://attack.mitre.org/techniques/T1528/) | Credential Access | Analyst-mapped | GitHub / npm / Kubernetes等のAccess Token取得・再利用に対応。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

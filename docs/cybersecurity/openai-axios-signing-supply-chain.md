@@ -22,6 +22,11 @@ tags:
 - Notarization
 - Build Pipeline
 - Certificate Rotation
+mitre_attack:
+- id: T1195.001
+  basis: Analyst-mapped
+  note: 悪意あるAxios DependencyがGitHub ActionsのBuild / Signing Environmentで実行された事象に対応。Signing
+    Materialの不正利用自体は確認されていない。
 audience:
 - CISO
 - DevSecOps
@@ -38,7 +43,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した
 
 <div class="sil-article-meta">
@@ -79,6 +83,24 @@ Supply Chain AttackのRiskは「悪意あるLibraryがApplicationへ組み込ま
 3. Build / Signing Environment内で実行
 4. Certificate / Notarization MaterialへAccess可能
 5. VendorがCertificate Rotation / App UpdateでTrustを再確立
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1195.001 Compromise Software Dependencies and Development Tools](https://attack.mitre.org/techniques/T1195/001/) | Initial Access | Analyst-mapped | 悪意あるAxios DependencyがGitHub ActionsのBuild / Signing Environmentで実行された事象に対応。Signing Materialの不正利用自体は確認されていない。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

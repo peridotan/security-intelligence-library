@@ -1,6 +1,6 @@
 # Rights and Publication Review
 
-Review date: 2026-08-26
+Review date: 2026-08-27
 
 ## Purpose
 
@@ -25,6 +25,9 @@ At the time of this review:
   ambiguous copyright ownership of contributed articles.
 - Product/company names are used for identification and analysis; no affiliation
   or endorsement is claimed.
+- Selected articles reproduce MITRE ATT&CK® technique names/IDs under MITRE's
+  published Terms of Use; the required copyright designation, permission notice,
+  trademark acknowledgment, and non-endorsement language are included.
 
 ## Remaining Limitations
 

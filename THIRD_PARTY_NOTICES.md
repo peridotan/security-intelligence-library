@@ -29,6 +29,21 @@ distributed by the Zensical project. The generated footer keeps the
 - Project: https://github.com/yaml/pyyaml
 - License information: https://github.com/yaml/pyyaml
 
+## MITRE ATT&CK®
+
+- Project: MITRE ATT&CK®
+- Role: Referenced taxonomy for selected adversary-technique mappings
+- Source: https://attack.mitre.org/
+- Terms of Use: https://attack.mitre.org/resources/terms-of-use/
+- Legal / Branding: https://attack.mitre.org/resources/legal-and-branding/
+
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation.
+The use of ATT&CK mappings in this repository does not imply affiliation,
+sponsorship, endorsement, or approval by MITRE.
+
+© 2026 The MITRE Corporation. This work is reproduced and distributed with the
+permission of The MITRE Corporation.
+
 ## Fonts
 
 The site config disables Zensical's automatic Google Fonts loading

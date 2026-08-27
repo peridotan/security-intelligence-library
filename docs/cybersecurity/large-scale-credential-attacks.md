@@ -21,6 +21,19 @@ tags:
 - MFA Fatigue
 - Microsoft Entra
 - Edge Device
+mitre_attack:
+- id: T1110.003
+  basis: Analyst-mapped
+  note: Password Sprayingとして確認・整理された攻撃パターンに対応。TheHatman固有の侵入経路を確定するものではない。
+- id: T1110.002
+  basis: Analyst-mapped
+  note: 取得済みCredential Materialをオフライン解析してPasswordを回復する段階に対応。
+- id: T1552.001
+  basis: Analyst-mapped
+  note: Network機器等の設定ファイルから保存Credentialを取得する行動に対応。
+- id: T1078
+  basis: Analyst-mapped
+  note: 取得・漏えい済みCredentialを正規Loginとして再利用する行動に対応。
 audience:
 - Executive
 - CISO
@@ -110,6 +123,27 @@ TheHatmanについては、Microsoft Entraテナントから情報を窃取し�
 </div>
 
 ここで重要なのは、**Credential AttackとEdge Device Attackを別々に管理しないこと**です。設定ファイルからCredentialが得られると、ネットワーク機器の侵害がIdentity侵害へ変わり、逆にIdentity侵害から管理インターフェースへ横展開できます。
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1110.003 Password Spraying](https://attack.mitre.org/techniques/T1110/003/) | Credential Access | Analyst-mapped | Password Sprayingとして確認・整理された攻撃パターンに対応。TheHatman固有の侵入経路を確定するものではない。 |
+| [T1110.002 Password Cracking](https://attack.mitre.org/techniques/T1110/002/) | Credential Access | Analyst-mapped | 取得済みCredential Materialをオフライン解析してPasswordを回復する段階に対応。 |
+| [T1552.001 Credentials In Files](https://attack.mitre.org/techniques/T1552/001/) | Credential Access | Analyst-mapped | Network機器等の設定ファイルから保存Credentialを取得する行動に対応。 |
+| [T1078 Valid Accounts](https://attack.mitre.org/techniques/T1078/) | Initial Access, Persistence, Privilege Escalation, Defense Evasion | Analyst-mapped | 取得・漏えい済みCredentialを正規Loginとして再利用する行動に対応。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

@@ -21,6 +21,28 @@ tags:
 - Edge Appliance
 - Credential Theft
 - EOL
+mitre_attack:
+- id: T1021.004
+  basis: Source-labeled
+  note: Microsoftが本CampaignのObserved ATT&CK TechniqueとしてSSH利用を明示。
+- id: T1083
+  basis: Source-labeled
+  note: MicrosoftがLinux Host上のFile EnumerationをObserved ATT&CK Techniqueとして明示。
+- id: T1190
+  basis: Source-labeled
+  note: Microsoftが脆弱なConfluence ServerへのRCEをObserved ATT&CK Techniqueとして明示。
+- id: T1505
+  basis: Source-labeled
+  note: MicrosoftがConfluence Web Server上のWeb ShellによるPersistent AccessをT1505として明示。
+- id: T1078.002
+  basis: Source-labeled
+  note: MicrosoftがConfluence ServerのDomain Credential利用をObserved ATT&CK Techniqueとして明示。
+- id: T1187
+  basis: Source-labeled
+  note: MicrosoftがDomain Controllerを狙うAuthentication Coercion / Relay行動を明示。
+- id: T1557
+  basis: Source-labeled
+  note: MicrosoftがRelay-style Authentication AttackをAdversary-in-the-Middleとして明示。
 audience:
 - CISO
 - Infrastructure
@@ -37,7 +59,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点
 
 <div class="sil-article-meta">
@@ -81,6 +102,30 @@ EOL Productや管理不足のVirtual Applianceが残ると、内部侵入の入�
 - Identity / Additional Systemへ横展開
 
 Microsoftは特定Incidentだけでなく、Edge DeviceのN-day Vulnerabilityを入口にする高Impact Incidentの増加傾向も指摘しています。
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1021.004 Remote Services: SSH](https://attack.mitre.org/techniques/T1021/004/) | Lateral Movement | Source-labeled | Microsoftが本CampaignのObserved ATT&CK TechniqueとしてSSH利用を明示。 |
+| [T1083 File and Directory Discovery](https://attack.mitre.org/techniques/T1083/) | Discovery | Source-labeled | MicrosoftがLinux Host上のFile EnumerationをObserved ATT&CK Techniqueとして明示。 |
+| [T1190 Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/) | Initial Access | Source-labeled | Microsoftが脆弱なConfluence ServerへのRCEをObserved ATT&CK Techniqueとして明示。 |
+| [T1505 Server Software Component](https://attack.mitre.org/techniques/T1505/) | Persistence | Source-labeled | MicrosoftがConfluence Web Server上のWeb ShellによるPersistent AccessをT1505として明示。 |
+| [T1078.002 Valid Accounts: Domain Accounts](https://attack.mitre.org/techniques/T1078/002/) | Initial Access, Persistence, Privilege Escalation, Defense Evasion | Source-labeled | MicrosoftがConfluence ServerのDomain Credential利用をObserved ATT&CK Techniqueとして明示。 |
+| [T1187 Forced Authentication](https://attack.mitre.org/techniques/T1187/) | Credential Access | Source-labeled | MicrosoftがDomain Controllerを狙うAuthentication Coercion / Relay行動を明示。 |
+| [T1557 Adversary-in-the-Middle](https://attack.mitre.org/techniques/T1557/) | Credential Access, Collection | Source-labeled | MicrosoftがRelay-style Authentication AttackをAdversary-in-the-Middleとして明示。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

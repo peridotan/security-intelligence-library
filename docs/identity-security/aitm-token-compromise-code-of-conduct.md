@@ -22,6 +22,13 @@ tags:
 - MFA
 - Microsoft Entra
 - Credential Theft
+mitre_attack:
+- id: T1566.002
+  basis: Analyst-mapped
+  note: PDF内Linkと多段Redirectを使ったPhishing Deliveryに対応。
+- id: T1539
+  basis: Analyst-mapped
+  note: AiTM Proxyで認証済みSession Tokenを奪いAccount Accessへ利用する行動に対応。
 audience:
 - CISO
 - IAM
@@ -37,7 +44,6 @@ status: published
 pptx: ''
 media_rights: none
 ---
-
 # AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing
 
 <div class="sil-article-meta">
@@ -79,6 +85,25 @@ Identity SecurityはAuthentication Factorだけでなく、Session、Device、Ri
 4. Password / MFAを正規IdPへ中継
 5. Authentication TokenをCapture
 6. Tokenを利用してAccountへAccess
+
+<!-- AUTO:MITRE:START -->
+## MITRE ATT&CK® Mapping
+
+<div class="sil-mitre-note" markdown>
+
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1566.002 Spearphishing Link](https://attack.mitre.org/techniques/T1566/002/) | Initial Access | Analyst-mapped | PDF内Linkと多段Redirectを使ったPhishing Deliveryに対応。 |
+| [T1539 Steal Web Session Cookie](https://attack.mitre.org/techniques/T1539/) | Credential Access | Analyst-mapped | AiTM Proxyで認証済みSession Tokenを奪いAccount Accessへ利用する行動に対応。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
+<!-- AUTO:MITRE:END -->
 
 ## 経営インパクト
 

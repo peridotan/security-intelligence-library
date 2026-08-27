@@ -43,6 +43,21 @@ Management ImpactとUrgencyは別概念です。
 - **商標・製品名** — 製品名、サービス名、企業名、商標は説明・識別のために使用します。特段の記載がない限り、権利者との提携、承認、推奨を意味しません。
 - **出典へのリンク** — 外部サイトへのリンクは参照目的です。リンク先コンテンツの権利・内容・継続提供を本サイトが保証するものではありません。
 
+## MITRE ATT&CK® Mapping
+
+攻撃・Campaign・Intrusionを扱う記事では、読者が標準的な攻撃行動へ接続して理解できる場合に限り、**MITRE ATT&CK® Mappingを選択的に付与**します。すべての記事へ機械的に付与することはしません。
+
+- **Source-labeled** — 一次情報の発行者が、対象Campaignや観測行動についてATT&CK Technique IDを明示している。
+- **Analyst-mapped** — 一次情報が具体的な攻撃行動を記述しており、本Libraryがその行動をATT&CK Techniqueへ対応付けている。
+- Techniqueを特定する根拠が弱い場合は、無理にMappingしません。
+- 本文のAttack / Process Flowは読者向けの独自整理として維持し、ATT&CK Mappingで置き換えません。
+- Mappingは攻撃行動を整理する補助情報であり、MITREによる本Libraryの分析・評価・見解の承認を意味しません。
+
+Technique vocabularyとLinkは `config/mitre_attack.yml` で一元管理し、記事側では対象Technique、Mapping Basis、記事文脈をMetadataとして保持します。
+
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation.  
+© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+
 ## TopicsとTags
 
 本Libraryでは、記事の探索分類を`Topics`と`Tags`に分けます。
@@ -76,12 +91,13 @@ Topicsをむやみに増やさず、細かな概念はTagsへ置くことで、�
 1. Executive Summary
 2. なぜ今なのか
 3. 何が起きているのか / 論点
-4. 経営インパクト
-5. 日本企業への示唆
-6. 推奨アクション
-7. 用語解説
-8. 関連記事
-9. 参考情報
+4. MITRE ATT&CK® Mapping（攻撃・Campaign記事で必要な場合のみ）
+5. 経営インパクト
+6. 日本企業への示唆
+7. 推奨アクション
+8. 用語解説
+9. 関連記事
+10. 参考情報
 
 MetadataはFront Matterを**Single Source of Truth**とし、公開日、更新日、カテゴリ、Topics、想定読者、Management Impact、Urgency、Evidenceをビルド時に同期します。PowerPointリンクは `pptx` が設定された記事にのみ表示します。
 

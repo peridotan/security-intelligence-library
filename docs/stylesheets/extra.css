@@ -542,3 +542,23 @@ a.sil-topic:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* v0.12.0: selective MITRE ATT&CK mapping */
+.sil-mitre-note {
+  margin: 0.65rem 0 0.9rem;
+  padding: 0.72rem 0.9rem;
+  border-left: 0.2rem solid var(--sil-border);
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.9rem;
+}
+
+.sil-mitre-note p {
+  margin: 0;
+}
+
+.sil-mitre-legal {
+  margin: 0.65rem 0 1.4rem;
+  color: var(--sil-muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}

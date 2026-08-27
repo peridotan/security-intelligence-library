@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.12.0
+
+- Added selective MITRE ATT&CK® mapping to eight attack/campaign articles.
+- Distinguished source-labeled ATT&CK IDs from analyst mappings.
+- Added a controlled ATT&CK technique catalog and generated mapping sections.
+- Added CI validation for mappings and required MITRE legal/trademark notices.
+- Kept reader-oriented attack/process flows independent from ATT&CK mappings.
+
 ## v0.11.2
 
 - Replaced flow-like `text` code blocks with semantic attack/process flow UI.

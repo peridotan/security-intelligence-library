@@ -17,9 +17,9 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
-    <a class="sil-card-title" href="../cybersecurity/ai-generated-plc-attacks.md">AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点</a>
-    <div class="sil-card-meta">August 2026 · Immediate · Observed · Business Continuity / OT / Safety</div>
-    <p>Siemens S7 PLCを狙うAI生成の悪用スクリプトに関する共同警告から、OT/ICS防御への示唆を整理する。</p>
+    <a class="sil-card-title" href="../ai-security/ai-infrastructure-control-plane-attacks.md">AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk</a>
+    <div class="sil-card-meta">August 2026 · Immediate · Observed · AI Infrastructure / Credential Risk</div>
+    <p>Microsoftが2026年8月26日に報告したLiteLLM、RAGFlow、Kestraへの侵害を基に、AI Gateway・RAG・OrchestratorがCredential・Data・Executionを集中させるControl…</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="../regulation/eu-ai-act-enforcement-2026.md">EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか</a>
@@ -32,14 +32,19 @@ hide:
     <p>公開PoC後48時間以内に悪用が集中する観測を踏まえ、脆弱性管理を件数ではなく露出と残存時間で再設計する。</p>
   </article>
   <article class="sil-card">
-    <a class="sil-card-title" href="../ai-security/generative-ai-governance.md">生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る</a>
-    <div class="sil-card-meta">August 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
-    <p>生成AI利活用ガバナンスを、利用類型・リスク・統制・教育・モニタリングの観点から企業向けに整理する。</p>
+    <a class="sil-card-title" href="../cybersecurity/ai-generated-plc-attacks.md">AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点</a>
+    <div class="sil-card-meta">August 2026 · Immediate · Observed · Business Continuity / OT / Safety</div>
+    <p>Siemens S7 PLCを狙うAI生成の悪用スクリプトに関する共同警告から、OT/ICS防御への示唆を整理する。</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="../regulation/japan-critical-infrastructure-unified-standard.md">重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと</a>
     <div class="sil-card-meta">August 2026 · Near-term · Confirmed · Regulatory / Business Continuity</div>
     <p>2026年7月決定の重要インフラ統一基準と8月公表の安全基準等策定ガイドライン案を、企業への実務影響から整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/generative-ai-governance.md">生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る</a>
+    <div class="sil-card-meta">August 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>生成AI利活用ガバナンスを、利用類型・リスク・統制・教育・モニタリングの観点から企業向けに整理する。</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/frontier-ai-cyber-capabilities.md">Frontier AIのサイバー能力が「Critical」に近づく意味</a>

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.18.0
+
+- Finalized August 2026 Monthly Intelligence after reviewing the complete August 1-31 source window.
+- Added an observed AI-infrastructure control-plane article covering Microsoft-reported LiteLLM, RAGFlow, and Kestra compromises.
+- Refreshed frontier cyber capability, exploitation-window, agentic-security, EU AI Act, and Japan critical-infrastructure coverage with late-August developments.
+- Kept August at ten core themes by moving the agentic AI controls synthesis out of the monthly core set.
+- Added optional monthly `finalized` metadata and final-review UI.
+
 ## v0.17.2
 
 - Simplified the Home hero into a concise value proposition.

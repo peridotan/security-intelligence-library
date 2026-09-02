@@ -15,6 +15,16 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/ai-infrastructure-control-plane-attacks.md">AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk</a>
+    <div class="sil-card-meta">August 2026 · Immediate · Observed · AI Infrastructure / Credential Risk</div>
+    <p>Microsoftが2026年8月26日に報告したLiteLLM、RAGFlow、Kestraへの侵害を基に、AI Gateway・RAG・OrchestratorがCredential・Data・Executionを集中させるControl…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="exploitation-window-48-hours.md">脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える</a>
+    <div class="sil-card-meta">August 2026 · Immediate · Observed · Operational Security / Business Continuity</div>
+    <p>公開PoC後48時間以内に悪用が集中する観測を踏まえ、脆弱性管理を件数ではなく露出と残存時間で再設計する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="ai-generated-plc-attacks.md">AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点</a>
     <div class="sil-card-meta">August 2026 · Immediate · Observed · Business Continuity / OT / Safety</div>
     <p>Siemens S7 PLCを狙うAI生成の悪用スクリプトに関する共同警告から、OT/ICS防御への示唆を整理する。</p>
@@ -23,11 +33,6 @@ hide:
     <a class="sil-card-title" href="large-scale-credential-attacks.md">Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security</a>
     <div class="sil-card-meta">August 2026 · Immediate · Mixed · Identity / Operational Security</div>
     <p>Unit 42の大規模資格情報攻撃レポートを基に、確認済み事実と攻撃者主張を分け、Identity Security対策を整理する。</p>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="exploitation-window-48-hours.md">脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える</a>
-    <div class="sil-card-meta">August 2026 · Immediate · Observed · Operational Security / Business Continuity</div>
-    <p>公開PoC後48時間以内に悪用が集中する観測を踏まえ、脆弱性管理を件数ではなく露出と残存時間で再設計する。</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/ai-enabled-malware-reality.md">AI Enabled Malwareの現実 ― 「405検体・97%」をどう読むか</a>

@@ -1,8 +1,8 @@
 ---
 title: EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか
 date: 2026-08-26
-updated: 2026-08-26
-reviewed: '2026-08-26'
+updated: '2026-09-03'
+reviewed: '2026-09-03'
 review_status: Current
 source_period: 2026-08
 description: EU AI Actの2026年8月2日適用・執行強化とArticle 50透明性義務を日本企業向けに整理する。
@@ -39,8 +39,8 @@ media_rights: none
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-09-03</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-09-03</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Regulation &amp; Policy / AI Governance</span></div>
@@ -86,7 +86,7 @@ European Commissionは7月31日、8月2日からAI Officeと各国当局がAI Ac
 
 ## 2026年8月2日からの執行
 
-European Commissionの最新整理では、8月2日からAI Officeおよび加盟国当局の執行権限が動きます。Transparencyだけでなく、既に適用されている禁止AI PracticesやGPAI Provider obligationsも執行対象に含まれます。
+European Commissionの8月24日時点のEnforcement Frameworkでも、8月2日からAI Officeおよび加盟国当局の執行権限が動いたことが確認されています。Transparencyだけでなく、既に適用されている禁止AI PracticesやGPAI Provider obligationsも執行対象に含まれます。
 
 Commission FAQでは、Article 50違反に対する罰金は最大**1,500万ユーロまたは前年度全世界売上高の3%**に達し得ると説明されています。ただし、具体的な適用は違反内容、主体、比例原則等によって決まります。
 

@@ -20,14 +20,14 @@ hide:
     <p>EU AI Actの2026年8月2日適用・執行強化とArticle 50透明性義務を日本企業向けに整理する。</p>
   </article>
   <article class="sil-card">
-    <a class="sil-card-title" href="../ai-security/generative-ai-governance.md">生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る</a>
-    <div class="sil-card-meta">August 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
-    <p>生成AI利活用ガバナンスを、利用類型・リスク・統制・教育・モニタリングの観点から企業向けに整理する。</p>
-  </article>
-  <article class="sil-card">
     <a class="sil-card-title" href="japan-critical-infrastructure-unified-standard.md">重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと</a>
     <div class="sil-card-meta">August 2026 · Near-term · Confirmed · Regulatory / Business Continuity</div>
     <p>2026年7月決定の重要インフラ統一基準と8月公表の安全基準等策定ガイドライン案を、企業への実務影響から整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/generative-ai-governance.md">生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る</a>
+    <div class="sil-card-meta">August 2026 · Near-term · Confirmed · AI Governance / Regulatory</div>
+    <p>生成AI利活用ガバナンスを、利用類型・リスク・統制・教育・モニタリングの観点から企業向けに整理する。</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="eu-cybersecurity-ai-action-plan.md">EU Cybersecurity &amp; AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う</a>

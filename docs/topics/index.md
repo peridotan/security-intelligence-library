@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>80</strong> Articles</span>
+    <span><strong>81</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>336</strong> Detailed Tags</span>
+    <span><strong>343</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -29,7 +29,7 @@ hide:
 <a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">11</span></a>
 <a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">2</span></a>
 </div>
 </section>
@@ -45,7 +45,7 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">10</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">11</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
@@ -56,7 +56,7 @@ hide:
 <div class="sil-topic-directory">
 <a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">17</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">33</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">34</span></a>
 </div>
 </section>
 </div>
@@ -67,8 +67,8 @@ hide:
 
 AI Agentの自律性、Tool利用、Sandbox、Identity、停止・監視を横断する。
 
-- [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
 - [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
+- [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
 - [AutoJack ― 「localhostは安全」という前提をAI Agentが崩す](../ai-security/autojack-agent-localhost-rce.md) — June 2026 · Immediate · Observed
 - [MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない](../ai-security/mcp-tool-poisoning-agent-supply-chain.md) — June 2026 · Immediate · Assessment
@@ -141,6 +141,7 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 
 GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
+- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic · Confirmed
 - [GTIG AI Threat Tracker ― AIは攻撃Toolであると同時に「盗まれるAsset」になった](../cybersecurity/gtig-ai-threat-tracker-february.md) — February 2026 · Near-term · Observed
 
@@ -160,8 +161,8 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 人・Workload・NHI・AI Agentを含むIdentityの認証・認可・監視。
 
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md) — August 2026 · Immediate · Mixed
-- [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
 - [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
+- [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
 - [Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkeyから学ぶ](../identity-security/pass-the-passkey.md) — August 2026 · Near-term · Observed
 - [2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方](../cybersecurity/july-2026-trust-infrastructure-zero-days.md) — July 2026 · Immediate · Confirmed
 - [Microsoft Entra IDがPasskeyを既定へ ― SMS / Voice MFA終了に向けた移行設計](../identity-security/entra-passkeys-default.md) — July 2026 · Near-term · Confirmed
@@ -227,6 +228,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 実悪用、KEV / EPSS、Patch優先度、Exploit Windowを含む脆弱性管理。
 
+- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える](../cybersecurity/exploitation-window-48-hours.md) — August 2026 · Immediate · Observed
 - [2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方](../cybersecurity/july-2026-trust-infrastructure-zero-days.md) — July 2026 · Immediate · Confirmed
 - [MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ](../cybersecurity/mdash-ai-vulnerability-discovery.md) — June 2026 · Near-term · Observed
@@ -301,8 +303,8 @@ Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 AI・Cybersecurity・重要インフラに関する法規制・政策・公的Guidance。
 
 - [EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか](../regulation/eu-ai-act-enforcement-2026.md) — August 2026 · Immediate · Confirmed
-- [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed
 - [重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと](../regulation/japan-critical-infrastructure-unified-standard.md) — August 2026 · Near-term · Confirmed
+- [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed
 - [EU Cybersecurity & AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う](../regulation/eu-cybersecurity-ai-action-plan.md) — July 2026 · Strategic · Confirmed
 - [Project YATA-Shield ― 日本政府がFrontier AI時代のサイバー対策を具体化](../regulation/japan-project-yata-shield.md) — May 2026 · Immediate · Confirmed
 - [金融庁のFrontier AI短期対応 ― 「大量の脆弱性」を前提にPatch運用を再設計する](../regulation/fsa-frontier-ai-short-term-response.md) — May 2026 · Immediate · Confirmed
@@ -322,6 +324,7 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
+- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える](../cybersecurity/exploitation-window-48-hours.md) — August 2026 · Immediate · Observed
 - [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed
 - [Frontier AIのサイバー能力が「Critical」に近づく意味](../ai-security/frontier-ai-cyber-capabilities.md) — August 2026 · Strategic · Confirmed

@@ -12,49 +12,49 @@ hide:
 <div class="sil-cards sil-monthly-grid">
   <article class="sil-card">
     <a class="sil-card-title" href="2026-08.md">August 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
-    <p>攻撃速度、Identity、Agentic AI、OT、AI Malware、AI規制、重要インフラを横断した月次Executive Summary。</p>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-09-03</span></div>
+    <p>攻撃時間の短縮、Identity Trust、AI Infrastructure、Frontier Cyber Capability、OT、AI規制、重要インフラを8月1日〜31日の公開情報で確定した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-08.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-07.md">July 2026 Intelligence</a>
-    <div class="sil-card-meta">9 Core Themes · Reviewed 2026-08-26</div>
+    <div class="sil-card-meta">9 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-26</span></div>
     <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-07.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-06.md">June 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-26</span></div>
     <p>AI AgentのRead→Act化、Continuous AI Security、AI for Security、Software Supply Chain、OT Resilience、PQC Identityを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-06.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-05.md">May 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-26</div>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-26</span></div>
     <p>日本政府・金融庁のFrontier AI対応、Agent Security、Cyber Capability Access、CI/CD Supply Chain、Edge-to-Identity、OT Recoveryを横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-05.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-04.md">April 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-27</span></div>
     <p>Frontier AIのExploit能力上昇、AI組込み型攻撃、Token Abuse、Supply Chain、Phishing-resistant Identity、PQC、日本のSCS・重要インフラ制度を横断した月次Executive Summary。</p>
     <a class="sil-card-more" href="2026-04.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-03.md">March 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-27</span></div>
     <p>AI Tradecraft、AiTM / Vishing、AI Monitoring、Digital Identity、Cyber ERM、SCS、Software Supplier Responsibility、Recovery Denialを横断したQ2直前の月次Executive…</p>
     <a class="sil-card-more" href="2026-03.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-02.md">February 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-27</span></div>
     <p>Frontier AIのZero-day探索、Trusted Cyber Access、Agent Identity / Standards、AI評価、攻撃速度・Identity・Supply Chain、Recovery Infrastructure、Data Classificati…</p>
     <a class="sil-card-more" href="2026-02.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="2026-01.md">January 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · Reviewed 2026-08-27</div>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-27</span></div>
     <p>AI Agent Securityの独立、Runtime / Link / Frameworkまで広がるAI攻撃面、Identity / SaaS Trustの悪用、Cybercrime Infrastructure、EU・日本のSupply Chain / 経済安全保障を横断した月次E…</p>
     <a class="sil-card-more" href="2026-01.md">月次サマリーを見る →</a>
   </article>

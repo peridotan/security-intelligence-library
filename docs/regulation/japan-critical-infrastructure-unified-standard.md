@@ -1,8 +1,8 @@
 ---
 title: 重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと
 date: 2026-08-26
-updated: 2026-08-26
-reviewed: '2026-08-26'
+updated: '2026-09-03'
+reviewed: '2026-09-03'
 review_status: Current
 source_period: 2026-08
 description: 2026年7月決定の重要インフラ統一基準と8月公表の安全基準等策定ガイドライン案を、企業への実務影響から整理する。
@@ -40,8 +40,8 @@ media_rights: none
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-09-03</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-09-03</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Regulation</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Regulation &amp; Policy / OT / Critical Infrastructure</span></div>
@@ -69,6 +69,14 @@ media_rights: none
 国家サイバー統括室は、従来の枠組みでは分野・事業者ごとにサイバーセキュリティの取組水準にばらつきがあり、評価・改善につながる具体的・統一的な基準が不足していたと説明しています。
 
 2025年改正のサイバーセキュリティ基本法を踏まえ、2026年7月に統一基準が決定され、8月のガイドライン案はその詳細化に当たります。
+
+## 8月末時点の確定状況
+
+- **重要インフラ統一基準**：2026年7月31日に決定済み。2026年10月1日施行予定。
+- **安全基準等策定ガイドライン**：8月5日に「案」が公表され、意見募集は**8月26日に終了**。
+- **8月31日時点**：国家サイバー統括室の公開情報上、ガイドラインは引き続き「案」として扱われており、最終版の公表を待つ段階。
+
+したがって、本記事では統一基準そのものとガイドライン案を区別し、ガイドライン案の記述を確定義務として扱いません。
 
 ## 何が変わるのか
 

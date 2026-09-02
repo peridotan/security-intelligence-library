@@ -672,3 +672,27 @@ a.sil-topic:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* v0.18.0: monthly final-review state */
+.sil-month-final {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.75rem;
+  margin: 0.35rem 0 1.1rem;
+  padding: 0.58rem 0.75rem;
+  border: 1px solid var(--sil-border);
+  border-radius: 0.55rem;
+  background: var(--sil-surface);
+  color: var(--sil-muted);
+  font-size: 0.78rem;
+}
+
+.sil-month-final strong {
+  color: var(--md-default-fg-color);
+  letter-spacing: 0.035em;
+}
+
+.sil-month-reviewed {
+  white-space: nowrap;
+}

@@ -2,7 +2,7 @@
 title: 生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る
 date: 2026-08-14
 updated: 2026-08-26
-reviewed: '2026-08-26'
+reviewed: '2026-09-03'
 review_status: Current
 source_period: 2026-08
 description: 生成AI利活用ガバナンスを、利用類型・リスク・統制・教育・モニタリングの観点から企業向けに整理する。
@@ -43,7 +43,7 @@ media_rights: none
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-14</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-09-03</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Governance / Regulation &amp; Policy / Security Governance &amp; Risk Management</span></div>

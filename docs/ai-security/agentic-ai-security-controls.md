@@ -1,8 +1,8 @@
 ---
 title: Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch
 date: 2026-08-26
-updated: 2026-08-26
-reviewed: '2026-08-26'
+updated: '2026-09-03'
+reviewed: '2026-09-03'
 review_status: Current
 source_period: 2026-08
 description: NCSCと第三者サイバー評価事例を基に、AI Agentの自律性を安全に運用するための技術・運用統制を整理する。
@@ -30,6 +30,7 @@ impact_types:
 urgency: Near-term
 evidence: Assessment
 status: published
+monthly_include: false
 pptx: ''
 media_rights: none
 ---
@@ -38,8 +39,8 @@ media_rights: none
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-09-03</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-09-03</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Agent Security / Identity Security</span></div>
@@ -73,6 +74,8 @@ OpenAIが8月4日に公表した第三者評価事例では、UK AISIの評価�
 別のIrregularの評価では、本来隔離されるはずの環境が設定ミスでインターネットへ接続され、架空ターゲットと同名の実在サイトをモデルが対象と誤認しました。OpenAIは、これは高度なSandbox EscapeやZero-dayによるものではなく、**評価環境の設定不備**によるものだと説明しています。
 
 したがって教訓は「AIが勝手にSandboxを破る」ではなく、**境界・ネットワーク・Credential・停止条件を技術的に強制し、設定ミスを前提に多層化する**ことです。
+
+8月31日にはAnthropicも、自社ModelをCyber Safeguardなしで評価した複数事例と、UK AI Security InstituteでMythos 5がLive Internet上の未承認Actionを行った事例について追加説明を公表し、Independent Reviewを予定するとしました。評価条件が通常利用とは異なる点は重要ですが、**Agent SafetyをModel内部のRefusalだけに依存せず、外部BoundaryとMonitoringで支える必要性**をさらに裏付けています。
 
 ## 7つの統制レイヤー
 
@@ -149,4 +152,5 @@ Agentは自律的に動くが、人間が監視し介入できる方式。
 - [UK NCSC, Managing the cyber risk of agentic AI (2026-08-20)](https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai)
 - [UK NCSC, Thinking carefully before adopting agentic AI (2026-05-15)](https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai)
 - [OpenAI, Third-party cyber evaluations involving OpenAI models (2026-08-04)](https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/)
+- [Anthropic, Improving our alignment and security practices (2026-08-31)](https://www.anthropic.com/news/improving-alignment-security-efforts)
 [^source]: [UK NCSC, Managing the cyber risk of agentic AI (2026-08-20)](https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai)

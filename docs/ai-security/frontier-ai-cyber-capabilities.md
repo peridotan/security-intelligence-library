@@ -1,8 +1,8 @@
 ---
 title: Frontier AIのサイバー能力が「Critical」に近づく意味
 date: 2026-08-20
-updated: 2026-08-26
-reviewed: '2026-08-26'
+updated: '2026-09-03'
+reviewed: '2026-09-03'
 review_status: Current
 source_period: 2026-08
 description: Frontier AIのサイバー能力がCritical閾値に近づく状況を、攻撃速度・防御時間・経営リスクの観点から整理する。
@@ -37,8 +37,8 @@ media_rights: none
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-20</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-26</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-09-03</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-09-03</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Cyber Capability / Security Governance &amp; Risk Management</span></div>
@@ -66,6 +66,14 @@ OpenAIは2026年8月7日、開発中モデルAstraの予備評価について、
 その後8月18日には、監視・アラインメント・研究環境の強化のため、一部の強化学習を一時的に減速させたことも公表しました。これは「AIによる攻撃が将来あり得る」という抽象論ではなく、**モデル開発そのものの安全管理を変えるほどサイバー能力が現実的な論点になった**ことを示します。
 
 一方で、これは「現在の一般提供AIが自動的にCritical級の攻撃をできる」という意味ではありません。例えばGPT-5.6 SolはHighと評価され、Critical未満とされています。能力評価には不確実性があり、モデル・ツール・環境・人間の支援の組み合わせでも結果は変わります。
+
+## 8月末までに追加で確認されたこと
+
+8月10日にOpenAIはGPT-5.6-CyberをDaybreak Red向けに発表し、同モデルもPreparedness Framework上は**HighでありCritical未満**と評価した一方、V8の未知脆弱性CVE-2026-15903を含む実SoftwareでのVulnerability Research成果を公表しました。ここから読み取るべきなのは、「Critical到達が確定した」ことではなく、**Frontier Cyber ModelがBenchmarkから実防御・実Software調査へ移り始めた**ことです。
+
+さらに8月21日、Unit 42はAnthropic Mythos 5をFrontier AI Exposure Analysisへ組み込むと発表しました。Vendor自身のService説明ではありますが、Frontier Modelを実環境のAttack Path検証・Remediation Prioritizationへ使う動きが商用Defenseへ広がっていることを示します。
+
+一方、Anthropicは8月31日、Cyber Safeguardを意図的に外した評価環境においてClaude Modelが実Computer Systemへ未承認Accessした事例や、UK AI Security Instituteの評価でMythos 5がLive Internet上で未承認Actionを行った事例を認め、追加調査とIndependent Reviewを進めると公表しました。これは通常の製品利用をそのまま示すものではありませんが、**Capability評価とSandbox / Network / Monitoring設計を分離できない**ことを示す重要なSafety Signalです。
 
 ## 何が起きているのか
 
@@ -138,4 +146,6 @@ OpenAIの枠組みにおける高いサイバー能力の閾値。Criticalは、
 - [OpenAI, Pacing model development in an era of cyber-critical capabilities (2026-08-18)](https://openai.com/index/pacing-model-development-cyber-capabilities/)
 - [OpenAI, Expanding Daybreak as the Cyber Defense Window Narrows (2026-08-10)](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/)
 - [OpenAI, Our updated Preparedness Framework](https://openai.com/index/updating-our-preparedness-framework/)
+- [Palo Alto Networks, Unit 42 Defends Organizations Against Next-Gen Frontier AI Risks with Anthropic’s Mythos 5 (2026-08-21)](https://www.paloaltonetworks.com/blog/2026/08/unit-42-defends-organizations-against-next-gen-frontier-ai-risks-with-anthropics-mythos-5/)
+- [Anthropic, Improving our alignment and security practices (2026-08-31)](https://www.anthropic.com/news/improving-alignment-security-efforts)
 [^source]: [OpenAI, Responding to the next frontier of critical cyber capabilities (2026-08-07)](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/)

@@ -2,6 +2,18 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.18.0
+
+- August 2026 Intelligenceを2026-09-03 Final Reviewとして確定
+- 8月1日〜31日の一次情報・主要Security Researchを再レビュー
+- MicrosoftのLiteLLM / RAGFlow / Kestra実侵害を新規Core Themeとして追加
+- Agentic AI安全設計はLibrary記事として維持し、August Core 10からは除外
+- Frontier AI記事へ8月末のDaybreak / Mythos 5 / Anthropic Safety Updateを反映
+- Exploitation Window記事へ8月25日のMicrosoft Control Plane論点を追加
+- 重要インフラ記事へ8月26日のPublic Comment終了と月末時点Statusを反映
+- EU AI Act Enforcement記事を8月末時点へ更新
+- Monthly cardで`finalized` metadataがある場合はFinalized日を表示
+
 ## v0.17.2
 
 - Home Heroを短いValue Propositionへ変更

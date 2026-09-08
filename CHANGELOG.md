@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.19.0
+
+- Added September 2026 Current Intelligence as of September 8 with six week-one core themes.
+- Added coverage of GPT-6 Astra critical cyber capability, a Unit 42 AI-assisted intrusion, Teams IT-support impersonation, Enterprise Frontier Safeguards, edge-AI trust architecture, and ASCII-smuggling phishing evasion.
+- Added an explicit `As of` state for in-progress monthly intelligence.
+- September remains mutable until month-end finalization.
+
 ## v0.18.0
 
 - Finalized August 2026 Monthly Intelligence after reviewing the complete August 1-31 source window.

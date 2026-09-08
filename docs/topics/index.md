@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>81</strong> Articles</span>
+    <span><strong>87</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>343</strong> Detailed Tags</span>
+    <span><strong>374</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -24,21 +24,21 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">AI Security</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#ai-agent-security">AI Agent Security <span class="sil-topic-count">13</span></a>
+<a class="sil-topic" href="#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#mcp-security">MCP Security <span class="sil-topic-count">2</span></a>
-<a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">17</span></a>
-<a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">11</span></a>
-<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">3</span></a>
-<a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">12</span></a>
+<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">8</span></a>
+<a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">4</span></a>
+<a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">3</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Identity</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">22</span></a>
+<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">24</span></a>
 <a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">13</span></a>
+<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">15</span></a>
 <a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">3</span></a>
 </div>
 </section>
@@ -56,7 +56,7 @@ hide:
 <div class="sil-topic-directory">
 <a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">17</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">34</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">39</span></a>
 </div>
 </section>
 </div>
@@ -67,6 +67,9 @@ hide:
 
 AI Agentの自律性、Tool利用、Sandbox、Identity、停止・監視を横断する。
 
+- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
+- [Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する](../ai-security/enterprise-frontier-safeguards-zdr.md) — September 2026 · Near-term · Confirmed
+- [Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る](../ai-security/edge-ai-trust-attestation-provenance.md) — September 2026 · Strategic · Assessment
 - [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
@@ -92,6 +95,7 @@ MCP Server / Tool / Metadata / Local Control Planeに関するSecurity。
 
 生成AI・AI Systemの利用統制、継続評価、責任・Risk管理。
 
+- [Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する](../ai-security/enterprise-frontier-safeguards-zdr.md) — September 2026 · Near-term · Confirmed
 - [EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか](../regulation/eu-ai-act-enforcement-2026.md) — August 2026 · Immediate · Confirmed
 - [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed
 - [OpenAI / Hugging Face評価インシデント ― AI Cyber評価環境をどう隔離するか](../ai-security/openai-huggingface-evaluation-incident.md) — July 2026 · Immediate · Confirmed
@@ -114,6 +118,7 @@ MCP Server / Tool / Metadata / Local Control Planeに関するSecurity。
 
 Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evaluation。
 
+- [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed
 - [Frontier AIのサイバー能力が「Critical」に近づく意味](../ai-security/frontier-ai-cyber-capabilities.md) — August 2026 · Strategic · Confirmed
 - [OpenAI / Hugging Face評価インシデント ― AI Cyber評価環境をどう隔離するか](../ai-security/openai-huggingface-evaluation-incident.md) — July 2026 · Immediate · Confirmed
 - [EU Cybersecurity & AI Action Plan ― AIの攻撃利用と防御利用を同じ政策で扱う](../regulation/eu-cybersecurity-ai-action-plan.md) — July 2026 · Strategic · Confirmed
@@ -130,6 +135,8 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 
 攻撃・Malware・Ransomware・OT標的活動にAIが組み込まれる脅威。
 
+- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
+- [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
 - [AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点](../cybersecurity/ai-generated-plc-attacks.md) — August 2026 · Immediate · Observed
 - [AI Enabled Malwareの現実 ― 「405検体・97%」をどう読むか](../ai-security/ai-enabled-malware-reality.md) — August 2026 · Near-term · Observed
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
@@ -141,6 +148,7 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 
 GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
+- [Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る](../ai-security/edge-ai-trust-attestation-provenance.md) — September 2026 · Strategic · Assessment
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic · Confirmed
 - [GTIG AI Threat Tracker ― AIは攻撃Toolであると同時に「盗まれるAsset」になった](../cybersecurity/gtig-ai-threat-tracker-february.md) — February 2026 · Near-term · Observed
@@ -149,6 +157,7 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 脆弱性発見・検知・対応など、防御側でAIを活用するテーマ。
 
+- [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed
 - [MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ](../cybersecurity/mdash-ai-vulnerability-discovery.md) — June 2026 · Near-term · Observed
 - [LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める](../ai-security/anthropic-llm-discovered-zero-days.md) — February 2026 · Immediate · Observed
 
@@ -160,6 +169,8 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 人・Workload・NHI・AI Agentを含むIdentityの認証・認可・監視。
 
+- [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
+- [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md) — August 2026 · Immediate · Mixed
 - [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
@@ -198,6 +209,8 @@ Passkey / FIDO2と、登録・回復を含むフィッシング耐性認証。
 
 Password Spraying、MFA Fatigue、漏えい資格情報、Recovery悪用。
 
+- [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
+- [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md) — August 2026 · Immediate · Mixed
 - [Passkey時代の次の攻撃面 ― 登録・回復フローを狙うSocial Engineering](../identity-security/passkey-enrollment-recovery-attacks.md) — July 2026 · Immediate · Observed
 - [AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing](../identity-security/aitm-token-compromise-code-of-conduct.md) — May 2026 · Immediate · Observed
@@ -324,6 +337,11 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
+- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
+- [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed
+- [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
+- [Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する](../ai-security/enterprise-frontier-safeguards-zdr.md) — September 2026 · Near-term · Confirmed
+- [Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る](../ai-security/edge-ai-trust-attestation-provenance.md) — September 2026 · Strategic · Assessment
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える](../cybersecurity/exploitation-window-48-hours.md) — August 2026 · Immediate · Observed
 - [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed

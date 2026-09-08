@@ -15,6 +15,16 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="teams-it-support-remote-session-intrusion.md">IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Observed · Identity / Social Engineering</div>
+    <p>Microsoftが2026年9月2日に報告したHuman-operated Intrusionを基に、Teams外部コラボレーション、IT Support偽装、RMM、Node.js Implant、AD Recon、WinRM横展開をId…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/ascii-smuggling-phishing-evasion.md">ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した</a>
+    <div class="sil-card-meta">September 2026 · Near-term · Observed · Email Security / Identity</div>
+    <p>Microsoftが2026年9月3日に公表した大規模Phishing Campaignを基に、AI Prompt Injection研究で知られたInvisible Unicode Tag Characterが従来型Email Filter…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../cybersecurity/large-scale-credential-attacks.md">Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security</a>
     <div class="sil-card-meta">August 2026 · Immediate · Mixed · Identity / Operational Security</div>
     <p>Unit 42の大規模資格情報攻撃レポートを基に、確認済み事実と攻撃者主張を分け、Identity Security対策を整理する。</p>

@@ -15,6 +15,31 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="ai-assisted-intrusion-10-hours.md">AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Observed · Threat Landscape / Identity</div>
+    <p>Unit 42が2026年9月2日に公開した実侵害対応を基に、Frontier AI Agentが50超のATT&amp;CK Techniqueを10時間未満で横断し、Identity・Source Code・CI/CD・Cloud AIへ波及した…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/gpt6-astra-critical-cyber-capability.md">GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Confirmed · Strategic Risk / Cyber Capability</div>
+    <p>OpenAIが2026年9月1日にGPT-6 AstraをPreparedness Framework上のCritical Cyber Capabilityと評価したことを基に、未知脆弱性探索・Exploit Development・Acce…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/teams-it-support-remote-session-intrusion.md">IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Observed · Identity / Social Engineering</div>
+    <p>Microsoftが2026年9月2日に報告したHuman-operated Intrusionを基に、Teams外部コラボレーション、IT Support偽装、RMM、Node.js Implant、AD Recon、WinRM横展開をId…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="ascii-smuggling-phishing-evasion.md">ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した</a>
+    <div class="sil-card-meta">September 2026 · Near-term · Observed · Email Security / Identity</div>
+    <p>Microsoftが2026年9月3日に公表した大規模Phishing Campaignを基に、AI Prompt Injection研究で知られたInvisible Unicode Tag Characterが従来型Email Filter…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/edge-ai-trust-attestation-provenance.md">Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る</a>
+    <div class="sil-card-meta">September 2026 · Strategic · Assessment · AI Infrastructure / OT Security</div>
+    <p>Microsoft Security Researchが2026年9月4日に示したEdge AI Security Architectureを基に、Runtime Attestation、Artifact Provenance、Determi…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/ai-infrastructure-control-plane-attacks.md">AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk</a>
     <div class="sil-card-meta">August 2026 · Immediate · Observed · AI Infrastructure / Credential Risk</div>
     <p>Microsoftが2026年8月26日に報告したLiteLLM、RAGFlow、Kestraへの侵害を基に、AI Gateway・RAG・OrchestratorがCredential・Data・Executionを集中させるControl…</p>

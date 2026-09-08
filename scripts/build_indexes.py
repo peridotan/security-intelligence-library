@@ -191,13 +191,13 @@ def month_card(m, page):
     title = esc(meta.get("title") or f"{fmt_period(m['period'])} Intelligence")
     summary = esc(shorten(meta.get("summary") or meta.get("description") or "", 145))
     finalized = fmt_date(meta.get("finalized") or "")
-    reviewed = fmt_date(
-        meta.get("reviewed") or meta.get("as_of") or meta.get("updated") or ""
-    )
+    as_of = fmt_date(meta.get("as_of") or "")
+    reviewed = fmt_date(meta.get("reviewed") or meta.get("updated") or "")
     status_part = (
         f' · <span class="sil-month-reviewed">Finalized {esc(finalized)}</span>'
         if finalized else
-        (f' · <span class="sil-month-reviewed">Reviewed {esc(reviewed)}</span>' if reviewed else "")
+        (f' · <span class="sil-month-reviewed">As of {esc(as_of)}</span>' if as_of else
+         (f' · <span class="sil-month-reviewed">Reviewed {esc(reviewed)}</span>' if reviewed else ""))
     )
     return "\n".join([
         '  <article class="sil-card">',

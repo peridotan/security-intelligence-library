@@ -2,6 +2,18 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## v0.19.0
+
+- September 2026 Intelligenceを2026-09-08時点のCurrent Reviewとして追加
+- GPT-6 AstraのCritical Cyber Capability記事を追加
+- Unit 42の10時間未満AI-assisted Intrusion記事を追加
+- Teams IT Support Impersonation / Remote Session侵入記事を追加
+- Anthropic Enterprise Frontier Safeguards記事を追加
+- Microsoft Edge AI Trust Model記事を追加
+- ASCII Smuggling / Phishing Evasion記事を追加
+- Monthly `as_of` metadataをCurrent Review表示へ反映
+- Septemberは月途中のため6 Core Themesで開始し、Final Reviewまで追加・入替可能
+
 ## v0.18.0
 
 - August 2026 Intelligenceを2026-09-03 Final Reviewとして確定

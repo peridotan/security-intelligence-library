@@ -1,0 +1,77 @@
+/* Security Intelligence Suite shared font-size control — Library */
+.sil-font-size-control{
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  gap:.35rem;
+  padding:.28rem .38rem;
+  border:1px solid #d9e2ea;
+  border-radius:.55rem;
+  background:#fff;
+}
+.sil-font-size-label{
+  display:inline-flex;
+  align-items:center;
+  gap:.22rem;
+  color:#68758a;
+  font-size:.58rem;
+  font-weight:750;
+  white-space:nowrap;
+}
+.sil-font-size-label b{
+  color:#17324d;
+  font-size:.7rem;
+}
+.sil-font-size-buttons{
+  display:inline-flex;
+  gap:.12rem;
+  padding:.12rem;
+  border-radius:.42rem;
+  background:#edf1f6;
+}
+.sil-font-size-buttons button{
+  border:1px solid transparent;
+  border-radius:.34rem;
+  background:transparent;
+  color:#536175;
+  padding:.23rem .34rem;
+  font:inherit;
+  font-size:.56rem;
+  font-weight:750;
+  line-height:1.15;
+  cursor:pointer;
+}
+.sil-font-size-buttons button:hover{
+  border-color:#c7d3e2;
+  background:#fff;
+  color:#17324d;
+}
+.sil-font-size-buttons button[aria-pressed="true"]{
+  border-color:#17324d;
+  background:#17324d;
+  color:#fff;
+}
+.sil-font-size-buttons button:focus-visible{
+  outline:3px solid rgba(45,111,183,.24);
+  outline-offset:2px;
+}
+.sil-visually-hidden{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+@media screen and (max-width:72rem){
+  .sil-suite-bar__inner{flex-wrap:wrap}
+}
+@media screen and (max-width:60rem){
+  .sil-font-size-control{align-self:flex-start}
+}
+@media screen and (max-width:30rem){
+  .sil-font-size-label span{display:none}
+}

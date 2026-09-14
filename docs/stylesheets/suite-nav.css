@@ -101,3 +101,19 @@
     display: none;
   }
 }
+
+/* Keep Suite tool names readable at Large / Extra Large */
+.sil-suite-bar__links{
+  flex:1 1 auto;
+}
+
+.sil-suite-link strong{
+  overflow:visible;
+  text-overflow:clip;
+  white-space:normal;
+  line-height:1.15;
+}
+
+.sil-suite-link{
+  min-width:0;
+}

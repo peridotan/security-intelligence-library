@@ -39,30 +39,48 @@
     ).trim();
   }
 
-  async function applyVulnerabilityContext() {
+  async function loadArticleContext() {
+    const key = currentPageKey();
+    if (!key) return null;
+
+    const indexUrl =
+      `${window.location.origin}${libraryBasePath()}assets/context-index.json`;
+
+    try {
+      const response = await fetch(indexUrl, { cache: "no-store" });
+      if (!response.ok) return null;
+
+      const data = await response.json();
+      return data?.articles?.[key] || null;
+    } catch {
+      return null;
+    }
+  }
+
+  function addCommonContext(url) {
+    url.searchParams.set(
+      "from",
+      "security-intelligence-library"
+    );
+
+    url.searchParams.set(
+      "context",
+      window.location.pathname
+    );
+
+    url.searchParams.set(
+      "contextTitle",
+      currentPageTitle()
+    );
+  }
+
+  function applyVulnerabilityContext(context) {
     const link = document.querySelector(
       '[data-suite-key="vulnerability"]'
     );
 
     if (!link) return;
 
-    const key = currentPageKey();
-    if (!key) return;
-
-    const indexUrl =
-      `${window.location.origin}${libraryBasePath()}assets/context-index.json`;
-
-    let data;
-
-    try {
-      const response = await fetch(indexUrl, { cache: "no-store" });
-      if (!response.ok) return;
-      data = await response.json();
-    } catch {
-      return;
-    }
-
-    const context = data?.articles?.[key];
     const cves = Array.isArray(context?.cves)
       ? context.cves
       : [];
@@ -71,20 +89,8 @@
 
     const url = new URL(link.href);
 
-    url.searchParams.set(
-      "from",
-      "security-intelligence-library"
-    );
+    addCommonContext(url);
     url.searchParams.set("scope", "all");
-    url.searchParams.set(
-      "context",
-      window.location.pathname
-    );
-    url.searchParams.set(
-      "contextTitle",
-      currentPageTitle()
-    );
-
     url.searchParams.delete("cve");
 
     for (const cve of cves) {
@@ -100,8 +106,74 @@
     }
   }
 
-  function initialize() {
-    applyVulnerabilityContext();
+  function applyThreatContext(context) {
+    const link = document.querySelector(
+      '[data-suite-key="investigate"]'
+    );
+
+    if (!link) return;
+
+    const actors = Array.isArray(context?.actors)
+      ? context.actors
+      : [];
+
+    const techniques = Array.isArray(context?.techniques)
+      ? context.techniques
+      : [];
+
+    if (!actors.length && !techniques.length) return;
+
+    const url = new URL(link.href);
+
+    addCommonContext(url);
+
+    url.searchParams.delete("actor");
+    url.searchParams.delete("technique");
+    url.searchParams.delete("entity");
+
+    for (const actor of actors) {
+      url.searchParams.append("actor", actor);
+    }
+
+    for (const technique of techniques) {
+      url.searchParams.append("technique", technique);
+    }
+
+    // Only auto-select when there is one unambiguous primary entity.
+    if (actors.length === 1) {
+      url.searchParams.set("entity", `actor:${actors[0]}`);
+    } else if (actors.length === 0 && techniques.length === 1) {
+      url.searchParams.set(
+        "entity",
+        `technique:${techniques[0]}`
+      );
+    }
+
+    link.href = url.toString();
+
+    const small = link.querySelector("small");
+    if (!small) return;
+
+    if (actors.length === 1) {
+      small.textContent = `Investigate · ${actors[0]}`;
+    } else if (actors.length > 1) {
+      small.textContent =
+        `Investigate · ${actors.length} actors`;
+    } else if (techniques.length === 1) {
+      small.textContent =
+        `Investigate · ${techniques[0]}`;
+    } else {
+      small.textContent =
+        `Investigate · ${techniques.length} ATT&CK`;
+    }
+  }
+
+  async function initialize() {
+    const context = await loadArticleContext();
+    if (!context) return;
+
+    applyThreatContext(context);
+    applyVulnerabilityContext(context);
   }
 
   if (typeof document$ !== "undefined" && document$?.subscribe) {

@@ -1,9 +1,32 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "articles_scanned": 87,
+  "articles_with_context": 15,
   "articles_with_cves": 3,
+  "articles_with_actors": 0,
+  "articles_with_techniques": 12,
   "unique_cve_count": 3,
+  "unique_actor_count": 0,
+  "unique_technique_count": 22,
   "articles": {
+    "ai-security/ai-infrastructure-control-plane-attacks/": {
+      "title": "AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk",
+      "source": "docs/ai-security/ai-infrastructure-control-plane-attacks.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1190",
+        "T1552.001"
+      ],
+      "technique_count": 2,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
     "ai-security/langgrinch-ai-application-supply-chain/": {
       "title": "LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる",
       "source": "docs/ai-security/langgrinch-ai-application-supply-chain.md",
@@ -11,7 +34,15 @@
         "CVE-2025-68664"
       ],
       "cve_count": 1,
-      "detection": "auto"
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [],
+      "technique_count": 0,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
     },
     "cybersecurity/dell-recoverpoint-zero-day-trust-plane/": {
       "title": "Dell RecoverPoint Zero-day ― 「Recovery製品」自体が長期Persistenceの足場になる",
@@ -20,7 +51,58 @@
         "CVE-2026-22769"
       ],
       "cve_count": 1,
-      "detection": "auto"
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [],
+      "technique_count": 0,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "cybersecurity/f5-confluence-edge-to-identity/": {
+      "title": "Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点",
+      "source": "docs/cybersecurity/f5-confluence-edge-to-identity.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1021.004",
+        "T1078.002",
+        "T1083",
+        "T1187",
+        "T1190",
+        "T1505",
+        "T1557"
+      ],
+      "technique_count": 7,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "cybersecurity/jadepuffer-agentic-ransomware/": {
+      "title": "JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ",
+      "source": "docs/cybersecurity/jadepuffer-agentic-ransomware.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1190",
+        "T1485",
+        "T1486",
+        "T1657"
+      ],
+      "technique_count": 4,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
     },
     "cybersecurity/july-2026-trust-infrastructure-zero-days/": {
       "title": "2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方",
@@ -29,7 +111,182 @@
         "CVE-2026-56155"
       ],
       "cve_count": 1,
-      "detection": "auto"
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [],
+      "technique_count": 0,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "cybersecurity/large-scale-credential-attacks/": {
+      "title": "Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security",
+      "source": "docs/cybersecurity/large-scale-credential-attacks.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1078",
+        "T1110.002",
+        "T1110.003",
+        "T1552.001"
+      ],
+      "technique_count": 4,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "cybersecurity/mastra-npm-ai-supply-chain/": {
+      "title": "Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる",
+      "source": "docs/cybersecurity/mastra-npm-ai-supply-chain.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1195.001"
+      ],
+      "technique_count": 1,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "cybersecurity/mini-shai-hulud-antv/": {
+      "title": "Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する",
+      "source": "docs/cybersecurity/mini-shai-hulud-antv.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1195.001",
+        "T1528",
+        "T1552.001"
+      ],
+      "technique_count": 3,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "cybersecurity/openai-axios-signing-supply-chain/": {
+      "title": "Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した",
+      "source": "docs/cybersecurity/openai-axios-signing-supply-chain.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1195.001"
+      ],
+      "technique_count": 1,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "identity-security/ai-enabled-device-code-phishing/": {
+      "title": "AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする",
+      "source": "docs/identity-security/ai-enabled-device-code-phishing.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1098.005",
+        "T1114.003",
+        "T1528",
+        "T1566.002"
+      ],
+      "technique_count": 4,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "identity-security/aitm-token-compromise-code-of-conduct/": {
+      "title": "AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing",
+      "source": "docs/identity-security/aitm-token-compromise-code-of-conduct.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1539",
+        "T1566.002"
+      ],
+      "technique_count": 2,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "identity-security/shinyhunters-saas-data-theft/": {
+      "title": "ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む",
+      "source": "docs/identity-security/shinyhunters-saas-data-theft.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1078",
+        "T1098.005",
+        "T1566.004"
+      ],
+      "technique_count": 3,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "identity-security/teams-vishing-quick-assist/": {
+      "title": "Teams Vishing ― 「IT Supportを信じる」ことがInitial Accessになる",
+      "source": "docs/identity-security/teams-vishing-quick-assist.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1219.002",
+        "T1566.004"
+      ],
+      "technique_count": 2,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "identity-security/tycoon2fa-aitm-phaas/": {
+      "title": "Tycoon2FA ― MFA突破がPhishing-as-a-Serviceとして「産業化」した",
+      "source": "docs/identity-security/tycoon2fa-aitm-phaas.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1539",
+        "T1557",
+        "T1566.002"
+      ],
+      "technique_count": 3,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
     }
   }
 }

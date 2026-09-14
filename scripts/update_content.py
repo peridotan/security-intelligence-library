@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 for script in [
     "scripts/build_indexes.py",
+    "scripts/build_context_index.py",
     "scripts/sync_article_metadata.py",
     "scripts/check_content.py",
 ]:

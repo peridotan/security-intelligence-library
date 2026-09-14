@@ -38,6 +38,9 @@ jobs:
       - name: Generate derived indexes
         run: python scripts/build_indexes.py
 
+      - name: Generate intelligence context index
+        run: python scripts/build_context_index.py
+
       - name: Synchronize article metadata
         run: python scripts/sync_article_metadata.py
 

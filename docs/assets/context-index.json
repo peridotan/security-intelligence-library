@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "articles_scanned": 87,
+  "articles_with_cves": 3,
+  "unique_cve_count": 3,
+  "articles": {
+    "ai-security/langgrinch-ai-application-supply-chain/": {
+      "title": "LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる",
+      "source": "docs/ai-security/langgrinch-ai-application-supply-chain.md",
+      "cves": [
+        "CVE-2025-68664"
+      ],
+      "cve_count": 1,
+      "detection": "auto"
+    },
+    "cybersecurity/dell-recoverpoint-zero-day-trust-plane/": {
+      "title": "Dell RecoverPoint Zero-day ― 「Recovery製品」自体が長期Persistenceの足場になる",
+      "source": "docs/cybersecurity/dell-recoverpoint-zero-day-trust-plane.md",
+      "cves": [
+        "CVE-2026-22769"
+      ],
+      "cve_count": 1,
+      "detection": "auto"
+    },
+    "cybersecurity/july-2026-trust-infrastructure-zero-days/": {
+      "title": "2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方",
+      "source": "docs/cybersecurity/july-2026-trust-infrastructure-zero-days.md",
+      "cves": [
+        "CVE-2026-56155"
+      ],
+      "cve_count": 1,
+      "detection": "auto"
+    }
+  }
+}

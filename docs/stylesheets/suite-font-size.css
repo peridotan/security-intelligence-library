@@ -75,3 +75,119 @@
 @media screen and (max-width:30rem){
   .sil-font-size-label span{display:none}
 }
+
+/* Security Intelligence Suite font control alignment v1 */
+.sil-font-size-control{
+  justify-self:end;
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  padding:7px 9px;
+  border:1px solid #dce3ed;
+  border-radius:10px;
+  background:rgba(255,255,255,.9);
+}
+
+.sil-font-size-label{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  color:#68758a;
+  font-size:.6875rem;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.sil-font-size-label b{
+  color:#17365d;
+  font-size:.875rem;
+  letter-spacing:-.03em;
+}
+
+.sil-font-size-buttons{
+  display:inline-flex;
+  gap:3px;
+  padding:3px;
+  border-radius:8px;
+  background:#edf1f6;
+}
+
+.sil-font-size-buttons button{
+  border:1px solid transparent;
+  border-radius:6px;
+  background:transparent;
+  color:#536175;
+  padding:5px 8px;
+  font:inherit;
+  font-size:.6875rem;
+  font-weight:850;
+  line-height:1.2;
+  cursor:pointer;
+  transition:background .15s ease,border-color .15s ease,color .15s ease,box-shadow .15s ease;
+}
+
+.sil-font-size-buttons button:hover{
+  background:#fff;
+  border-color:#c7d3e2;
+  color:#17365d;
+}
+
+.sil-font-size-buttons button[aria-pressed="true"]{
+  background:#17365d;
+  border-color:#17365d;
+  color:#fff;
+  box-shadow:0 2px 7px rgba(23,54,93,.16);
+}
+
+@media screen and (max-width:65.625rem){
+  .sil-font-size-control{
+    justify-self:end;
+  }
+}
+
+@media screen and (max-width:47.5rem){
+  .sil-font-size-control{
+    justify-self:start;
+    align-self:auto;
+  }
+}
+
+@media screen and (max-width:30rem){
+  .sil-font-size-label span{
+    display:inline;
+  }
+}
+
+/* Security Intelligence Suite font control visual alignment v1 */
+.sil-font-size-label{
+  font-size:.55rem;
+}
+
+.sil-font-size-label b{
+  font-size:.70rem;
+}
+
+.sil-font-size-buttons button{
+  font-size:.55rem;
+}
+
+/* Suite chrome exact font-control typography v1 */
+.sil-font-size-label{
+  font-size:calc(11px * var(--suite-font-scale, 1));
+}
+
+.sil-font-size-label b{
+  font-size:calc(14px * var(--suite-font-scale, 1));
+}
+
+.sil-font-size-buttons button{
+  font-size:calc(11px * var(--suite-font-scale, 1));
+}
+
+/* Suite chrome exact font family alignment */
+.sil-font-size-control,
+.sil-font-size-control button{
+  font-family:Inter,"Noto Sans JP","Yu Gothic UI","Yu Gothic",system-ui,-apple-system,sans-serif;
+}

@@ -117,3 +117,172 @@
 .sil-suite-link{
   min-width:0;
 }
+
+/* Security Intelligence Suite top chrome alignment v1
+   Align Zensical Library chrome with Threat / Vulnerability. */
+.sil-suite-bar{
+  width:100%;
+  border-bottom:1px solid #d9e2ea;
+  background:#f7f9fb;
+  color:#17324d;
+}
+
+.sil-suite-bar__inner.md-grid{
+  width:min(1240px,calc(100% - 32px));
+  max-width:none;
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:18px;
+  min-height:58px;
+  padding:8px 0;
+}
+
+.sil-suite-bar__brand{
+  color:#607080;
+  font-size:.6875rem;
+  font-weight:900;
+  letter-spacing:.12em;
+  white-space:nowrap;
+}
+
+.sil-suite-bar__links{
+  display:grid;
+  grid-template-columns:1.28fr 1.05fr 1.22fr;
+  align-items:stretch;
+  justify-content:stretch;
+  gap:4px;
+  min-width:0;
+  width:auto;
+  padding:4px;
+  border:1px solid #d8e2ee;
+  border-radius:14px;
+  background:rgba(255,255,255,.72);
+  overflow:visible;
+}
+
+.sil-suite-link{
+  display:grid;
+  align-content:center;
+  gap:2px;
+  min-width:0;
+  padding:7px 9px;
+  border:0;
+  border-radius:10px;
+  background:transparent;
+  color:#536175;
+  text-decoration:none;
+  line-height:1.2;
+}
+
+.sil-suite-link strong{
+  overflow:visible;
+  color:inherit;
+  font-size:.625rem;
+  font-weight:850;
+  text-overflow:clip;
+  white-space:normal;
+  line-height:1.15;
+}
+
+.sil-suite-link small{
+  overflow:visible;
+  color:#8290a4;
+  font-size:.5625rem;
+  font-weight:650;
+  text-overflow:clip;
+  white-space:nowrap;
+}
+
+.sil-suite-link:hover{
+  border:0;
+  background:#fff;
+  color:#17365d;
+  text-decoration:none;
+}
+
+.sil-suite-link.is-active{
+  border:0;
+  background:#17365d;
+  color:#fff;
+  box-shadow:0 2px 8px rgba(23,54,93,.16);
+}
+
+.sil-suite-link.is-active small{
+  color:rgba(255,255,255,.78);
+}
+
+@media screen and (max-width:65.625rem){
+  .sil-suite-bar__inner.md-grid{
+    grid-template-columns:1fr auto;
+    gap:10px 14px;
+  }
+
+  .sil-suite-bar__brand{
+    grid-column:1 / -1;
+  }
+
+  .sil-suite-bar__links{
+    width:auto;
+    justify-content:stretch;
+    overflow:visible;
+    padding-bottom:4px;
+  }
+}
+
+@media screen and (max-width:47.5rem){
+  .sil-suite-bar__inner.md-grid{
+    grid-template-columns:1fr;
+    align-items:stretch;
+  }
+
+  .sil-suite-bar__links{
+    grid-template-columns:1fr;
+  }
+
+  .sil-suite-link{
+    flex:initial;
+  }
+
+  .sil-suite-link small{
+    display:block;
+  }
+}
+
+/* Security Intelligence Suite top chrome font alignment v1
+   Zensical uses a larger root font size than the static dashboards,
+   so use adjusted rem values to match the same visual px size while
+   still respecting the shared Standard / Large / Extra Large setting. */
+.sil-suite-bar__brand{
+  font-size:.55rem;
+}
+
+.sil-suite-link strong{
+  font-size:.50rem;
+}
+
+.sil-suite-link small{
+  font-size:.45rem;
+}
+
+/* Suite chrome exact typography v1
+   Match static dashboards exactly at Standard / Large / Extra Large. */
+.sil-suite-bar__brand{
+  font-size:calc(11px * var(--suite-font-scale, 1));
+}
+
+.sil-suite-link strong{
+  font-size:calc(10px * var(--suite-font-scale, 1));
+}
+
+.sil-suite-link small{
+  font-size:calc(9px * var(--suite-font-scale, 1));
+}
+
+/* Suite chrome exact font family alignment */
+.sil-suite-bar,
+.sil-suite-bar button,
+.sil-suite-bar a{
+  font-family:Inter,"Noto Sans JP","Yu Gothic UI","Yu Gothic",system-ui,-apple-system,sans-serif;
+}

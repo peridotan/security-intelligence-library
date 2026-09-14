@@ -51,6 +51,7 @@
   function applyPreference(value, persist = true) {
     const next = isValid(value) ? value : 'standard';
     root.dataset.fontSize = next;
+    root.style.setProperty('--suite-font-scale', String(SIZES[next].scale));
     applyRootScale(SIZES[next].scale);
 
     document.querySelectorAll('#security-intelligence-suite-font-size [data-font-size]').forEach((button) => {

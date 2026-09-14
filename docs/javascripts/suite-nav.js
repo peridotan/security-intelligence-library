@@ -28,8 +28,25 @@
     return "library";
   }
 
-  function suiteUrl(path) {
-    return `${window.location.origin}${path}`;
+  function currentPageTitle() {
+    const heading = document.querySelector(".md-content h1, main h1, article h1");
+    return (heading?.textContent || document.title || "").trim();
+  }
+
+  function suiteUrl(item) {
+    const url = new URL(item.path, window.location.origin);
+
+    if (activeKey() === "library" && item.key === "investigate") {
+      url.searchParams.set("from", "security-intelligence-library");
+      url.searchParams.set("context", window.location.pathname);
+
+      const title = currentPageTitle();
+      if (title) {
+        url.searchParams.set("contextTitle", title);
+      }
+    }
+
+    return url.toString();
   }
 
   function buildSuiteNav() {
@@ -57,7 +74,7 @@
     SUITE_ITEMS.forEach((item) => {
       const link = document.createElement("a");
       link.className = "sil-suite-link";
-      link.href = suiteUrl(item.path);
+      link.href = suiteUrl(item);
       link.dataset.suiteKey = item.key;
       link.innerHTML = `<strong>${item.label}</strong><small>${item.phase}</small>`;
       if (item.key === current) {

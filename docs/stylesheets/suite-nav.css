@@ -1,0 +1,103 @@
+/* Security Intelligence Suite navigation — Phase 1 */
+.sil-suite-bar {
+  width: 100%;
+  border-bottom: 1px solid #d9e2ea;
+  background: #f7f9fb;
+  color: #17324d;
+}
+
+.sil-suite-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.15rem;
+  padding: 0.45rem 0.8rem;
+}
+
+.sil-suite-bar__brand {
+  flex: 0 0 auto;
+  color: #607080;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  white-space: nowrap;
+}
+
+.sil-suite-bar__links {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.sil-suite-link {
+  display: grid;
+  gap: 0.08rem;
+  min-width: 0;
+  padding: 0.38rem 0.62rem;
+  border: 1px solid transparent;
+  border-radius: 0.55rem;
+  color: #536175;
+  text-decoration: none;
+  line-height: 1.25;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.sil-suite-link strong {
+  overflow: hidden;
+  font-size: 0.72rem;
+  font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sil-suite-link small {
+  color: #7b8795;
+  font-size: 0.58rem;
+  white-space: nowrap;
+}
+
+.sil-suite-link:hover {
+  border-color: #b8c8d7;
+  background: #ffffff;
+  color: #17324d;
+  text-decoration: none;
+}
+
+.sil-suite-link.is-active {
+  border-color: #17324d;
+  background: #17324d;
+  color: #ffffff;
+}
+
+.sil-suite-link.is-active small {
+  color: #dbe6f0;
+}
+
+@media screen and (max-width: 60rem) {
+  .sil-suite-bar__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .sil-suite-bar__links {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.1rem;
+    scrollbar-width: thin;
+  }
+
+  .sil-suite-link {
+    flex: 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .sil-suite-link small {
+    display: none;
+  }
+}

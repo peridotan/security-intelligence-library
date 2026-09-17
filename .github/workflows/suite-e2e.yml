@@ -1,0 +1,48 @@
+name: Security Intelligence Suite E2E
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "17 0 * * *"
+
+  workflow_run:
+    workflows:
+      - Publish Security Intelligence Library
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+jobs:
+  live-e2e:
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install base dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install E2E dependencies
+        run: pip install -r requirements-e2e.txt
+
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run all-article Suite smoke test
+        run: python scripts/run_suite_e2e.py
+
+      - name: Run target rendering test
+        run: python scripts/run_suite_e2e_targets.py

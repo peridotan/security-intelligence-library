@@ -3,10 +3,10 @@
   "articles_scanned": 87,
   "articles_with_context": 15,
   "articles_with_cves": 3,
-  "articles_with_actors": 0,
+  "articles_with_actors": 1,
   "articles_with_techniques": 12,
   "unique_cve_count": 3,
-  "unique_actor_count": 0,
+  "unique_actor_count": 1,
   "unique_technique_count": 22,
   "articles": {
     "ai-security/ai-infrastructure-control-plane-attacks/": {
@@ -237,8 +237,10 @@
       "source": "docs/identity-security/shinyhunters-saas-data-theft.md",
       "cves": [],
       "cve_count": 0,
-      "actors": [],
-      "actor_count": 0,
+      "actors": [
+        "G1057"
+      ],
+      "actor_count": 1,
       "techniques": [
         "T1078",
         "T1098.005",
@@ -247,7 +249,7 @@
       "technique_count": 3,
       "detection": {
         "cves": "auto",
-        "actors": "auto",
+        "actors": "front-matter",
         "techniques": "mitre_attack"
       }
     },

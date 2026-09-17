@@ -49,6 +49,9 @@ evidence: Observed
 status: published
 pptx: ''
 media_rights: none
+handoff:
+  actors:
+  - G1057
 ---
 
 # ShinyHunters型SaaS Data Theft ― VishingでSSOを奪い、Cloud Dataを直接盗む

@@ -27,6 +27,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      - name: Checkout Threat Investigation data
+        uses: actions/checkout@v7
+        with:
+          repository: peridotan/threat-investigation-dashboard
+          path: .suite/threat-investigation-dashboard
+
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
@@ -46,6 +52,12 @@ jobs:
 
       - name: Check content quality and rights
         run: python scripts/check_content.py
+
+      - name: Check Suite handoff contracts
+        run: >
+          python scripts/check_suite_handoff.py
+          --threat-data
+          .suite/threat-investigation-dashboard/data/dashboard.json
 
       - name: Verify generated source is committed
         run: git diff --exit-code -- docs

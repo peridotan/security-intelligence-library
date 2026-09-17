@@ -12,6 +12,7 @@ for script in [
     "scripts/build_context_index.py",
     "scripts/sync_article_metadata.py",
     "scripts/check_content.py",
+    "scripts/check_suite_handoff.py",
 ]:
     subprocess.run([sys.executable, script], cwd=ROOT, check=True)
 

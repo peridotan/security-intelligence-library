@@ -15,6 +15,11 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Confirmed · Regulatory / Product Security</div>
+    <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="eu-ai-act-enforcement-2026.md">EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか</a>
     <div class="sil-card-meta">August 2026 · Immediate · Confirmed · Regulatory / AI Governance</div>
     <p>EU AI Actの2026年8月2日適用・執行強化とArticle 50透明性義務を日本企業向けに整理する。</p>

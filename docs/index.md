@@ -18,6 +18,18 @@ hide:
 <!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="regulation/eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
+    <div class="sil-card-meta">September 2026 · Regulation · Urgency: Immediate</div>
+    <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>
+    <a class="sil-card-more" href="regulation/eu-cra-reporting-obligations-live.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="identity-security/passkey-social-engineering-cloud-compromise.md">Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる</a>
+    <div class="sil-card-meta">September 2026 · Identity Security · Urgency: Immediate</div>
+    <p>Microsoftが2026年9月9日に報告したPasskey / MFA / SSO更新を口実とするSocial Engineeringから、AiTM・Device Code・認証手段追加・Microsoft Graph Recon・Clo…</p>
+    <a class="sil-card-more" href="identity-security/passkey-social-engineering-cloud-compromise.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="cybersecurity/ai-assisted-intrusion-10-hours.md">AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ</a>
     <div class="sil-card-meta">September 2026 · Cybersecurity · Urgency: Immediate</div>
     <p>Unit 42が2026年9月2日に公開した実侵害対応を基に、Frontier AI Agentが50超のATT&amp;CK Techniqueを10時間未満で横断し、Identity・Source Code・CI/CD・Cloud AIへ波及した…</p>
@@ -36,22 +48,10 @@ hide:
     <a class="sil-card-more" href="identity-security/teams-it-support-remote-session-intrusion.md">記事を読む →</a>
   </article>
   <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/ascii-smuggling-phishing-evasion.md">ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した</a>
-    <div class="sil-card-meta">September 2026 · Cybersecurity · Urgency: Near-term</div>
-    <p>Microsoftが2026年9月3日に公表した大規模Phishing Campaignを基に、AI Prompt Injection研究で知られたInvisible Unicode Tag Characterが従来型Email Filter…</p>
-    <a class="sil-card-more" href="cybersecurity/ascii-smuggling-phishing-evasion.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="ai-security/enterprise-frontier-safeguards-zdr.md">Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する</a>
-    <div class="sil-card-meta">September 2026 · AI Security · Urgency: Near-term</div>
-    <p>Anthropicが2026年9月1日に発表したEnterprise Frontier Safeguardsを基に、Zero Data RetentionとMisuse DetectionをCustomer-controlled Cloudで…</p>
-    <a class="sil-card-more" href="ai-security/enterprise-frontier-safeguards-zdr.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="ai-security/edge-ai-trust-attestation-provenance.md">Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る</a>
-    <div class="sil-card-meta">September 2026 · AI Security · Urgency: Strategic</div>
-    <p>Microsoft Security Researchが2026年9月4日に示したEdge AI Security Architectureを基に、Runtime Attestation、Artifact Provenance、Determi…</p>
-    <a class="sil-card-more" href="ai-security/edge-ai-trust-attestation-provenance.md">記事を読む →</a>
+    <a class="sil-card-title" href="identity-security/nist-ir8587-token-protection.md">Token Security Becomes Identity Control Plane ― NIST IR 8587 Final</a>
+    <div class="sil-card-meta">September 2026 · Identity Security · Urgency: Near-term</div>
+    <p>NISTとCISAが2026年9月15日にFinal版を公開したNIST IR 8587を基に、Identity / Access TokenとAssertionのSigning Key、Verification、Lifecycle、Work…</p>
+    <a class="sil-card-more" href="identity-security/nist-ir8587-token-protection.md">記事を読む →</a>
   </article>
 </div>
 <!-- AUTO:HOME_LATEST:END -->
@@ -84,8 +84,8 @@ hide:
 <div class="sil-cards">
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-09.md">September 2026 Intelligence</a>
-    <div class="sil-card-meta">6 Core Themes · <span class="sil-month-reviewed">As of 2026-09-08</span></div>
-    <p>GPT-6 AstraのCritical Cyber Capability、10時間未満のAI-assisted Intrusion、Teams Helpdesk Trust、Enterprise Frontier Safeguards、Edge AI Trust、ASCII Smugg…</p>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">As of 2026-09-24</span></div>
+    <p>Frontier AIのCritical Cyber Capability、10時間未満のAI-assisted Intrusion、Trust Attack、Passkey-themed Cloud Compromise、CRA報告義務、NIST Token Protection、EN…</p>
     <a class="sil-card-more" href="monthly/2026-09.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
@@ -117,13 +117,13 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">39</span></a>
-<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">24</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">41</span></a>
+<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">26</span></a>
 <a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">17</span></a>
+<a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">15</span></a>
+<a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="topics/index.md#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">12</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->

@@ -15,9 +15,19 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="passkey-social-engineering-cloud-compromise.md">Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Observed · Identity / Cloud</div>
+    <p>Microsoftが2026年9月9日に報告したPasskey / MFA / SSO更新を口実とするSocial Engineeringから、AiTM・Device Code・認証手段追加・Microsoft Graph Recon・Clo…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="teams-it-support-remote-session-intrusion.md">IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる</a>
     <div class="sil-card-meta">September 2026 · Immediate · Observed · Identity / Social Engineering</div>
     <p>Microsoftが2026年9月2日に報告したHuman-operated Intrusionを基に、Teams外部コラボレーション、IT Support偽装、RMM、Node.js Implant、AD Recon、WinRM横展開をId…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="nist-ir8587-token-protection.md">Token Security Becomes Identity Control Plane ― NIST IR 8587 Final</a>
+    <div class="sil-card-meta">September 2026 · Near-term · Confirmed · Identity / Cloud</div>
+    <p>NISTとCISAが2026年9月15日にFinal版を公開したNIST IR 8587を基に、Identity / Access TokenとAssertionのSigning Key、Verification、Lifecycle、Work…</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="../cybersecurity/ascii-smuggling-phishing-evasion.md">ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した</a>

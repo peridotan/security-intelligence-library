@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>87</strong> Articles</span>
+    <span><strong>91</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>374</strong> Detailed Tags</span>
+    <span><strong>394</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -28,7 +28,7 @@ hide:
 <a class="sil-topic" href="#mcp-security">MCP Security <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">18</span></a>
 <a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">12</span></a>
-<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">8</span></a>
+<a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">9</span></a>
 <a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">4</span></a>
 <a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">3</span></a>
 </div>
@@ -36,17 +36,17 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Identity</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">24</span></a>
-<a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">15</span></a>
+<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">26</span></a>
+<a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">7</span></a>
+<a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">3</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">11</span></a>
-<a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">12</span></a>
+<a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
 </div>
@@ -54,9 +54,9 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Governance &amp; Risk</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">17</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">39</span></a>
+<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
+<a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">41</span></a>
 </div>
 </section>
 </div>
@@ -137,6 +137,7 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 
 - [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
 - [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
+- [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic · Assessment
 - [AI生成スクリプトがPLC標的活動に登場 ― OT/ICSセキュリティの転換点](../cybersecurity/ai-generated-plc-attacks.md) — August 2026 · Immediate · Observed
 - [AI Enabled Malwareの現実 ― 「405検体・97%」をどう読むか](../ai-security/ai-enabled-malware-reality.md) — August 2026 · Near-term · Observed
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
@@ -169,7 +170,9 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 人・Workload・NHI・AI Agentを含むIdentityの認証・認可・監視。
 
+- [Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる](../identity-security/passkey-social-engineering-cloud-compromise.md) — September 2026 · Immediate · Observed
 - [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
+- [Token Security Becomes Identity Control Plane ― NIST IR 8587 Final](../identity-security/nist-ir8587-token-protection.md) — September 2026 · Near-term · Confirmed
 - [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md) — August 2026 · Immediate · Mixed
 - [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
@@ -198,6 +201,7 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 Passkey / FIDO2と、登録・回復を含むフィッシング耐性認証。
 
+- [Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる](../identity-security/passkey-social-engineering-cloud-compromise.md) — September 2026 · Immediate · Observed
 - [Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkeyから学ぶ](../identity-security/pass-the-passkey.md) — August 2026 · Near-term · Observed
 - [Passkey時代の次の攻撃面 ― 登録・回復フローを狙うSocial Engineering](../identity-security/passkey-enrollment-recovery-attacks.md) — July 2026 · Immediate · Observed
 - [Microsoft Entra IDがPasskeyを既定へ ― SMS / Voice MFA終了に向けた移行設計](../identity-security/entra-passkeys-default.md) — July 2026 · Near-term · Confirmed
@@ -209,6 +213,7 @@ Passkey / FIDO2と、登録・回復を含むフィッシング耐性認証。
 
 Password Spraying、MFA Fatigue、漏えい資格情報、Recovery悪用。
 
+- [Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる](../identity-security/passkey-social-engineering-cloud-compromise.md) — September 2026 · Immediate · Observed
 - [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
 - [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md) — August 2026 · Immediate · Mixed
@@ -241,6 +246,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 実悪用、KEV / EPSS、Patch優先度、Exploit Windowを含む脆弱性管理。
 
+- [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える](../cybersecurity/exploitation-window-48-hours.md) — August 2026 · Immediate · Observed
 - [2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方](../cybersecurity/july-2026-trust-infrastructure-zero-days.md) — July 2026 · Immediate · Confirmed
@@ -257,6 +263,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 Ransomware対策、Backup / Restore、Business Resilience。
 
+- [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic · Assessment
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
 - [NIST IR 8374r1 ― Ransomware対策を「製品導入」からCSF 2.0の経営Riskへ](../risk-management/nist-ransomware-csf2-profile.md) — June 2026 · Near-term · Confirmed
 - [NIST SP 1339 ― OT Backupは「取得」ではなくChange ManagementとRecovery Exerciseで守る](../cybersecurity/nist-ot-backup-sp1339.md) — June 2026 · Near-term · Confirmed
@@ -294,6 +301,7 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 
 Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 
+- [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic · Assessment
 - [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](../risk-management/c-scrm-due-diligence-sp1326.md) — July 2026 · Near-term · Confirmed
 - [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic · Confirmed
 - [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](../cybersecurity/mastra-npm-ai-supply-chain.md) — June 2026 · Immediate · Observed
@@ -315,6 +323,7 @@ Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 
 AI・Cybersecurity・重要インフラに関する法規制・政策・公的Guidance。
 
+- [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか](../regulation/eu-ai-act-enforcement-2026.md) — August 2026 · Immediate · Confirmed
 - [重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと](../regulation/japan-critical-infrastructure-unified-standard.md) — August 2026 · Near-term · Confirmed
 - [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed
@@ -337,9 +346,11 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
+- [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
 - [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed
 - [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
+- [Token Security Becomes Identity Control Plane ― NIST IR 8587 Final](../identity-security/nist-ir8587-token-protection.md) — September 2026 · Near-term · Confirmed
 - [Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する](../ai-security/enterprise-frontier-safeguards-zdr.md) — September 2026 · Near-term · Confirmed
 - [Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る](../ai-security/edge-ai-trust-attestation-provenance.md) — September 2026 · Strategic · Assessment
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed

@@ -17,6 +17,16 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../regulation/eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Confirmed · Regulatory / Product Security</div>
+    <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/passkey-social-engineering-cloud-compromise.md">Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる</a>
+    <div class="sil-card-meta">September 2026 · Immediate · Observed · Identity / Cloud</div>
+    <p>Microsoftが2026年9月9日に報告したPasskey / MFA / SSO更新を口実とするSocial Engineeringから、AiTM・Device Code・認証手段追加・Microsoft Graph Recon・Clo…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../cybersecurity/ai-assisted-intrusion-10-hours.md">AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ</a>
     <div class="sil-card-meta">September 2026 · Immediate · Observed · Threat Landscape / Identity</div>
     <p>Unit 42が2026年9月2日に公開した実侵害対応を基に、Frontier AI Agentが50超のATT&amp;CK Techniqueを10時間未満で横断し、Identity・Source Code・CI/CD・Cloud AIへ波及した…</p>
@@ -32,9 +42,19 @@ hide:
     <p>Microsoftが2026年9月2日に報告したHuman-operated Intrusionを基に、Teams外部コラボレーション、IT Support偽装、RMM、Node.js Implant、AD Recon、WinRM横展開をId…</p>
   </article>
   <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/nist-ir8587-token-protection.md">Token Security Becomes Identity Control Plane ― NIST IR 8587 Final</a>
+    <div class="sil-card-meta">September 2026 · Near-term · Confirmed · Identity / Cloud</div>
+    <p>NISTとCISAが2026年9月15日にFinal版を公開したNIST IR 8587を基に、Identity / Access TokenとAssertionのSigning Key、Verification、Lifecycle、Work…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/enterprise-frontier-safeguards-zdr.md">Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する</a>
     <div class="sil-card-meta">September 2026 · Near-term · Confirmed · AI Governance / Privacy</div>
     <p>Anthropicが2026年9月1日に発表したEnterprise Frontier Safeguardsを基に、Zero Data RetentionとMisuse DetectionをCustomer-controlled Cloudで…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/enisa-threat-landscape-2026-dependencies.md">Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026</a>
+    <div class="sil-card-meta">September 2026 · Strategic · Assessment · Cyber Resilience / Third-party</div>
+    <p>ENISAが2026年9月22日に公開したThreat Landscape 2026を基に、2025年観測データからRansomware、DDoS、Vulnerability Exploitation、Supply Chain / Third…</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/edge-ai-trust-attestation-provenance.md">Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る</a>

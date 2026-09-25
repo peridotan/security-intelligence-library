@@ -3,11 +3,17 @@ version: 1
 # Deterministic routing policy. These rules select where a candidate should go;
 # they do not decide whether an article is ultimately published.
 defaults:
+  # Broad source expansion defaults to Watch. A human can promote a high-signal
+  # candidate to Library during Triage Review before merge.
   route: watch
 
 source_defaults:
   nist-cybersecurity: library
   cisa-csaf-it: vulnerability
+
+  # Product/CVE-oriented MSRC updates belong in Vulnerability Intelligence by
+  # default. Broader Microsoft Security Blog posts remain Watch via the default.
+  msrc-security-update-guide: vulnerability
 
 csaf:
   # Active exploitation is promoted to a Library candidate because it can become

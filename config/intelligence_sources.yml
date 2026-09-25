@@ -1,8 +1,10 @@
 version: 1
 
-# Phase 2A source registry.
-# Keep this list intentionally small until the review flow is validated.
+# Security Intelligence source registry.
+# Primary / first-party feeds are preferred. Most newly added sources route to
+# Watch by default so source expansion does not automatically create articles.
 sources:
+  # Standards / government / national CERT
   - id: nist-cybersecurity
     name: NIST Cybersecurity
     type: rss
@@ -25,5 +27,94 @@ sources:
       published: published
       updated: updated
     link_transform: github_raw_to_blob
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: jpcert-alerts
+    name: JPCERT/CC Alerts
+    type: rss
+    url: https://www.jpcert.or.jp/english/rss/jpcert-en.rdf
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: jpcert-blog
+    name: JPCERT/CC Blog
+    type: rss
+    url: https://blogs.jpcert.or.jp/en/atom.xml
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: ncsc-reports
+    name: UK NCSC Reports
+    type: rss
+    url: https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml
+    enabled: true
+    category_hint: risk-management
+    trust: primary
+
+  # Vendor / platform first-party security feeds
+  - id: msrc-security-update-guide
+    name: Microsoft Security Response Center
+    type: rss
+    url: https://api.msrc.microsoft.com/update-guide/rss
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: microsoft-security-blog
+    name: Microsoft Security Blog
+    type: rss
+    url: https://www.microsoft.com/en-us/security/blog/feed/
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: google-security-blog
+    name: Google Security Blog
+    type: rss
+    url: https://security.googleblog.com/feeds/posts/default
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: okta-security
+    name: Okta Security
+    type: rss
+    url: https://sec.okta.com/rss.xml
+    enabled: true
+    category_hint: identity-security
+    trust: primary
+
+  - id: aws-security-blog
+    name: AWS Security Blog
+    type: rss
+    url: https://aws.amazon.com/blogs/security/feed/
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: cloudflare-blog
+    name: Cloudflare Blog
+    type: rss
+    url: https://blog.cloudflare.com/rss/
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: unit42
+    name: Palo Alto Networks Unit 42
+    type: rss
+    url: https://unit42.paloaltonetworks.com/feed/
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: crowdstrike-blog
+    name: CrowdStrike Blog
+    type: rss
+    url: https://www.crowdstrike.com/en-us/blog/feed/
+    enabled: true
     category_hint: cybersecurity
     trust: primary

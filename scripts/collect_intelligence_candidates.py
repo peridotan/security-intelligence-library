@@ -25,6 +25,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "intelligence_sources.yml"
 DOCS = ROOT / "docs"
+AUTOMATION_REVIEW = ROOT / ".automation-review"
 
 USER_AGENT = (
     "Security-Intelligence-Library/1.0 "
@@ -230,8 +231,35 @@ def fetch_source(source: dict, timeout: int) -> bytes:
         return response.read()
 
 
-def existing_urls() -> set[str]:
+def accepted_triage_urls() -> set[str]:
+    """Return URLs already accepted by merged schema-v2 triage reviews."""
     urls: set[str] = set()
+    if not AUTOMATION_REVIEW.exists():
+        return urls
+
+    for path in sorted(AUTOMATION_REVIEW.glob("candidates-*.json")):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+            continue
+
+        if int(payload.get("schema_version") or 0) < 2:
+            continue
+
+        for candidate in payload.get("candidates", []) or []:
+            if not isinstance(candidate, dict) or "triage" not in candidate:
+                continue
+            url = str(candidate.get("url", "") or "").strip()
+            if url:
+                urls.add(url)
+
+    return urls
+
+
+def existing_urls() -> set[str]:
+    # A merged triage review is a completed human decision even when the route is
+    # Vulnerability or Watch. Do not propose the same source again every week.
+    urls: set[str] = accepted_triage_urls()
     if not DOCS.exists():
         return urls
     for path in DOCS.rglob("*.md"):

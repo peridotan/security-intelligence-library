@@ -1,0 +1,75 @@
+name: Collect Security Intelligence Candidates
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Lookback window in days"
+        required: true
+        default: "7"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect-candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect candidates
+        id: collect
+        run: |
+          python scripts/collect_intelligence_candidates.py \
+            --days "${{ inputs.days }}" \
+            --output-json ".automation-review/candidates-${GITHUB_RUN_ID}.json" \
+            --output-md ".automation-review/candidates-${GITHUB_RUN_ID}.md" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Add collection summary
+        run: |
+          cat "${{ steps.collect.outputs.candidate_md }}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create candidate review pull request
+        if: steps.collect.outputs.candidate_count != '0'
+        id: review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEWER: ${{ github.repository_owner }}
+          REVIEW_TITLE: "[Candidate Review] Security Intelligence source scan"
+          REVIEW_BODY: |
+            Automated source collection found **${{ steps.collect.outputs.candidate_count }}**
+            new Security Intelligence candidate(s).
+
+            Please review the generated candidate list and source links.
+
+            **Approve + merge** means the candidate set may proceed to the future drafting phase.
+            This PR does not publish any Library article.
+          COMMIT_MESSAGE: "Add Security Intelligence candidate review"
+          BRANCH_PREFIX: "automation/candidate-review"
+        run: scripts/open_review_pr.sh
+
+      - name: No candidate notice
+        if: steps.collect.outputs.candidate_count == '0'
+        run: |
+          echo "No new candidates were found; no review PR was created." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Show review link
+        if: steps.collect.outputs.candidate_count != '0'
+        run: |
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Human review" >> "$GITHUB_STEP_SUMMARY"
+          echo "PR: ${{ steps.review.outputs.pr_url }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "A review was requested from @${{ github.repository_owner }}." >> "$GITHUB_STEP_SUMMARY"

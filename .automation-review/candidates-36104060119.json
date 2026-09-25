@@ -1,0 +1,1340 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-09-25T06:42:25.838191+00:00",
+  "window_days": 7,
+  "candidate_count": 62,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 93
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_type": "rss",
+      "fetched": 5110
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 86
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "error": "ValueError: unsupported feed root: rdf"
+    }
+  ],
+  "candidates": [
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+      "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-24T16:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "​​​​​​​​What’s new in Microsoft Security: September 2026​​",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+      "summary": "This month's updates help you discover and control local AI agents, extend Zero Trust to agent traffic, and strengthen SOC foundations. The post ​​​​​​​​What’s new in Microsoft Security: September 2026​​ appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-24T16:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+      "url": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+      "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
+      "published_at": "2026-09-24T15:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 15:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69681 Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulernability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69681",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69732 Windows Link Layer Topology Discovery Protocol Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69732",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-71337 Windows Storage Management Provider Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71337",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69282 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69282",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-81357 Visual Studio Code Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81357",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-68894 Windows Error Reporting Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68894",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69637 Windows DHCP Server Denial of Service Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69637",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69803 Windows DHCP Server Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69803",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69409 Microsoft Office SharePoint Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69409",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69590 Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69590",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-80073 Microsoft Office Outlook Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80073",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-81951 Microsoft Excel Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81951",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-59113 Visual Studio Code Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59113",
+      "summary": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Security Updates table. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-65675 CoPilot Chat Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65675",
+      "summary": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Security Updates table. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-54981 Visual Studio Code Python Extension Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54981",
+      "summary": "Updated the fixed version information and download link. The fix was previously believed to be included in Dynamics 365 Server (on-premises) version 6.2; however, it has been confirmed that the fix is included in Dynamics 365 Server v9.1 (on-premises) Update 1.45 (version 9.1.0045.0011). The download link, release notes, and build number has been updated accordingly in the Security Updates table. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-68804 Microsoft Excel Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87564: Type confusion in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87564",
+      "summary": "Information published.",
+      "published_at": "2026-09-24T08:44:17+00:00",
+      "published_raw": "Thu, 24 Sep 2026 01:44:17 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87587: Use after free in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87587",
+      "summary": "Information published.",
+      "published_at": "2026-09-24T08:43:38+00:00",
+      "published_raw": "Thu, 24 Sep 2026 01:43:38 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Named a Leader in The Forrester Wave™: Proactive Security Platforms, Q3 2026",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-forrester-wave-proactive-security-platforms-q3-2026/",
+      "summary": "",
+      "published_at": "2026-09-24T05:00:00+00:00",
+      "published_raw": "Sep 24, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "ICYMI: August 2026 @AWS Security",
+      "url": "https://aws.amazon.com/blogs/security/icymi-august-2026-aws-security/",
+      "summary": "Read all about the latest AWS security features, compliance updates, and hands-on resources in our monthly digest posts. You’ll find expert blog posts, new service capabilities, code samples, and workshops. AWS Security Blog posts August brought 20 AWS Security Blog posts organized across seven categories. Identity and access management led the month with five posts […]",
+      "published_at": "2026-09-23T23:07:36+00:00",
+      "published_raw": "Wed, 23 Sep 2026 23:07:36 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Reimagining the SOC for the agentic era in Microsoft Defender",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+      "summary": "We are announcing ISOC in Microsoft Defender: a foundation built for agentic security that brings leading solutions for SIEM and threat protection together. The post Reimagining the SOC for the agentic era in Microsoft Defender appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-23T16:00:00+00:00",
+      "published_raw": "Wed, 23 Sep 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Supporting ASD’s multi-factor authentication campaign: Why MFA matters more than ever",
+      "url": "https://aws.amazon.com/blogs/security/supporting-asds-multi-factor-authentication-campaign-why-mfa-matters-more-than-ever/",
+      "summary": "The Australian Signals Directorate (ASD) has this month issued a clear call to action through its Multi-factor authentication: Switch it on campaign, urging businesses, organisations, and individuals to enable multi-factor authentication (MFA) across their online accounts. At AWS, we strongly support this message. As threat actors continue to target credentials through phishing, credential stuffing, and […]",
+      "published_at": "2026-09-23T14:45:44+00:00",
+      "published_raw": "Wed, 23 Sep 2026 14:45:44 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-70125 Microsoft Outlook Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
+      "summary": "Information published. This CVE was addressed by updates that were released in September 2026, but the CVE was inadvertently omitted from the September 2026 Security Updates. This is an informational change only. Customers who have already installed the September 2026 updates do not need to take any further action.",
+      "published_at": "2026-09-23T14:00:00+00:00",
+      "published_raw": "Wed, 23 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87612: Type confusion in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87612",
+      "summary": "Information published.",
+      "published_at": "2026-09-23T08:43:38+00:00",
+      "published_raw": "Wed, 23 Sep 2026 01:43:38 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87489: Memory corruption in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87489",
+      "summary": "Information published.",
+      "published_at": "2026-09-23T08:43:17+00:00",
+      "published_raw": "Wed, 23 Sep 2026 01:43:17 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87536: Use after free in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87536",
+      "summary": "Information published.",
+      "published_at": "2026-09-23T08:42:58+00:00",
+      "published_raw": "Wed, 23 Sep 2026 01:42:58 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87625: Use after free in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87625",
+      "summary": "Information published.",
+      "published_at": "2026-09-23T08:42:46+00:00",
+      "published_raw": "Wed, 23 Sep 2026 01:42:46 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium CVE-2026-87601: Race condition in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87601",
+      "summary": "Information published.",
+      "published_at": "2026-09-23T08:42:35+00:00",
+      "published_raw": "Wed, 23 Sep 2026 01:42:35 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+      "summary": "EvilTokens has quickly become one of the top PhaaS platforms, enabling device code phishing attacks through AI-assisted lures, automated infrastructure, and token theft. In collaboration with partners, Microsoft Digital Crimes Unit (DCU) facilitated a disruption of EvilTokens infrastructure and operations. The post Unmasking EvilTokens: Getting to the root of device code phishing appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-22T15:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 15:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "url": "https://blog.cloudflare.com/vary-support/",
+      "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpredictable.",
+      "published_at": "2026-09-22T14:04:31+00:00",
+      "published_raw": "Tue, 22 Sep 2026 14:04:31 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-57099 ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57099",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-77886 Windows DHCP Server Denial of Service Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77886",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-68824 Connected User Experiences and Telemetry Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68824",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69498 Windows Win32k Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69498",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69572 Windows SMB Client Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69572",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-69620 Windows DHCP Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69620",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-55134 Microsoft Word Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55134",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-57091 Windows File History Service Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57091",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+      "url": "https://blog.cloudflare.com/worker-previews/",
+      "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production.",
+      "published_at": "2026-09-22T13:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Transforming Bedrock Guardrails events into OCSF with CloudWatch",
+      "url": "https://aws.amazon.com/blogs/security/transforming-bedrock-guardrails-events-into-ocsf-with-cloudwatch/",
+      "summary": "Security teams investigating possible AI-related security events need guardrail intervention data alongside their existing security telemetry. When a guardrail identifies or blocks a prompt injection attempt or redacts sensitive data, that intervention carries additional investigative value comparable to a failed sign-in or a network intrusion alert. AWS Bedrock publishes this telemetry to AWS CloudWatch metrics […]",
+      "published_at": "2026-09-21T15:33:25+00:00",
+      "published_raw": "Mon, 21 Sep 2026 15:33:25 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-68825 Windows Bind Filter Driver Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68825",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-78517 Microsoft Office Word Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78517",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-77901 Microsoft Office Word Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77901",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-78526 Microsoft Office Word Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78526",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-83498 Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83498",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-63516 Microsoft SharePoint Server Spoofing Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63516",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-62871 .NET Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62871",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-63532 Microsoft Office Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63532",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-68798 Microsoft Excel Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68798",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-55039 Microsoft Excel Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55039",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-55123 Microsoft PowerPoint Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55123",
+      "summary": "Updated an acknowledgement. This is an informational change only.",
+      "published_at": "2026-09-21T14:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Python Workers are now generally available",
+      "url": "https://blog.cloudflare.com/python-workers-ga/",
+      "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
+      "published_at": "2026-09-21T13:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies",
+      "url": "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/",
+      "summary": "We explore how AWS neutralizes exposed IAM credentials using managed policies, detailing GitHub secret scanning and CloudTrail monitoring strategies. The post From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies appeared first on Unit 42 .",
+      "published_at": "2026-09-21T10:00:13+00:00",
+      "published_raw": "Mon, 21 Sep 2026 10:00:13 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Saving another 100TB of RAM with math (and Rust)",
+      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RAM usage with statistics.",
+      "published_at": "2026-09-18T17:23:58+00:00",
+      "published_raw": "Fri, 18 Sep 2026 17:23:58 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "CVE-2026-88097 Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88097",
+      "summary": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges locally.",
+      "published_at": "2026-09-18T14:00:00+00:00",
+      "published_raw": "Fri, 18 Sep 2026 07:00:00 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
+      "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
+      "summary": "Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity appeared first on Unit 42 .",
+      "published_at": "2026-09-18T10:00:36+00:00",
+      "published_raw": "Fri, 18 Sep 2026 10:00:36 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "msrc-security-update-guide",
+      "source_name": "Microsoft Security Response Center",
+      "source_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "title": "Chromium: CVE-2026-0899 Out of bounds memory access in V8",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0899",
+      "summary": "Information published.",
+      "published_at": "2026-09-18T08:47:53+00:00",
+      "published_raw": "Fri, 18 Sep 2026 01:47:53 -0700",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: vulnerability"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "watch": 15,
+    "vulnerability": 47
+  }
+}

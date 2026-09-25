@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-09-25T01:27:32.267636+00:00",
+  "window_days": 7,
+  "candidate_count": 2,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 93
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Araxis Merge",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-267-01.json",
+      "summary": "Araxis Merge for Windows version 2011.4074 through 2026.0 stores user-configured credentials for remote servers in the Windows registry and does not apply sufficient cryptographic protection. An authenticated, non-administrative user could retrieve and unencrypt other users' credentials.",
+      "published_at": "2026-09-24T14:21:29+00:00",
+      "published_raw": "2026-09-24T14:21:29Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-267-01.json",
+        "document_category": "csaf_vex",
+        "summary": "Araxis Merge for Windows version 2011.4074 through 2026.0 stores user-configured credentials for remote servers in the Windows registry and does not apply sufficient cryptographic protection. An authenticated, non-administrative user could retrieve and unencrypt other users' credentials.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-92680"
+        ],
+        "max_cvss": 5.5,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "product-specific CSAF advisory; source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Plex Media Server",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-266-01.json",
+      "summary": "Plex Media Server before 1.43.3.10861 contains multiple vulnerabilities. In the worst case, a remote attacker could steal a legitimate user's account credentials and eventually write arbitrary files or execute code.",
+      "published_at": "2026-09-23T15:39:29+00:00",
+      "published_raw": "2026-09-23T15:39:29Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-266-01.json",
+        "document_category": "csaf_vex",
+        "summary": "Plex Media Server before 1.43.3.10861 contains multiple vulnerabilities. In the worst case, a remote attacker could steal a legitimate user's account credentials and eventually write arbitrary files or execute code.",
+        "vulnerability_count": 5,
+        "cves": [
+          "CVE-2026-96651",
+          "CVE-2026-96652",
+          "CVE-2026-96654",
+          "CVE-2026-96655",
+          "CVE-2026-96656"
+        ],
+        "max_cvss": 7.2,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "5 vulnerabilities >= watch threshold 3"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "vulnerability": 1,
+    "watch": 1
+  }
+}

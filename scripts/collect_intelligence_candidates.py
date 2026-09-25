@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect recent Security Intelligence candidates from configured RSS/Atom feeds.
+"""Collect recent Security Intelligence candidates from configured feeds.
 
 Phase 2A intentionally stops at candidate collection. It does not publish articles and
 does not use an LLM. The generated JSON/Markdown files are submitted through the
@@ -9,13 +9,13 @@ existing human review pull-request flow.
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
 import json
 import re
-import sys
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 import xml.etree.ElementTree as ET
@@ -38,7 +38,7 @@ SPACE_RE = re.compile(r"\s+")
 def clean_text(value: str | None, limit: int = 700) -> str:
     if not value:
         return ""
-    value = TAG_RE.sub(" ", unescape(value))
+    value = TAG_RE.sub(" ", unescape(str(value)))
     value = SPACE_RE.sub(" ", value).strip()
     if len(value) <= limit:
         return value
@@ -48,7 +48,7 @@ def clean_text(value: str | None, limit: int = 700) -> str:
 def parse_datetime(value: str | None) -> datetime | None:
     if not value:
         return None
-    value = value.strip()
+    value = str(value).strip()
     try:
         dt = parsedate_to_datetime(value)
         if dt.tzinfo is None:
@@ -65,6 +65,31 @@ def parse_datetime(value: str | None) -> datetime | None:
         return dt.astimezone(timezone.utc)
     except ValueError:
         return None
+
+
+def get_nested(value, path: str | None, default=None):
+    if not path:
+        return default
+    current = value
+    for part in path.split("."):
+        if isinstance(current, dict) and part in current:
+            current = current[part]
+        else:
+            return default
+    return current
+
+
+def transform_link(link: str, source: dict) -> str:
+    link = (link or "").strip()
+    if source.get("link_transform") == "github_raw_to_blob":
+        prefix = "https://raw.githubusercontent.com/"
+        if link.startswith(prefix):
+            rest = link[len(prefix):]
+            parts = rest.split("/", 3)
+            if len(parts) == 4:
+                owner, repo, ref, path = parts
+                return f"https://github.com/{owner}/{repo}/blob/{ref}/{path}"
+    return link
 
 
 def child_text(node: ET.Element, names: tuple[str, ...]) -> str:
@@ -86,7 +111,29 @@ def atom_link(node: ET.Element) -> str:
     return ""
 
 
-def parse_feed(xml_bytes: bytes, source: dict) -> list[dict]:
+def make_record(
+    source: dict,
+    title: str,
+    link: str,
+    summary: str,
+    published_raw: str,
+) -> dict:
+    published = parse_datetime(published_raw)
+    return {
+        "source_id": source["id"],
+        "source_name": source["name"],
+        "source_url": source["url"],
+        "title": clean_text(title, 500),
+        "url": transform_link(link, source),
+        "summary": clean_text(summary),
+        "published_at": published.isoformat() if published else None,
+        "published_raw": published_raw or None,
+        "category_hint": source.get("category_hint", ""),
+        "trust": source.get("trust", ""),
+    }
+
+
+def parse_xml_feed(xml_bytes: bytes, source: dict) -> list[dict]:
     root = ET.fromstring(xml_bytes)
     root_name = root.tag.rsplit("}", 1)[-1].lower()
     records: list[dict] = []
@@ -132,35 +179,52 @@ def parse_feed(xml_bytes: bytes, source: dict) -> list[dict]:
     return records
 
 
-def make_record(
-    source: dict,
-    title: str,
-    link: str,
-    summary: str,
-    published_raw: str,
-) -> dict:
-    published = parse_datetime(published_raw)
-    return {
-        "source_id": source["id"],
-        "source_name": source["name"],
-        "source_url": source["url"],
-        "title": clean_text(title, 500),
-        "url": link.strip(),
-        "summary": clean_text(summary),
-        "published_at": published.isoformat() if published else None,
-        "published_raw": published_raw or None,
-        "category_hint": source.get("category_hint", ""),
-        "trust": source.get("trust", ""),
-    }
+def parse_json_feed(json_bytes: bytes, source: dict) -> list[dict]:
+    data = json.loads(json_bytes.decode("utf-8-sig"))
+    entries = get_nested(data, source.get("entry_path", "entries"), [])
+    if not isinstance(entries, list):
+        raise ValueError("JSON feed entry_path did not resolve to a list")
+
+    field_map = source.get("field_map", {})
+    title_path = field_map.get("title", "title")
+    link_path = field_map.get("link", "link")
+    summary_path = field_map.get("summary")
+    published_path = field_map.get("published", "published")
+    updated_path = field_map.get("updated", "updated")
+
+    records: list[dict] = []
+    for item in entries:
+        if not isinstance(item, dict):
+            continue
+        title = get_nested(item, title_path, "")
+        link = get_nested(item, link_path, "")
+        summary = get_nested(item, summary_path, "") if summary_path else ""
+        published_raw = (
+            get_nested(item, published_path, "")
+            or get_nested(item, updated_path, "")
+            or ""
+        )
+        if title and link:
+            records.append(
+                make_record(
+                    source,
+                    str(title),
+                    str(link),
+                    str(summary or ""),
+                    str(published_raw or ""),
+                )
+            )
+    return records
 
 
 def fetch_source(source: dict, timeout: int) -> bytes:
+    accept = (
+        "application/json, application/feed+json, "
+        "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+    )
     request = Request(
         source["url"],
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-        },
+        headers={"User-Agent": USER_AGENT, "Accept": accept},
     )
     with urlopen(request, timeout=timeout) as response:
         return response.read()
@@ -204,11 +268,14 @@ def unique_recent(
 def render_markdown(
     candidates: list[dict],
     errors: list[dict],
+    source_stats: list[dict],
     generated_at: datetime,
     days: int,
 ) -> str:
     start = (generated_at - timedelta(days=days)).date().isoformat()
     end = generated_at.date().isoformat()
+    candidate_counts = Counter(item["source_id"] for item in candidates)
+
     lines = [
         "# Security Intelligence Candidate Review",
         "",
@@ -220,7 +287,20 @@ def render_markdown(
         "This file is generated automatically. Approval of this PR means the candidate set",
         "is acceptable for the next drafting phase; it does **not** publish Library articles.",
         "",
+        "## Source status",
+        "",
+        "| Source | Type | Fetched | Candidates | Status |",
+        "| --- | --- | ---: | ---: | --- |",
     ]
+
+    error_ids = {item["source_id"] for item in errors}
+    for stat in source_stats:
+        status = "warning" if stat["source_id"] in error_ids else "ok"
+        lines.append(
+            f"| {stat['source_name']} | `{stat['source_type']}` | "
+            f"{stat['fetched']} | {candidate_counts[stat['source_id']]} | {status} |"
+        )
+    lines.append("")
 
     if candidates:
         lines += ["## Candidates", ""]
@@ -286,14 +366,30 @@ def main() -> int:
     cutoff = generated_at - timedelta(days=args.days)
     collected: list[dict] = []
     errors: list[dict] = []
+    source_stats: list[dict] = []
 
     for source in sources:
+        source_type = source.get("type")
+        fetched_count = 0
         try:
-            if source.get("type") != "rss":
-                raise ValueError(f"unsupported source type: {source.get('type')}")
             payload = fetch_source(source, args.timeout)
-            collected.extend(parse_feed(payload, source))
-        except (HTTPError, URLError, TimeoutError, ET.ParseError, ValueError) as exc:
+            if source_type == "rss":
+                records = parse_xml_feed(payload, source)
+            elif source_type == "json_feed":
+                records = parse_json_feed(payload, source)
+            else:
+                raise ValueError(f"unsupported source type: {source_type}")
+            fetched_count = len(records)
+            collected.extend(records)
+        except (
+            HTTPError,
+            URLError,
+            TimeoutError,
+            ET.ParseError,
+            json.JSONDecodeError,
+            UnicodeDecodeError,
+            ValueError,
+        ) as exc:
             errors.append(
                 {
                     "source_id": source.get("id", "unknown"),
@@ -301,6 +397,14 @@ def main() -> int:
                     "error": f"{type(exc).__name__}: {exc}",
                 }
             )
+        source_stats.append(
+            {
+                "source_id": source.get("id", "unknown"),
+                "source_name": source.get("name", source.get("id", "unknown")),
+                "source_type": source_type or "unknown",
+                "fetched": fetched_count,
+            }
+        )
 
     candidates = unique_recent(collected, cutoff, existing_urls())
 
@@ -312,6 +416,7 @@ def main() -> int:
         "generated_at": generated_at.isoformat(),
         "window_days": args.days,
         "candidate_count": len(candidates),
+        "source_stats": source_stats,
         "source_errors": errors,
         "candidates": candidates,
     }
@@ -320,7 +425,7 @@ def main() -> int:
         encoding="utf-8",
     )
     args.output_md.write_text(
-        render_markdown(candidates, errors, generated_at, args.days),
+        render_markdown(candidates, errors, source_stats, generated_at, args.days),
         encoding="utf-8",
     )
     write_github_output(

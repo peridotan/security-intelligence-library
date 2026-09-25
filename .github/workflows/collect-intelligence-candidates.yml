@@ -29,36 +29,57 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect candidates
+      - name: Collect raw candidates
         id: collect
         run: |
           python scripts/collect_intelligence_candidates.py \
             --days "${{ inputs.days }}" \
+            --output-json "${RUNNER_TEMP}/raw-candidates-${GITHUB_RUN_ID}.json" \
+            --output-md "${RUNNER_TEMP}/raw-candidates-${GITHUB_RUN_ID}.md" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Triage candidates
+        id: triage
+        if: steps.collect.outputs.candidate_count != '0'
+        run: |
+          python scripts/triage_intelligence_candidates.py \
+            --input-json "${{ steps.collect.outputs.candidate_json }}" \
             --output-json ".automation-review/candidates-${GITHUB_RUN_ID}.json" \
             --output-md ".automation-review/candidates-${GITHUB_RUN_ID}.md" \
             --github-output "$GITHUB_OUTPUT"
 
       - name: Add collection summary
+        if: steps.collect.outputs.candidate_count == '0'
         run: |
           cat "${{ steps.collect.outputs.candidate_md }}" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Create candidate review pull request
+      - name: Add triage summary
+        if: steps.collect.outputs.candidate_count != '0'
+        run: |
+          cat "${{ steps.triage.outputs.candidate_md }}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create triage review pull request
         if: steps.collect.outputs.candidate_count != '0'
         id: review
         env:
           GH_TOKEN: ${{ github.token }}
           REVIEWER: ${{ github.repository_owner }}
-          REVIEW_TITLE: "[Candidate Review] Security Intelligence source scan"
+          REVIEW_TITLE: "[Triage Review] Security Intelligence source scan"
           REVIEW_BODY: |
-            Automated source collection found **${{ steps.collect.outputs.candidate_count }}**
-            new Security Intelligence candidate(s).
+            Automated source collection found **${{ steps.triage.outputs.candidate_count }}**
+            candidate(s) and applied deterministic routing.
 
-            Please review the generated candidate list and source links.
+            - Library: **${{ steps.triage.outputs.library_count }}**
+            - Vulnerability: **${{ steps.triage.outputs.vulnerability_count }}**
+            - Watch: **${{ steps.triage.outputs.watch_count }}**
 
-            **Approve + merge** means the candidate set may proceed to the future drafting phase.
+            Please review the candidate metadata, source links, and recommended routes.
+
+            **Approve + merge** confirms this triage result.
+            Only candidates routed to **Library** are eligible for the future article-drafting phase.
             This PR does not publish any Library article.
-          COMMIT_MESSAGE: "Add Security Intelligence candidate review"
-          BRANCH_PREFIX: "automation/candidate-review"
+          COMMIT_MESSAGE: "Add Security Intelligence triage review"
+          BRANCH_PREFIX: "automation/triage-review"
         run: scripts/open_review_pr.sh
 
       - name: No candidate notice

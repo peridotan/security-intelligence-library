@@ -1,0 +1,21 @@
+version: 1
+
+# Deterministic routing policy. These rules select where a candidate should go;
+# they do not decide whether an article is ultimately published.
+defaults:
+  route: watch
+
+source_defaults:
+  nist-cybersecurity: library
+  cisa-csaf-it: vulnerability
+
+csaf:
+  # Active exploitation is promoted to a Library candidate because it can become
+  # a broader security-management signal, subject to human review.
+  active_exploitation_route: library
+
+  # PoC availability or unusually severe/broad advisories stay in Watch until
+  # a human decides whether they are structurally important.
+  poc_exploitation_route: watch
+  watch_min_cvss: 9.0
+  watch_min_vulnerabilities: 3

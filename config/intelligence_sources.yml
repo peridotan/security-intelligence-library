@@ -1,0 +1,20 @@
+version: 1
+
+# Phase 2A source registry.
+# Keep this list intentionally small until the review flow is validated.
+sources:
+  - id: nist-cybersecurity
+    name: NIST Cybersecurity
+    type: rss
+    url: https://www.nist.gov/news-events/cybersecurity/rss.xml
+    enabled: true
+    category_hint: regulation
+    trust: primary
+
+  - id: cisa-cybersecurity-advisories
+    name: CISA Cybersecurity Advisories
+    type: rss
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary

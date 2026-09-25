@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-25T01:03:13.504504+00:00",
+  "window_days": 7,
+  "candidate_count": 2,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 93
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Araxis Merge",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-267-01.json",
+      "summary": "",
+      "published_at": "2026-09-24T14:21:29+00:00",
+      "published_raw": "2026-09-24T14:21:29Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary"
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Plex Media Server",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-266-01.json",
+      "summary": "",
+      "published_at": "2026-09-23T15:39:29+00:00",
+      "published_raw": "2026-09-23T15:39:29Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary"
+    }
+  ]
+}

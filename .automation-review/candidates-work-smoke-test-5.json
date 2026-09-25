@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-09-25T05:00:00+00:00",
+  "window_days": 0,
+  "candidate_count": 0,
+  "source_stats": [],
+  "source_errors": [],
+  "candidates": [],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "library": 0,
+    "vulnerability": 0,
+    "watch": 0
+  },
+  "smoke_test": true,
+  "purpose": "Verify ChatGPT Work trigger after GitHub App installation."
+}

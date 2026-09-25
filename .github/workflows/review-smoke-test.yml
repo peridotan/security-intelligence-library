@@ -1,0 +1,58 @@
+name: Review Request Smoke Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-review-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Create harmless review marker
+        run: |
+          mkdir -p .automation-review
+          cat > ".automation-review/review-${GITHUB_RUN_ID}.md" <<EOF_MARKER
+          # Security Intelligence Library review smoke test
+
+          This file was generated only to verify the automated review-request flow.
+
+          - Workflow run: ${GITHUB_RUN_ID}
+          - Purpose: verify PR creation, reviewer notification, and GitHub approval UI
+          - Action after verification: close the PR without merging it
+          EOF_MARKER
+
+      - name: Create pull request and request review
+        id: review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEWER: ${{ github.repository_owner }}
+          REVIEW_TITLE: "[Smoke Test] Security Intelligence review approval"
+          REVIEW_BODY: |
+            This PR is a **review-flow smoke test** for Security Intelligence Library automation.
+
+            Please verify the review experience:
+            1. Open this PR from the GitHub review-request notification.
+            2. Review the generated marker file.
+            3. Select **Review changes → Approve**.
+            4. After the test, close this PR **without merging**.
+
+            No production article or published documentation is changed by this test.
+          COMMIT_MESSAGE: "Add review workflow smoke-test marker"
+          BRANCH_PREFIX: "automation/review-smoke"
+        run: scripts/open_review_pr.sh
+
+      - name: Show review link
+        run: |
+          echo "### Review smoke test" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "PR: ${{ steps.review.outputs.pr_url }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "A review was requested from @${{ github.repository_owner }}." >> "$GITHUB_STEP_SUMMARY"

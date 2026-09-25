@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "promotion_type": "human_review_override",
+  "source_run_id": "36106112055",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
+      "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
+      "summary": "Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity appeared first on Unit 42 .",
+      "published_at": "2026-09-18T10:00:36+00:00",
+      "published_raw": "Fri, 18 Sep 2026 10:00:36 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": true,
+        "reasons": [
+          "human review promotion: cross-cutting AI agent identity, prompt injection, and credential exposure risk",
+          "selected for positive-path ChatGPT Work drafting validation"
+        ]
+      }
+    }
+  ],
+  "route_counts": {
+    "library": 1
+  }
+}

@@ -11,10 +11,19 @@ sources:
     category_hint: regulation
     trust: primary
 
-  - id: cisa-cybersecurity-advisories
-    name: CISA Cybersecurity Advisories
-    type: rss
-    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+  # cisa.gov blocks GitHub-hosted runners for this RSS endpoint (HTTP 403).
+  # Use CISA's own verified GitHub organization and its CSAF IT feed instead.
+  - id: cisa-csaf-it
+    name: CISA CSAF IT Advisories
+    type: json_feed
+    url: https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json
     enabled: true
+    entry_path: feed.entry
+    field_map:
+      title: title
+      link: content.src
+      published: published
+      updated: updated
+    link_transform: github_raw_to_blob
     category_hint: cybersecurity
     trust: primary

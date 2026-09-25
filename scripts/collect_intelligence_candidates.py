@@ -174,6 +174,24 @@ def parse_xml_feed(xml_bytes: bytes, source: dict) -> list[dict]:
                 records.append(
                     make_record(source, title, link, summary, published_raw)
                 )
+    elif root_name == "rdf":
+        # RSS 1.0 / RDF feeds (for example JPCERT/CC).
+        entries = [
+            c for c in list(root)
+            if c.tag.rsplit("}", 1)[-1].lower() == "item"
+        ]
+        for item in entries:
+            title = child_text(item, ("title",))
+            link = child_text(item, ("link",))
+            summary = child_text(item, ("description", "summary"))
+            published_raw = child_text(
+                item, ("date", "pubdate", "published", "updated")
+            )
+            if title and link:
+                records.append(
+                    make_record(source, title, link, summary, published_raw)
+                )
+
     else:
         raise ValueError(f"unsupported feed root: {root_name}")
 

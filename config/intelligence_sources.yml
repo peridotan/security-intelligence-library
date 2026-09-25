@@ -55,11 +55,14 @@ sources:
     trust: primary
 
   # Vendor / platform first-party security feeds
+  # The MSRC Update Guide emits thousands of CVE records and minor metadata
+  # updates. That signal belongs in Vulnerability Intelligence rather than the
+  # Library candidate queue.
   - id: msrc-security-update-guide
     name: Microsoft Security Response Center
     type: rss
     url: https://api.msrc.microsoft.com/update-guide/rss
-    enabled: true
+    enabled: false
     category_hint: cybersecurity
     trust: primary
 

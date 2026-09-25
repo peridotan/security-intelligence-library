@@ -1,0 +1,387 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-09-25T07:08:09.040647+00:00",
+  "window_days": 7,
+  "candidate_count": 15,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 93
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 6
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 86
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+      "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-24T16:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "​​​​​​​​What’s new in Microsoft Security: September 2026​​",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+      "summary": "This month's updates help you discover and control local AI agents, extend Zero Trust to agent traffic, and strengthen SOC foundations. The post ​​​​​​​​What’s new in Microsoft Security: September 2026​​ appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-24T16:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+      "url": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+      "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
+      "published_at": "2026-09-24T15:00:00+00:00",
+      "published_raw": "Thu, 24 Sep 2026 15:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Named a Leader in The Forrester Wave™: Proactive Security Platforms, Q3 2026",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-forrester-wave-proactive-security-platforms-q3-2026/",
+      "summary": "",
+      "published_at": "2026-09-24T05:00:00+00:00",
+      "published_raw": "Sep 24, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "ICYMI: August 2026 @AWS Security",
+      "url": "https://aws.amazon.com/blogs/security/icymi-august-2026-aws-security/",
+      "summary": "Read all about the latest AWS security features, compliance updates, and hands-on resources in our monthly digest posts. You’ll find expert blog posts, new service capabilities, code samples, and workshops. AWS Security Blog posts August brought 20 AWS Security Blog posts organized across seven categories. Identity and access management led the month with five posts […]",
+      "published_at": "2026-09-23T23:07:36+00:00",
+      "published_raw": "Wed, 23 Sep 2026 23:07:36 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Reimagining the SOC for the agentic era in Microsoft Defender",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+      "summary": "We are announcing ISOC in Microsoft Defender: a foundation built for agentic security that brings leading solutions for SIEM and threat protection together. The post Reimagining the SOC for the agentic era in Microsoft Defender appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-23T16:00:00+00:00",
+      "published_raw": "Wed, 23 Sep 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Supporting ASD’s multi-factor authentication campaign: Why MFA matters more than ever",
+      "url": "https://aws.amazon.com/blogs/security/supporting-asds-multi-factor-authentication-campaign-why-mfa-matters-more-than-ever/",
+      "summary": "The Australian Signals Directorate (ASD) has this month issued a clear call to action through its Multi-factor authentication: Switch it on campaign, urging businesses, organisations, and individuals to enable multi-factor authentication (MFA) across their online accounts. At AWS, we strongly support this message. As threat actors continue to target credentials through phishing, credential stuffing, and […]",
+      "published_at": "2026-09-23T14:45:44+00:00",
+      "published_raw": "Wed, 23 Sep 2026 14:45:44 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+      "summary": "EvilTokens has quickly become one of the top PhaaS platforms, enabling device code phishing attacks through AI-assisted lures, automated infrastructure, and token theft. In collaboration with partners, Microsoft Digital Crimes Unit (DCU) facilitated a disruption of EvilTokens infrastructure and operations. The post Unmasking EvilTokens: Getting to the root of device code phishing appeared first on Microsoft Security Blog .",
+      "published_at": "2026-09-22T15:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 15:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "url": "https://blog.cloudflare.com/vary-support/",
+      "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpredictable.",
+      "published_at": "2026-09-22T14:04:31+00:00",
+      "published_raw": "Tue, 22 Sep 2026 14:04:31 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+      "url": "https://blog.cloudflare.com/worker-previews/",
+      "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production.",
+      "published_at": "2026-09-22T13:00:00+00:00",
+      "published_raw": "Tue, 22 Sep 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Transforming Bedrock Guardrails events into OCSF with CloudWatch",
+      "url": "https://aws.amazon.com/blogs/security/transforming-bedrock-guardrails-events-into-ocsf-with-cloudwatch/",
+      "summary": "Security teams investigating possible AI-related security events need guardrail intervention data alongside their existing security telemetry. When a guardrail identifies or blocks a prompt injection attempt or redacts sensitive data, that intervention carries additional investigative value comparable to a failed sign-in or a network intrusion alert. AWS Bedrock publishes this telemetry to AWS CloudWatch metrics […]",
+      "published_at": "2026-09-21T15:33:25+00:00",
+      "published_raw": "Mon, 21 Sep 2026 15:33:25 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Python Workers are now generally available",
+      "url": "https://blog.cloudflare.com/python-workers-ga/",
+      "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
+      "published_at": "2026-09-21T13:00:00+00:00",
+      "published_raw": "Mon, 21 Sep 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies",
+      "url": "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/",
+      "summary": "We explore how AWS neutralizes exposed IAM credentials using managed policies, detailing GitHub secret scanning and CloudTrail monitoring strategies. The post From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies appeared first on Unit 42 .",
+      "published_at": "2026-09-21T10:00:13+00:00",
+      "published_raw": "Mon, 21 Sep 2026 10:00:13 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Saving another 100TB of RAM with math (and Rust)",
+      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RAM usage with statistics.",
+      "published_at": "2026-09-18T17:23:58+00:00",
+      "published_raw": "Fri, 18 Sep 2026 17:23:58 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
+      "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
+      "summary": "Analysis of how default configurations in AWS AgentCore Harness allow prompt injection to exfiltrate credentials, and key steps to secure your agents. The post A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity appeared first on Unit 42 .",
+      "published_at": "2026-09-18T10:00:36+00:00",
+      "published_raw": "Fri, 18 Sep 2026 10:00:36 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "watch": 15
+  }
+}

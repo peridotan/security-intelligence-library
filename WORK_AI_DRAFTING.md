@@ -116,3 +116,19 @@ Set the proposed article status to `draft` in the Work artifact. Publication sta
 decided only after human review and repository integration.
 
 ## Human publication gate
+
+Draft generation never authorizes publication. A human must review the factual basis,
+article placement, and repository changes before any draft is integrated or published.
+
+## Supplemental Discovery handoff
+
+When a candidate comes from supplemental public-web discovery rather than the configured
+feed collector, it must be classified against existing repository content before drafting.
+Read `WORK_SUPPLEMENTAL_DISCOVERY.md` and honor its `content_relation` decision.
+
+- `new`: may proceed to normal drafting when route is `library` and draft eligible.
+- `update-existing`: do not create a second article; prepare an update proposal for the
+  identified existing article.
+- `duplicate`: do not draft.
+- `watch` or `vulnerability`: do not create a Library article unless a later human review
+  explicitly promotes it.

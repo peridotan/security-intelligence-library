@@ -117,6 +117,9 @@ decided only after human review and repository integration.
 
 ## Human publication gate
 
+Draft generation never authorizes publication. A human must review the factual basis,
+article placement, and repository changes before any draft is integrated or published.
+
 ## Supplemental Discovery handoff
 
 When a candidate comes from supplemental public-web discovery rather than the configured

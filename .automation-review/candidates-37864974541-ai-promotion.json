@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "promotion_type": "ai_assisted_human_review_proposal",
+  "source_run_id": "37864974541",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "The keys to the Internet change on October 11. Are you ready?",
+      "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
+      "published_at": "2026-10-06T17:50:11+00:00",
+      "published_raw": "Tue, 06 Oct 2026 17:50:11 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": true,
+        "reasons": [
+          "AI-assisted promotion proposal, pending human PR merge approval",
+          "2026-10-11 DNS root KSK-2024 rollover; ICANN recommends verifying DNSSEC validating resolvers' trust anchor (key tag 38696). Urgent, operationally actionable."
+        ]
+      },
+      "content_relation": "new"
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-08T20:44:28+00:00",
+      "published_raw": "Thu, 08 Oct 2026 20:44:28 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": true,
+        "reasons": [
+          "AI-assisted promotion proposal, pending human PR merge approval",
+          "Microsoft PQC TLS pilot (non-production) raises enterprise PKI, trust-anchor, certificate chain, HSM, and application-interoperability readiness questions distinct from PIV and key generation."
+        ]
+      },
+      "content_relation": "new"
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Building your AI vulnerability harness, Part 1",
+      "url": "https://aws.amazon.com/blogs/security/building-your-ai-vulnerability-harness-part-1/",
+      "summary": "Vulnerability scanners produce findings faster than manual triage can process them. Your developers ship more code with more dependencies, and the volume of candidate findings grows with it. Many findings a scanner produces are unlikely to be exploited. The ones that matter need to reach an engineer fast, with enough evidence that they can act […]",
+      "published_at": "2026-10-07T21:49:43+00:00",
+      "published_raw": "Wed, 07 Oct 2026 21:49:43 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": true,
+        "reasons": [
+          "AI-assisted promotion proposal, pending human PR merge approval",
+          "Evidence-based vulnerability triage combines scanner agreement, structural verification and deployment context; companion Part 2 is a supporting source, not an additional draft."
+        ]
+      },
+      "content_relation": "new"
+    }
+  ],
+  "route_counts": {
+    "library": 3
+  }
+}

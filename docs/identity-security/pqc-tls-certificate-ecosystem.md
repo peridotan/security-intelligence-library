@@ -8,36 +8,51 @@ source_period: 2026-10
 description: MicrosoftのPQC TLS Pilot Programを基に、企業PKI、証明書チェーン、HSM、アプリケーションの非本番検証で確認すべき論点を整理する。
 category: Identity Security
 collections:
-  - identity-security
-  - risk-management
+- identity-security
+- risk-management
 topics:
-  - PQC / Crypto Agility
-  - Identity Security
+- PQC / Crypto Agility
+- Identity Security
 tags:
-  - PQC
-  - TLS
-  - PKI
-  - ML-DSA
-  - Certificate
-  - Crypto Agility
+- PQC
+- TLS
+- PKI
+- ML-DSA
+- Certificate
+- Crypto Agility
 audience:
-  - Executive
-  - CISO
-  - IAM
-  - PKI
+- Executive
+- CISO
+- IAM
+- PKI
 management_impact: High
 impact_types:
-  - Identity
-  - Cryptography
-  - Technology Lifecycle
+- Identity
+- Cryptography
+- Technology Lifecycle
 urgency: Strategic
 evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-10-09</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">October 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-10-09</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-10-09</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">PQC / Crypto Agility / Identity Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / IAM / PKI</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Identity / Cryptography / Technology Lifecycle</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Strategic</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

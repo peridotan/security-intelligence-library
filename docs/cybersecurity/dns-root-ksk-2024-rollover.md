@@ -8,31 +8,46 @@ source_period: 2026-10
 description: 2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。
 category: Cybersecurity
 collections:
-  - cybersecurity
+- cybersecurity
 topics:
-  - Security Governance & Risk Management
+- Security Governance & Risk Management
 tags:
-  - DNSSEC
-  - KSK
-  - DNS
-  - Trust Anchor
-  - Operational Resilience
+- DNSSEC
+- KSK
+- DNS
+- Trust Anchor
+- Operational Resilience
 audience:
-  - Executive
-  - CISO
-  - Infrastructure
+- Executive
+- CISO
+- Infrastructure
 management_impact: High
 impact_types:
-  - Operational Security
-  - Business Continuity
+- Operational Security
+- Business Continuity
 urgency: Immediate
 evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-10-09</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">October 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-10-09</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-10-09</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Security Governance &amp; Risk Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Infrastructure</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Operational Security / Business Continuity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

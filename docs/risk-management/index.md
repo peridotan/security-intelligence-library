@@ -17,6 +17,11 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../identity-security/pqc-tls-certificate-ecosystem.md">PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題</a>
+    <div class="sil-card-meta">October 2026 · Strategic · Confirmed · Identity / Cryptography</div>
+    <p>MicrosoftのPQC TLS Pilot Programを基に、企業PKI、証明書チェーン、HSM、アプリケーションの非本番検証で確認すべき論点を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../regulation/eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
     <div class="sil-card-meta">September 2026 · Immediate · Confirmed · Regulatory / Product Security</div>
     <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>

@@ -37,7 +37,7 @@ jobs:
         id: collect
         run: |
           python scripts/collect_intelligence_candidates.py \
-            --days "${{ inputs.days }}" \
+            --days "${{ inputs.days || '7' }}" \
             --output-json "${RUNNER_TEMP}/raw-candidates-${GITHUB_RUN_ID}.json" \
             --output-md "${RUNNER_TEMP}/raw-candidates-${GITHUB_RUN_ID}.md" \
             --github-output "$GITHUB_OUTPUT"

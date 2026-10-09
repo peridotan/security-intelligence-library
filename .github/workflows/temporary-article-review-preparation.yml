@@ -1,0 +1,47 @@
+name: Temporary Article Review Preparation
+
+on:
+  pull_request:
+    types: [opened]
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  prepare-review:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'review/security-intelligence-articles-20261009' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/checkout@v7
+        with:
+          repository: peridotan/threat-investigation-dashboard
+          path: .suite/threat-investigation-dashboard
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - run: pip install -r requirements.txt
+      - name: Generate and synchronize publication-ready article indexes
+        run: |
+          python scripts/build_indexes.py
+          python scripts/build_context_index.py
+          python scripts/sync_article_metadata.py
+      - name: Verify site before saving generated changes
+        run: |
+          python scripts/check_content.py
+          python scripts/check_suite_handoff.py --threat-data .suite/threat-investigation-dashboard/data/dashboard.json
+          zensical build --clean --strict
+          python scripts/check_generated_site.py
+      - name: Commit generated docs to review branch (never main)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate and validate article metadata and indexes'
+            git push origin HEAD:${{ github.head_ref }}
+          fi

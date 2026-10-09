@@ -1,0 +1,727 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-09T00:28:57.485603+00:00",
+  "window_days": 7,
+  "candidate_count": 32,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 94
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 6
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 86
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-08T20:44:28+00:00",
+      "published_raw": "Thu, 08 Oct 2026 20:44:28 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+      "url": "https://blog.cloudflare.com/radar-redesign/",
+      "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standardized components, we simplified navigation while preserving technical depth.",
+      "published_at": "2026-10-08T13:00:00+00:00",
+      "published_raw": "Thu, 08 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Solving the Continuous Authorization Conundrum",
+      "url": "https://www.crowdstrike.com/en-us/blog/solving-the-continuous-authorization-conundrum/",
+      "summary": "",
+      "published_at": "2026-10-08T05:00:00+00:00",
+      "published_raw": "Oct 08, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "Evolution of Web3 in Cloud Supply Chain Attacks",
+      "url": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
+      "summary": "Unit 42 details how threat actors leverage Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments The post Evolution of Web3 in Cloud Supply Chain Attacks appeared first on Unit 42 .",
+      "published_at": "2026-10-07T22:00:16+00:00",
+      "published_raw": "Wed, 07 Oct 2026 22:00:16 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Configuring your AI vulnerability harness, Part 2: The steering file",
+      "url": "https://aws.amazon.com/blogs/security/configuring-your-ai-vulnerability-harness-part-2-the-steering-file/",
+      "summary": "This post shows you how to configure an AI model to perform structured, evidence-based vulnerability triage with the consistency of a seasoned security analyst. You’ll learn the design decisions behind five configuration sections that enforce structural verification, evidence-based scoring, and infrastructure-aware prioritization across every analysis session. Our companion post—Building your AI vulnerability harness—covered the architecture; […]",
+      "published_at": "2026-10-07T21:49:50+00:00",
+      "published_raw": "Wed, 07 Oct 2026 21:49:50 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Building your AI vulnerability harness, Part 1",
+      "url": "https://aws.amazon.com/blogs/security/building-your-ai-vulnerability-harness-part-1/",
+      "summary": "Vulnerability scanners produce findings faster than manual triage can process them. Your developers ship more code with more dependencies, and the volume of candidate findings grows with it. Many findings a scanner produces are unlikely to be exploited. The ones that matter need to reach an engineer fast, with enough evidence that they can act […]",
+      "published_at": "2026-10-07T21:49:43+00:00",
+      "published_raw": "Wed, 07 Oct 2026 21:49:43 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+      "url": "https://blog.cloudflare.com/agentic-security-operations/",
+      "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers grounded recommendations to Managed Defense Analysts.",
+      "published_at": "2026-10-07T16:30:36+00:00",
+      "published_raw": "Wed, 07 Oct 2026 16:30:36 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Part 1 – Cybersecurity journeys: I didn’t plan this",
+      "url": "https://aws.amazon.com/blogs/security/part-1-cybersecurity-journeys-i-didnt-plan-this/",
+      "summary": "If you’ve ever wondered whether your background qualifies you for a career in cybersecurity, you’re not alone — and you’re probably more prepared than you think. My name is Shannon Brazil, and I work in security communications at Amazon Web Services (AWS). I have been in the security space for over a decade, and my […]",
+      "published_at": "2026-10-07T16:21:19+00:00",
+      "published_raw": "Wed, 07 Oct 2026 16:21:19 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "3 lessons from frontier AI vulnerability research",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+      "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-07T16:00:00+00:00",
+      "published_raw": "Wed, 07 Oct 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance",
+      "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
+      "summary": "",
+      "published_at": "2026-10-07T05:00:00+00:00",
+      "published_raw": "Oct 07, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-idc-marketscape-worldwide-modern-endpoint-security-for-enterprises/",
+      "summary": "",
+      "published_at": "2026-10-07T05:00:00+00:00",
+      "published_raw": "Oct 07, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Improving SPIRE security and resiliency with AWS managed services",
+      "url": "https://aws.amazon.com/blogs/security/improving-spire-security-and-resiliency-with-aws-managed-services/",
+      "summary": "In cloud-centered environments, establishing trust between workloads is fundamental to securing machine-to-machine communication. Traditional approaches such as API keys, shared secrets, and static service account credentials weren’t designed for the scale and ephemeral nature of cloud workloads. This drives an organizational need to shift from long-term, static credentials to short-lived cryptographic workload identities. Organizations are […]",
+      "published_at": "2026-10-06T18:52:25+00:00",
+      "published_raw": "Tue, 06 Oct 2026 18:52:25 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "The keys to the Internet change on October 11. Are you ready?",
+      "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
+      "published_at": "2026-10-06T17:50:11+00:00",
+      "published_raw": "Tue, 06 Oct 2026 17:50:11 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Identity-aware AI data agents with AWS Lake Formation and Trusted Identity Propagation",
+      "url": "https://aws.amazon.com/blogs/security/identity-aware-ai-data-agents-with-aws-lake-formation-and-trusted-identity-propagation/",
+      "summary": "You’re building a data agent that lets business users ask questions about lakehouse data in natural language. You’ve already built governance policies that control who can access which datasets. The challenge is making the agent respect those rules without rebuilding them in your application code. When a user asks a question, the agent maps it […]",
+      "published_at": "2026-10-06T16:07:06+00:00",
+      "published_raw": "Tue, 06 Oct 2026 16:07:06 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+      "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-06T16:00:00+00:00",
+      "published_raw": "Tue, 06 Oct 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "Blinder Tunnel Campaign Targets Iraqi Infrastructure",
+      "url": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+      "summary": "Analysis of Blinder Tunnel, an Iran-nexus campaign using fake Dubai Airports recruitment lures and GitHub C2 malware to target critical infrastructure. The post Blinder Tunnel Campaign Targets Iraqi Infrastructure appeared first on Unit 42 .",
+      "published_at": "2026-10-06T10:00:33+00:00",
+      "published_raw": "Tue, 06 Oct 2026 10:00:33 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Request, Aggregate, Bypass: How Attackers Can Evade LLM Safety Classifiers",
+      "url": "https://www.crowdstrike.com/en-us/blog/how-attackers-can-bypass-llm-safety-classifiers/",
+      "summary": "",
+      "published_at": "2026-10-06T05:00:00+00:00",
+      "published_raw": "Oct 06, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS Continuum sets a new standard in autonomous code security",
+      "url": "https://aws.amazon.com/blogs/security/aws-continuum-sets-a-new-standard-in-autonomous-code-security/",
+      "summary": "As AI models become more capable, they uncover more security vulnerabilities and identify increasingly sophisticated paths to exploit them, raising the bar for how quickly defenders must respond. Security teams now face more potential vulnerabilities than their existing processes were designed to handle — each requiring investigation, reproduction, and a repair that must be tested […]",
+      "published_at": "2026-10-05T21:41:01+00:00",
+      "published_raw": "Mon, 05 Oct 2026 21:41:01 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Everything we launched during Birthday Week 2026",
+      "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped.",
+      "published_at": "2026-10-05T13:00:00+00:00",
+      "published_raw": "Mon, 05 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "One year later: the power of 1.1.1.1 interns",
+      "url": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI amplifies human potential instead of replacing it.",
+      "published_at": "2026-10-05T13:00:00+00:00",
+      "published_raw": "Mon, 05 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Falcon Data Security for SaaS Secures Sensitive Data in Microsoft 365",
+      "url": "https://www.crowdstrike.com/en-us/blog/falcon-data-security-for-saas-secures-sensitive-data/",
+      "summary": "",
+      "published_at": "2026-10-05T05:00:00+00:00",
+      "published_raw": "Oct 05, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "New in Falcon Cloud Security: Third-Party App Insights and AI-Enhanced Remediation",
+      "url": "https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-third-party-app-insights-ai-enhanced-remedation/",
+      "summary": "",
+      "published_at": "2026-10-05T05:00:00+00:00",
+      "published_raw": "Oct 05, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "8 major updates to Cloudflare Observability",
+      "url": "https://blog.cloudflare.com/one-observability-platform/",
+      "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing.",
+      "published_at": "2026-10-02T18:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 18:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+      "url": "https://blog.cloudflare.com/streamline/",
+      "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine.",
+      "published_at": "2026-10-02T16:13:45+00:00",
+      "published_raw": "Fri, 02 Oct 2026 16:13:45 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Web Search API via AI Gateway",
+      "url": "https://blog.cloudflare.com/introducing-web-search-api/",
+      "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Workers bindings.",
+      "published_at": "2026-10-02T13:28:10+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:28:10 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+      "url": "https://blog.cloudflare.com/cloudflare-tracing/",
+      "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+      "url": "https://blog.cloudflare.com/enterprise-for-all-update/",
+      "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools internally, and what is coming next.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+      "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+      "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Follow the thread: a new dashboard to investigate account abuse",
+      "url": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+      "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account abuse.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+      "url": "https://blog.cloudflare.com/protected-quick-tunnels/",
+      "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Building for good: How civil society organizations are automating on Cloudflare",
+      "url": "https://blog.cloudflare.com/civil-society-automation/",
+      "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "2026 Birthday week: network performance update",
+      "url": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+      "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining user privacy.",
+      "published_at": "2026-10-02T13:00:00+00:00",
+      "published_raw": "Fri, 02 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "watch": 32
+  }
+}

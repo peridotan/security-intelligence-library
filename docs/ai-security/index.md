@@ -15,6 +15,11 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
+    <div class="sil-card-meta">October 2026 · Near-term · Assessment · Operational Security / Software Security</div>
+    <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../cybersecurity/ai-assisted-intrusion-10-hours.md">AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ</a>
     <div class="sil-card-meta">September 2026 · Immediate · Observed · Threat Landscape / Identity</div>
     <p>Unit 42が2026年9月2日に公開した実侵害対応を基に、Frontier AI Agentが50超のATT&amp;CK Techniqueを10時間未満で横断し、Identity・Source Code・CI/CD・Cloud AIへ波及した…</p>

@@ -18,6 +18,24 @@ hide:
 <!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="cybersecurity/dns-root-ksk-2024-rollover.md">DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する</a>
+    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Immediate</div>
+    <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
+    <a class="sil-card-more" href="cybersecurity/dns-root-ksk-2024-rollover.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="cybersecurity/evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
+    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
+    <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>
+    <a class="sil-card-more" href="cybersecurity/evidence-grounded-ai-vulnerability-triage.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="identity-security/pqc-tls-certificate-ecosystem.md">PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題</a>
+    <div class="sil-card-meta">October 2026 · Identity Security · Urgency: Strategic</div>
+    <p>MicrosoftのPQC TLS Pilot Programを基に、企業PKI、証明書チェーン、HSM、アプリケーションの非本番検証で確認すべき論点を整理する。</p>
+    <a class="sil-card-more" href="identity-security/pqc-tls-certificate-ecosystem.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="regulation/eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
     <div class="sil-card-meta">September 2026 · Regulation · Urgency: Immediate</div>
     <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>
@@ -34,24 +52,6 @@ hide:
     <div class="sil-card-meta">September 2026 · Cybersecurity · Urgency: Immediate</div>
     <p>Unit 42が2026年9月2日に公開した実侵害対応を基に、Frontier AI Agentが50超のATT&amp;CK Techniqueを10時間未満で横断し、Identity・Source Code・CI/CD・Cloud AIへ波及した…</p>
     <a class="sil-card-more" href="cybersecurity/ai-assisted-intrusion-10-hours.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="ai-security/gpt6-astra-critical-cyber-capability.md">GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった</a>
-    <div class="sil-card-meta">September 2026 · AI Security · Urgency: Immediate</div>
-    <p>OpenAIが2026年9月1日にGPT-6 AstraをPreparedness Framework上のCritical Cyber Capabilityと評価したことを基に、未知脆弱性探索・Exploit Development・Acce…</p>
-    <a class="sil-card-more" href="ai-security/gpt6-astra-critical-cyber-capability.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="identity-security/teams-it-support-remote-session-intrusion.md">IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる</a>
-    <div class="sil-card-meta">September 2026 · Identity Security · Urgency: Immediate</div>
-    <p>Microsoftが2026年9月2日に報告したHuman-operated Intrusionを基に、Teams外部コラボレーション、IT Support偽装、RMM、Node.js Implant、AD Recon、WinRM横展開をId…</p>
-    <a class="sil-card-more" href="identity-security/teams-it-support-remote-session-intrusion.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="identity-security/nist-ir8587-token-protection.md">Token Security Becomes Identity Control Plane ― NIST IR 8587 Final</a>
-    <div class="sil-card-meta">September 2026 · Identity Security · Urgency: Near-term</div>
-    <p>NISTとCISAが2026年9月15日にFinal版を公開したNIST IR 8587を基に、Identity / Access TokenとAssertionのSigning Key、Verification、Lifecycle、Work…</p>
-    <a class="sil-card-more" href="identity-security/nist-ir8587-token-protection.md">記事を読む →</a>
   </article>
 </div>
 <!-- AUTO:HOME_LATEST:END -->
@@ -117,14 +117,14 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">41</span></a>
-<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">26</span></a>
-<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">42</span></a>
+<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">27</span></a>
+<a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
 <a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="topics/index.md#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">12</span></a>
+<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">13</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->
 

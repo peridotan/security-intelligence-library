@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>91</strong> Articles</span>
+    <span><strong>94</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>394</strong> Detailed Tags</span>
+    <span><strong>405</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -26,26 +26,26 @@ hide:
 <div class="sil-topic-directory">
 <a class="sil-topic" href="#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#mcp-security">MCP Security <span class="sil-topic-count">2</span></a>
-<a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">12</span></a>
 <a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">9</span></a>
 <a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">4</span></a>
-<a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">4</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Identity</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">26</span></a>
+<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">27</span></a>
 <a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">4</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">12</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">13</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
@@ -56,7 +56,7 @@ hide:
 <div class="sil-topic-directory">
 <a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">41</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">42</span></a>
 </div>
 </section>
 </div>
@@ -95,6 +95,7 @@ MCP Server / Tool / Metadata / Local Control Planeに関するSecurity。
 
 生成AI・AI Systemの利用統制、継続評価、責任・Risk管理。
 
+- [AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則](../cybersecurity/evidence-grounded-ai-vulnerability-triage.md) — October 2026 · Near-term · Assessment
 - [Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する](../ai-security/enterprise-frontier-safeguards-zdr.md) — September 2026 · Near-term · Confirmed
 - [EU AI Actが執行フェーズへ ― 2026年8月2日から何が変わったか](../regulation/eu-ai-act-enforcement-2026.md) — August 2026 · Immediate · Confirmed
 - [生成AI利活用ガバナンス ― 禁止事項だけでなく「安全に使える仕組み」を作る](../ai-security/generative-ai-governance.md) — August 2026 · Near-term · Confirmed
@@ -158,6 +159,7 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 脆弱性発見・検知・対応など、防御側でAIを活用するテーマ。
 
+- [AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則](../cybersecurity/evidence-grounded-ai-vulnerability-triage.md) — October 2026 · Near-term · Assessment
 - [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed
 - [MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ](../cybersecurity/mdash-ai-vulnerability-discovery.md) — June 2026 · Near-term · Observed
 - [LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める](../ai-security/anthropic-llm-discovered-zero-days.md) — February 2026 · Immediate · Observed
@@ -170,6 +172,7 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 人・Workload・NHI・AI Agentを含むIdentityの認証・認可・監視。
 
+- [PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題](../identity-security/pqc-tls-certificate-ecosystem.md) — October 2026 · Strategic · Confirmed
 - [Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる](../identity-security/passkey-social-engineering-cloud-compromise.md) — September 2026 · Immediate · Observed
 - [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
 - [Token Security Becomes Identity Control Plane ― NIST IR 8587 Final](../identity-security/nist-ir8587-token-protection.md) — September 2026 · Near-term · Confirmed
@@ -234,6 +237,7 @@ Password Spraying、MFA Fatigue、漏えい資格情報、Recovery悪用。
 
 Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
+- [PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題](../identity-security/pqc-tls-certificate-ecosystem.md) — October 2026 · Strategic · Confirmed
 - [NIST PIVのPQC対応 ― Identity Credentialも「Crypto Agility」が必要になる](../identity-security/pqc-piv-dual-stack.md) — June 2026 · Strategic · Confirmed
 - [NIST SP 800-133r3 Draft ― PQC移行はAlgorithmだけでなくKey Generation / HSMまで変える](../identity-security/nist-key-generation-pqc-sp800-133r3.md) — April 2026 · Strategic · Confirmed
 - [NIST SP 1800-39 Draft ― Zero Trust・PQC・Secure AIの前に「Dataを見つけて分類する」](../risk-management/nist-data-classification-sp1800-39.md) — February 2026 · Near-term · Confirmed
@@ -246,6 +250,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 実悪用、KEV / EPSS、Patch優先度、Exploit Windowを含む脆弱性管理。
 
+- [AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則](../cybersecurity/evidence-grounded-ai-vulnerability-triage.md) — October 2026 · Near-term · Assessment
 - [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [脆弱性悪用の猶予は48時間以下へ ― 「残存時間」でパッチ管理を考える](../cybersecurity/exploitation-window-48-hours.md) — August 2026 · Immediate · Observed
@@ -346,6 +351,7 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
+- [DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する](../cybersecurity/dns-root-ksk-2024-rollover.md) — October 2026 · Immediate · Confirmed
 - [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
 - [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed

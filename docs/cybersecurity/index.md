@@ -15,6 +15,16 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="dns-root-ksk-2024-rollover.md">DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する</a>
+    <div class="sil-card-meta">October 2026 · Immediate · Confirmed · Operational Security / Business Continuity</div>
+    <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
+    <div class="sil-card-meta">October 2026 · Near-term · Assessment · Operational Security / Software Security</div>
+    <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../regulation/eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
     <div class="sil-card-meta">September 2026 · Immediate · Confirmed · Regulatory / Product Security</div>
     <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>

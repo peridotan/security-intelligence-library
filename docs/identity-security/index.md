@@ -15,6 +15,11 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="pqc-tls-certificate-ecosystem.md">PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題</a>
+    <div class="sil-card-meta">October 2026 · Strategic · Confirmed · Identity / Cryptography</div>
+    <p>MicrosoftのPQC TLS Pilot Programを基に、企業PKI、証明書チェーン、HSM、アプリケーションの非本番検証で確認すべき論点を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="passkey-social-engineering-cloud-compromise.md">Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる</a>
     <div class="sil-card-meta">September 2026 · Immediate · Observed · Identity / Cloud</div>
     <p>Microsoftが2026年9月9日に報告したPasskey / MFA / SSO更新を口実とするSocial Engineeringから、AiTM・Device Code・認証手段追加・Microsoft Graph Recon・Clo…</p>

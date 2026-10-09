@@ -1,6 +1,10 @@
 name: Collect Security Intelligence Candidates
 
 on:
+  # 23:00 Sunday UTC = 08:00 Monday Japan Standard Time.
+  # The existing triage PR remains subject to human review and merge.
+  schedule:
+    - cron: '0 23 * * 0'
   workflow_dispatch:
     inputs:
       days:
@@ -33,7 +37,7 @@ jobs:
         id: collect
         run: |
           python scripts/collect_intelligence_candidates.py \
-            --days "${{ inputs.days }}" \
+            --days "${{ inputs.days || '7' }}" \
             --output-json "${RUNNER_TEMP}/raw-candidates-${GITHUB_RUN_ID}.json" \
             --output-md "${RUNNER_TEMP}/raw-candidates-${GITHUB_RUN_ID}.md" \
             --github-output "$GITHUB_OUTPUT"

@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-12T02:11:24.323234+00:00",
+  "window_days": 7,
+  "candidate_count": 4,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 94
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 6
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 86
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+      "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x.",
+      "published_at": "2026-10-09T18:27:34+00:00",
+      "published_raw": "Fri, 09 Oct 2026 18:27:34 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+      "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks.",
+      "published_at": "2026-10-09T13:00:00+00:00",
+      "published_raw": "Fri, 09 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Deno is joining Cloudflare",
+      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
+      "published_at": "2026-10-09T12:50:00+00:00",
+      "published_raw": "Fri, 09 Oct 2026 12:50:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike and Anthropic Give Critical Infrastructure Defenders the AI Advantage",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
+      "summary": "",
+      "published_at": "2026-10-08T05:00:00+00:00",
+      "published_raw": "Oct 08, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "watch": 4
+  }
+}

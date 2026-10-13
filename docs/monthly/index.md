@@ -12,8 +12,8 @@ hide:
 <div class="sil-cards sil-monthly-grid">
   <article class="sil-card">
     <a class="sil-card-title" href="2026-09.md">September 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">As of 2026-09-24</span></div>
-    <p>Frontier AIのCritical Cyber Capability、10時間未満のAI-assisted Intrusion、Trust Attack、Passkey-themed Cloud Compromise、CRA報告義務、NIST Token Protection、EN…</p>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-10-13</span></div>
+    <p>AI Cyber Capability、AI-assisted Intrusion、Identity Trust、CRA報告義務、Token Protection、Cyber Dependencyを9月1〜30日の公開情報で整理。</p>
     <a class="sil-card-more" href="2026-09.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">

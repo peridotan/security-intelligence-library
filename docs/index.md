@@ -64,16 +64,16 @@ hide:
 <!-- AUTO:HOME_QUARTERLY:START -->
 <div class="sil-cards sil-cards-2 sil-quarter-cards">
   <article class="sil-card">
+    <a class="sil-card-title" href="quarterly/2026-q3.md">Q3 2026 Security Intelligence Review</a>
+    <div class="sil-card-meta">July 2026 · August 2026 · September 2026 · <span class="sil-quarter-reviewed">Reviewed 2026-10-13</span></div>
+    <p>AI Cyber Capability、Identity Trust、AI Control Plane、攻撃速度、Regulation、Cyber Dependency、Security Assuranceの7つの構造変化を横断整理。</p>
+    <a class="sil-card-more" href="quarterly/2026-q3.md">四半期レビューを見る →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="quarterly/2026-q2.md">Q2 2026 Security Intelligence Review</a>
     <div class="sil-card-meta">April 2026 · May 2026 · June 2026 · <span class="sil-quarter-reviewed">Reviewed 2026-08-27</span></div>
     <p>Frontier AI、AI Agent、Identity、Software Supply Chain、OT Resilience、Security Assurance、PQCの7構造変化を四半期視点で整理。</p>
     <a class="sil-card-more" href="quarterly/2026-q2.md">四半期レビューを見る →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="quarterly/2026-q1.md">Q1 2026 Security Intelligence Review</a>
-    <div class="sil-card-meta">January 2026 · February 2026 · March 2026 · <span class="sil-quarter-reviewed">Reviewed 2026-08-27</span></div>
-    <p>AI Agent、AI Cyber Capability、Identity Trust、Cybercrime Industrialization、Data Security、Supply Chain、Recovery / Enterprise Riskの7構造変化を四半期視点で整理。</p>
-    <a class="sil-card-more" href="quarterly/2026-q1.md">四半期レビューを見る →</a>
   </article>
 </div>
 <!-- AUTO:HOME_QUARTERLY:END -->
@@ -84,8 +84,8 @@ hide:
 <div class="sil-cards">
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-09.md">September 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">As of 2026-09-24</span></div>
-    <p>Frontier AIのCritical Cyber Capability、10時間未満のAI-assisted Intrusion、Trust Attack、Passkey-themed Cloud Compromise、CRA報告義務、NIST Token Protection、EN…</p>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-10-13</span></div>
+    <p>AI Cyber Capability、AI-assisted Intrusion、Identity Trust、CRA報告義務、Token Protection、Cyber Dependencyを9月1〜30日の公開情報で整理。</p>
     <a class="sil-card-more" href="monthly/2026-09.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">

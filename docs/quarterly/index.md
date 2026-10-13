@@ -11,6 +11,12 @@ hide:
 <!-- AUTO:QUARTERLY_INDEX:START -->
 <div class="sil-cards sil-cards-2 sil-quarter-cards">
   <article class="sil-card">
+    <a class="sil-card-title" href="2026-q3.md">Q3 2026 Security Intelligence Review</a>
+    <div class="sil-card-meta">July 2026 · August 2026 · September 2026 · <span class="sil-quarter-reviewed">Reviewed 2026-10-13</span></div>
+    <p>AI Cyber Capability、Identity Trust、AI Control Plane、攻撃速度、Regulation、Cyber Dependency、Security Assuranceの7つの構造変化を横断整理。</p>
+    <a class="sil-card-more" href="2026-q3.md">四半期レビューを見る →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="2026-q2.md">Q2 2026 Security Intelligence Review</a>
     <div class="sil-card-meta">April 2026 · May 2026 · June 2026 · <span class="sil-quarter-reviewed">Reviewed 2026-08-27</span></div>
     <p>Frontier AI、AI Agent、Identity、Software Supply Chain、OT Resilience、Security Assurance、PQCの7構造変化を四半期視点で整理。</p>

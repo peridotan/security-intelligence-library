@@ -113,15 +113,18 @@ class DossierTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             file = Path(folder) / "new-security-report.json"
             file.write_text(json.dumps(p, ensure_ascii=False), encoding="utf-8")
+            original = Path.read_text
+
+            def contents(path, *args, **kwargs):
+                if path == file:
+                    return original(path, *args, **kwargs)
+                return "## 何が起きているのか\n"
+
             with patch.object(ev, "new_published_articles", return_value={p["article_path"]}), patch.object(
                 ev, "read_status", return_value="published"
-            ), patch.object(Path, "read_text", autospec=True, side_effect=lambda self, *args, **kwargs: (
-                file.read_text(encoding="utf-8") if self == file else
-                "## 何が起きているのか\n"
-            )):
-                # Patch Path.read_text without recursion by reading via open() instead.
-                # Override in the next test when filesystem access matters.
-                pass
+            ), patch.object(Path, "read_text", autospec=True, side_effect=contents):
+                count, errors = ev.validate_all(Path(folder), base_ref="origin/main")
+            self.assertEqual((count, errors), (1, []))
 
     def test_empty_legacy_repo_requires_no_retroactive_dossiers(self):
         with tempfile.TemporaryDirectory() as folder:

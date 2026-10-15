@@ -45,6 +45,17 @@ def probe(config: Path, timeout: int) -> tuple[list[tuple[str, int, str]], bool]
             else:
                 raise ValueError(f"unsupported type: {source['type']}")
             count = len(records)
+            if not count and source["type"] == "html_listing":
+                # Minimal public-site diagnostics to identify charset / JS-only markup.
+                from official_html_sources import Links, DATE_JP, plain
+                raw_head = payload[:350].decode("ascii", errors="replace").replace("\n", " ")
+                decoded = payload.decode("utf-8-sig", errors="replace")
+                links = Links(decoded).links
+                print(f"HTML debug {source_id}: {len(payload)} bytes, "
+                      f"{len(links)} links, {len(DATE_JP.findall(plain(decoded)))} dates")
+                print(f"HTML header preview: {raw_head}")
+                for link in links[:5]:
+                    print(f"HTML link: {link['href'][:140]} / {link['text'][:70]}")
             status = "ok" if count else "no items parsed (verify markup / feed)"
             ok = ok and count > 0
             results.append((source_id, count, status))

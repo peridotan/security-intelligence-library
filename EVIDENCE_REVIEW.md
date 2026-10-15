@@ -2,7 +2,7 @@
 
 ## Goal and limitations
 
-Every **new** published Security Intelligence Library article must have a
+Every **newly published** Security Intelligence Library article must have a
 machine-readable, **human-approved** Evidence Review record for material claims.
 This separates verified source facts, first-party/vendor assertions, and
 Library interpretation so the editor can focus on substantive exceptions.
@@ -24,9 +24,10 @@ The human editor must open primary sources and inspect the cited passages.
 4. A human inspects each material source claim against the actual primary
    source, corrects/removes unsupported assertions, and then records
    review.status = approved, reviewed_by and reviewed_at.
-5. When submitting a new published article at docs/<collection>/<slug>.md,
-   commit its matching dossier under review/evidence/<slug>.json in the same
-   PR. Evidence sidecars live outside docs/ and are not rendered on the site.
+5. When publishing a new article at docs/<collection>/<slug>.md (including a
+   previously committed Draft now being changed to published), commit its
+   matching dossier under review/evidence/<slug>.json in the same PR.
+   Evidence sidecars live outside docs/ and are not rendered on the site.
 6. Pull-request CI validates the dossier before the existing required
    quality gate passes. Merge and publication remain separate human choices.
 
@@ -48,7 +49,7 @@ The human editor must open primary sources and inspect the cited passages.
 | claims[].source | HTTPS URL, precise locator, accessed_at, optional published_at |
 | claims[].rationale | Required for library_assessment |
 
-At least one **material** claim is required. Include all consequential
+At least one **material source-backed** claim is required. Include all consequential
 conclusions, dates, affected systems, obligations and recommendations;
 do not list every trivial sentence.
 

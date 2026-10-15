@@ -51,14 +51,36 @@ When a matching triage pull request is merged:
    - read `config/topics.yml`
    - inspect existing articles for duplication and related context
 5. Draft one Japanese Markdown article per candidate.
-6. Create a short review summary describing:
+6. Create a **claim-level Evidence Review dossier** using
+   `templates/evidence-review-template.json` and the instructions in
+   `EVIDENCE_REVIEW.md`. Return one UTF-8 JSON artifact per article,
+   intended for `review/evidence/<article-slug>.json` when a human
+   integrates the draft into GitHub.
+   - Record each material factual claim, consequential source/vendor claim,
+     and Library-specific assessment separately.
+   - For source-backed claims, record an actual primary-source HTTPS URL,
+     a precise locator (section / figure / table / page), and the real
+     date the source was accessed; record publication date only if known.
+   - Use `source_fact`, `source_claim`, or `library_assessment`.
+     A vendor prediction or assertion remains `source_claim` even when
+     faithfully transcribed from its primary source.
+   - Set `verification: verified` only when the cited location was actually
+     inspected and supports the claim. Otherwise set `needs_review` or
+     `unsupported`; never invent evidence or dates.
+   - `library_assessment` requires an explicit rationale and
+     `verification: not_applicable` (not a sourced fact).
+   - **Always set `review.status: pending`.** Never identify the AI as
+     a human reviewer or set `approved` automatically.
+7. Create a short review summary describing:
    - candidate
    - proposed article title
    - proposed category
    - proposed topics
    - why the item matters now
    - important facts that need human verification
-7. Do not publish, merge, or modify the repository from this Work task.
+   - Evidence Review dossier filename, material claim IDs and unresolved
+     `needs_review` / `unsupported` items
+8. Do not publish, merge, or modify the repository from this Work task.
 
 ## Article requirements
 
@@ -119,6 +141,16 @@ decided only after human review and repository integration.
 
 Draft generation never authorizes publication. A human must review the factual basis,
 article placement, and repository changes before any draft is integrated or published.
+
+For **new** published articles, repository integration must include an Evidence
+Review dossier in `review/evidence/` with `review.status: approved`, a
+human `reviewed_by`, and `reviewed_at` after checking all material
+source-backed claims. PR CI fails on an absent dossier or unresolved source
+claims. Existing published articles are not forced into retrospective dossiers;
+updated articles may adopt the same structure voluntarily.
+
+ChatGPT Work must not approve, commit, merge or publish an Evidence Review.
+The reviewer may reject the draft or return it for correction.
 
 ## Supplemental Discovery handoff
 

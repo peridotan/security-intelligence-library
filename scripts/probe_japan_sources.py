@@ -60,6 +60,19 @@ def probe(config: Path, timeout: int) -> tuple[list[tuple[str, int, str]], bool]
                 scripts = re.findall(r"<script[^>]+src=['\"]([^'\"]+)", decoded)
                 print(f"HTML scripts ({len(scripts)}): " + ", ".join(scripts[-12:]))
                 print("HTML tail: " + re.sub(r"\s+", " ", decoded[-1800:]))
+                if source_id == "nco-security-news":
+                    try:
+                        from urllib.parse import urljoin
+                        script_bytes = fetch_source({"url": urljoin(source["url"], "/js/app.js")}, timeout)
+                        javascript = script_bytes.decode("utf-8", errors="replace")
+                        print("NCO app.js bytes:", len(script_bytes))
+                        for term in ("fetch(", ".json", "/api/", "news/list", "newsList"):
+                            matches = list(re.finditer(re.escape(term), javascript, flags=re.I))
+                            print(f"NCO script term {term}: {len(matches)} match(es)")
+                            for match in matches[:3]:
+                                print("NCO script context:", javascript[max(0, match.start()-90):match.end()+130].replace("\\n", " "))
+                    except Exception as exc:
+                        print("NCO app.js probe failed:", type(exc).__name__, str(exc)[:150])
             status = "ok" if count else "no items parsed (verify markup / feed)"
             ok = ok and count > 0
             results.append((source_id, count, status))

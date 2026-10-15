@@ -21,6 +21,8 @@ from urllib.error import HTTPError, URLError
 import xml.etree.ElementTree as ET
 
 import yaml
+from official_html_sources import parse_html_listing
+from official_csv_sources import parse_nco_csv
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "intelligence_sources.yml"
@@ -239,7 +241,7 @@ def parse_json_feed(json_bytes: bytes, source: dict) -> list[dict]:
 def fetch_source(source: dict, timeout: int) -> bytes:
     accept = (
         "application/json, application/feed+json, "
-        "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+        "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html, text/csv, */*"
     )
     request = Request(
         source["url"],
@@ -418,13 +420,41 @@ def main() -> int:
         source_type = source.get("type")
         fetched_count = 0
         try:
-            payload = fetch_source(source, args.timeout)
-            if source_type == "rss":
-                records = parse_xml_feed(payload, source)
-            elif source_type == "json_feed":
-                records = parse_json_feed(payload, source)
+            if source_type == "csv_yearly":
+                # NCO publishes news as per-year CSV; cover New Year lookback too.
+                now_jst = datetime.now(timezone(timedelta(hours=9)))
+                years = sorted({now_jst.year, (now_jst - timedelta(days=args.days)).year})
+                records = []
+                for year in years:
+                    yearly_source = dict(
+                        source, url=source["url"].replace("{year}", str(year))
+                    )
+                    rows = parse_nco_csv(
+                        fetch_source(yearly_source, args.timeout), yearly_source
+                    )
+                    records.extend(
+                        make_record(
+                            yearly_source, item["title"], item["url"],
+                            item.get("summary", ""), item["published_raw"],
+                        )
+                        for item in rows
+                    )
             else:
-                raise ValueError(f"unsupported source type: {source_type}")
+                payload = fetch_source(source, args.timeout)
+                if source_type == "rss":
+                    records = parse_xml_feed(payload, source)
+                elif source_type == "json_feed":
+                    records = parse_json_feed(payload, source)
+                elif source_type == "html_listing":
+                    records = [
+                        make_record(
+                            source, item["title"], item["url"],
+                            item.get("summary", ""), item["published_raw"],
+                        )
+                        for item in parse_html_listing(payload, source)
+                    ]
+                else:
+                    raise ValueError(f"unsupported source type: {source_type}")
             fetched_count = len(records)
             collected.extend(records)
         except (

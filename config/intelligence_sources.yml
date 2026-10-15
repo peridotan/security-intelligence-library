@@ -54,6 +54,46 @@ sources:
     category_hint: risk-management
     trust: primary
 
+  # Japanese primary-source expansion (pilot): publish no articles automatically.
+  # NICT's press listing is a server-rendered alternative to the CYNEX Library.
+  # Filter NICT press releases to security-related titles; other research excluded.
+  - id: nict-security-press
+    name: NICT Security Press Releases
+    type: html_listing
+    url: https://www.nict.go.jp/press/
+    html_strategy: nict_press
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  - id: ipa-security-alerts
+    name: IPA Security Alerts (Japanese)
+    type: rss
+    url: https://www.ipa.go.jp/security/rss/alert.rdf
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  # Add Japanese first-party feed while retaining existing English coverage.
+  # Do not use the JPCERT/CC combined feed: it includes a large volume of JVN CVEs.
+  - id: jpcert-alerts-jp
+    name: JPCERT/CC Alerts (Japanese)
+    type: rss
+    url: https://www.jpcert.or.jp/rss/jpcert.rdf
+    enabled: true
+    category_hint: cybersecurity
+    trust: primary
+
+  # The official NCO news listing loads annual first-party CSV via JavaScript.
+  # Resolve the current and previous year as needed for seven-day windows.
+  - id: nco-security-news
+    name: National Cybersecurity Office (Japan) News
+    type: csv_yearly
+    url: https://www.cyber.go.jp/csv/{year}.csv
+    enabled: true
+    category_hint: regulation
+    trust: primary
+
   # Vendor / platform first-party security feeds
   # The MSRC Update Guide emits thousands of CVE records and minor metadata
   # updates. That signal belongs in Vulnerability Intelligence rather than the

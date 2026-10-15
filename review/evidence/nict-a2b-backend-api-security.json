@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/nict-a2b-backend-api-security.md",
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": "手動Pilot。NICT公式プレス・CYNEX本文は確認したが、発表が参照する詳細7ページPDFの技術的根拠と事案の因果関係は人間の確認が必要（C02）。Work/AIは承認者にならない。公開時は人間が全material claim、記事本文、引用とリンクを再照合する。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "NICTは2026年10月13日に、LETTICEによるA2B攻撃の注意喚起を発表した。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+        "locator": "冒頭の日付・「ポイント」・導入段落",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "公式プレスリリースの公表日と主催機関を照合済み。"
+    },
+    {
+      "id": "C02",
+      "statement": "NICTのLETTICEは、国内の情報漏えい事案の原因の一つとしてA2B攻撃を特定したと報告している。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "needs_review",
+      "source": {
+        "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+        "locator": "「ポイント」第1項、本文「今回の成果」",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "NICTがそのように公表したことは確認済み。ただし個別事案との関係や検証材料は詳細7ページPDFの人間による確認が必要。独立に因果関係を立証したと表現しない。"
+    },
+    {
+      "id": "C03",
+      "statement": "NICTが説明するA2B攻撃では、公開Androidアプリの解析からAPI接続先・仕様を把握し、その情報でBackendを狙う。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+        "locator": "「今回の成果」図A2B攻撃の流れ直後の2段落",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "NICTが説明する攻撃パターンとしての記述。調査事例全体を独立検証したわけではない。"
+    },
+    {
+      "id": "C04",
+      "statement": "NICTは、同様の問題がiOSアプリやWebサービスのBackend APIでも生じ得ると注意喚起している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+        "locator": "「今回の成果」Android以外への波及可能性を述べた段落",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "可能性として記載し、発生事実と混同しない。"
+    },
+    {
+      "id": "C05",
+      "statement": "NICTは、AI活用によりアプリ解析や脆弱性探索が効率化し、A2Bのような攻撃が拡大する可能性を指摘した。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+        "locator": "「今回の成果」AI活用による効率化への言及",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "AI使用が今回の攻撃で観測・立証されたとは書かない。あくまでNICTの将来懸念。"
+    },
+    {
+      "id": "C06",
+      "statement": "NICTは事業者に侵害の確認、脆弱性の点検、暫定的な緩和策の3対策を示している。",
+      "section": "## 推奨アクション",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://cynex.nict.go.jp/library/261013-01.html",
+        "locator": "「Androidアプリを公開する事業者へのお願い」第1〜3項",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "対策の名称と概要は公式CYNEXにて照合済み。"
+    },
+    {
+      "id": "C07",
+      "statement": "NICTはAPI認可不備（IDOR/BOLA）、SSRF、RCE、SQLインジェクションを重点点検の対象に挙げている。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://cynex.nict.go.jp/library/261013-01.html",
+        "locator": "「Androidアプリを公開する事業者へのお願い」第2項",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "点検対象の例であり、すべてが実際に悪用されたとの断定を避ける。"
+    },
+    {
+      "id": "C08",
+      "statement": "公開クライアント内部の通信先やパラメータを秘密とみなさず、Backendで認証・オブジェクト単位の認可・入力検証を行うべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "アプリが公開され解析可能であるという脅威モデルと、サーバ側の脆弱性が侵害条件になるとのNICT説明を基にしたLibraryの防御設計評価。"
+    },
+    {
+      "id": "C09",
+      "statement": "外部委託を含むアプリ開発・Backend運用・SOCでAPI資産台帳と診断範囲・ログ保全の責任分界を統一するべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "公開アプリとBackendが別チームに分割される一般的な開発構成に対し、漏えい調査に必要なAPI管理・所有者・記録を横断して統制するLibrary独自の提案。"
+    },
+    {
+      "id": "C10",
+      "statement": "公開APIの不正利用兆候を確認し、不要API停止やアクセス制限などの暫定措置を検討する。",
+      "section": "## 推奨アクション",
+      "classification": "source_fact",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://cynex.nict.go.jp/library/261013-01.html",
+        "locator": "「Androidアプリを公開する事業者へのお願い」第1・3項",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-15"
+      },
+      "review_note": "具体的な対策の適用可否は環境ごとに判断。"
+    }
+  ]
+}

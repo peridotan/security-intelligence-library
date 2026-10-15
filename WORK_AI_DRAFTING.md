@@ -142,7 +142,8 @@ decided only after human review and repository integration.
 Draft generation never authorizes publication. A human must review the factual basis,
 article placement, and repository changes before any draft is integrated or published.
 
-For **new** published articles, repository integration must include an Evidence
+For **newly published** articles (including a Draft changed to published),
+repository integration must include an Evidence
 Review dossier in `review/evidence/` with `review.status: approved`, a
 human `reviewed_by`, and `reviewed_at` after checking all material
 source-backed claims. PR CI fails on an absent dossier or unresolved source

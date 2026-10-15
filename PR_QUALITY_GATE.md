@@ -10,15 +10,18 @@ GitHub Pages only after a push to `main`.
 1. Check out the proposed PR (using the regular `pull_request` event), and
    publicly available Threat Investigation reference data.
 2. Install the same Python dependencies used by publication.
-3. Run offline regression tests for official first-party source adapters.
-4. Generate the article/category indexes and intelligence context index.
-5. Synchronize article metadata.
-6. Validate article fields, sections, evidence metadata, links and media rights.
-7. Validate cross-repository Suite handoff contracts.
-8. Fail if generated `docs/` changes or untracked generated files have not
+3. Run offline regression tests for official first-party source adapters
+   and Evidence Review dossiers.
+4. Validate claim-level Evidence Review records, and require a human-approved
+   dossier for **newly published articles** (legacy articles are exempt).
+5. Generate the article/category indexes and intelligence context index.
+6. Synchronize article metadata.
+7. Validate article fields, sections, evidence metadata, links and media rights.
+8. Validate cross-repository Suite handoff contracts.
+9. Fail if generated `docs/` changes or untracked generated files have not
    been included in the PR.
-9. Build the site with `zensical build --clean --strict`.
-10. Check rendered HTML and internal links.
+10. Build the site with `zensical build --clean --strict`.
+11. Check rendered HTML and internal links.
 
 The job is **read-only** (`contents: read`); it cannot merge PRs, deploy
 GitHub Pages, publish articles, or push generated files. It uses no application
@@ -30,6 +33,8 @@ From the repository root, after installing `requirements.txt`:
 
 ```bash
 python -m unittest discover -s scripts -p 'test_official_*_sources.py' -v
+python -m unittest discover -s scripts -p 'test_evidence_review.py' -v
+python scripts/check_evidence_review.py --base-ref origin/main
 python scripts/build_indexes.py
 python scripts/build_context_index.py
 python scripts/sync_article_metadata.py
@@ -54,6 +59,9 @@ fails when generated output is missing or stale.
 
 Inspect the failed step in the PR's `Checks` tab. For example:
 
+- **Evidence Review:** include the reviewed dossier for each new published
+  article, fix unresolved material claims and record human approval.
+  See `EVIDENCE_REVIEW.md`.
 - **Content quality:** fix missing required sections / metadata and rerun.
 - **Generated docs:** run the index and metadata generators, commit the
   resulting `docs/` changes, and push again.

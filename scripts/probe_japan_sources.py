@@ -66,6 +66,14 @@ def probe(config: Path, timeout: int) -> tuple[list[tuple[str, int, str]], bool]
                         script_bytes = fetch_source({"url": urljoin(source["url"], "/js/app.js")}, timeout)
                         javascript = script_bytes.decode("utf-8", errors="replace")
                         print("NCO app.js bytes:", len(script_bytes))
+                        anchor = javascript.find('fetch("/csv/"')
+                        if anchor >= 0:
+                            print("NCO fetch implementation:", javascript[max(0,anchor-750):anchor+650])
+                        try:
+                            csv_bytes = fetch_source({"url": urljoin(source["url"], "/csv/.csv")}, timeout)
+                            print("NCO CSV default:", len(csv_bytes), csv_bytes[:450].decode("utf-8", errors="replace"))
+                        except Exception as csv_exc:
+                            print("NCO CSV default fetch:", type(csv_exc).__name__, str(csv_exc)[:200])
                         for term in ("fetch(", ".json", "/api/", "news/list", "newsList"):
                             matches = list(re.finditer(re.escape(term), javascript, flags=re.I))
                             print(f"NCO script term {term}: {len(matches)} match(es)")

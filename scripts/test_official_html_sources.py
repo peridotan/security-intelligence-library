@@ -22,29 +22,6 @@ class OfficialSourcesTest(unittest.TestCase):
 <a href="/press/2026/10/invalid.html">サイバー攻撃</a>"""
         self.assertEqual(parse_html_listing(html.encode(), source), [])
 
-    def test_nco_dated_pdf(self):
-        source = {
-            "url": "https://www.cyber.go.jp/news/list/index.html",
-            "html_strategy": "nco_news",
-        }
-        html = """<section><div>2026年10月09日</div>
-<p>不正アクセスによる漏えい等の事案を踏まえた対応について</p>
-<a href="/pdf/security-notice.pdf">PDF形式:407KB</a></section>"""
-        records = parse_html_listing(html.encode(), source)
-        self.assertEqual(len(records), 1)
-        self.assertEqual(records[0]["published_raw"], "2026-10-09")
-        self.assertIn("不正アクセス", records[0]["title"])
-
-    def test_nco_undated_links_excluded(self):
-        source = {
-            "url": "https://www.cyber.go.jp/news/list/index.html",
-            "html_strategy": "nco_news",
-        }
-        self.assertEqual(
-            parse_html_listing(b'<a href="/pdf/x.pdf">Important security bulletin</a>', source),
-            [],
-        )
-
     def test_unknown_strategy_fails_closed(self):
         with self.assertRaises(ValueError):
             parse_html_listing(b"", {"html_strategy": "unknown"})

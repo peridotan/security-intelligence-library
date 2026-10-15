@@ -135,6 +135,7 @@ def validate_dossier(payload: object, filename: str) -> tuple[str | None, list[s
 
     used: set[str] = set()
     has_material = False
+    has_material_source = False
     for idx, claim in enumerate(claims, 1):
         label = f"{filename}: claims[{idx}]"
         if not isinstance(claim, dict):
@@ -162,6 +163,8 @@ def validate_dossier(payload: object, filename: str) -> tuple[str | None, list[s
             has_material = True
         verification = claim.get("verification")
         if classification in ("source_fact", "source_claim"):
+            if importance == "material":
+                has_material_source = True
             check_source(claim.get("source"), label, problems)
             if verification not in VERIFY_SOURCE:
                 problems.append(f"{label}: source-backed claim requires verified, needs_review or unsupported")
@@ -176,6 +179,8 @@ def validate_dossier(payload: object, filename: str) -> tuple[str | None, list[s
                 check_source(claim["source"], label, problems)
     if not has_material:
         problems.append(f"{filename}: at least one material claim must be recorded")
+    if not has_material_source:
+        problems.append(f"{filename}: at least one material source-backed claim is required")
 
     if target:
         article = ROOT / target

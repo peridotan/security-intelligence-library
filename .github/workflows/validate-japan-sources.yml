@@ -40,3 +40,41 @@ jobs:
 
       - name: Probe four live Japanese primary sources
         run: python scripts/probe_japan_sources.py
+
+      - name: Dry-run seven-day collection and triage (no GitHub writes)
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          import yaml
+          registry = yaml.safe_load(Path("config/intelligence_sources.yml").read_text())
+          wanted = {"nict-security-press", "ipa-security-alerts", "jpcert-alerts-jp", "nco-security-news"}
+          config = {"version": registry["version"], "sources": [s for s in registry["sources"] if s["id"] in wanted]}
+          assert len(config["sources"]) == 4
+          Path(os.environ["RUNNER_TEMP"], "japan-source-pilot.yml").write_text(
+              yaml.safe_dump(config, allow_unicode=True), encoding="utf-8"
+          )
+          PY
+          python scripts/collect_intelligence_candidates.py \
+            --config "$RUNNER_TEMP/japan-source-pilot.yml" \
+            --days 7 \
+            --output-json "$RUNNER_TEMP/japan-source-pilot.json" \
+            --output-md "$RUNNER_TEMP/japan-source-pilot.md"
+          python scripts/triage_intelligence_candidates.py \
+            --input-json "$RUNNER_TEMP/japan-source-pilot.json" \
+            --output-json "$RUNNER_TEMP/japan-source-triage.json" \
+            --output-md "$RUNNER_TEMP/japan-source-triage.md"
+          python - <<'PY'
+          import json, os
+          from collections import Counter
+          from pathlib import Path
+          src = json.loads(Path(os.environ["RUNNER_TEMP"], "japan-source-pilot.json").read_text())
+          triage = json.loads(Path(os.environ["RUNNER_TEMP"], "japan-source-triage.json").read_text())
+          counts = Counter(x["source_id"] for x in src["candidates"])
+          routes = Counter(x["triage"]["route"] for x in triage["candidates"])
+          print("Pilot last-seven-day candidates by source:", dict(counts))
+          print("Pilot triage routes:", dict(routes))
+          print("Pilot source errors:", src["source_errors"])
+          assert not src["source_errors"], "Pilot source fetch failures"
+          assert routes.get("library", 0) == 0, "Unexpected automatic Library promotion"
+          PY

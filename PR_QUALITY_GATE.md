@@ -13,7 +13,8 @@ GitHub Pages only after a push to `main`.
 3. Run offline regression tests for official first-party source adapters
    and Evidence Review dossiers.
 4. Validate claim-level Evidence Review records, and require a human-approved
-   dossier for **newly published articles** (legacy articles are exempt).
+   dossier for **newly published articles**, including Draft-to-published
+   transitions (legacy published articles remain exempt).
 5. Generate the article/category indexes and intelligence context index.
 6. Synchronize article metadata.
 7. Validate article fields, sections, evidence metadata, links and media rights.

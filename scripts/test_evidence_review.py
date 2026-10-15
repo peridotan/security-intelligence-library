@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -125,6 +126,51 @@ class DossierTest(unittest.TestCase):
             ), patch.object(Path, "read_text", autospec=True, side_effect=contents):
                 count, errors = ev.validate_all(Path(folder), base_ref="origin/main")
             self.assertEqual((count, errors), (1, []))
+
+    def test_git_diff_detects_draft_publication_not_normal_update(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            target = repo / "docs" / "cybersecurity" / "new-report.md"
+            target.parent.mkdir(parents=True)
+            def git(*args):
+                return subprocess.run(
+                    ["git", *args], cwd=repo, capture_output=True,
+                    text=True, check=True,
+                ).stdout.strip()
+            git("init", "-q")
+            git("config", "user.name", "Evidence Test")
+            git("config", "user.email", "evidence@example.invalid")
+            (repo / "README.md").write_text("test", encoding="utf-8")
+            git("add", ".")
+            git("commit", "-qm", "initial")
+            initial = git("rev-parse", "HEAD")
+
+            target.write_text("---\nstatus: draft\n---\n## 何が起きているのか\n", encoding="utf-8")
+            git("add", ".")
+            git("commit", "-qm", "draft article")
+            draft_commit = git("rev-parse", "HEAD")
+            with patch.object(ev, "ROOT", repo):
+                self.assertEqual(ev.new_published_articles(initial), set())
+
+            target.write_text("---\nstatus: published\n---\n## 何が起きているのか\n", encoding="utf-8")
+            git("add", ".")
+            git("commit", "-qm", "publish draft")
+            published_commit = git("rev-parse", "HEAD")
+            with patch.object(ev, "ROOT", repo):
+                self.assertEqual(
+                    ev.new_published_articles(draft_commit),
+                    {"docs/cybersecurity/new-report.md"},
+                )
+                self.assertEqual(
+                    ev.new_published_articles(initial),
+                    {"docs/cybersecurity/new-report.md"},
+                )
+
+            target.write_text("---\nstatus: published\n---\n## 何が起きているのか\n\nUpdate.\n", encoding="utf-8")
+            git("add", ".")
+            git("commit", "-qm", "normal article update")
+            with patch.object(ev, "ROOT", repo):
+                self.assertEqual(ev.new_published_articles(published_commit), set())
 
     def test_empty_legacy_repo_requires_no_retroactive_dossiers(self):
         with tempfile.TemporaryDirectory() as folder:

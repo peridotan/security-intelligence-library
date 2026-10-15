@@ -49,7 +49,8 @@ def valid_url(value: object) -> bool:
     return (
         result.scheme == "https"
         and bool(result.hostname)
-        and result.hostname not in {"example.com", "www.example.com"}
+        and result.hostname not in {"example.com", "www.example.com", "example.org", "example.net"}
+        and not result.hostname.endswith((".invalid", ".test", ".example", ".localhost"))
         and not result.username
         and not result.password
     )
@@ -216,9 +217,11 @@ def validate_all(root: Path = DOSSIERS, base_ref: str | None = None) -> tuple[in
         try:
             data = json.loads(filename.read_text(encoding="utf-8"))
         except (ValueError, OSError) as exc:
-            errors.append(f"{filename.relative_to(ROOT)}: invalid JSON: {exc}")
+            display = filename.relative_to(ROOT) if filename.is_relative_to(ROOT) else filename
+            errors.append(f"{display}: invalid JSON: {exc}")
             continue
-        target, problems = validate_dossier(data, filename.relative_to(ROOT).as_posix())
+        display = filename.relative_to(ROOT) if filename.is_relative_to(ROOT) else filename
+        target, problems = validate_dossier(data, display.as_posix())
         errors.extend(problems)
         if target:
             if target in article_to_file:

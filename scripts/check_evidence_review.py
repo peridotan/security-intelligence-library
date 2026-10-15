@@ -70,19 +70,22 @@ def article_path(value: object) -> str | None:
     return str(part)
 
 
-def read_status(path: Path) -> str | None:
-    if not path.is_file():
-        return None
-    body = path.read_text(encoding="utf-8")
+def status_from_text(body: str) -> str | None:
     if not body.startswith("---\n"):
         return None
     sections = body.split("---\n", 2)
     if len(sections) < 3:
         return None
-    # Only the uncomplicated status key needs to be inspected; parsing YAML
-    # is deliberately left to the existing check_content.py quality gate.
-    match = re.search(r"(?m)^status:\s*['\"]?(published|draft)['\"]?\s*$", sections[1])
+    # Only the uncomplicated status key needs inspection; full YAML parsing
+    # remains the responsibility of the existing content quality checker.
+    match = re.search(r"(?m)^status:\s*['\\"]?(published|draft)['\\"]?\s*$", sections[1])
     return match.group(1) if match else None
+
+
+def read_status(path: Path) -> str | None:
+    if not path.is_file():
+        return None
+    return status_from_text(path.read_text(encoding="utf-8"))
 
 
 def check_source(data: object, name: str, errors: list[str]) -> None:
@@ -193,17 +196,37 @@ def validate_dossier(payload: object, filename: str) -> tuple[str | None, list[s
 
 
 def new_published_articles(base_ref: str) -> set[str]:
-    cmd = [
-        "git", "diff", "--name-only", "--diff-filter=A",
-        f"{base_ref}...HEAD", "--", "docs",
-    ]
-    run = subprocess.run(cmd, cwd=ROOT, text=True, capture_output=True, check=False)
-    if run.returncode:
-        raise RuntimeError(f"could not inspect newly added articles: {run.stderr.strip()}")
+    """Detect added articles AND existing drafts transitioning to published.
+
+    Compare against the PR merge base so older published articles edited in a
+    PR do not require retrospective dossiers. Renamed-in article paths are
+    treated as new until supported by a dossier.
+    """
+    base = subprocess.run(
+        ["git", "merge-base", base_ref, "HEAD"],
+        cwd=ROOT, text=True, capture_output=True, check=False,
+    )
+    if base.returncode or not base.stdout.strip():
+        raise RuntimeError(f"could not find PR merge-base: {base.stderr.strip()}")
+    baseline = base.stdout.strip()
+    changes = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=AMR",
+         f"{baseline}...HEAD", "--", "docs"],
+        cwd=ROOT, text=True, capture_output=True, check=False,
+    )
+    if changes.returncode:
+        raise RuntimeError(f"could not inspect changed articles: {changes.stderr.strip()}")
     result: set[str] = set()
-    for candidate in run.stdout.splitlines():
+    for candidate in changes.stdout.splitlines():
         target = article_path(candidate)
-        if target and read_status(ROOT / target) == "published":
+        if not target or read_status(ROOT / target) != "published":
+            continue
+        previous = subprocess.run(
+            ["git", "show", f"{baseline}:{target}"],
+            cwd=ROOT, text=True, capture_output=True, check=False,
+        )
+        previous_status = status_from_text(previous.stdout) if previous.returncode == 0 else None
+        if previous_status != "published":
             result.add(target)
     return result
 

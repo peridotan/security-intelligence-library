@@ -57,9 +57,9 @@ def probe(config: Path, timeout: int) -> tuple[list[tuple[str, int, str]], bool]
                 for link in links[:5]:
                     print(f"HTML link: {link['href'][:140]} / {link['text'][:70]}")
                 import re
-                scripts = re.findall(r'<script[^>]+src=[\\"\\']([^\\"\\']+)', decoded)
+                scripts = re.findall(r"<script[^>]+src=['\"]([^'\"]+)", decoded)
                 print(f"HTML scripts ({len(scripts)}): " + ", ".join(scripts[-12:]))
-                print("HTML tail: " + re.sub(r"\\s+", " ", decoded[-1800:]))
+                print("HTML tail: " + re.sub(r"\s+", " ", decoded[-1800:]))
             status = "ok" if count else "no items parsed (verify markup / feed)"
             ok = ok and count > 0
             results.append((source_id, count, status))

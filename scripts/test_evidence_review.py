@@ -52,6 +52,10 @@ class DossierTest(unittest.TestCase):
 
     def test_assessment_requires_rationale_and_distinct_verification(self):
         p = dossier(classification="library_assessment", verification="not_applicable")
+        self.assertTrue(any("material source-backed" in e for e in self.check(p)))
+        source_fact = dossier()["claims"][0]
+        source_fact["id"] = "C02"
+        p["claims"].append(source_fact)
         self.assertEqual(self.check(p), [])
         p["claims"][0]["rationale"] = ""
         self.assertTrue(any("requires rationale" in e for e in self.check(p)))

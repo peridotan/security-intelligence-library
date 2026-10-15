@@ -21,6 +21,7 @@ from urllib.error import HTTPError, URLError
 import xml.etree.ElementTree as ET
 
 import yaml
+from official_html_sources import parse_html_listing
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config" / "intelligence_sources.yml"
@@ -239,7 +240,7 @@ def parse_json_feed(json_bytes: bytes, source: dict) -> list[dict]:
 def fetch_source(source: dict, timeout: int) -> bytes:
     accept = (
         "application/json, application/feed+json, "
-        "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+        "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html, */*"
     )
     request = Request(
         source["url"],
@@ -423,6 +424,14 @@ def main() -> int:
                 records = parse_xml_feed(payload, source)
             elif source_type == "json_feed":
                 records = parse_json_feed(payload, source)
+            elif source_type == "html_listing":
+                records = [
+                    make_record(
+                        source, item["title"], item["url"],
+                        item.get("summary", ""), item["published_raw"],
+                    )
+                    for item in parse_html_listing(payload, source)
+                ]
             else:
                 raise ValueError(f"unsupported source type: {source_type}")
             fetched_count = len(records)

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/REPLACE-WITH-ARTICLE-SLUG.md",
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": "人間が一次情報・本文との一致を確認した後にのみ approved に変更する。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "ここに記事の中心となる事実・日付・数値等の主張を日本語で記載する。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "needs_review",
+      "source": {
+        "url": "https://example.com/REPLACE-WITH-PRIMARY-SOURCE",
+        "locator": "一次情報の見出し・表番号・ページなど（引用文の転載は不要）",
+        "published_at": null,
+        "accessed_at": "YYYY-MM-DD"
+      },
+      "review_note": "一次情報が実際に明示しているか確認する。"
+    },
+    {
+      "id": "C02",
+      "statement": "ここに一次情報の発行元が主張する見解や効果を記録する。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "needs_review",
+      "source": {
+        "url": "https://example.com/REPLACE-WITH-PRIMARY-SOURCE",
+        "locator": "発行元の主張が確認できるセクション",
+        "accessed_at": "YYYY-MM-DD"
+      },
+      "review_note": "発行元の見解を検証済み事実として表現しない。"
+    },
+    {
+      "id": "C03",
+      "statement": "ここに日本企業に対するLibrary独自の解釈・推奨を記録する。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "どの前提やリスクを踏まえてこの評価・推奨に至ったかを具体的に説明する。"
+    }
+  ]
+}

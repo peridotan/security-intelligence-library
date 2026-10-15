@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout proposed PR changes
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0  # compare new published articles to origin/main
 
       - name: Checkout Threat Investigation reference data
         uses: actions/checkout@v7
@@ -39,6 +41,12 @@ jobs:
 
       - name: Run official source adapter regression tests
         run: python -m unittest discover -s scripts -p "test_official_*_sources.py" -v
+
+      - name: Run Evidence Review regression tests
+        run: python -m unittest discover -s scripts -p "test_evidence_review.py" -v
+
+      - name: Validate Evidence Review dossiers and new-article gate
+        run: python scripts/check_evidence_review.py --base-ref origin/main
 
       - name: Regenerate article and category indexes
         run: python scripts/build_indexes.py
@@ -85,7 +93,8 @@ jobs:
           {
             echo "### Security Intelligence Library PR quality gate"
             echo ""
-            echo "Passed: source parser regressions, generated indexes/metadata,"
+            echo "Passed: source parser and Evidence Review regressions,"
+            echo "approved evidence for newly published articles, generated indexes/metadata,"
             echo "article quality and rights, Suite handoff, generated-source cleanliness,"
             echo "strict site build, and generated HTML/link checks."
             echo ""

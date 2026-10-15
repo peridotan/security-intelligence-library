@@ -84,13 +84,12 @@ sources:
     category_hint: cybersecurity
     trust: primary
 
-  # HTML adapter is provisional until verified against live GitHub Actions runner.
-  # Failures must surface as source_errors, never be treated as successful ingestion.
+  # The official NCO news listing loads annual first-party CSV via JavaScript.
+  # Resolve the current and previous year as needed for seven-day windows.
   - id: nco-security-news
     name: National Cybersecurity Office (Japan) News
-    type: html_listing
-    url: https://www.cyber.go.jp/news/list/index.html
-    html_strategy: nco_news
+    type: csv_yearly
+    url: https://www.cyber.go.jp/csv/{year}.csv
     enabled: true
     category_hint: regulation
     trust: primary

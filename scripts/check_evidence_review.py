@@ -78,7 +78,7 @@ def status_from_text(body: str) -> str | None:
         return None
     # Only the uncomplicated status key needs inspection; full YAML parsing
     # remains the responsibility of the existing content quality checker.
-    match = re.search(r"(?m)^status:\s*['\\"]?(published|draft)['\\"]?\s*$", sections[1])
+    match = re.search(r'''(?m)^status:\s*['"]?(published|draft)['"]?\s*$''', sections[1])
     return match.group(1) if match else None
 
 

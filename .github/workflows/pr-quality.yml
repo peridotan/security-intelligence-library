@@ -1,0 +1,93 @@
+name: Validate Security Intelligence PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+# PR validation is read-only and never deploys or merges content.
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-quality-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-gate:
+    name: Content, indexes, Suite and site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout proposed PR changes
+        uses: actions/checkout@v7
+
+      - name: Checkout Threat Investigation reference data
+        uses: actions/checkout@v7
+        with:
+          repository: peridotan/threat-investigation-dashboard
+          path: .suite/threat-investigation-dashboard
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run official source adapter regression tests
+        run: python -m unittest discover -s scripts -p "test_official_*_sources.py" -v
+
+      - name: Regenerate article and category indexes
+        run: python scripts/build_indexes.py
+
+      - name: Regenerate intelligence context index
+        run: python scripts/build_context_index.py
+
+      - name: Synchronize generated article metadata
+        run: python scripts/sync_article_metadata.py
+
+      - name: Validate content structure and media rights
+        run: python scripts/check_content.py
+
+      - name: Validate Suite handoff contracts
+        run: >
+          python scripts/check_suite_handoff.py
+          --threat-data
+          .suite/threat-investigation-dashboard/data/dashboard.json
+
+      - name: Verify generated docs are committed
+        shell: bash
+        run: |
+          if ! git diff --exit-code -- docs; then
+            echo "::error::Generated docs differ from the PR. Run the generators, commit docs/, and push again."
+            exit 1
+          fi
+          untracked="$(git ls-files --others --exclude-standard -- docs)"
+          if [[ -n "$untracked" ]]; then
+            echo "::error::Generated docs contain untracked files; commit them before merging."
+            printf '%s\n' "$untracked"
+            exit 1
+          fi
+
+      - name: Build documentation site with strict validation
+        run: zensical build --clean --strict
+
+      - name: Validate generated HTML and internal links
+        run: python scripts/check_generated_site.py
+
+      - name: Publish quality-gate summary
+        if: success()
+        shell: bash
+        run: |
+          {
+            echo "### Security Intelligence Library PR quality gate"
+            echo ""
+            echo "Passed: source parser regressions, generated indexes/metadata,"
+            echo "article quality and rights, Suite handoff, generated-source cleanliness,"
+            echo "strict site build, and generated HTML/link checks."
+            echo ""
+            echo "**This workflow does not deploy, publish articles, or merge the PR.**"
+          } >> "$GITHUB_STEP_SUMMARY"

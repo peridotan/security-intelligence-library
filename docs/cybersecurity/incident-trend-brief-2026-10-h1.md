@@ -1,46 +1,61 @@
 ---
-title: "Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧"
+title: Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧
 date: 2026-10-16
 updated: 2026-10-16
 reviewed: 2026-10-16
 review_status: Current
 source_period: 2026-10
-description: "2026年10月1〜15日に国内で公表された代表的な不正アクセス事案と公的注意喚起を基に、攻撃面・委託先への波及・復旧・被害判断の変化を整理する。"
+description: 2026年10月1〜15日に国内で公表された代表的な不正アクセス事案と公的注意喚起を基に、攻撃面・委託先への波及・復旧・被害判断の変化を整理する。
 category: Cybersecurity
 collections:
-  - cybersecurity
+- cybersecurity
 topics:
-  - Vulnerability Management
-  - Third-party Risk / C-SCRM
-  - Security Governance & Risk Management
+- Vulnerability Management
+- Third-party Risk / C-SCRM
+- Security Governance & Risk Management
 tags:
-  - Incident Trends
-  - Incident Trend Brief
-  - API Security
-  - Third-party Risk
-  - Cloud Resilience
-  - Ransomware
-  - Data Breach
-  - JPCERT/CC
-  - NICT
+- Incident Trends
+- Incident Trend Brief
+- API Security
+- Third-party Risk
+- Cloud Resilience
+- Ransomware
+- Data Breach
+- JPCERT/CC
+- NICT
 audience:
-  - Executive
-  - CISO
-  - Security Operations
-  - Risk Management
+- Executive
+- CISO
+- Security Operations
+- Risk Management
 management_impact: High
 impact_types:
-  - Business Continuity
-  - Operational Security
-  - Third-party Risk
+- Business Continuity
+- Operational Security
+- Third-party Risk
 urgency: Near-term
 evidence: Mixed
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-10-16</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">October 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-10-16</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-10-16</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Vulnerability Management / Third-party Risk / C-SCRM / Security Governance &amp; Risk Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Security Operations / Risk Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Business Continuity / Operational Security / Third-party Risk</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Mixed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

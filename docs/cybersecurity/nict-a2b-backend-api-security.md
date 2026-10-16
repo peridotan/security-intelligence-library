@@ -1,9 +1,9 @@
 ---
 title: NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク
-date: 2026-10-15
-updated: 2026-10-15
-reviewed: 2026-10-15
-review_status: Needs Review
+date: 2026-10-16
+updated: 2026-10-16
+reviewed: 2026-10-16
+review_status: Current
 source_period: 2026-10
 description: NICTが2026年10月13日に公表したA2B攻撃の注意喚起を基に、公開モバイルアプリから推測されるBackend APIへの攻撃経路と企業の確認事項を整理する。
 category: Cybersecurity
@@ -33,7 +33,7 @@ impact_types:
   - Identity
 urgency: Near-term
 evidence: Mixed
-status: draft
+status: published
 pptx: ""
 media_rights: none
 ---

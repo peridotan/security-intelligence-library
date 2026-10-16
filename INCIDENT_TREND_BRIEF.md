@@ -6,11 +6,13 @@
 
 既存のSecurity Intelligence Libraryとは **公開・閲覧は統合、収集・記録・分析は分離** します。個別記事は一つの事案・攻撃手法を深掘りし、本Briefは2週間の代表事案を比較、Monthlyは月全体の戦略的な変化、Quarterlyは複数月にまたがる構造変化を扱います。**Monthlyの短縮版にはしません**。
 
+初号は2026年10月16日に掲載承認を受け、公開用記事・根拠・レビュー記録を配置しました。以下は現在の構成です。
+
 初号の構成：
 - 事案記録：data/incident-trends/2026-10-h1.json
-- 記事草稿：drafts/cybersecurity/incident-trend-brief-2026-10-h1.md
-- 根拠JSON：drafts/evidence/incident-trend-brief-2026-10-h1.json
-- 人間のレビュー表：drafts/reviews/incident-trend-brief-2026-10-h1.md
+- 記事草稿：docs/cybersecurity/incident-trend-brief-2026-10-h1.md
+- 根拠JSON：review/evidence/incident-trend-brief-2026-10-h1.json
+- 人間のレビュー表：review/pilots/incident-trend-brief-2026-10-h1.md
 
 ## 期間・選定条件
 
@@ -54,7 +56,7 @@ python -m unittest discover -s scripts -p "test_incident_trends.py" -v
 python scripts/article_workflow.py check --collection cybersecurity --slug incident-trend-brief-2026-10-h1
 ~~~
 
-6. **Draft PRで人間がレビュー**。3事案群が非網羅サンプルであること、JPCERT/CC等の一般的な手口との混同がないこと、出典の確度、続報による判断変更を確認する。
+6. **公開前のDraft PRで人間がレビュー**。3事案群が非網羅サンプルであること、JPCERT/CC等の一般的な手口との混同がないこと、出典の確度、続報による判断変更を確認する。
 7. 人間が正式採用・公開を承認した場合にだけ、article_workflow.pyのstageで掲載先をdocs/cybersecurity/へ移し、review/evidenceへ根拠JSONを配置する。実際に確認した人間がreview.status = approved、reviewed_by、reviewed_atを記録する。記事をpublishedへ更新し、生成インデックス・メタデータを更新する。
 8. 必須CIの成功、Draft解除後の再チェック、**人間によるマージ**、GitHub Pagesへの配信と表示確認を実施する。
 
@@ -64,7 +66,7 @@ python scripts/article_workflow.py check --collection cybersecurity --slug incid
 
 scripts/check_incident_trends.py は、期間とファイル名の一致、発表日・確認日、重複事案群ID、ソースURL・参照位置、関連公表と注意喚起の分離、分析への参照とlimitationsを検査します。
 
-この検査は**構造のみ**です。ネットワークを使った原文の取得・真偽の自動判定、データ自動収集、AI推論による事件の断定、GitHubへの公開・マージは行いません。初号ではデータと記事を人間が選定・作成したDraftとして扱います。
+この検査は**構造のみ**です。ネットワークを使った原文の取得・真偽の自動判定、データ自動収集、AI推論による事件の断定、GitHubへの公開・マージは行いません。初号はAI支援による一次情報照合と所有者の編集承認を経て公開用に昇格しました。AIだけで人間の出典確認を代行したと主張するものではありません。
 
 ## 次の運用改善候補
 

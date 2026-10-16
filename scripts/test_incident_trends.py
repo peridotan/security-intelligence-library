@@ -21,6 +21,9 @@ class IncidentTrendDataTest(unittest.TestCase):
 
     def test_initial_incident_trend_evidence_passes(self):
         self.assertEqual(self.errors(self.baseline), [])
+        self.assertEqual(len(self.baseline["incidents"]), 3)
+        self.assertEqual(len(self.baseline["advisories"]), 4)
+        self.assertEqual(len({s["id"] for s in self.baseline["sources"]}), len(self.baseline["sources"]))
 
     def test_related_customer_disclosures_are_not_independent_events(self):
         data = deepcopy(self.baseline)

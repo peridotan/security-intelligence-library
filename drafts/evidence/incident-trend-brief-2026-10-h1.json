@@ -5,7 +5,7 @@
     "status": "pending",
     "reviewed_by": null,
     "reviewed_at": null,
-    "notes": "Incident Trend Brief初号のAI支援による一次情報照合記録。3事案群・3注意喚起の非網羅サンプル。各社に共通する攻撃者・侵入経路や国内発生総数は確認していない。人間による実質確認・公開判断前であり、approvedを設定しない。対応するソースデータは data/incident-trends/2026-10-h1.json。"
+    "notes": "Incident Trend Brief初号のAI支援による一次情報照合記録。3事案群・3注意喚起の非網羅サンプル。各社に共通する攻撃者・侵入経路や国内発生総数は確認していない。人間による実質確認・公開判断前であり、approvedを設定しない。対応するソースデータは data/incident-trends/2026-10-h1.json。 2026-10-16一次照合時、IPAと個人情報保護委員会の注意喚起を別公表として分離し、計4件へ修正。C16で個人情報保護委員会の一次PDFを追跡。"
   },
   "claims": [
     {
@@ -214,6 +214,21 @@
       "importance": "material",
       "verification": "not_applicable",
       "rationale": "初号の選定方法がcurated_non_exhaustiveであり、サンプル分母と捕捉率が不明なため。事業者の更新・下流顧客の公表は同一事案群に束ねる。"
+    },
+    {
+      "id": "C16",
+      "statement": "個人情報保護委員会は2026年10月7日に大規模漏えい等事案を踏まえた注意喚起を公表し、技術的安全管理措置の見直し予定と不要データの消去を説明した。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.ppc.go.jp/files/pdf/261007_houdou.pdf",
+        "locator": "本文p.1『安全管理措置』『見直し予定』およびp.2『不要となった個人データの消去』",
+        "published_at": "2026-10-07",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "一次PDFの本文に基づく注意喚起の内容。法令上『手法の例示』すべてを義務と断定しない。"
     }
   ]
 }

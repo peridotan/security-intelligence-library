@@ -12,6 +12,13 @@ person actually reviewed it**. CI validates structure, traceability and the
 recorded approval state, not remote source content or reviewer identity.
 The human editor must open primary sources and inspect the cited passages.
 
+For the normal article production lifecycle, including reusable scaffold,
+Draft PR creation, staging, human approval and the final deployment check,
+see [`ARTICLE_WORKFLOW.md`](ARTICLE_WORKFLOW.md).
+The local CLI keeps placeholder dossiers under `drafts/evidence/`; they are
+moved to `review/evidence/` **only after valid real source data has replaced
+the template**, to avoid leaving invalid evidence files in the CI gate.
+
 ## Work-to-GitHub workflow
 
 1. After an eligible Triage PR merges, ChatGPT Work drafts the article under

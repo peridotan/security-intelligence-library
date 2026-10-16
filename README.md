@@ -2,6 +2,12 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## 記事制作の標準手順
+
+記事のDraft作成、一次情報の根拠記録（Evidence Review）、人間の公開承認、PR品質チェックからGitHub Pagesでの表示確認までを [ARTICLE_WORKFLOW.md](ARTICLE_WORKFLOW.md) にまとめています。
+
+新規記事では `scripts/article_workflow.py` を使用し、**記事＋根拠JSON＋編集レビュー表**をセットで準備してください。人間の承認やGitHubへの公開は自動化されません。
+
 ## v0.19.0
 
 - September 2026 Intelligenceを2026-09-08時点のCurrent Reviewとして追加

@@ -48,6 +48,12 @@ jobs:
       - name: Run reusable article workflow regression tests
         run: python -m unittest discover -s scripts -p "test_article_workflow.py" -v
 
+      - name: Run Incident Trend Brief regression tests
+        run: python -m unittest discover -s scripts -p "test_incident_trends.py" -v
+
+      - name: Validate Incident Trend Brief source records and draft bundles
+        run: python scripts/check_incident_trends.py
+
       - name: Validate Evidence Review dossiers and new-article gate
         run: python scripts/check_evidence_review.py --base-ref origin/main
 

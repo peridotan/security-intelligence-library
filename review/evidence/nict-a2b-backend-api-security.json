@@ -2,10 +2,10 @@
   "schema_version": 1,
   "article_path": "docs/cybersecurity/nict-a2b-backend-api-security.md",
   "review": {
-    "status": "pending",
-    "reviewed_by": null,
-    "reviewed_at": null,
-    "notes": "2026-10-15、NICT/LETTICEの7ページ技術資料 Rev 1.1 を追加確認。C02はPDF p.1『1. 概要』・p.6『5. まとめ』に記載されたNICT自身の調査結果としての出典照合を完了し verified に変更。ただし個別被害組織・事案ごとの因果関係の独立検証は資料からはできない。AIによるこの事前照合は人間の承認を意味せず、review.status は pending のまま。記事採用と公開判断には人間が全material claimを確認する必要がある。 2026-10-16公開準備用PRに複製。利用者は正式掲載準備の開始を許可したが、全claimの最終人間レビュー・承認者記録や公開そのものの許可とはみなさない。"
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-10-16",
+    "notes": "NICT/LETTICE注意喚起Rev 1.1（全7ページ）の各一次情報位置はChatGPTによる事前照合で確認。2026-10-16、公開用PRの内容に進めてよい旨を所有者からチャット上で承認された。reviewed_by は掲載の編集承認者を記録するもので、承認者自身が全根拠を独立調査したことを意味しない。C02はNICTによる報告の出典一致であり、個別被害事案の独立検証はしていない。C05のAI活用は資料内の図示・将来リスクであり個別被害におけるAI使用状況の実証値ではない。"
   },
   "claims": [
     {

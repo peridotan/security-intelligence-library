@@ -45,6 +45,9 @@ jobs:
       - name: Run Evidence Review regression tests
         run: python -m unittest discover -s scripts -p "test_evidence_review.py" -v
 
+      - name: Run reusable article workflow regression tests
+        run: python -m unittest discover -s scripts -p "test_article_workflow.py" -v
+
       - name: Validate Evidence Review dossiers and new-article gate
         run: python scripts/check_evidence_review.py --base-ref origin/main
 

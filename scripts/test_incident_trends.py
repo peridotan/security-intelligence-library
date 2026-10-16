@@ -41,7 +41,7 @@ class IncidentTrendDataTest(unittest.TestCase):
     def test_window_is_based_on_disclosure_not_attack_date(self):
         data = deepcopy(self.baseline)
         data["incidents"][0]["disclosed_at"] = "2026-09-09"
-        self.assertTrue(any("outside" in err for err in self.errors(data)))
+        self.assertTrue(any("reporting window" in err for err in self.errors(data)))
         data = deepcopy(self.baseline)
         data["period"]["end"] = "2026-10-16"
         self.assertTrue(any("h1 period" in err for err in self.errors(data)))

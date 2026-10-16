@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>94</strong> Articles</span>
+    <span><strong>95</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>405</strong> Detailed Tags</span>
+    <span><strong>413</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -45,7 +45,7 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">13</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">14</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
@@ -56,7 +56,7 @@ hide:
 <div class="sil-topic-directory">
 <a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">42</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">43</span></a>
 </div>
 </section>
 </div>
@@ -250,6 +250,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 実悪用、KEV / EPSS、Patch優先度、Exploit Windowを含む脆弱性管理。
 
+- [NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク](../cybersecurity/nict-a2b-backend-api-security.md) — October 2026 · Near-term · Mixed
 - [AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則](../cybersecurity/evidence-grounded-ai-vulnerability-triage.md) — October 2026 · Near-term · Assessment
 - [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
@@ -352,6 +353,7 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
 - [DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する](../cybersecurity/dns-root-ksk-2024-rollover.md) — October 2026 · Immediate · Confirmed
+- [NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク](../cybersecurity/nict-a2b-backend-api-security.md) — October 2026 · Near-term · Mixed
 - [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
 - [GPT-6 AstraがCyber Capability「Critical」へ ― Capability Riskが運用課題になった](../ai-security/gpt6-astra-critical-cyber-capability.md) — September 2026 · Immediate · Confirmed

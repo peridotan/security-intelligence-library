@@ -88,7 +88,7 @@ def init_bundle(
         "{{TITLE}}": json.dumps(title.strip(), ensure_ascii=False),
         "{{DATE}}": draft_date,
         "{{SOURCE_PERIOD}}": source_period,
-        "{{DESCRIPTION}}": "TODO: 一次情報の内容と経営上の意味を記載",
+        "{{DESCRIPTION}}": json.dumps("TODO: 一次情報の内容と経営上の意味を記載", ensure_ascii=False),
         "{{CATEGORY}}": CATEGORIES[collection],
         "{{COLLECTION}}": collection,
     }

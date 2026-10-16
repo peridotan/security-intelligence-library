@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "brief_id": "2026-10-h1",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-15",
+    "as_of": "2026-10-16"
+  },
+  "coverage": {
+    "geography": "Japan",
+    "sampling": "curated_non_exhaustive",
+    "counting_unit": "incident_group",
+    "limitations": "一次情報で10月1～15日に公表された代表例を意図的に選んだ非網羅サンプル。国内の総発生件数・件数増減・攻撃手法の市場シェアを示す統計ではない。更新公表、影響組織別の発表は同一の侵害事案に束ね、二重計上しない。"
+  },
+  "sources": [
+    {
+      "id": "SRC01",
+      "publisher": "JOGMEC",
+      "url": "https://www.jogmec.go.jp/news/information/information_00706.html",
+      "published_at": "2026-10-02",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月2日『1．概要』『2．漏えいした可能性のある個人情報』『3．原因』"
+    },
+    {
+      "id": "SRC02",
+      "publisher": "IDCフロンティア",
+      "url": "https://www.idcf.jp/news/topics/20261007002/",
+      "published_at": "2026-10-07",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月7日第2報：原因、影響495顧客、停止・遮断対応"
+    },
+    {
+      "id": "SRC03",
+      "publisher": "IDCフロンティア",
+      "url": "https://www.idcf.jp/news/topics/20261014001/",
+      "published_at": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月14日第5報：VMデータ持ち出し確認結果、194顧客のスナップショット、48社の登録情報照会"
+    },
+    {
+      "id": "SRC04",
+      "publisher": "株式会社アルカディア（SpeeCAN RAIDEN）",
+      "url": "https://raiden.site.ktaiwork.jp/archives/4597",
+      "published_at": "2026-10-13",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月13日第2報、10月14日第4報、10月15日第9報"
+    },
+    {
+      "id": "SRC05",
+      "publisher": "さいたま市",
+      "url": "https://www.city.saitama.lg.jp/006/014/008/003/015/007/p134471.html",
+      "published_at": "2026-10-13",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月13日第1報『1.概要』『2.漏洩した可能性のある個人情報』"
+    },
+    {
+      "id": "SRC06",
+      "publisher": "千葉県",
+      "url": "https://www.pref.chiba.lg.jp/dejisui/press/2026/20261014incident.html",
+      "published_at": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月14日『1 漏えいの可能性がある情報』『2 経緯』"
+    },
+    {
+      "id": "SRC07",
+      "publisher": "JR東海",
+      "url": "https://market.jr-central.co.jp/shop/pages/20261015.aspx",
+      "published_at": "2026-10-15",
+      "accessed_at": "2026-10-16",
+      "locator": "IDCフロンティア関連の2026年10月15日続報：10月13日の漏えい可能性公表を更新"
+    },
+    {
+      "id": "SRC08",
+      "publisher": "JPCERT/CC",
+      "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
+      "published_at": "2026-10-08",
+      "accessed_at": "2026-10-16",
+      "locator": "注意喚起JPCERT-AT-2026-0030、2026年10月9日更新、II.ケースA～DとIII.対策"
+    },
+    {
+      "id": "SRC09",
+      "publisher": "NICT",
+      "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+      "published_at": "2026-10-13",
+      "accessed_at": "2026-10-16",
+      "locator": "NICT/LETTICE A2B攻撃：ポイント、今回の成果、対策の公表"
+    },
+    {
+      "id": "SRC10",
+      "publisher": "IPA",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
+      "published_at": "2026-10-09",
+      "accessed_at": "2026-10-16",
+      "locator": "『概要』：大規模個人情報を扱う事業者と経営者への早急なリスク見直し要請"
+    },
+    {
+      "id": "SRC11",
+      "publisher": "個人情報保護委員会",
+      "url": "https://www.ppc.go.jp/news/press/2026/261007_houdou/",
+      "published_at": "2026-10-07",
+      "accessed_at": "2026-10-16",
+      "locator": "2026年10月7日 大規模漏えい事案に関する注意喚起"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC01",
+      "event_group": "GROUP-JOGMEC-202609",
+      "organization": "JOGMEC",
+      "title": "不正アクセスに伴うメールアドレス漏えいの可能性（10月2日公表）",
+      "disclosed_at": "2026-10-02",
+      "category": "unauthorized_access",
+      "impact": "possible_data_exposure",
+      "facts": [
+        {
+          "text": "JOGMECは10月2日、情報システムへの第三者不正アクセスと、個人情報漏えいの可能性を公表した。",
+          "classification": "source_fact",
+          "source_ids": [
+            "SRC01"
+          ]
+        },
+        {
+          "text": "漏えい可能性の対象には役職員のメールアドレス約1,100件と、それ以外のメールアドレス約7,400件が含まれる。件数は可能性のある対象であり確定漏えい件数ではない。",
+          "classification": "source_claim",
+          "source_ids": [
+            "SRC01"
+          ]
+        },
+        {
+          "text": "判明日は9月9日であり、今回の半月期間に攻撃が発生したと確定するものではない。",
+          "classification": "source_fact",
+          "source_ids": [
+            "SRC01"
+          ]
+        }
+      ],
+      "uncertainty": "不正アクセスの具体的な侵入経路、情報の持ち出し確定、二次利用は公表時点で確定していない。10月2日の公表日と9月9日の判明日を区別する。",
+      "related_disclosures": []
+    },
+    {
+      "id": "INC02",
+      "event_group": "GROUP-IDCF-20261007",
+      "organization": "IDCフロンティア",
+      "title": "IDCFクラウドへのランサムウェア攻撃とサービス障害",
+      "disclosed_at": "2026-10-07",
+      "category": "ransomware",
+      "impact": "confirmed_disruption",
+      "facts": [
+        {
+          "text": "IDCフロンティアは10月7日、IDCFクラウド東日本リージョン1の一部におけるランサムウェア攻撃と障害を公表し、影響対象を495企業・自治体とした。",
+          "classification": "source_fact",
+          "source_ids": [
+            "SRC02"
+          ]
+        },
+        {
+          "text": "10月14日の第5報では、対象仮想サーバ内データの外部持ち出し痕跡は確認されず、同社は外部流出はなかったと判断した。これは同社の調査結果・判断であり、あらゆる情報の漏えいが絶対になかったと独立に保証するものではない。",
+          "classification": "source_claim",
+          "source_ids": [
+            "SRC03"
+          ]
+        },
+        {
+          "text": "10月14日の第5報で、影響顧客495のうちスナップショット利用194顧客はバックアップデータの取り出しが可能と報告した。",
+          "classification": "source_fact",
+          "source_ids": [
+            "SRC03"
+          ]
+        },
+        {
+          "text": "同社はクラウドポータルの48社の登録情報に不正な照会があったと公表したが、持ち出しの痕跡は確認されないと報告した。仮想サーバ領域のデータ流出評価と混同しない。",
+          "classification": "source_fact",
+          "source_ids": [
+            "SRC03"
+          ]
+        }
+      ],
+      "uncertainty": "サービス停止は確認されているが、個別顧客の最終復旧可否や侵入経路の詳細は発表時点では完全には確定していない。メール配信サービス等の下流影響は元事案にひも付け、個別の別攻撃として数えない。",
+      "related_disclosures": [
+        {
+          "organization": "JR東海（JR東海MARKET/いいもの探訪）",
+          "disclosed_at": "2026-10-15",
+          "source_ids": [
+            "SRC07"
+          ],
+          "note": "10月13日約15,000件漏えい可能性を告知したが、15日の続報では漏えいの事実が確認されなかったと説明。同じIDC関連事案への更新公表。"
+        }
+      ]
+    },
+    {
+      "id": "INC03",
+      "event_group": "GROUP-ARCADIA-20261011",
+      "organization": "株式会社アルカディア（SpeeCAN RAIDEN）",
+      "title": "防災・通知サービス事業者への不正アクセスと複数自治体への波及",
+      "disclosed_at": "2026-10-13",
+      "category": "unauthorized_access",
+      "impact": "possible_data_exposure",
+      "facts": [
+        {
+          "text": "アルカディアは10月13日、SpeeCAN RAIDENへの第三者不正アクセスと個人情報漏えいの可能性を公表し、10月11日16時30分の不審挙動確認を報告した。",
+          "classification": "source_fact",
+          "source_ids": [
+            "SRC04"
+          ]
+        },
+        {
+          "text": "10月15日第9報では対象サーバの復旧完了を報告したが、情報漏えいの範囲は引き続き調査中と明記した。",
+          "classification": "source_claim",
+          "source_ids": [
+            "SRC04"
+          ]
+        },
+        {
+          "text": "さいたま市は同事業者のシステムを利用し、防災行政無線メールのアドレス34,783件などが漏えいした可能性を公表した。",
+          "classification": "source_claim",
+          "source_ids": [
+            "SRC05"
+          ]
+        },
+        {
+          "text": "千葉県は同事業者から通知を受け、災害対応職員などの情報漏えいの可能性を公表した。県民の情報は同システムに登録していないと説明した。",
+          "classification": "source_claim",
+          "source_ids": [
+            "SRC06"
+          ]
+        }
+      ],
+      "uncertainty": "情報漏えい可能性を現実の流出確定としない。さいたま市と千葉県の公表は同じサービス事業者事案への波及を示すもので、独立した侵入3件とは数えない。侵入時の技術的原因は本資料群からは確定できない。",
+      "related_disclosures": [
+        {
+          "organization": "さいたま市",
+          "disclosed_at": "2026-10-13",
+          "source_ids": [
+            "SRC05"
+          ],
+          "note": "防災関連のメール・電話サービス利用者情報が対象となり得る。"
+        },
+        {
+          "organization": "千葉県",
+          "disclosed_at": "2026-10-14",
+          "source_ids": [
+            "SRC06"
+          ],
+          "note": "災害対応職員参集・水道関連の職員情報が対象となり得る。"
+        }
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "id": "ADV01",
+      "summary": "JPCERT/CCは10月8日（9日更新）、不正アクセス事案に関連した複数の攻撃類型を注意喚起。既知の脆弱性探索、管理APIへの不正操作、Metabase SQLインジェクション、アプリケーションサーバへのWebシェル設置を区別し、全事案に同じ手法が使われたとみなすべきではないと明記。",
+      "source_ids": [
+        "SRC08"
+      ]
+    },
+    {
+      "id": "ADV02",
+      "summary": "NICTは10月13日、公開Androidアプリの解析情報を利用してBackend APIを狙うA2B攻撃を注意喚起。今回のサンプル3事案すべての原因がA2Bだったとは言えない。",
+      "source_ids": [
+        "SRC09"
+      ]
+    },
+    {
+      "id": "ADV03",
+      "summary": "IPAは10月9日、個人情報等を保有する事業者に緊急の対策点検と経営主導のセキュリティリスク見直しを要請。個人情報保護委員会も10月7日に大規模漏えい事案を踏まえ注意喚起した。",
+      "source_ids": [
+        "SRC10",
+        "SRC11"
+      ]
+    }
+  ],
+  "trend_signals": [
+    {
+      "id": "TRD01",
+      "assessment": "一般公開アプリや管理用途のBackend APIが攻撃面になり得るという注意喚起が強まっている。利用画面から見えないAPIや管理用機能も点検対象に含める必要がある。",
+      "incident_ids": [],
+      "advisory_ids": [
+        "ADV01",
+        "ADV02"
+      ],
+      "confidence": "medium",
+      "limitation": "JPCERT/CC/NICTの注意喚起が示す攻撃類型であり、JOGMEC・IDCF・アルカディアの個別侵入経路と因果関係が証明されたわけではない。"
+    },
+    {
+      "id": "TRD02",
+      "assessment": "共有サービス事業者への一度の侵入・障害が、複数の利用企業や自治体の情報漏えい懸念または業務停止へ波及する。委託先管理と復旧手段の実効性を点検する必要がある。",
+      "incident_ids": [
+        "INC02",
+        "INC03"
+      ],
+      "advisory_ids": [],
+      "confidence": "high",
+      "limitation": "本サンプルで観測した波及構造であり、全国の委託先インシデント増加率や事業者同士の攻撃主体の共通性を示すものではない。"
+    },
+    {
+      "id": "TRD03",
+      "assessment": "初報の『漏えいの可能性』と後続調査の『流出痕跡なし』は異なる情報であり、Briefには更新による評価の変化を保存する。確認済み侵入、漏えいの可能性、確定漏えいを同一視しない。",
+      "incident_ids": [
+        "INC01",
+        "INC02",
+        "INC03"
+      ],
+      "advisory_ids": [],
+      "confidence": "high",
+      "limitation": "各発行元の当該時点の調査結果に依存し、後日追加判明する事実を排除できない。特にIDCFのVMデータの流出判断とポータル情報への不正照会を混同しない。"
+    },
+    {
+      "id": "TRD04",
+      "assessment": "クラウド事業者のランサムウェア被害では顧客環境が広く停止し、スナップショットなどの復旧手段の有無が実務上の差を生む。復旧可能性はバックアップ『保有』だけでなく取り出しと再開まで確認すべきである。",
+      "incident_ids": [
+        "INC02"
+      ],
+      "advisory_ids": [],
+      "confidence": "medium",
+      "limitation": "単一の事業者事例からの実務上の示唆であり、全クラウドに共通する障害率や復旧率を推定する統計ではない。"
+    }
+  ]
+}

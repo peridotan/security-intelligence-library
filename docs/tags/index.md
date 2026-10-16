@@ -668,6 +668,7 @@ hide:
 現時点で1記事だけに付いている詳細キーワードです。
 
 <div class="sil-topic-directory">
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">A2B Attack <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/ai-enabled-device-code-phishing.md">Access Token <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/redvds-cybercrime-infrastructure.md">Account Takeover <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/teams-it-support-remote-session-intrusion.md">Active Directory <span class="sil-topic-count">1</span></a>
@@ -690,6 +691,8 @@ hide:
 <a class="sil-topic" href="../cybersecurity/enisa-threat-landscape-2026-dependencies.md">AI-Enabled Threats <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/japan-ai-guidelines-business-v12.md">AI事業者ガイドライン <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/mini-shai-hulud-antv.md">antv <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">API Security <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">AppSec <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/edge-ai-trust-attestation-provenance.md">Artifact Provenance <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/ascii-smuggling-phishing-evasion.md">ASCII Smuggling <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/unit42-global-ir-2026.md">Attack Speed <span class="sil-topic-count">1</span></a>
@@ -702,6 +705,7 @@ hide:
 <a class="sil-topic" href="../regulation/fsa-frontier-ai-short-term-response.md">BCP <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/redvds-cybercrime-infrastructure.md">BEC <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/nist-ai800-3-evaluation-uncertainty.md">Benchmark <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">BOLA <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/dell-recoverpoint-zero-day-trust-plane.md">BRICKSTORM <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/unit42-global-ir-2026.md">Browser <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/openai-axios-signing-supply-chain.md">Build Pipeline <span class="sil-topic-count">1</span></a>
@@ -743,6 +747,7 @@ hide:
 <a class="sil-topic" href="../identity-security/eudi-wallet-certification.md">Cybersecurity Certification <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/eu-cybersecurity-ai-action-plan.md">Cybersecurity Policy <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/japan-critical-infrastructure-unified-standard.md">Cybersecurity Regulation <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">CYNEX <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/nist-data-classification-sp1800-39.md">Data Classification <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/openai-agent-link-data-exfiltration.md">Data Exfiltration <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/microsoft-data-security-index-2026.md">Data Loss Prevention <span class="sil-topic-count">1</span></a>
@@ -835,6 +840,7 @@ hide:
 <a class="sil-topic" href="../cybersecurity/jadepuffer-agentic-ransomware.md">Langflow <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/langgrinch-ai-application-supply-chain.md">LangGrinch <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/mcp-tool-poisoning-agent-supply-chain.md">Least Agency <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">LETTICE <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/f5-confluence-edge-to-identity.md">Linux <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-infrastructure-control-plane-attacks.md">LiteLLM <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/autojack-agent-localhost-rce.md">Localhost <span class="sil-topic-count">1</span></a>
@@ -852,6 +858,7 @@ hide:
 <a class="sil-topic" href="../ai-security/enterprise-frontier-safeguards-zdr.md">Misuse Detection <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/pqc-tls-certificate-ecosystem.md">ML-DSA <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/nist-key-generation-pqc-sp800-133r3.md">ML-KEM <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">Mobile Application <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/nist-mdl-financial-institutions.md">Mobile Driver License <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/gtig-ai-threat-tracker-february.md">Model Extraction <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/agentic-ai-security-controls.md">Monitoring <span class="sil-topic-count">1</span></a>
@@ -861,6 +868,7 @@ hide:
 <a class="sil-topic" href="../ai-security/openai-running-codex-safely.md">Network Egress <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/ai-agent-identity-nhi.md">NHI <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/nist-csf2-erm-workforce-sp1308.md">NICE Framework <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">NICT <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/eu-cybersecurity-package-january-2026.md">NIS2 <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/eu-ict-supply-chain-security-toolbox.md">NIS2 Cooperation Group <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/nist-ai800-3-evaluation-uncertainty.md">NIST AI 800-3 <span class="sil-topic-count">1</span></a>

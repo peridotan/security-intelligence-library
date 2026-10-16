@@ -35,6 +35,7 @@ From the repository root, after installing `requirements.txt`:
 ```bash
 python -m unittest discover -s scripts -p 'test_official_*_sources.py' -v
 python -m unittest discover -s scripts -p 'test_evidence_review.py' -v
+python -m unittest discover -s scripts -p 'test_article_workflow.py' -v
 python scripts/check_evidence_review.py --base-ref origin/main
 python scripts/build_indexes.py
 python scripts/build_context_index.py
@@ -83,6 +84,11 @@ To actually block merging on red checks, configure GitHub repository branch
 protection or rulesets on `main` to require that status check, after its
 first successful run. This requires repository settings access and must be
 configured separately.
+
+For the standard article-scaffolding and human publication procedure,
+see [`ARTICLE_WORKFLOW.md`](ARTICLE_WORKFLOW.md). The article helper
+tests run in this same required check; they do not create a separate
+required status, publish, or merge.
 
 The existing Japanese-source live validation workflow stays separate: its
 network-dependent checks run only for relevant source-code changes, while

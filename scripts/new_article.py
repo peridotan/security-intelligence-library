@@ -64,10 +64,12 @@ def main():
     output.write_text(text, encoding="utf-8")
     print(output.relative_to(ROOT))
     print(
-        "Next: edit the article, select 1-3 curated `topics` from config/topics.yml, "
-        "add detailed `tags` and reliable sources/footnotes, set status: published, "
-        "then run `python scripts/update_content.py`. "
-        "Home, category, monthly and topic indexes are generated automatically."
+        "Legacy helper: this creates article Markdown only, without Evidence Review. "
+        "For new articles use ARTICLE_WORKFLOW.md and scripts/article_workflow.py "
+        "to create the article, pending evidence dossier and human review checklist. "
+        "Do NOT set status: published or merge before human evidence approval; "
+        "the required PR quality check will reject new published articles "
+        "without an approved review/evidence dossier."
     )
 
 if __name__ == "__main__":

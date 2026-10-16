@@ -33,6 +33,12 @@ Condition:
 - pull request title starts with
   `[Triage Review] Security Intelligence source scan`
 
+For the reusable human-led GitHub publication process, follow
+[`ARTICLE_WORKFLOW.md`](ARTICLE_WORKFLOW.md). The local helper
+`scripts/article_workflow.py` can create a draft bundle and check structural
+completeness; the Work task itself must still return artifacts only and must
+not approve, publish, merge or push.
+
 ## Work task instructions
 
 When a matching triage pull request is merged:

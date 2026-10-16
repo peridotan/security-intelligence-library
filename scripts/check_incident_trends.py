@@ -239,6 +239,14 @@ def main() -> int:
             failures.append(f"{path}: {exc}")
             continue
         errors = validate(payload, path.name)
+        # Validate Draft article and pending claim dossier when present. Do not
+        # require an old Draft after a human has staged and published the issue.
+        if not errors:
+            draft_slug = "incident-trend-brief-" + payload["brief_id"]
+            draft = ROOT / "drafts" / "cybersecurity" / (draft_slug + ".md")
+            if draft.is_file():
+                import article_workflow
+                errors.extend(article_workflow.validate_bundle(ROOT, "cybersecurity", draft_slug))
         failures.extend(f"{path}: {err}" for err in errors)
         if not errors:
             print(f"Validated {path}: {len(payload['incidents'])} distinct curated incident groups; "

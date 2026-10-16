@@ -20,6 +20,11 @@ hide:
     <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
   </article>
   <article class="sil-card">
+    <a class="sil-card-title" href="incident-trend-brief-2026-10-h1.md">Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧</a>
+    <div class="sil-card-meta">October 2026 · Near-term · Mixed · Business Continuity / Operational Security</div>
+    <p>2026年10月1〜15日に国内で公表された代表的な不正アクセス事案と公的注意喚起を基に、攻撃面・委託先への波及・復旧・被害判断の変化を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="nict-a2b-backend-api-security.md">NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク</a>
     <div class="sil-card-meta">October 2026 · Near-term · Mixed · Operational Security / Software Security</div>
     <p>NICTが2026年10月13日に公表したA2B攻撃の注意喚起を基に、公開モバイルアプリから推測されるBackend APIへの攻撃経路と企業の確認事項を整理する。</p>

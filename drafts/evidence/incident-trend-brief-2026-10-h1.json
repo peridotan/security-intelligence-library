@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/incident-trend-brief-2026-10-h1.md",
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": "Incident Trend Brief初号のAI支援による一次情報照合記録。3事案群・3注意喚起の非網羅サンプル。各社に共通する攻撃者・侵入経路や国内発生総数は確認していない。人間による実質確認・公開判断前であり、approvedを設定しない。対応するソースデータは data/incident-trends/2026-10-h1.json。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "JPCERT/CCは10月8日付注意喚起（9日更新）で、既知脆弱性探索・管理API不正操作・Metabase脆弱性・Webシェルを別ケースで整理した。",
+      "section": "## なぜ今なのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
+        "locator": "I.概要／II.ケースA～D／IV.改訂履歴",
+        "published_at": "2026-10-08",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "JPCERTのケース分けは、全事案の手法の同一性を意味しない。"
+    },
+    {
+      "id": "C02",
+      "statement": "NICTは10月13日、公開Androidアプリの解析結果を利用してBackend APIを狙うA2B攻撃を注意喚起した。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+        "locator": "今回の成果・ポイント：A2B攻撃の説明",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "本Briefの個別3事案の侵入経路と同一だと断定しない。"
+    },
+    {
+      "id": "C03",
+      "statement": "JOGMECは10月2日に、情報システムへの不正アクセスおよびメールアドレス等の漏えい可能性を公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.jogmec.go.jp/news/information/information_00706.html",
+        "locator": "1．概要／2．漏えいした可能性のある個人情報",
+        "published_at": "2026-10-02",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "判明は9月9日。10月の発生と誤認しない。"
+    },
+    {
+      "id": "C04",
+      "statement": "IDCフロンティアは10月7日、東日本リージョン1の一部へのランサムウェア攻撃と495企業・自治体への影響を公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.idcf.jp/news/topics/20261007002/",
+        "locator": "2026年10月7日第2報『原因』『影響範囲』",
+        "published_at": "2026-10-07",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "495は影響対象顧客数。漏えいした顧客数とは違う。"
+    },
+    {
+      "id": "C05",
+      "statement": "IDCフロンティアは10月14日、対象VMデータの外部持ち出し痕跡がないことを基に、流出はなかったと判断したと公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.idcf.jp/news/topics/20261014001/",
+        "locator": "1．お客さまの仮想サーバー内のデータ流出に関する調査結果",
+        "published_at": "2026-10-14",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "事業者の調査結果であり独立保証ではない。"
+    },
+    {
+      "id": "C06",
+      "statement": "IDCフロンティアは10月14日、クラウドポータルの48社の登録情報に不正照会があったと公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.idcf.jp/news/topics/20261014001/",
+        "locator": "3．一部のお客さまの登録情報に対する不正な照会",
+        "published_at": "2026-10-14",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "対象VMの外部流出評価とポータル照会は区別する。"
+    },
+    {
+      "id": "C07",
+      "statement": "IDCフロンティアは10月14日、495顧客のうちスナップショット利用194顧客のバックアップデータの取り出しが可能と公表した。",
+      "section": "## 傾向分析 ― 事実とLibraryの評価",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.idcf.jp/news/topics/20261014001/",
+        "locator": "2．バックアップによるデータの取り出し・復元の見通しについて",
+        "published_at": "2026-10-14",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "復元可能性・業務再開完了とは違う。"
+    },
+    {
+      "id": "C08",
+      "statement": "アルカディアは10月13日、SpeeCAN RAIDENへの第三者不正アクセスと個人情報漏えいの可能性を公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://raiden.site.ktaiwork.jp/archives/4597",
+        "locator": "2026年10月13日第2報・経緯と漏えい可能性、10月15日第9報",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "事業者公式ブログは随時更新で今後記載が変わる可能性。"
+    },
+    {
+      "id": "C09",
+      "statement": "さいたま市はアルカディアの不正アクセス事案に関連し防災情報配信サービスの情報漏えい可能性を公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.city.saitama.lg.jp/006/014/008/003/015/007/p134471.html",
+        "locator": "1.概要、2.漏洩した可能性のある個人情報",
+        "published_at": "2026-10-13",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "さいたま市単体の新規侵入事案として数えない。"
+    },
+    {
+      "id": "C10",
+      "statement": "千葉県はアルカディアの不正アクセス事案に関連し災害対応職員の情報漏えい可能性を公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.pref.chiba.lg.jp/dejisui/press/2026/20261014incident.html",
+        "locator": "冒頭・1漏えいの可能性がある情報・2経緯",
+        "published_at": "2026-10-14",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "同じ事業者の事案群、県民情報は登録していない旨の県説明を保持。"
+    },
+    {
+      "id": "C11",
+      "statement": "JR東海は10月15日の続報で、IDCフロンティア事案に関連して当初懸念していたメール情報の漏えい事実が確認されなかったと公表した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://market.jr-central.co.jp/shop/pages/20261015.aspx",
+        "locator": "2026年10月15日続報冒頭・10月13日公表との対比",
+        "published_at": "2026-10-15",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "当該メール情報についての更新判断。他の組織の全情報への断定ではない。"
+    },
+    {
+      "id": "C12",
+      "statement": "IPAは10月9日、国内における相次ぐ不正アクセス・漏えい事案を踏まえ、経営層主導の早急なセキュリティ対策点検を要請した。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
+        "locator": "概要・対策の点検を要請する本文",
+        "published_at": "2026-10-09",
+        "accessed_at": "2026-10-16"
+      },
+      "review_note": "IPAの対策要請を企業への一般的示唆として区別。"
+    },
+    {
+      "id": "C13",
+      "statement": "IDCとアルカディアの事案は委託先・共通基盤のリスクを示し、利用組織は預託情報と代替手段を確認すべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "独立した2事案群を比較してサプライヤー経由の業務・情報への波及構造を整理したLibraryの評価。同じ攻撃者がいるとは主張しない。"
+    },
+    {
+      "id": "C14",
+      "statement": "初報の漏えい可能性と続報の流出確認結果を同一視せず、事案の状態を時間軸と範囲で更新すべきである。",
+      "section": "## 傾向分析 ― 事実とLibraryの評価",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "JOGMEC・IDC・アルカディアとJR東海の一次公表を比較したLibraryの管理提案。可能性と確定に意味的な違いがあるため。"
+    },
+    {
+      "id": "C15",
+      "statement": "インシデントの公表3事案群から日本全国の発生率・増減率を推計することはできない。",
+      "section": "## Executive Summary",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "初号の選定方法がcurated_non_exhaustiveであり、サンプル分母と捕捉率が不明なため。事業者の更新・下流顧客の公表は同一事案群に束ねる。"
+    }
+  ]
+}

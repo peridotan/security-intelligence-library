@@ -246,15 +246,24 @@ Cybersecurity / Identity Security / AI Security / Regulation / Management View �
 - CIで生成後HTMLの構造・内部リンクを検証
 - RedirectやEditorial / Rights Guardrailは継続
 
-### Content workflow
+### Content workflow（2026年10月以降の推奨手順）
+
+記事Draft → 出典JSON → 人間のEvidence Review → Draft PR → 公開用PRの品質チェック → 人間によるマージ、という運用に統一しました。
+
+詳細：[記事制作・Evidence Review・公開の標準ワークフロー](ARTICLE_WORKFLOW.md)
 
 ```bash
-python scripts/new_article.py ai-security example-slug "記事タイトル" --source-period 2026-09
-# 記事を編集して status: published に変更
+python scripts/article_workflow.py init --collection ai-security --slug example-slug --title "記事タイトル" --draft-date 2026-10-16 --source-period 2026-10
+# 記事・根拠JSON・レビュー表を編集（人間の公開承認は自動では実施しません）
+python scripts/article_workflow.py check --collection ai-security --slug example-slug
+python scripts/article_workflow.py stage --collection ai-security --slug example-slug
+# 人間による承認と公開日付の確定後に限り status: published に変更
 python scripts/update_content.py
 ```
 
-個別記事を`zensical.toml`やCategory / Topics / Homeへ手作業で追加する必要はありません。
+従来の `scripts/new_article.py` は互換性のため残していますが、**Evidence Review JSONを同時作成しない旧方式**です。新規記事では上記の標準手順を利用してください。
+
+個別記事を `zensical.toml` やCategory / Topics / Homeへ手作業で追加する必要はありません。
 
 ## v0.6.0
 

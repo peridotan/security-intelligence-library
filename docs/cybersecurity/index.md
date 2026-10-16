@@ -20,6 +20,11 @@ hide:
     <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
   </article>
   <article class="sil-card">
+    <a class="sil-card-title" href="nict-a2b-backend-api-security.md">NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク</a>
+    <div class="sil-card-meta">October 2026 · Near-term · Mixed · Operational Security / Software Security</div>
+    <p>NICTが2026年10月13日に公表したA2B攻撃の注意喚起を基に、公開モバイルアプリから推測されるBackend APIへの攻撃経路と企業の確認事項を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
     <div class="sil-card-meta">October 2026 · Near-term · Assessment · Operational Security / Software Security</div>
     <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>

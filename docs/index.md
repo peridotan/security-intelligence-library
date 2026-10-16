@@ -24,6 +24,12 @@ hide:
     <a class="sil-card-more" href="cybersecurity/dns-root-ksk-2024-rollover.md">記事を読む →</a>
   </article>
   <article class="sil-card">
+    <a class="sil-card-title" href="cybersecurity/nict-a2b-backend-api-security.md">NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク</a>
+    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
+    <p>NICTが2026年10月13日に公表したA2B攻撃の注意喚起を基に、公開モバイルアプリから推測されるBackend APIへの攻撃経路と企業の確認事項を整理する。</p>
+    <a class="sil-card-more" href="cybersecurity/nict-a2b-backend-api-security.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="cybersecurity/evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
     <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
     <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>
@@ -46,12 +52,6 @@ hide:
     <div class="sil-card-meta">September 2026 · Identity Security · Urgency: Immediate</div>
     <p>Microsoftが2026年9月9日に報告したPasskey / MFA / SSO更新を口実とするSocial Engineeringから、AiTM・Device Code・認証手段追加・Microsoft Graph Recon・Clo…</p>
     <a class="sil-card-more" href="identity-security/passkey-social-engineering-cloud-compromise.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/ai-assisted-intrusion-10-hours.md">AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ</a>
-    <div class="sil-card-meta">September 2026 · Cybersecurity · Urgency: Immediate</div>
-    <p>Unit 42が2026年9月2日に公開した実侵害対応を基に、Frontier AI Agentが50超のATT&amp;CK Techniqueを10時間未満で横断し、Identity・Source Code・CI/CD・Cloud AIへ波及した…</p>
-    <a class="sil-card-more" href="cybersecurity/ai-assisted-intrusion-10-hours.md">記事を読む →</a>
   </article>
 </div>
 <!-- AUTO:HOME_LATEST:END -->
@@ -117,14 +117,14 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">42</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">43</span></a>
 <a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">27</span></a>
 <a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
 <a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">13</span></a>
+<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">14</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->
 

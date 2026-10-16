@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>95</strong> Articles</span>
+    <span><strong>96</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>413</strong> Detailed Tags</span>
+    <span><strong>418</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -45,7 +45,7 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Cyber Operations</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">14</span></a>
+<a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">15</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
@@ -54,9 +54,9 @@ hide:
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Governance &amp; Risk</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">17</span></a>
+<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">18</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">43</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">44</span></a>
 </div>
 </section>
 </div>
@@ -250,6 +250,7 @@ Post-Quantum CryptographyとIdentity / Credentialの移行設計。
 
 実悪用、KEV / EPSS、Patch優先度、Exploit Windowを含む脆弱性管理。
 
+- [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md) — October 2026 · Near-term · Mixed
 - [NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク](../cybersecurity/nict-a2b-backend-api-security.md) — October 2026 · Near-term · Mixed
 - [AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則](../cybersecurity/evidence-grounded-ai-vulnerability-triage.md) — October 2026 · Near-term · Assessment
 - [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
@@ -307,6 +308,7 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 
 Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 
+- [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md) — October 2026 · Near-term · Mixed
 - [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic · Assessment
 - [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](../risk-management/c-scrm-due-diligence-sp1326.md) — July 2026 · Near-term · Confirmed
 - [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic · Confirmed
@@ -353,6 +355,7 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
 - [DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する](../cybersecurity/dns-root-ksk-2024-rollover.md) — October 2026 · Immediate · Confirmed
+- [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md) — October 2026 · Near-term · Mixed
 - [NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク](../cybersecurity/nict-a2b-backend-api-security.md) — October 2026 · Near-term · Mixed
 - [EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ](../regulation/eu-cra-reporting-obligations-live.md) — September 2026 · Immediate · Confirmed
 - [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed

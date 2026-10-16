@@ -10,7 +10,7 @@ Cybersecurity / Identity Security / AI Security / Regulation / Management View �
 
 ## Incident Trend Brief（隔週のインシデント傾向）
 
-Incident Trend Briefは、直近半月に公表された代表的なインシデントと公的注意喚起から、組織横断の攻撃面・被害傾向・対策を分析する独立の編集ワークフローです。**公開・閲覧は本Libraryへ統合、事案データと分析は別管理**。初号2026年10月前半はDraftレビュー中であり、まだ公開記事ではありません。
+Incident Trend Briefは、直近半月に公表された代表的なインシデントと公的注意喚起から、組織横断の攻撃面・被害傾向・対策を分析する独立の編集ワークフローです。**公開・閲覧は本Libraryへ統合、事案データと分析は別管理**。初号2026年10月前半は2026年10月16日に編集承認され、公開用PRでの品質チェック・配信を進めています。
 
 詳細：[Incident Trend Briefの作成・分析ルール](INCIDENT_TREND_BRIEF.md)。
 

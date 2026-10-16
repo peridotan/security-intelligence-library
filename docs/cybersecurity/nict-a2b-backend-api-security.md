@@ -8,37 +8,52 @@ source_period: 2026-10
 description: NICTが2026年10月13日に公表したA2B攻撃の注意喚起を基に、公開モバイルアプリから推測されるBackend APIへの攻撃経路と企業の確認事項を整理する。
 category: Cybersecurity
 collections:
-  - cybersecurity
+- cybersecurity
 topics:
-  - Vulnerability Management
-  - Security Governance & Risk Management
+- Vulnerability Management
+- Security Governance & Risk Management
 tags:
-  - NICT
-  - CYNEX
-  - LETTICE
-  - A2B Attack
-  - API Security
-  - Mobile Application
-  - BOLA
-  - AppSec
+- NICT
+- CYNEX
+- LETTICE
+- A2B Attack
+- API Security
+- Mobile Application
+- BOLA
+- AppSec
 audience:
-  - Executive
-  - CISO
-  - AppSec
-  - Product Security
+- Executive
+- CISO
+- AppSec
+- Product Security
 management_impact: High
 impact_types:
-  - Operational Security
-  - Software Security
-  - Identity
+- Operational Security
+- Software Security
+- Identity
 urgency: Near-term
 evidence: Mixed
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-10-16</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">October 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-10-16</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-10-16</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Vulnerability Management / Security Governance &amp; Risk Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AppSec / Product Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Operational Security / Software Security / Identity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Mixed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

@@ -279,14 +279,14 @@
   "trend_signals": [
     {
       "id": "TRD01",
-      "assessment": "一般公開アプリや管理用途のBackend APIが攻撃面になり得るという注意喚起が強まっている。利用画面から見えないAPIや管理用機能も点検対象に含める必要がある。",
+      "assessment": "今期のJPCERT/CCとNICTの注意喚起には、公開アプリから特定できるAPIや管理用Backend機能を狙う手法という共通の論点がある。利用画面から見えないAPIや管理機能も点検対象に含める必要がある。",
       "incident_ids": [],
       "advisory_ids": [
         "ADV01",
         "ADV02"
       ],
       "confidence": "medium",
-      "limitation": "JPCERT/CC/NICTの注意喚起が示す攻撃類型であり、JOGMEC・IDCF・アルカディアの個別侵入経路と因果関係が証明されたわけではない。"
+      "limitation": "JPCERT/CC/NICTの注意喚起が示す攻撃類型であり、JOGMEC・IDCF・アルカディアの個別侵入経路と因果関係が証明されたわけではない。 注意喚起が長期的に増加したかどうかを定量確認したものではない。"
     },
     {
       "id": "TRD02",

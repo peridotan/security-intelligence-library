@@ -113,7 +113,7 @@ def validate(data: object, filename: str) -> list[str]:
             source_ids.add(sid)
         if not safe_https(s.get("url")):
             e.append(f"{loc}: real https source URL required")
-        _text(s, "publisher", loc, e)
+        _text(s, "publisher", loc, e, minimum=2)
         _text(s, "locator", loc, e, minimum=8)
         if not valid_date(s.get("published_at")) or s["published_at"] > asof:
             e.append(f"{loc}: published_at must not be after as_of")
@@ -144,7 +144,7 @@ def validate(data: object, filename: str) -> list[str]:
             e.append(f"{loc}: disclosed_at must be inside the reporting window")
         if ev.get("category") not in CATEGORIES or ev.get("impact") not in IMPACT:
             e.append(f"{loc}: invalid category/impact")
-        _text(ev, "organization", loc, e)
+        _text(ev, "organization", loc, e, minimum=2)
         _text(ev, "title", loc, e)
         _text(ev, "uncertainty", loc, e, minimum=20)
         facts = ev.get("facts")
@@ -169,7 +169,7 @@ def validate(data: object, filename: str) -> list[str]:
             if not isinstance(rel, dict):
                 e.append(f"{rel_loc}: object required")
                 continue
-            _text(rel, "organization", rel_loc, e)
+            _text(rel, "organization", rel_loc, e, minimum=2)
             if not valid_date(rel.get("disclosed_at")) or not a <= rel["disclosed_at"] <= b:
                 e.append(f"{rel_loc}: date outside reporting window")
             _references(rel.get("source_ids"), source_ids, rel_loc + ".source_ids", e)

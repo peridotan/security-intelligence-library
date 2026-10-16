@@ -36,6 +36,8 @@ From the repository root, after installing `requirements.txt`:
 python -m unittest discover -s scripts -p 'test_official_*_sources.py' -v
 python -m unittest discover -s scripts -p 'test_evidence_review.py' -v
 python -m unittest discover -s scripts -p 'test_article_workflow.py' -v
+python -m unittest discover -s scripts -p 'test_incident_trends.py' -v
+python scripts/check_incident_trends.py
 python scripts/check_evidence_review.py --base-ref origin/main
 python scripts/build_indexes.py
 python scripts/build_context_index.py
@@ -61,6 +63,7 @@ fails when generated output is missing or stale.
 
 Inspect the failed step in the PR's `Checks` tab. For example:
 
+- **Incident Trend Brief:** verify incident group deduplication, source references, reporting windows and draft bundle completeness. See `INCIDENT_TREND_BRIEF.md`.
 - **Evidence Review:** include the reviewed dossier for each new published
   article, fix unresolved material claims and record human approval.
   See `EVIDENCE_REVIEW.md`.

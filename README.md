@@ -8,6 +8,12 @@ Cybersecurity / Identity Security / AI Security / Regulation / Management View �
 
 新規記事では `scripts/article_workflow.py` を使用し、**記事＋根拠JSON＋編集レビュー表**をセットで準備してください。人間の承認やGitHubへの公開は自動化されません。
 
+## Incident Trend Brief（隔週のインシデント傾向）
+
+Incident Trend Briefは、直近半月に公表された代表的なインシデントと公的注意喚起から、組織横断の攻撃面・被害傾向・対策を分析する独立の編集ワークフローです。**公開・閲覧は本Libraryへ統合、事案データと分析は別管理**。初号2026年10月前半は2026年10月16日に編集承認され、公開用PRでの品質チェック・配信を進めています。
+
+詳細：[Incident Trend Briefの作成・分析ルール](INCIDENT_TREND_BRIEF.md)。
+
 ## v0.19.0
 
 - September 2026 Intelligenceを2026-09-08時点のCurrent Reviewとして追加

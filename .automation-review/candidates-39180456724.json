@@ -116,10 +116,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "Human-approved new Library article candidate (2026-10-19); Unit 42 September 2026 observational scope; avoid generalizing prevalence to Japan."
         ]
       }
     },
@@ -136,10 +136,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
+        "route": "library",
         "draft_eligible": false,
         "reasons": [
-          "source default route: watch"
+          "Human-approved update-existing (2026-10-19): docs/ai-security/generative-ai-governance.md; no new article draft."
         ]
       }
     },
@@ -179,7 +179,7 @@
         "route": "watch",
         "draft_eligible": false,
         "reasons": [
-          "source default route: watch"
+          "Human-approved watch (2026-10-19): attribution and direct Japanese impact not independently established; reassess on new evidence."
         ]
       }
     },
@@ -736,10 +736,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
+        "route": "vulnerability",
         "draft_eligible": false,
         "reasons": [
-          "source default route: watch"
+          "Human-approved vulnerability routing (2026-10-19): CVE-2026-106931; validate affected assets and preserve investigation evidence before remediation."
         ]
       }
     },
@@ -976,10 +976,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "Human-approved new Library article candidate (2026-10-19): consolidate AWS Part 1 and Part 2 into one ML-DSA signing/governance article; respect AWS SCP/IAM control scope."
         ]
       }
     },
@@ -999,7 +999,7 @@
         "route": "watch",
         "draft_eligible": false,
         "reasons": [
-          "source default route: watch"
+          "Supporting source for consolidated AWS Part 2 article; do not create a duplicate draft."
         ]
       }
     },
@@ -1026,6 +1026,8 @@
   ],
   "triage_policy_version": 1,
   "route_counts": {
-    "watch": 46
+    "library": 3,
+    "vulnerability": 1,
+    "watch": 42
   }
 }

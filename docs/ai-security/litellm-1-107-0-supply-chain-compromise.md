@@ -5,7 +5,8 @@ updated: 2026-10-29
 reviewed: 2026-10-29
 review_status: Current
 source_period: 2026-10
-description: LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Riskを整理する。
+description: LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner
+  Token、Release Pipeline、AI Gateway Credentialの連鎖的Riskを整理する。
 category: AI Security
 collections:
 - ai-security
@@ -25,7 +26,8 @@ tags:
 mitre_attack:
 - id: T1195.001
   basis: Source-labeled
-  note: MicrosoftがLiteLLM 1.107.0の悪意あるWheelとContainer Image配布をCompromise Software Dependencies and Development Toolsとして明示。
+  note: MicrosoftがLiteLLM 1.107.0の悪意あるWheelとContainer Image配布をCompromise Software
+    Dependencies and Development Toolsとして明示。
 - id: T1546.018
   basis: Source-labeled
   note: Microsoftがcook.pthとsitecustomize.pyによるPython初期化時の自動実行をPython Startup Hooksとして明示。

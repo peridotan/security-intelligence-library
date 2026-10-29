@@ -5,7 +5,8 @@ updated: 2026-10-29
 reviewed: 2026-10-29
 review_status: Current
 source_period: 2026-10
-description: eMudhraの中間CA秘密鍵が弱いEntropyから復元可能だった問題を基に、Browser、OS、Runtime、Container、Custom Trust Storeを横断するTrust更新を整理する。
+description: eMudhraの中間CA秘密鍵が弱いEntropyから復元可能だった問題を基に、Browser、OS、Runtime、Container、Custom
+  Trust Storeを横断するTrust更新を整理する。
 category: Cybersecurity
 collections:
 - cybersecurity

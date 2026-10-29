@@ -15,6 +15,16 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/litellm-1-107-0-supply-chain-compromise.md">LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る</a>
+    <div class="sil-card-meta">October 2026 · Immediate · Mixed · AI Infrastructure / Software Supply Chain</div>
+    <p>LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Risk…</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="emudhra-intermediate-ca-weak-keys.md">eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新</a>
+    <div class="sil-card-meta">October 2026 · Immediate · Mixed · Trust Infrastructure / Operational Security</div>
+    <p>eMudhraの中間CA秘密鍵が弱いEntropyから復元可能だった問題を基に、Browser、OS、Runtime、Container、Custom Trust Storeを横断するTrust更新を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="dns-root-ksk-2024-rollover.md">DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する</a>
     <div class="sil-card-meta">October 2026 · Immediate · Confirmed · Operational Security / Business Continuity</div>
     <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>

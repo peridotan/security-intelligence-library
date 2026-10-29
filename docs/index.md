@@ -18,6 +18,18 @@ hide:
 <!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="ai-security/litellm-1-107-0-supply-chain-compromise.md">LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る</a>
+    <div class="sil-card-meta">October 2026 · AI Security · Urgency: Immediate</div>
+    <p>LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Risk…</p>
+    <a class="sil-card-more" href="ai-security/litellm-1-107-0-supply-chain-compromise.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="cybersecurity/emudhra-intermediate-ca-weak-keys.md">eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新</a>
+    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Immediate</div>
+    <p>eMudhraの中間CA秘密鍵が弱いEntropyから復元可能だった問題を基に、Browser、OS、Runtime、Container、Custom Trust Storeを横断するTrust更新を整理する。</p>
+    <a class="sil-card-more" href="cybersecurity/emudhra-intermediate-ca-weak-keys.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="cybersecurity/dns-root-ksk-2024-rollover.md">DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する</a>
     <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Immediate</div>
     <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
@@ -40,18 +52,6 @@ hide:
     <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
     <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>
     <a class="sil-card-more" href="cybersecurity/evidence-grounded-ai-vulnerability-triage.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="identity-security/pqc-tls-certificate-ecosystem.md">PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題</a>
-    <div class="sil-card-meta">October 2026 · Identity Security · Urgency: Strategic</div>
-    <p>MicrosoftのPQC TLS Pilot Programを基に、企業PKI、証明書チェーン、HSM、アプリケーションの非本番検証で確認すべき論点を整理する。</p>
-    <a class="sil-card-more" href="identity-security/pqc-tls-certificate-ecosystem.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="regulation/eu-cra-reporting-obligations-live.md">EU CRA Reporting Goes Live ― 脆弱性・重大Incident報告が24h / 72h運用へ</a>
-    <div class="sil-card-meta">September 2026 · Regulation · Urgency: Immediate</div>
-    <p>EU Cyber Resilience ActのReporting Obligationが2026年9月11日に適用開始され、Actively Exploited VulnerabilityとSevere Incidentについて24時間Ea…</p>
-    <a class="sil-card-more" href="regulation/eu-cra-reporting-obligations-live.md">記事を読む →</a>
   </article>
 </div>
 <!-- AUTO:HOME_LATEST:END -->
@@ -117,10 +117,10 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">44</span></a>
-<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">27</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">45</span></a>
+<a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">29</span></a>
 <a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
-<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
 <a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>

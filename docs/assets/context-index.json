@@ -1,13 +1,13 @@
 {
   "schema_version": "1.1",
-  "articles_scanned": 96,
-  "articles_with_context": 15,
+  "articles_scanned": 98,
+  "articles_with_context": 16,
   "articles_with_cves": 3,
   "articles_with_actors": 1,
-  "articles_with_techniques": 12,
+  "articles_with_techniques": 13,
   "unique_cve_count": 3,
   "unique_actor_count": 1,
-  "unique_technique_count": 22,
+  "unique_technique_count": 23,
   "articles": {
     "ai-security/ai-infrastructure-control-plane-attacks/": {
       "title": "AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk",
@@ -38,6 +38,24 @@
       "actor_count": 0,
       "techniques": [],
       "technique_count": 0,
+      "detection": {
+        "cves": "auto",
+        "actors": "auto",
+        "techniques": "mitre_attack"
+      }
+    },
+    "ai-security/litellm-1-107-0-supply-chain-compromise/": {
+      "title": "LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る",
+      "source": "docs/ai-security/litellm-1-107-0-supply-chain-compromise.md",
+      "cves": [],
+      "cve_count": 0,
+      "actors": [],
+      "actor_count": 0,
+      "techniques": [
+        "T1195.001",
+        "T1546.018"
+      ],
+      "technique_count": 2,
       "detection": {
         "cves": "auto",
         "actors": "auto",

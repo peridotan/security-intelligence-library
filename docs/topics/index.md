@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>96</strong> Articles</span>
+    <span><strong>98</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>418</strong> Detailed Tags</span>
+    <span><strong>425</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -29,14 +29,14 @@ hide:
 <a class="sil-topic" href="#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="#ai-cyber-capability">AI Cyber Capability <span class="sil-topic-count">12</span></a>
 <a class="sil-topic" href="#ai-enabled-threats">AI-Enabled Threats <span class="sil-topic-count">9</span></a>
-<a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">4</span></a>
+<a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">5</span></a>
 <a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">4</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Identity</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">27</span></a>
+<a class="sil-topic" href="#identity-security">Identity Security <span class="sil-topic-count">29</span></a>
 <a class="sil-topic" href="#passkey-phishing-resistant-mfa">Passkey &amp; Phishing-resistant MFA <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#pqc-crypto-agility">PQC / Crypto Agility <span class="sil-topic-count">4</span></a>
@@ -48,15 +48,15 @@ hide:
 <a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">15</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">6</span></a>
+<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">7</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Governance &amp; Risk</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">18</span></a>
+<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">44</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">45</span></a>
 </div>
 </section>
 </div>
@@ -150,6 +150,7 @@ Frontier / Open-weight Modelの攻撃・脆弱性探索能力とCapability Evalu
 
 GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate · Mixed
 - [Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る](../ai-security/edge-ai-trust-attestation-provenance.md) — September 2026 · Strategic · Assessment
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate · Observed
 - [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic · Confirmed
@@ -172,6 +173,8 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 
 人・Workload・NHI・AI Agentを含むIdentityの認証・認可・監視。
 
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate · Mixed
+- [eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新](../cybersecurity/emudhra-intermediate-ca-weak-keys.md) — October 2026 · Immediate · Mixed
 - [PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題](../identity-security/pqc-tls-certificate-ecosystem.md) — October 2026 · Strategic · Confirmed
 - [Passkey-themed Social Engineering ― 強い認証の「周辺」がCloud侵害へつながる](../identity-security/passkey-social-engineering-cloud-compromise.md) — September 2026 · Immediate · Observed
 - [IT Support Impersonation ― Teamsの「信頼」がRemote SessionからDomain侵入へつながる](../identity-security/teams-it-support-remote-session-intrusion.md) — September 2026 · Immediate · Observed
@@ -293,6 +296,7 @@ OT / ICS、重要インフラ、Remote Access、Recovery、Safety。
 
 npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate · Mixed
 - [MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない](../ai-security/mcp-tool-poisoning-agent-supply-chain.md) — June 2026 · Immediate · Assessment
 - [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](../cybersecurity/mastra-npm-ai-supply-chain.md) — June 2026 · Immediate · Observed
 - [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate · Observed
@@ -308,6 +312,7 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 
 Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 
+- [eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新](../cybersecurity/emudhra-intermediate-ca-weak-keys.md) — October 2026 · Immediate · Mixed
 - [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md) — October 2026 · Near-term · Mixed
 - [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic · Assessment
 - [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](../risk-management/c-scrm-due-diligence-sp1326.md) — July 2026 · Near-term · Confirmed
@@ -354,6 +359,7 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
+- [eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新](../cybersecurity/emudhra-intermediate-ca-weak-keys.md) — October 2026 · Immediate · Mixed
 - [DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する](../cybersecurity/dns-root-ksk-2024-rollover.md) — October 2026 · Immediate · Confirmed
 - [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md) — October 2026 · Near-term · Mixed
 - [NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク](../cybersecurity/nict-a2b-backend-api-security.md) — October 2026 · Near-term · Mixed

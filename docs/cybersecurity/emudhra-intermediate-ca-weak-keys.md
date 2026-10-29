@@ -3,43 +3,57 @@ title: eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらな�
 date: 2026-10-29
 updated: 2026-10-29
 reviewed: 2026-10-29
-review_status: Needs Review
+review_status: Current
 source_period: 2026-10
 description: eMudhraの中間CA秘密鍵が弱いEntropyから復元可能だった問題を基に、Browser、OS、Runtime、Container、Custom Trust Storeを横断するTrust更新を整理する。
 category: Cybersecurity
 collections:
-  - cybersecurity
-  - identity-security
+- cybersecurity
+- identity-security
 topics:
-  - Security Governance & Risk Management
-  - Third-party Risk / C-SCRM
-  - Identity Security
+- Security Governance & Risk Management
+- Third-party Risk / C-SCRM
+- Identity Security
 tags:
-  - eMudhra
-  - WebPKI
-  - Certificate Authority
-  - TLS
-  - Trust Store
-  - Certificate Lifecycle
+- eMudhra
+- WebPKI
+- Certificate Authority
+- TLS
+- Trust Store
+- Certificate Lifecycle
 mitre_attack: []
 audience:
-  - Executive
-  - CISO
-  - Infrastructure
-  - IAM
+- Executive
+- CISO
+- Infrastructure
+- IAM
 management_impact: High
 impact_types:
-  - Trust Infrastructure
-  - Operational Security
-  - Third-party Risk
+- Trust Infrastructure
+- Operational Security
+- Third-party Risk
 urgency: Immediate
 evidence: Mixed
-status: draft
-pptx: ""
+status: published
+pptx: ''
 media_rights: none
 ---
-
 # eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-10-29</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">October 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-10-29</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-10-29</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Cybersecurity</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Security Governance &amp; Risk Management / Third-party Risk / C-SCRM / Identity Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Infrastructure / IAM</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Trust Infrastructure / Operational Security / Third-party Risk</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Mixed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

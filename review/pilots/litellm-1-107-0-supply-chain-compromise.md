@@ -6,7 +6,7 @@
 - 公開予定パス：`docs/ai-security/litellm-1-107-0-supply-chain-compromise.md`
 - Evidence公開予定パス：`review/evidence/litellm-1-107-0-supply-chain-compromise.json`
 - 重要Claim：C01〜C09
-- 状態：**記事Draft、Evidence pending、公開未承認**
+- 状態：**Evidence承認済み・掲載準備中・PR未マージ**
 
 ## 編集者が確認する事項
 
@@ -19,7 +19,7 @@
 - [ ] 既存のLiteLLM Runtime侵害記事との役割分担と関連記事リンクを確認
 - [ ] 記事本文、Evidence Claim、出典、すべての編集指摘を確認した人間だけが後工程で承認者・承認日を記録する
 
-**このDraft PRでは公開・マージ・Evidence approved化を行わない。**
+**2026-10-29のEvidence承認および公開承認に基づき、Evidenceと記事を掲載パスに移行しました。マージ・Pagesへの反映はまだ行っていません。**
 
 ## Evidence承認意思の記録（2026-10-29 JST）
 
@@ -28,3 +28,11 @@
 - **認証済みGitHub連携アカウント**：`peridotan`。会話内で独立した本人確認を行ったわけではないため、GitHubアカウントと依頼者の同一性を独立検証した記録ではない。
 - **変更しない承認ゲート**：この記録は**記事公開、PR #50のマージ、`published`への変更の承認ではない**。リポジトリの`ARTICLE_WORKFLOW.md`に従い、別途正式な公開承認を得るまで`drafts/evidence/`の`review.status = pending`、`reviewed_by = null`、`reviewed_at = null`を維持する。正式な公開段階で承認者として記録するハンドル・日付を確定する。
 - **有効範囲**：後から本文やClaimが実質変更された場合、その変更分は再レビュー対象とする。
+
+## 公開用ステージング（2026-10-29）
+
+- 承認者：`peridotan`（GitHub接続の認証済みアカウント）
+- 承認記録：ChatGPT会話で全23件のEvidence承認に続き、2記事の公開承認を明示。
+- 記事：`docs/ai-security/litellm-1-107-0-supply-chain-compromise.md`（`status: published`、`review_status: Current`）。
+- 証拠：`review/evidence/litellm-1-107-0-supply-chain-compromise.json`（`review.status: approved`、`reviewed_by: peridotan`、`reviewed_at: 2026-10-29`）。
+- **この変更はPR作業ブランチ内のみ**。マージ前には最新のCI、生成インデックス、サイトプレビューと最終差分を確認。

@@ -3,50 +3,64 @@ title: LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredenti
 date: 2026-10-29
 updated: 2026-10-29
 reviewed: 2026-10-29
-review_status: Needs Review
+review_status: Current
 source_period: 2026-10
 description: LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Riskを整理する。
 category: AI Security
 collections:
-  - ai-security
-  - cybersecurity
+- ai-security
+- cybersecurity
 topics:
-  - Software Supply Chain
-  - AI Infrastructure
-  - Identity Security
+- Software Supply Chain
+- AI Infrastructure
+- Identity Security
 tags:
-  - LiteLLM
-  - Python
-  - PyPI
-  - Supply Chain
-  - Credential Theft
-  - CI/CD
-  - AI Gateway
+- LiteLLM
+- Python
+- PyPI
+- Supply Chain
+- Credential Theft
+- CI/CD
+- AI Gateway
 mitre_attack:
-  - id: T1195.001
-    basis: Source-labeled
-    note: MicrosoftがLiteLLM 1.107.0の悪意あるWheelとContainer Image配布をCompromise Software Dependencies and Development Toolsとして明示。
-  - id: T1546.018
-    basis: Source-labeled
-    note: Microsoftがcook.pthとsitecustomize.pyによるPython初期化時の自動実行をPython Startup Hooksとして明示。
+- id: T1195.001
+  basis: Source-labeled
+  note: MicrosoftがLiteLLM 1.107.0の悪意あるWheelとContainer Image配布をCompromise Software Dependencies and Development Toolsとして明示。
+- id: T1546.018
+  basis: Source-labeled
+  note: Microsoftがcook.pthとsitecustomize.pyによるPython初期化時の自動実行をPython Startup Hooksとして明示。
 audience:
-  - Executive
-  - CISO
-  - AI Platform
-  - DevSecOps
+- Executive
+- CISO
+- AI Platform
+- DevSecOps
 management_impact: High
 impact_types:
-  - AI Infrastructure
-  - Software Supply Chain
-  - Credential Risk
+- AI Infrastructure
+- Software Supply Chain
+- Credential Risk
 urgency: Immediate
 evidence: Mixed
-status: draft
-pptx: ""
+status: published
+pptx: ''
 media_rights: none
 ---
-
 # LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-10-29</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">October 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-10-29</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-10-29</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Software Supply Chain / AI Infrastructure / Identity Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / AI Platform / DevSecOps</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Infrastructure / Software Supply Chain / Credential Risk</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Mixed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 
@@ -121,11 +135,20 @@ Microsoftは、最初のUpstream AccessとCredential取得経路を独立に確�
 <!-- AUTO:MITRE:START -->
 ## MITRE ATT&CK® Mapping
 
-| Technique | Basis | Article context |
-| --- | --- | --- |
-| T1195.001 Compromise Software Dependencies and Development Tools | Source-labeled | Microsoftが悪意あるLiteLLM WheelとContainer Imageの配布を明示。 |
-| T1546.018 Event Triggered Execution: Python Startup Hooks | Source-labeled | Microsoftが`cook.pth`と`sitecustomize.py`による自動実行を明示。 |
+<div class="sil-mitre-note" markdown>
 
+この表は、攻撃・Campaignの理解に有用な場合だけ表示します。`Source-labeled` は一次情報がATT&CK IDを明示したもの、`Analyst-mapped` は一次情報に記載された行動を本LibraryがATT&CKへ対応付けたものです。後者は、元情報の発行者がそのATT&CK IDを明示したことを意味しません。
+
+</div>
+
+| Technique | Tactic | Basis | Article context |
+| --- | --- | --- | --- |
+| [T1195.001 Compromise Software Dependencies and Development Tools](https://attack.mitre.org/techniques/T1195/001/) | Initial Access | Source-labeled | MicrosoftがLiteLLM 1.107.0の悪意あるWheelとContainer Image配布をCompromise Software Dependencies and Development Toolsとして明示。 |
+| [T1546.018 Python Startup Hooks](https://attack.mitre.org/techniques/T1546/018/) | Persistence, Privilege Escalation | Source-labeled | Microsoftがcook.pthとsitecustomize.pyによるPython初期化時の自動実行をPython Startup Hooksとして明示。 |
+
+<div class="sil-mitre-legal">
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+</div>
 <!-- AUTO:MITRE:END -->
 
 ## 経営インパクト

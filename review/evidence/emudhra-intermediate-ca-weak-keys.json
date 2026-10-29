@@ -2,10 +2,10 @@
   "schema_version": 1,
   "article_path": "docs/cybersecurity/emudhra-intermediate-ca-weak-keys.md",
   "review": {
-    "status": "pending",
-    "reviewed_by": null,
-    "reviewed_at": null,
-    "notes": "潜在的な鍵悪用能力、Vendorごとの観測、eMudhraの暫定説明、実際のDeployment影響を区別して人間が確認する。"
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-10-29",
+    "notes": "潜在的な鍵悪用能力、Vendorごとの観測、eMudhraの暫定説明、実際のDeployment影響を区別して人間が確認する。 2026-10-29に依頼者がChatGPT上で23 ClaimsのEvidence承認を明示し、その後PR #50の2記事の公開を承認。reviewed_by は認証済みGitHub接続アカウント peridotan を編集承認記録として用いる。これは各Vendorの主張が独立検証済みであるという意味ではない。公開PRのマージ・サイト反映は別の最終確認で行う。"
   },
   "claims": [
     {

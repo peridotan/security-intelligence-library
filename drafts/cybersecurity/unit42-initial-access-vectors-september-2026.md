@@ -19,7 +19,6 @@ tags:
   - Credential Abuse
   - Phishing
   - Supply Chain
-mitre_attack: []
 audience:
   - Executive
   - CISO

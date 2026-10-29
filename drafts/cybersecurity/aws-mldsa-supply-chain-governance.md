@@ -20,7 +20,6 @@ tags:
   - AWS Private CA
   - Software Supply Chain
   - Crypto Agility
-mitre_attack: []
 audience:
   - Executive
   - CISO

@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/emudhra-intermediate-ca-weak-keys.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-10-29",
+    "notes": "潜在的な鍵悪用能力、Vendorごとの観測、eMudhraの暫定説明、実際のDeployment影響を区別して人間が確認する。 2026-10-29に依頼者がChatGPT上で23 ClaimsのEvidence承認を明示し、その後PR #50の2記事の公開を承認。reviewed_by は認証済みGitHub接続アカウント peridotan を編集承認記録として用いる。これは各Vendorの主張が独立検証済みであるという意味ではない。公開PRのマージ・サイト反映は別の最終確認で行う。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "2026年10月17日UTC、8つのeMudhra中間CA秘密鍵が不足したEntropyにより公開鍵から復元可能との報告がRoot Programへ行われた。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/",
+        "locator": "記事冒頭、October 17, 2026 18:05 UTCの報告とweak cryptographic entropyの説明",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "秘密鍵が盗取されたInfrastructure Compromiseではなく、弱いKeyから復元可能だった問題として表現。"
+    },
+    {
+      "id": "C02",
+      "statement": "Googleは10月17日19:45 UTCまでに影響IntermediateのSPKI HashをCRLSetでBlockした。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/",
+        "locator": "CRLSet updateの段落",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "UTC時刻を維持。"
+    },
+    {
+      "id": "C03",
+      "statement": "MozillaはOneCRLを用い、10月17日22:59 UTCまでに標準構成のFirefoxへBlockを配布した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/",
+        "locator": "冒頭からOneCRL distribution completeの段落",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "標準構成外のUser向けReleaseもあるため、全環境へ無条件で適用済みとしない。"
+    },
+    {
+      "id": "C04",
+      "statement": "Appleは10月19日から影響IntermediateをBlockし、10月23日にemSign ECC Root CA - G3もBlockした。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://support.apple.com/en-us/149555",
+        "locator": "What Apple is doing",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Apple Support pageに明示された日付を使用。"
+    },
+    {
+      "id": "C05",
+      "statement": "eMudhraは8つのIntermediateを10月18日に失効し、7つはProduction未使用、1つもEnd-entity Certificateを発行していなかったと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://emudhra.com/en/post/certificate-security-incident",
+        "locator": "Update 3 / What happened、key sequence、What is the actual impact",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Incident当事者の説明として帰属し、独立検証済み事実としない。"
+    },
+    {
+      "id": "C06",
+      "statement": "eMudhraはHSMを使用したが、Wrap/Unwrap Stepにより弱いKey Setが公開され、約18か月検出されなかったと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://emudhra.com/en/post/certificate-security-incident",
+        "locator": "Update 3 / How it happened",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "最終RCA未公開の暫定説明である点を本文に明示。"
+    },
+    {
+      "id": "C07",
+      "statement": "GoogleはBlock前に6つのTLS IntermediateへChainする証明書がCT Logへ記録されていなかったと説明している。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/",
+        "locator": "Certificate Transparencyに関する段落",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "CT enforcing clientに関するGoogleの評価として扱い、すべてのClientへ一般化しない。"
+    },
+    {
+      "id": "C08",
+      "statement": "CloudflareはBrowserやcurlのTestだけでは別のApplication TLS Pathが保護されたことを証明できないと説明している。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+        "locator": "Developer guidance",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "実際のVerifier／Trust Storeごとの検証が必要。"
+    },
+    {
+      "id": "C09",
+      "statement": "OktaとAuth0はemSign ECC Root CA - G3と8つのIntermediateへのTrustをServiceから削除し、Outbound HookやConnectionの一部で接続失敗が起こり得ると説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://sec.okta.com/articles/2026/10/okta-and-auth0-removing-trust-in-emudhra-emsign-ecc-root-ca%E2%80%93g3/",
+        "locator": "Okta's responseおよびDo I need to do anything?",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Inbound Sign-inは影響対象ではないというOktaの説明も維持する。"
+    },
+    {
+      "id": "C10",
+      "statement": "Cloudflareは自社サービスの調査範囲において、本問題のActive Exploitationを確認していないと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+        "locator": "記事冒頭のCloudflare security review",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Cloudflare固有の観測範囲に限定し、Internet全体へ一般化しない。"
+    },
+    {
+      "id": "C11",
+      "statement": "日本企業は発行Certificate Inventoryに加えて、Browser、OS、Runtime、Container、SaaS Connector等のTrust Consumer Inventoryを整備すべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "複数Vendorの対応が、同じ端末・Serviceでも異なるTrust StoreとUpdate Pathを持つことを示しており、Certificate発行側だけのInventoryではExposureを判断できないため。"
+    },
+    {
+      "id": "C12",
+      "statement": "eMudhraは2026年10月28日、影響するG3系統の発行済み証明書が約30,800件で、米国の一つの利用者群に属し、代替G1 RSA Root経路への移行を進めていると説明した。脆弱な8つのIntermediateからの発行件数とは異なる。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://emudhra.com/en/post/certificate-security-incident",
+        "locator": "Update 6 (28 October 2026): Affected G3 certificates and the alternate G1 pathway",
+        "published_at": "2026-10-20",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "eMudhra当事者の数字・移行説明として帰属。弱い8 IntermediateからはEnd-entity未発行と区別する。"
+    },
+    {
+      "id": "C13",
+      "statement": "Okta/Auth0は自社環境において本問題の悪用の形跡を確認していないと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.okta.com/ja-jp/blog/identity-security/okta-and-auth0-removing-trust-in-emudhra-emsign-ecc-root-ca-g3/",
+        "locator": "Oktaの対応／悪用の形跡なし",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Okta/Auth0固有の観測に限定。Cloudflareの観測とは出典を分離した。"
+    },
+    {
+      "id": "C14",
+      "statement": "Appleは、影響中間CAの自動ブロック後もmacOSの一部コマンドラインツール（curl、gitなど）が/etc/ssl/cert.pem経由で影響する証明書を受け入れる可能性があり、後続アップデートが必要と説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://support.apple.com/en-us/149555",
+        "locator": "What Apple is doing; paragraph about Terminal, curl, git, and /etc/ssl/cert.pem",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Apple framework利用アプリとmacOSコマンドラインツールのTrust Storeを混同しない。"
+    }
+  ]
+}

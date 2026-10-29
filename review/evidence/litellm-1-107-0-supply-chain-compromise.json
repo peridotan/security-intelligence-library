@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/ai-security/litellm-1-107-0-supply-chain-compromise.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-10-29",
+    "notes": "LiteLLM MaintainerのRoot Cause AnalysisとMicrosoftの独立解析・観測を区別し、人間がArtifact範囲、時間、Credential Rotation Guidanceを再確認する。 2026-10-29に依頼者がChatGPT上で23 ClaimsのEvidence承認を明示し、その後PR #50の2記事の公開を承認。reviewed_by は認証済みGitHub接続アカウント peridotan を編集承認記録として用いる。これは各Vendorの主張が独立検証済みであるという意味ではない。公開PRのマージ・サイト反映は別の最終確認で行う。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "2026年10月21日、LiteLLM 1.107.0の悪意あるReleaseがPyPIと公式Container Registryへ公開された。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+        "locator": "OverviewおよびConfirmed Affected Versions",
+        "published_at": "2026-10-21",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "MaintainerのIncident ReportでArtifactと公開時間を確認。"
+    },
+    {
+      "id": "C02",
+      "statement": "影響対象はPyPIのlitellm==1.107.0全7 Wheelと、Docker Hub/GHCRのv1.107.0、latest、main-latest、main-stableである。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+        "locator": "Confirmed Affected Versions",
+        "published_at": "2026-10-21",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "各Registryの影響TagとUTC時間帯を確認。"
+    },
+    {
+      "id": "C03",
+      "statement": "悪意あるPackageはPython Startup Hookを使い、LiteLLMをImportしなくてもPython起動時にPayloadを実行できた。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+        "locator": "記事冒頭およびAttack overview / Automatic payload execution",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "MicrosoftがWheel内のcook.pthとsitecustomize.pyを解析。"
+    },
+    {
+      "id": "C04",
+      "statement": "CollectorはDeveloper、Cloud、Browser、SSH、Environment Variable、LiteLLM Database内の一部Credential・Configurationを収集対象としていた。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+        "locator": "Attack overview / Credential and sensitive-data collection",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "実際に到達したCredentialとCollectorが探索対象としたCredentialを混同しない。"
+    },
+    {
+      "id": "C05",
+      "statement": "Microsoftは、Unix向けLoaderによる追加Code取得・実行機能を確認したが、その実行自体は確認していない。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+        "locator": "Technical details / Conditional retrieval and execution of additional code",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "CapabilityとObserved Activityを分離。"
+    },
+    {
+      "id": "C06",
+      "statement": "LiteLLMのCanonical Reportは、公開履歴に残ったAgent Platform KeyからGitHub Owner Token、CI Secret、Release Workflow改変、Poisoned Release公開へ至る攻撃Chainを示している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
+        "locator": "Narrative、GitHub Owner Access、Exfiltrating additional tokens、Steps 4-7",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Maintainer調査の主張として帰属。Microsoftは初期侵入経路を独立確定していない。"
+    },
+    {
+      "id": "C07",
+      "statement": "疑わしい環境でPythonやpipを起動して存在確認するとPayloadを実行し得るため、外部・隔離手段で調査すべきである。",
+      "section": "## 推奨アクション",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+        "locator": "記事冒頭のEndpoint observationsおよびResponse guidance",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Microsoftの調査上の注意事項として確認。"
+    },
+    {
+      "id": "C08",
+      "statement": "Package削除だけでなく、影響EnvironmentのRebuildと、アクセス可能だったCredentialの失効・再発行が必要である。",
+      "section": "## 推奨アクション",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+        "locator": "記事冒頭およびMitigation and protection guidance",
+        "published_at": "2026-10-23",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "具体的なRotation範囲は各組織のExposure調査で決定する。"
+    },
+    {
+      "id": "C09",
+      "statement": "AI PlatformのCredential、Developer Identity、CI/CD Approval、Artifact Provenanceを一つのTrust Chainとして管理すべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "本件では一つの広範なOwner TokenからRelease ControlとCredential Exposureが連鎖し、RuntimeとSoftware Deliveryの管理分断が被害範囲を広げたため。"
+    }
+  ]
+}

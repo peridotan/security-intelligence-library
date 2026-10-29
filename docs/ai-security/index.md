@@ -15,6 +15,11 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="litellm-1-107-0-supply-chain-compromise.md">LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る</a>
+    <div class="sil-card-meta">October 2026 · Immediate · Mixed · AI Infrastructure / Software Supply Chain</div>
+    <p>LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Risk…</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../cybersecurity/evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
     <div class="sil-card-meta">October 2026 · Near-term · Assessment · Operational Security / Software Security</div>
     <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>

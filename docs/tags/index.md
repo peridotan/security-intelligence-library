@@ -14,15 +14,15 @@ hide:
 <div class="sil-topic-directory">
 <a class="sil-topic" href="#nist">NIST <span class="sil-topic-count">20</span></a>
 <a class="sil-topic" href="#microsoft">Microsoft <span class="sil-topic-count">12</span></a>
+<a class="sil-topic" href="#supply-chain">Supply Chain <span class="sil-topic-count">9</span></a>
 <a class="sil-topic" href="#ai-agent">AI Agent <span class="sil-topic-count">8</span></a>
-<a class="sil-topic" href="#supply-chain">Supply Chain <span class="sil-topic-count">8</span></a>
 <a class="sil-topic" href="#frontier-ai">Frontier AI <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#openai">OpenAI <span class="sil-topic-count">7</span></a>
+<a class="sil-topic" href="#credential-theft">Credential Theft <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#meti">METI <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#risk-management">Risk Management <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">6</span></a>
 <a class="sil-topic" href="#agentic-ai">Agentic AI <span class="sil-topic-count">5</span></a>
-<a class="sil-topic" href="#credential-theft">Credential Theft <span class="sil-topic-count">5</span></a>
 <a class="sil-topic" href="#critical-infrastructure">Critical Infrastructure <span class="sil-topic-count">5</span></a>
 <a class="sil-topic" href="#generative-ai">Generative AI <span class="sil-topic-count">5</span></a>
 <a class="sil-topic" href="#passkey">Passkey <span class="sil-topic-count">5</span></a>
@@ -38,6 +38,7 @@ hide:
 <a class="sil-topic" href="#aitm">AiTM <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#anthropic">Anthropic <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#caisi">CAISI <span class="sil-topic-count">3</span></a>
+<a class="sil-topic" href="#ci-cd">CI/CD <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#crypto-agility">Crypto Agility <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#digital-identity">Digital Identity <span class="sil-topic-count">3</span></a>
 <a class="sil-topic" href="#mfa">MFA <span class="sil-topic-count">3</span></a>
@@ -55,10 +56,10 @@ hide:
 <a class="sil-topic" href="#ai-evaluation">AI Evaluation <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ai-for-security">AI for Security <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ai-framework">AI Framework <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="#ai-gateway">AI Gateway <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ai-infrastructure">AI Infrastructure <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#api-security">API Security <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#c-scrm">C-SCRM <span class="sil-topic-count">2</span></a>
-<a class="sil-topic" href="#ci-cd">CI/CD <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#continuous-monitoring">Continuous Monitoring <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#csf-2-0">CSF 2.0 <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#cyber-capability">Cyber Capability <span class="sil-topic-count">2</span></a>
@@ -77,6 +78,7 @@ hide:
 <a class="sil-topic" href="#identity-verification">Identity Verification <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#incident-reporting">Incident Reporting <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#ipa">IPA <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="#litellm">LiteLLM <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#malware">Malware <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#mandiant">Mandiant <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#manufacturing">Manufacturing <span class="sil-topic-count">2</span></a>
@@ -98,6 +100,7 @@ hide:
 <a class="sil-topic" href="#session-token">Session Token <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#sso">SSO <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#threat-actor">Threat Actor <span class="sil-topic-count">2</span></a>
+<a class="sil-topic" href="#tls">TLS <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#trusted-access-for-cyber">Trusted Access for Cyber <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#unit-42">Unit 42 <span class="sil-topic-count">2</span></a>
 <a class="sil-topic" href="#vishing">Vishing <span class="sil-topic-count">2</span></a>
@@ -144,6 +147,18 @@ hide:
 - [Data Security Index 2026 ― AI導入Riskの中心が「Tool利用」からData Flowへ移る](../risk-management/microsoft-data-security-index-2026.md) — January 2026 · Near-term
 - [RedVDS ― CybercrimeのScaleを支える「安価なInfrastructure-as-a-Service」](../cybersecurity/redvds-cybercrime-infrastructure.md) — January 2026 · Near-term
 
+## Supply Chain {#supply-chain}
+
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate
+- [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic
+- [重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと](../regulation/japan-critical-infrastructure-unified-standard.md) — August 2026 · Near-term
+- [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](../risk-management/c-scrm-due-diligence-sp1326.md) — July 2026 · Near-term
+- [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic
+- [SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ](../risk-management/japan-scs-evaluation-operationalization.md) — April 2026 · Near-term
+- [SCS評価制度「制度構築方針」― Supplier Securityを取引条件として共通言語化する](../regulation/japan-scs-policy-march-2026.md) — March 2026 · Near-term
+- [Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」](../cybersecurity/unit42-global-ir-2026.md) — February 2026 · Immediate
+- [経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う](../risk-management/japan-economic-security-management-guidelines.md) — January 2026 · Strategic
+
 ## AI Agent {#ai-agent}
 
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term
@@ -154,17 +169,6 @@ hide:
 - [AI Agent Link Safety ― URLそのものがData Exfiltration Channelになる](../ai-security/openai-agent-link-data-exfiltration.md) — January 2026 · Near-term
 - [AI Agent Runtime Defense ― Tool Invocationを「Code Execution」と同じHigh-risk Eventとして守る](../ai-security/microsoft-agent-runtime-defense.md) — January 2026 · Near-term
 - [NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義](../ai-security/nist-caisi-agent-security-rfi-january.md) — January 2026 · Strategic
-
-## Supply Chain {#supply-chain}
-
-- [Cyber Dependencies Weaken Digital Resilience ― ENISA Threat Landscape 2026](../cybersecurity/enisa-threat-landscape-2026-dependencies.md) — September 2026 · Strategic
-- [重要インフラのサイバーセキュリティが「統一基準」へ ― 日本企業が確認すべきこと](../regulation/japan-critical-infrastructure-unified-standard.md) — August 2026 · Near-term
-- [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](../risk-management/c-scrm-due-diligence-sp1326.md) — July 2026 · Near-term
-- [NIST SP 800-239 Draft ― AI Data Centerを新しいCritical Infrastructureとして守る](../ai-security/ai-data-center-security-sp800-239.md) — July 2026 · Strategic
-- [SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ](../risk-management/japan-scs-evaluation-operationalization.md) — April 2026 · Near-term
-- [SCS評価制度「制度構築方針」― Supplier Securityを取引条件として共通言語化する](../regulation/japan-scs-policy-march-2026.md) — March 2026 · Near-term
-- [Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」](../cybersecurity/unit42-global-ir-2026.md) — February 2026 · Immediate
-- [経済安全保障経営ガイドライン ― Cyber / Supply Chain Riskを「企業価値」の問題として扱う](../risk-management/japan-economic-security-management-guidelines.md) — January 2026 · Strategic
 
 ## Frontier AI {#frontier-ai}
 
@@ -185,6 +189,15 @@ hide:
 - [Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る](../identity-security/openai-advanced-account-security.md) — April 2026 · Near-term
 - [Trusted Access for Cyber ― 高いCyber Capabilityを「IdentityとTrust」で段階開放する](../ai-security/openai-trusted-access-cyber-february.md) — February 2026 · Strategic
 - [AI Agent Link Safety ― URLそのものがData Exfiltration Channelになる](../ai-security/openai-agent-link-data-exfiltration.md) — January 2026 · Near-term
+
+## Credential Theft {#credential-theft}
+
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate
+- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate
+- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate
+- [AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing](../identity-security/aitm-token-compromise-code-of-conduct.md) — May 2026 · Immediate
+- [Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点](../cybersecurity/f5-confluence-edge-to-identity.md) — May 2026 · Immediate
+- [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate
 
 ## METI {#meti}
 
@@ -220,14 +233,6 @@ hide:
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate
 - [Singapore Agentic AI Governance v1.5 ― 「自律性をRisk Tierで制限する」実装例](../regulation/singapore-agentic-ai-governance-v15.md) — May 2026 · Near-term
-
-## Credential Theft {#credential-theft}
-
-- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate
-- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate
-- [AiTM Token Compromise ― 「MFA済み」のSessionを盗まれるPhishing](../identity-security/aitm-token-compromise-code-of-conduct.md) — May 2026 · Immediate
-- [Edge ApplianceからIdentity侵害へ ― F5 / Confluence攻撃Chainが示す境界防御の盲点](../cybersecurity/f5-confluence-edge-to-identity.md) — May 2026 · Immediate
-- [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate
 
 ## Critical Infrastructure {#critical-infrastructure}
 
@@ -334,6 +339,12 @@ hide:
 - [NISTがAI Agentを「Identity＋Standards」の問題として定義し始めた](../identity-security/nist-agent-identity-standards-february.md) — February 2026 · Strategic
 - [NIST CAISI AI Agent Security RFI ― Agent Securityを「Model＋Software System」の問題として定義](../ai-security/nist-caisi-agent-security-rfi-january.md) — January 2026 · Strategic
 
+## CI/CD {#ci-cd}
+
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate
+- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate
+- [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate
+
 ## Crypto Agility {#crypto-agility}
 
 - [PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題](../identity-security/pqc-tls-certificate-ecosystem.md) — October 2026 · Strategic
@@ -432,6 +443,11 @@ hide:
 - [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](../cybersecurity/mastra-npm-ai-supply-chain.md) — June 2026 · Immediate
 - [LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる](../ai-security/langgrinch-ai-application-supply-chain.md) — January 2026 · Immediate
 
+## AI Gateway {#ai-gateway}
+
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate
+- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate
+
 ## AI Infrastructure {#ai-infrastructure}
 
 - [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate
@@ -446,11 +462,6 @@ hide:
 
 - [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](../risk-management/c-scrm-due-diligence-sp1326.md) — July 2026 · Near-term
 - [NIST SP 800-18r2 ― Security・Privacy・C-SCRMを別々の計画書にしない](../risk-management/nist-sp800-18r2-integrated-system-plans.md) — June 2026 · Strategic
-
-## CI/CD {#ci-cd}
-
-- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate
-- [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](../cybersecurity/mini-shai-hulud-antv.md) — May 2026 · Immediate
 
 ## Continuous Monitoring {#continuous-monitoring}
 
@@ -541,6 +552,11 @@ hide:
 
 - [SCS評価制度が実装段階へ ― Supplier Securityを「個別質問票」から共通Baselineへ](../risk-management/japan-scs-evaluation-operationalization.md) — April 2026 · Near-term
 - [IT製品調達セキュリティ要件リスト第2.1版 ― ProcurementをSecurity Controlとして使う](../regulation/japan-it-product-procurement-security-v21.md) — February 2026 · Near-term
+
+## LiteLLM {#litellm}
+
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate
+- [AI Infrastructureが攻撃対象へ ― LiteLLM・RAGFlow・Kestraが示すControl Plane Risk](../ai-security/ai-infrastructure-control-plane-attacks.md) — August 2026 · Immediate
 
 ## Malware {#malware}
 
@@ -647,6 +663,11 @@ hide:
 - [AIは「自律攻撃」以前に攻撃工程へ埋め込まれている ― Microsoftの4月観測](../cybersecurity/ai-embedded-threat-operations.md) — April 2026 · Near-term
 - [AI as Tradecraft ― 攻撃者は「自律攻撃」より先にAIを日常の攻撃運用へ組み込んだ](../cybersecurity/ai-as-tradecraft-march-2026.md) — March 2026 · Near-term
 
+## TLS {#tls}
+
+- [eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新](../cybersecurity/emudhra-intermediate-ca-weak-keys.md) — October 2026 · Immediate
+- [PQC認証の準備は証明書エコシステムから ― Microsoft TLS Pilotが示す相互運用性の課題](../identity-security/pqc-tls-certificate-ecosystem.md) — October 2026 · Strategic
+
 ## Trusted Access for Cyber {#trusted-access-for-cyber}
 
 - [Advanced Account Security ― 高Risk AI Accountでは「認証」と「回復」を同じ強度で守る](../identity-security/openai-advanced-account-security.md) — April 2026 · Near-term
@@ -695,7 +716,6 @@ hide:
 <a class="sil-topic" href="../regulation/eu-cybersecurity-ai-action-plan.md">AI Act <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/ai-as-tradecraft-march-2026.md">AI as Tradecraft <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-data-center-security-sp800-239.md">AI Data Center <span class="sil-topic-count">1</span></a>
-<a class="sil-topic" href="../ai-security/ai-infrastructure-control-plane-attacks.md">AI Gateway <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-enabled-malware-reality.md">AI Malware <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/nist-deployed-ai-monitoring.md">AI Risk <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/openai-huggingface-evaluation-incident.md">AI Safety <span class="sil-topic-count">1</span></a>
@@ -724,6 +744,8 @@ hide:
 <a class="sil-topic" href="../cybersecurity/openai-axios-signing-supply-chain.md">Build Pipeline <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/openai-trusted-access-cyber-february.md">Capability-aware Access <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/pqc-tls-certificate-ecosystem.md">Certificate <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/emudhra-intermediate-ca-weak-keys.md">Certificate Authority <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/emudhra-intermediate-ca-weak-keys.md">Certificate Lifecycle <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/openai-axios-signing-supply-chain.md">Certificate Rotation <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/eu-cybersecurity-package-january-2026.md">Certification <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/japan-ai-guidelines-business-v12.md">Checklist <span class="sil-topic-count">1</span></a>
@@ -786,6 +808,7 @@ hide:
 <a class="sil-topic" href="../ai-security/edge-ai-trust-attestation-provenance.md">Edge AI <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/f5-confluence-edge-to-identity.md">Edge Appliance <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/eudi-wallet-certification.md">eIDAS <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/emudhra-intermediate-ca-weak-keys.md">eMudhra <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/nist-iot-product-lifecycle-ir8259r1.md">End-of-Life <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/enterprise-frontier-safeguards-zdr.md">Enterprise Frontier Safeguards <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/nist-csf2-erm-workforce-sp1308.md">Enterprise Risk Management <span class="sil-topic-count">1</span></a>
@@ -860,7 +883,6 @@ hide:
 <a class="sil-topic" href="../ai-security/mcp-tool-poisoning-agent-supply-chain.md">Least Agency <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/nict-a2b-backend-api-security.md">LETTICE <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/f5-confluence-edge-to-identity.md">Linux <span class="sil-topic-count">1</span></a>
-<a class="sil-topic" href="../ai-security/ai-infrastructure-control-plane-attacks.md">LiteLLM <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/autojack-agent-localhost-rce.md">Localhost <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/m-trends-2026-speed-identity-recovery.md">M-Trends 2026 <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/ai-assisted-intrusion-10-hours.md">Machine-speed Attack <span class="sil-topic-count">1</span></a>
@@ -914,6 +936,8 @@ hide:
 <a class="sil-topic" href="../ai-security/claude-mythos-preview-cyber-capability.md">Project Glasswing <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/japan-project-yata-shield.md">Project YATA-Shield <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/eu-cra-reporting-obligations-live.md">PSIRT <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../ai-security/litellm-1-107-0-supply-chain-compromise.md">PyPI <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../ai-security/litellm-1-107-0-supply-chain-compromise.md">Python <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/nist-data-classification-sp1800-39.md">Quantum-safe Cryptography <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/teams-vishing-quick-assist.md">Quick Assist <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-infrastructure-control-plane-attacks.md">RAG <span class="sil-topic-count">1</span></a>
@@ -973,7 +997,6 @@ hide:
 <a class="sil-topic" href="../identity-security/complex-routing-domain-spoofing.md">Third-party Connector <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-enabled-malware-reality.md">Threat Intelligence <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/enisa-threat-landscape-2026-dependencies.md">Threat Landscape <span class="sil-topic-count">1</span></a>
-<a class="sil-topic" href="../identity-security/pqc-tls-certificate-ecosystem.md">TLS <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/nist-ir8587-token-protection.md">Token Revocation <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/nist-ir8587-token-protection.md">Token Security <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/microsoft-agent-runtime-defense.md">Tool Invocation <span class="sil-topic-count">1</span></a>
@@ -981,6 +1004,7 @@ hide:
 <a class="sil-topic" href="../regulation/eu-ai-act-enforcement-2026.md">Transparency <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/dns-root-ksk-2024-rollover.md">Trust Anchor <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/edge-ai-trust-attestation-provenance.md">Trust Model <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/emudhra-intermediate-ca-weak-keys.md">Trust Store <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/openai-trusted-access-cyber.md">Trusted Access <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/dell-recoverpoint-zero-day-trust-plane.md">UNC6201 <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/nist-ai800-3-evaluation-uncertainty.md">Uncertainty <span class="sil-topic-count">1</span></a>
@@ -998,6 +1022,7 @@ hide:
 <a class="sil-topic" href="../identity-security/eudi-wallet-certification.md">Wallet <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/water-ot-secure-remote-access-sp1800-45.md">Water <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/pass-the-passkey.md">WebAuthn <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/emudhra-intermediate-ca-weak-keys.md">WebPKI <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/teams-it-support-remote-session-intrusion.md">WinRM <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/nist-csf2-erm-workforce-sp1308.md">Workforce Management <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/nist-ir8587-token-protection.md">Workload Identity <span class="sil-topic-count">1</span></a>

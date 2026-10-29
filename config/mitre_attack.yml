@@ -69,6 +69,13 @@ techniques:
     tactics:
     - Initial Access
     url: https://attack.mitre.org/techniques/T1195/001/
+  T1546.018:
+    name: Python Startup Hooks
+    domain: Enterprise
+    tactics:
+    - Persistence
+    - Privilege Escalation
+    url: https://attack.mitre.org/techniques/T1546/018/
   T1021.004:
     name: 'Remote Services: SSH'
     domain: Enterprise

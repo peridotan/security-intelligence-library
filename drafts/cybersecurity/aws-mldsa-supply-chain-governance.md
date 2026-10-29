@@ -76,6 +76,10 @@ AWS KMSは`ML_DSA_44`、`ML_DSA_65`、`ML_DSA_87`という3つのKey Specを提�
 
 Part 2の例ではML-DSA-65とML-DSA-87を承認し、ML-DSA-44の作成・利用を制限します。ただしAWSは、ML-DSA-44もFIPS 204で標準化された有効な選択肢であり、除外は脆弱性判断ではなく組織Policyの例だと明記しています。[^aws2]
 
+また、AWS Part 2は、**特定のParameter Setだけを`Deny`する禁止リスト方式では、将来AWSに新しいVariantが追加された際に未評価のVariantが既定で許可され得る**点を注意しています。これを防ぐには、承認済みParameter Set以外を`StringNotEquals`などで拒否する方式（default-deny）も選択肢です。ただし、新Variantの採用時にはPolicy更新が必要です。[^aws2]
+
+さらに、AWS Part 1は米国の**National Security Systems（NSS）向けCNSA 2.0**の対象では、ML-DSAを用いるなら`ML_DSA_87`のみが許容され、例示した`ML_DSA_65`のCode Signing構成はNSSにそのまま適用できないと明記しています。これは米国NSS向けの限定的要件であり、日本企業一般への法的義務と混同してはいけません。[^aws1]
+
 SCPはOrganization RootまたはOUへ適用でき、Member AccountでのKey作成や利用を制限できます。一方、Management Accountには適用されません。IAM Permission BoundaryはPrincipal単位の柔軟性を提供しますが、対象Principalへ確実にBoundaryを付与する仕組みが別途必要です。[^aws2]
 
 ### 適用範囲と限界

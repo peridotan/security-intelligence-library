@@ -156,10 +156,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "Human-approved AI review (2026-10-29), new article: LiteLLM 1.107.0 poisoned release and token/CI-CD trust. Developer's canonical incident report 2026-10-23: https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain . Do not duplicate existing AI framework / Axios case studies."
         ]
       }
     },
@@ -693,10 +693,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
+        "route": "library",
         "draft_eligible": false,
         "reasons": [
-          "source default route: watch"
+          "Human-approved AI review (2026-10-29), update-existing only: docs/cybersecurity/nict-a2b-backend-api-security.md . JPCERT/CC's 2026-10-21 independent observations must remain distinct from NICT's report; do not create a new article draft."
         ]
       }
     },
@@ -1193,10 +1193,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "Human-approved AI review (2026-10-29), new PKI trust-chain incident article about eight eMudhra intermediate certificates. Consolidate Cloudflare, Unit 42, Okta and primary CA/browser announcements. Verify real deployment effects; distinguish vendor assessments and time-zone-specific dates."
         ]
       }
     },
@@ -1213,10 +1213,10 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
+        "route": "vulnerability",
         "draft_eligible": false,
         "reasons": [
-          "source default route: watch"
+          "Human-approved AI review (2026-10-29): CVE-2026-0257 active exploitation reporting and PAN-OS/GlobalProtect exposure; prioritize affected assets, vendor advisory and logs in Vulnerability Intelligence. No Library article draft."
         ]
       }
     },
@@ -1403,7 +1403,8 @@
   ],
   "triage_policy_version": 1,
   "route_counts": {
-    "watch": 61,
-    "vulnerability": 2
+    "library": 3,
+    "vulnerability": 3,
+    "watch": 57
   }
 }

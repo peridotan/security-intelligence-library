@@ -1,0 +1,1410 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-26T01:03:48.932553+00:00",
+  "window_days": 7,
+  "candidate_count": 63,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 103
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 6
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "nict-security-press",
+      "source_name": "NICT Security Press Releases",
+      "source_type": "html_listing",
+      "fetched": 2
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_type": "rss",
+      "fetched": 254
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_type": "rss",
+      "fetched": 30
+    },
+    {
+      "source_id": "nco-security-news",
+      "source_name": "National Cybersecurity Office (Japan) News",
+      "source_type": "csv_yearly",
+      "fetched": 69
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 89
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 25)",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "summary": "CVE-2026-109618 and CVE-2026-109619 are Critical vulnerabilities in PHP, a scripting language used globally for web servers and CMS systems. The post Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 25) appeared first on Unit 42 .",
+      "published_at": "2026-10-23T19:00:34+00:00",
+      "published_raw": "Fri, 23 Oct 2026 19:00:34 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Origin Range Requests: Serving large files without range-request tuning",
+      "url": "https://blog.cloudflare.com/origin-range-requests/",
+      "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+      "published_at": "2026-10-23T18:22:59+00:00",
+      "published_raw": "Fri, 23 Oct 2026 18:22:59 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+      "summary": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations. The post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-23T18:12:19+00:00",
+      "published_raw": "Fri, 23 Oct 2026 18:12:19 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": true,
+        "reasons": [
+          "Human-approved AI review (2026-10-29), new article: LiteLLM 1.107.0 poisoned release and token/CI-CD trust. Developer's canonical incident report 2026-10-23: https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain . Do not duplicate existing AI framework / Axios case studies."
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Bringing post-quantum cryptography to geographically fenced key management",
+      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
+      "published_at": "2026-10-23T18:06:56+00:00",
+      "published_raw": "Fri, 23 Oct 2026 18:06:56 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Why Organizations Secure AI Agents with Falcon Guardian",
+      "url": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
+      "summary": "",
+      "published_at": "2026-10-23T05:00:00+00:00",
+      "published_raw": "Oct 23, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Obstacles to Weaponizing PHP2Shell Likely Constrain Immediate Widespread Exploitation",
+      "url": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
+      "summary": "",
+      "published_at": "2026-10-23T05:00:00+00:00",
+      "published_raw": "Oct 23, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "Node2Shell: Node.js Brotli flaw (CVE-2026-111497)",
+      "url": "https://sec.okta.com/articles/2026/10/node2shell-node.js-brotli-flaw-cve-2026-111497/",
+      "summary": "On October 21, 2026, the Node.js project released fixes for a Brotli decompression flaw (CVE-2026-111497, \"Node2Shell\"). Read on for Okta's response.",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "published_raw": "Fri, 23 Oct 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "Okta and Auth0 are removing trust in the eMudhra emSign ECC Root CA – G3",
+      "url": "https://sec.okta.com/articles/2026/10/okta-and-auth0-removing-trust-in-emudhra-emsign-ecc-root-ca–g3/",
+      "summary": "On October 17, 2026, a researcher reported that the private keys of eight intermediate eMudhra certificate authorities were generated with insufficient entropy and could be derived from their public certificates. Read on for Okta's response.",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "published_raw": "Fri, 23 Oct 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "EMudhra Intermediate CA Certificates Compromised",
+      "url": "https://unit42.paloaltonetworks.com/emudhra-certificate-compromise/",
+      "summary": "Eight compromised eMudhra intermediate CA private keys risk unauthorized TLS signing and MitM interception. Read our analysis and containment guide. The post EMudhra Intermediate CA Certificates Compromised appeared first on Unit 42 .",
+      "published_at": "2026-10-22T17:15:32+00:00",
+      "published_raw": "Thu, 22 Oct 2026 17:15:32 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "HAPI FHIR",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-294-01.json",
+      "summary": "SmileCDR HAPI FHIR contains multiple vulnerabilities. In the worst case, a user could read or write content in a tenant partition that they should not have access to, or an unauthenticated user could trigger a denial-of-service.",
+      "published_at": "2026-10-22T17:14:18+00:00",
+      "published_raw": "2026-10-22T17:14:18Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-294-01.json",
+        "document_category": "csaf_vex",
+        "summary": "SmileCDR HAPI FHIR contains multiple vulnerabilities. In the worst case, a user could read or write content in a tenant partition that they should not have access to, or an unauthenticated user could trigger a denial-of-service.",
+        "vulnerability_count": 4,
+        "cves": [
+          "CVE-2026-113873",
+          "CVE-2026-113874",
+          "CVE-2026-113875",
+          "CVE-2026-113876"
+        ],
+        "max_cvss": 8.1,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "4 vulnerabilities >= watch threshold 3"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "AgentZero XSS",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-296-01.json",
+      "summary": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is executed in the context of the victim’s authenticated Agent Zero Web UI session.",
+      "published_at": "2026-10-22T17:13:57+00:00",
+      "published_raw": "2026-10-22T17:13:57Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-296-01.json",
+        "document_category": "csaf_vex",
+        "summary": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is executed in the context of the victim’s authenticated Agent Zero Web UI session.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-97635"
+        ],
+        "max_cvss": 8.1,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "product-specific CSAF advisory; source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "The Current Landscape of OAuth Attacks",
+      "url": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
+      "summary": "Unit 42 explores modern OAuth threats and actionable steps organizations can take to protect their environments. The post The Current Landscape of OAuth Attacks appeared first on Unit 42 .",
+      "published_at": "2026-10-22T17:00:25+00:00",
+      "published_raw": "Thu, 22 Oct 2026 17:00:25 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+      "url": "https://blog.cloudflare.com/k-isms/",
+      "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
+      "published_at": "2026-10-22T13:00:00+00:00",
+      "published_raw": "Thu, 22 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+      "summary": "",
+      "published_at": "2026-10-22T04:11:00+00:00",
+      "published_raw": "2026-10-22T13:11+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Using AWS WAF to apply mitigations for PHP2Shell RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619)",
+      "url": "https://aws.amazon.com/blogs/security/using-aws-waf-to-apply-mitigations-for-php2shell-rce-vulnerabilities-cve-2026-109618-and-cve-2026-109619/",
+      "summary": "October 23, 2026-2: The PHP project disclosed CVE-2026-115560, a separate remote code execution issue that the October 21 releases don’t fix. It affects only applications with an uncommon configuration that keeps session upload progress enabled. The PHP2Shell_BODY rule in the PHP application managed rule group, version 2.4 and later, already blocks POST requests that carry […]",
+      "published_at": "2026-10-22T00:50:04+00:00",
+      "published_raw": "Thu, 22 Oct 2026 00:50:04 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "Okta's Response to PHP2Shell",
+      "url": "https://sec.okta.com/articles/2026/10/okta-response-to-php2shell/",
+      "summary": "Okta's response to the industry-wide third-party PHP vulnerabilities (CVE-2026-109618 and CVE-2026-109619).",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "published_raw": "Thu, 22 Oct 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot",
+      "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+      "summary": "Amazon Threat Intelligence identified a PHP2Shell exploitation attempt dating to Oct. 17, 2026, in MadPot telemetry, four days before public disclosure of CVE-2026-109618 and CVE-2026-109619. The exploit attempt originated from an IP address associated with a commercial anonymization network. While the vulnerability was under embargo, the targeting of a honeypot from an anonymized IP address […]",
+      "published_at": "2026-10-21T22:36:26+00:00",
+      "published_raw": "Wed, 21 Oct 2026 22:36:26 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+      "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-21T18:23:55+00:00",
+      "published_raw": "Wed, 21 Oct 2026 18:23:55 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Best practices for integrating IAM Roles Anywhere with your PKI",
+      "url": "https://aws.amazon.com/blogs/security/best-practices-for-integrating-iam-roles-anywhere-with-your-pki/",
+      "summary": "Using temporary credentials is a security best practice to reduce the risk from credentials getting compromised. With AWS IAM Roles Anywhere, now your workloads outside of Amazon Web Services (AWS) will be able to access AWS resources by obtaining temporary security credentials in AWS Identity and Access Management (IAM). IAM Roles Anywhere relies on public […]",
+      "published_at": "2026-10-21T17:03:50+00:00",
+      "published_raw": "Wed, 21 Oct 2026 17:03:50 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_url": "https://www.ipa.go.jp/security/rss/alert.rdf",
+      "title": "PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+      "summary": "",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "published_raw": "2026-10-22T00:00:00+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "PHP insecure error handling and state management",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-295-01.json",
+      "summary": "PHP insecurely handles multiple combinations of memory allocations and error conditions. These behaviors can allow a remote attacker to cause a denial of service or execute arbitrary code. Successful exploitation depends on a number of factors including the specific PHP application being targeted, the SAPI and web server, error handling and memory resource configuration, and platform or OS-level memory protections. Without significant analysis effort to prove otherwise, any application running on a vulnerable version of PHP should be considered vulnerable and exploitable.",
+      "published_at": "2026-10-21T14:56:09+00:00",
+      "published_raw": "2026-10-21T14:56:09Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-295-01.json",
+        "document_category": "csaf_vex",
+        "summary": "PHP insecurely handles multiple combinations of memory allocations and error conditions. These behaviors can allow a remote attacker to cause a denial of service or execute arbitrary code. Successful exploitation depends on a number of factors including the specific PHP application being targeted, the SAPI and web server, error handling and memory resource configuration, and platform or OS-level memory protections. Without significant analysis effort to prove otherwise, any application running on a vulnerable version of PHP should be considered vulnerable and exploitable.",
+        "vulnerability_count": 2,
+        "cves": [
+          "CVE-2026-109618",
+          "CVE-2026-109619"
+        ],
+        "max_cvss": 8.1,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "product-specific CSAF advisory; source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing full transaction detection for Cloudflare WAF",
+      "url": "https://blog.cloudflare.com/full-transaction-waf/",
+      "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
+      "published_at": "2026-10-21T14:10:42+00:00",
+      "published_raw": "Wed, 21 Oct 2026 14:10:42 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "“Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities",
+      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+      "summary": "An investigation into a threat actor bypassing AI safety controls to coordinate credential theft, VoIP fraud planning, and database exfiltration. The post “Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities appeared first on Unit 42 .",
+      "published_at": "2026-10-21T14:00:24+00:00",
+      "published_raw": "Wed, 21 Oct 2026 14:00:24 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Cloudflare deploys protections against php2shell vulnerability",
+      "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+      "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
+      "published_at": "2026-10-21T13:56:45+00:00",
+      "published_raw": "Wed, 21 Oct 2026 13:56:45 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+      "url": "https://blog.cloudflare.com/webmcp-commerce/",
+      "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
+      "published_at": "2026-10-21T13:00:00+00:00",
+      "published_raw": "Wed, 21 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Protects Customers from Threats Delivered via PHP2Shell",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-protects-customers-from-php-rce-zero-days/",
+      "summary": "",
+      "published_at": "2026-10-21T05:00:00+00:00",
+      "published_raw": "Oct 21, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Uncovers New Agentic AI Campaigns",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+      "summary": "",
+      "published_at": "2026-10-21T05:00:00+00:00",
+      "published_raw": "Oct 21, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_url": "https://blogs.jpcert.or.jp/en/atom.xml",
+      "title": "Recent AI-Assisted Cyber Attacks in Japan: Investigating Attack Infrastructure and Techniques",
+      "url": "https://blogs.jpcert.or.jp/en/2026/10/web_api_attacks.html",
+      "summary": "On October 8, 2026, JPCERT/CC issued an ...",
+      "published_at": "2026-10-21T02:00:00+00:00",
+      "published_raw": "2026-10-21T02:00:00Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": false,
+        "reasons": [
+          "Human-approved AI review (2026-10-29), update-existing only: docs/cybersecurity/nict-a2b-backend-api-security.md . JPCERT/CC's 2026-10-21 independent observations must remain distinct from NICT's report; do not create a new article draft."
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Microsoft Edgeに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#1",
+      "summary": "Microsoft Edgeに複数の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のJuniper Networks製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#2",
+      "summary": "複数のJuniper Networks製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: BeyondTrust Remote Supportになりすましによる認証回避の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#3",
+      "summary": "BeyondTrust Remote Supportになりすましによる認証回避の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のNGINX製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#4",
+      "summary": "複数のNGINX製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Drupal coreおよび複数のモジュールに脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#5",
+      "summary": "Drupal coreおよび複数のモジュールに脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のAdobe製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#6",
+      "summary": "複数のAdobe製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#7",
+      "summary": "Google Chromeに複数の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Next.jsに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#8",
+      "summary": "Next.jsに複数の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: EC-CUBE4系用プラグイン「AmazonPayプラグイン」に不変と想定しているWebパラメータの外部制御の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#9",
+      "summary": "EC-CUBE4系用プラグイン「AmazonPayプラグイン」に不変と想定しているWebパラメータの外部制御の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: NextcloudのCollabora Online - Built-in CODE Serverに脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#10",
+      "summary": "NextcloudのCollabora Online - Built-in CODE Serverに脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のPalo Alto Networks製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#11",
+      "summary": "複数のPalo Alto Networks製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Cisco Secure Email Gatewayに任意のファイル書き込みの脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#12",
+      "summary": "Cisco Secure Email Gatewayに任意のファイル書き込みの脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のZoom製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#13",
+      "summary": "複数のZoom製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のMozilla製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#14",
+      "summary": "複数のMozilla製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のSAP製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#15",
+      "summary": "複数のSAP製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のFortinet製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#16",
+      "summary": "複数のFortinet製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Ivanti Connect Secureに認証回避の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#17",
+      "summary": "Ivanti Connect Secureに認証回避の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: AssetViewに重要なリソースに対する不適切なアクセス権の割り当ての脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#18",
+      "summary": "AssetViewに重要なリソースに対する不適切なアクセス権の割り当ての脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: ((OTRS)) Community Editionに認証回避の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#19",
+      "summary": "((OTRS)) Community Editionに認証回避の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: ProgressのMarkLogic Serverに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#20",
+      "summary": "ProgressのMarkLogic Serverに複数の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: GitLabに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#21",
+      "summary": "GitLabに複数の脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: JPCERT/CCが「連続不正アクセス事案の攻撃手法に関する調査」を公開",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#22",
+      "summary": "JPCERT/CCが「連続不正アクセス事案の攻撃手法に関する調査」を公開",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: SiteGuard Server EditionにOSコマンドインジェクションの脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#23",
+      "summary": "SiteGuard Server EditionにOSコマンドインジェクションの脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のマイクロソフト製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261021.html#24",
+      "summary": "複数のマイクロソフト製品に脆弱性",
+      "published_at": "2026-10-21T00:12:00+00:00",
+      "published_raw": "2026-10-21T09:12+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+      "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+      "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should do next.",
+      "published_at": "2026-10-20T22:20:16+00:00",
+      "published_raw": "Tue, 20 Oct 2026 22:20:16 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "library",
+        "draft_eligible": true,
+        "reasons": [
+          "Human-approved AI review (2026-10-29), new PKI trust-chain incident article about eight eMudhra intermediate certificates. Consolidate Cloudflare, Unit 42, Okta and primary CA/browser announcements. Verify real deployment effects; distinguish vendor assessments and time-zone-specific dates."
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "Active Exploitation of May 2026 PAN-OS CVE-2026-0257 (Updated October 20)",
+      "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+      "summary": "Ransomware operators including Spikey Scorpius (aka Qilin) and Tarnished Scorpius (aka Inc) are exploiting PAN-OS vulnerability CVE-2026-0257. The post Active Exploitation of May 2026 PAN-OS CVE-2026-0257 (Updated October 20) appeared first on Unit 42 .",
+      "published_at": "2026-10-20T20:30:42+00:00",
+      "published_raw": "Tue, 20 Oct 2026 20:30:42 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "Human-approved AI review (2026-10-29): CVE-2026-0257 active exploitation reporting and PAN-OS/GlobalProtect exposure; prioritize affected assets, vendor advisory and logs in Vulnerability Intelligence. No Library article draft."
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Managing identity source transition for AWS IAM Identity Center",
+      "url": "https://aws.amazon.com/blogs/security/managing-identity-source-transition-for-aws-iam-identity-center/",
+      "summary": "October 20, 2026: This post was republished to reflect the new migration capability from Active Directory to an external identity provider (IdP) or the Identity Center directory, now available in IAM Identity Center. September 2, 2026: This post was republished to include Active Directory migration strategies and automation for permission sets. AWS IAM Identity Center […]",
+      "published_at": "2026-10-20T16:47:02+00:00",
+      "published_raw": "Tue, 20 Oct 2026 16:47:02 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_url": "https://www.ipa.go.jp/security/rss/alert.rdf",
+      "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+      "summary": "",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "published_raw": "2026-10-21T00:00:00+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_url": "https://www.ipa.go.jp/security/rss/alert.rdf",
+      "title": "Oracle Java の脆弱性対策について(2026年10月)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/1021-jre.html",
+      "summary": "",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "published_raw": "2026-10-21T00:00:00+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing tsrs: A port of TypeScript to Rust",
+      "url": "https://blog.cloudflare.com/typescript-rust-port/",
+      "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
+      "published_at": "2026-10-20T13:00:00+00:00",
+      "published_raw": "Tue, 20 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Achieves NCSC CIR Enhanced Level Assurance",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-achieves-uk-ncsc-cir-enhanced-level-assurance/",
+      "summary": "",
+      "published_at": "2026-10-20T05:00:00+00:00",
+      "published_raw": "Oct 20, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+      "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
+      "published_at": "2026-10-19T19:12:53+00:00",
+      "published_raw": "Mon, 19 Oct 2026 19:12:53 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Clairic, a new System One class of extraction models",
+      "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+      "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
+      "published_at": "2026-10-19T17:48:26+00:00",
+      "published_raw": "Mon, 19 Oct 2026 17:48:26 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Agents are your newest insiders. Security must move at their speed.",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+      "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-19T13:00:00+00:00",
+      "published_raw": "Mon, 19 Oct 2026 13:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
+      "published_at": "2026-10-19T13:00:00+00:00",
+      "published_raw": "Mon, 19 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "library": 3,
+    "vulnerability": 3,
+    "watch": 57
+  }
+}

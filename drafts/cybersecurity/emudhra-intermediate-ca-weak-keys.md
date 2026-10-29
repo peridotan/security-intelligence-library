@@ -89,6 +89,8 @@ eMudhraは、2025年4月30日のKey Generation Ceremonyで、HSMを使用した�
 | Cloud／Network | Cloudflare WARP、cloudflared、CDN、Zero Trust | Client Version、Origin、mTLS、Container Image、Custom Trust Storeを個別評価 |
 | Application | Java、Python、Go、Bundled CA Bundle | OSやBrowserと異なるCA Bundle・更新Cycleを持つ |
 
+さらにAppleは、SafariなどのApple Framework利用アプリでは影響する中間CAを自動ブロックする一方、macOSの一部のコマンドラインツール（例：`curl`、`git`）は`/etc/ssl/cert.pem`を参照し、将来のソフトウェア更新まで影響する証明書を受け入れる場合があると注意喚起しています。**同じ端末でも検証に使うTrust Storeが異なる**ため、ブラウザでの動作確認をmacOS全体の保護完了と扱ってはいけません。[^apple]
+
 Cloudflareは、自社Service上でActive Exploitationを確認していないと説明しています。Okta／Auth0も10月23日時点でExploitation Evidenceを観測していないと述べています。これらは各Vendorの観測範囲に限定され、Internet全体で悪用がなかったことを証明するものではありません。[^cloudflare][^okta]
 
 ## Trust Update Flow

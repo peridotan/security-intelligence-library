@@ -22,3 +22,11 @@
 - [ ] 14 Claimsの一次情報を人間が再検証した後にのみ、後工程でapprovedとする
 
 **このDraft PRでは公開・マージ・Evidence approved化を行わない。**
+
+## Evidence承認意思の記録（2026-10-29 JST）
+
+- **承認意思の表明**：依頼者はChatGPTの会話で「Evidenceも承認」と明示。直前の確認質問は「各Claimを一次情報と照合済みで承認するという意味か」であり、これへの回答として受領した。
+- **対象範囲**：この記事のEvidence Claim **14件**（現行Draft PR #50の版）。
+- **認証済みGitHub連携アカウント**：`peridotan`。会話内で独立した本人確認を行ったわけではないため、GitHubアカウントと依頼者の同一性を独立検証した記録ではない。
+- **変更しない承認ゲート**：この記録は**記事公開、PR #50のマージ、`published`への変更の承認ではない**。リポジトリの`ARTICLE_WORKFLOW.md`に従い、別途正式な公開承認を得るまで`drafts/evidence/`の`review.status = pending`、`reviewed_by = null`、`reviewed_at = null`を維持する。正式な公開段階で承認者として記録するハンドル・日付を確定する。
+- **有効範囲**：後から本文やClaimが実質変更された場合、その変更分は再レビュー対象とする。

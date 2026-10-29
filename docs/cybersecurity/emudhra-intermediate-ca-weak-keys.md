@@ -21,7 +21,6 @@ tags:
 - TLS
 - Trust Store
 - Certificate Lifecycle
-mitre_attack: []
 audience:
 - Executive
 - CISO

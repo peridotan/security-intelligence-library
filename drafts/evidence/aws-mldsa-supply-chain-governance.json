@@ -175,6 +175,36 @@
         "accessed_at": "2026-10-20"
       },
       "review_note": "2026-10-20にAWS原文を照合。Part 1での利用とPart 2での統制対象外を区別した。"
+    },
+    {
+      "id": "C13",
+      "statement": "AWSは特定のML-DSA Variantのみを禁止するDeny-listでは将来追加される未評価Variantが既定で許可され得ると説明し、承認済みVariant以外を拒否するDefault-deny方式を代替として示している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "A note on cryptographic agility: deny-list default-allow risk and StringNotEquals approved-set alternative",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "将来追加Variantの扱いは組織Policy選定の論点。default-denyも新Variant追加時のPolicy変更が必要。"
+    },
+    {
+      "id": "C14",
+      "statement": "AWS Part 1はCNSA 2.0の対象である米国National Security SystemsでML-DSAを署名に使う場合、ML-DSA-87 Parameter Setのみが許容され、ML-DSA-65の商用例をそのまま利用できないと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/",
+        "locator": "Regulatory timeline and recommended actions: Note for NSS customers and other CNSA 2.0 adopters",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "米国NSS向けと商用・日本国内の一般要件を明確に区別。ML-DSA署名パラメータについてのみの主張（他のCNSA-approved schemesは存在）。"
     }
   ]
 }

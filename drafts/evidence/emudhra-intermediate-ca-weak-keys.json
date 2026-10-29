@@ -195,6 +195,20 @@
         "accessed_at": "2026-10-29"
       },
       "review_note": "Okta/Auth0固有の観測に限定。Cloudflareの観測とは出典を分離した。"
+    },
+    {
+      "id": "C14",
+      "statement": "Appleは、影響中間CAの自動ブロック後もmacOSの一部コマンドラインツール（curl、gitなど）が/etc/ssl/cert.pem経由で影響する証明書を受け入れる可能性があり、後続アップデートが必要と説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://support.apple.com/en-us/149555",
+        "locator": "What Apple is doing; paragraph about Terminal, curl, git, and /etc/ssl/cert.pem",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "Apple framework利用アプリとmacOSコマンドラインツールのTrust Storeを混同しない。"
     }
   ]
 }

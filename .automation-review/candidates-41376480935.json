@@ -1,0 +1,911 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-02T02:12:54.249918+00:00",
+  "window_days": 7,
+  "candidate_count": 40,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 103
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 6
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "nict-security-press",
+      "source_name": "NICT Security Press Releases",
+      "source_type": "html_listing",
+      "fetched": 2
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_type": "rss",
+      "fetched": 256
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_type": "rss",
+      "fetched": 21
+    },
+    {
+      "source_id": "nco-security-news",
+      "source_name": "National Cybersecurity Office (Japan) News",
+      "source_type": "csv_yearly",
+      "fetched": 71
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 89
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+      "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-31T01:02:57+00:00",
+      "published_raw": "Sat, 31 Oct 2026 01:02:57 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+      "url": "https://blog.cloudflare.com/emudhra-patching/",
+      "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
+      "published_at": "2026-10-30T17:38:50+00:00",
+      "published_raw": "Fri, 30 Oct 2026 17:38:50 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+      "summary": "Teams support impersonation led to remote access, malicious runtime execution, and Certificate Services abuse through authentication relay and Kerberos. The post From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-30T16:11:44+00:00",
+      "published_raw": "Fri, 30 Oct 2026 16:11:44 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Cloudflare services for private origins is now generally available",
+      "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
+      "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity.",
+      "published_at": "2026-10-30T14:23:43+00:00",
+      "published_raw": "Fri, 30 Oct 2026 14:23:43 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Expands Falcon Adversary OverWatch Threat Hunting Across AI and Google Cloud",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
+      "summary": "",
+      "published_at": "2026-10-30T05:00:00+00:00",
+      "published_raw": "Oct 30, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Build an Intelligence Advantage with Falcon Next-Gen SIEM",
+      "url": "https://www.crowdstrike.com/en-us/blog/build-intelligence-advantage-with-falcon-next-gen-siem/",
+      "summary": "",
+      "published_at": "2026-10-30T05:00:00+00:00",
+      "published_raw": "Oct 30, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Agent Graph Shows How Agents Act on the Endpoint",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
+      "summary": "",
+      "published_at": "2026-10-30T05:00:00+00:00",
+      "published_raw": "Oct 30, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "nco-security-news",
+      "source_name": "National Cybersecurity Office (Japan) News",
+      "source_url": "https://www.cyber.go.jp/csv/2026.csv",
+      "title": "サイバーセキュリティに関する関係機関の相談窓口、各種発表や注意喚起等をまとめたサイバー対応特設サイトを公開しました。",
+      "url": "https://www.cyber.go.jp/tokusetsu/contactpoint_advisory_hub/index.html",
+      "summary": "",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "published_raw": "2026-10-30",
+      "category_hint": "regulation",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are utilizing AI across their operations, reflecting a broader trend of threat actors incorporating AI into their attack chains. The post Tracking AI adoption in North Korean threat actor tradecraft appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-29T16:00:00+00:00",
+      "published_raw": "Thu, 29 Oct 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
+      "summary": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises. The post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-29T16:00:00+00:00",
+      "published_raw": "Thu, 29 Oct 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+      "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
+      "published_at": "2026-10-29T12:55:00+00:00",
+      "published_raw": "Thu, 29 Oct 2026 12:55:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "VAPOR PANDA Uses AI-Driven ARTEX to Scale a Global Espionage Campaign",
+      "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+      "summary": "",
+      "published_at": "2026-10-29T05:00:00+00:00",
+      "published_raw": "Oct 29, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "New Prompt Injection Techniques Cover Agent-Planning Attacks",
+      "url": "https://www.crowdstrike.com/en-us/blog/new-prompt-injection-techniques-cover-agent-planning-attacks/",
+      "summary": "",
+      "published_at": "2026-10-29T05:00:00+00:00",
+      "published_raw": "Oct 29, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "nco-security-news",
+      "source_name": "National Cybersecurity Office (Japan) News",
+      "source_url": "https://www.cyber.go.jp/csv/2026.csv",
+      "title": "第19回日ASEANサイバーセキュリティ政策会議（結果）",
+      "url": "https://www.cyber.go.jp/pdf/press/19thAJCPM_ja.pdf",
+      "summary": "",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "published_raw": "2026-10-29",
+      "category_hint": "regulation",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "Unwrapping Retail Peak Season Cyber Threats",
+      "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+      "summary": "Unit 42 explores key peak shopping season retail cyber threats, from ransomware to AI attacks, and shares how to defend operations and customer trust. The post Unwrapping Retail Peak Season Cyber Threats appeared first on Unit 42 .",
+      "published_at": "2026-10-28T18:00:10+00:00",
+      "published_raw": "Wed, 28 Oct 2026 18:00:10 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
+      "summary": "As AI and agents reshape the enterprise, CISOs face two critical priorities: enabling innovation with the right identity and data guardrails, and modernizing defense to keep pace with AI-powered threats. Aarti Borkar shares how security leaders can approach both. The post The CISO’s evolving role: Protecting and defending in the agentic era appeared first on Microsoft Security Blog .",
+      "published_at": "2026-10-28T16:00:00+00:00",
+      "published_raw": "Wed, 28 Oct 2026 16:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "When AI Guardrails Expose Vulnerabilities",
+      "url": "https://www.crowdstrike.com/en-us/blog/when-ai-guardrails-expose-vulnerabilities/",
+      "summary": "",
+      "published_at": "2026-10-28T05:00:00+00:00",
+      "published_raw": "Oct 28, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike 2026 Legal Threat Landscape Report: eCrime Leads Attacks, China Activity Intensifies",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
+      "summary": "",
+      "published_at": "2026-10-28T05:00:00+00:00",
+      "published_raw": "Oct 28, 2026 00:00:00-0500",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: VeloCloud OrchestratorにSQLインジェクションの脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#1",
+      "summary": "VeloCloud OrchestratorにSQLインジェクションの脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: ISC BINDに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#2",
+      "summary": "ISC BINDに複数の脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のCisco製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#3",
+      "summary": "複数のCisco製品に脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: GitLabに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#4",
+      "summary": "GitLabに複数の脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Apache Tomcatに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#5",
+      "summary": "Apache Tomcatに複数の脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#6",
+      "summary": "Google Chromeに複数の脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のAtlassian製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#7",
+      "summary": "複数のAtlassian製品に脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のMozilla製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#8",
+      "summary": "複数のMozilla製品に脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: LaravelのTokenGuardに認証回避につながる脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#9",
+      "summary": "LaravelのTokenGuardに認証回避につながる脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Roundcube Webmailに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#10",
+      "summary": "Roundcube Webmailに複数の脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: MOVEit Transferに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#11",
+      "summary": "MOVEit Transferに複数の脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のOracle製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#12",
+      "summary": "複数のOracle製品に脆弱性",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#13",
+      "summary": "PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: JPCERT/CCが2026年7月から2026年9月分の「ソフトウェア等の脆弱性関連情報に関する届出状況」を公開",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#14",
+      "summary": "JPCERT/CCが2026年7月から2026年9月分の「ソフトウェア等の脆弱性関連情報に関する届出状況」を公開",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: JPCERT/CCが2026年7月から9月分の「JPCERT/CC 四半期レポート」を公開",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#15",
+      "summary": "JPCERT/CCが2026年7月から9月分の「JPCERT/CC 四半期レポート」を公開",
+      "published_at": "2026-10-28T00:07:00+00:00",
+      "published_raw": "2026-10-28T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Introducing Route 53 Resolved IP Validation for AWS Network Firewall",
+      "url": "https://aws.amazon.com/blogs/security/introducing-route-53-resolved-ip-validation-for-aws-network-firewall/",
+      "summary": "Your workloads reach most destinations by domain name, but a firewall can only act on what it sees in the traffic. For HTTP and HTTPS, AWS Network Firewall domain rules match the name that the client puts in the request, and the client chooses that name. The connections for protocols such as SSH and SSH […]",
+      "published_at": "2026-10-27T23:46:13+00:00",
+      "published_raw": "Tue, 27 Oct 2026 23:46:13 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS becomes first CSP to complete the Cloud High profile assessment with 172 services and features in scope",
+      "url": "https://aws.amazon.com/blogs/security/aws-becomes-first-csp-to-complete-the-cloud-high-profile-assessment-with-172-services-and-features-in-scope/",
+      "summary": "We continue to expand the scope of our assurance programs at Amazon Web Services (AWS) and are pleased to announce the successful completion of our first ever Cloud High (PBHH) security assessment with 172 assessed services and features. Completion of this assessment, effective September 18, 2026, makes AWS the first cloud service provider (CSP) in […]",
+      "published_at": "2026-10-27T17:50:05+00:00",
+      "published_raw": "Tue, 27 Oct 2026 17:50:05 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Part 3 – Cybersecurity journeys: The work behind the work",
+      "url": "https://aws.amazon.com/blogs/security/part-3-cybersecurity-journeys-the-work-behind-the-work/",
+      "summary": "The most important work I’ve done in cybersecurity would make for terrible television. There were no countdown clocks and no frantic typing, just a lot of careful reading, a lot of hard conversations, and the occasional quiet moment where everything finally clicked. That’s the part I want to show you this week, because the three […]",
+      "published_at": "2026-10-27T17:00:07+00:00",
+      "published_raw": "Tue, 27 Oct 2026 17:00:07 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+      "url": "https://blog.cloudflare.com/php-ctf/",
+      "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Internet safer.",
+      "published_at": "2026-10-27T13:00:00+00:00",
+      "published_raw": "Tue, 27 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "What took the Internet offline in Q3 2026",
+      "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+      "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connectivity and traffic.",
+      "published_at": "2026-10-27T13:00:00+00:00",
+      "published_raw": "Tue, 27 Oct 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue.",
+      "published_at": "2026-10-26T22:01:23+00:00",
+      "published_raw": "Mon, 26 Oct 2026 22:01:23 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260034.html",
+      "summary": "",
+      "published_at": "2026-10-26T07:25:00+00:00",
+      "published_raw": "2026-10-26T16:25+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "watch": 40
+  }
+}

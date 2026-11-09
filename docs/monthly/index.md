@@ -11,6 +11,12 @@ hide:
 <!-- AUTO:MONTHLY_INDEX:START -->
 <div class="sil-cards sil-monthly-grid">
   <article class="sil-card">
+    <a class="sil-card-title" href="2026-10.md">October 2026 Intelligence</a>
+    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-11-09</span></div>
+    <p>AI Agentの攻撃利用、LiteLLM供給網侵害、PKI Trust、PHP2Shell、DNS KSK、PQC、国内SCS評価制度を整理。</p>
+    <a class="sil-card-more" href="2026-10.md">月次サマリーを見る →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="2026-09.md">September 2026 Intelligence</a>
     <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-10-13</span></div>
     <p>AI Cyber Capability、AI-assisted Intrusion、Identity Trust、CRA報告義務、Token Protection、Cyber Dependencyを9月1〜30日の公開情報で整理。</p>

@@ -12,8 +12,8 @@ hide:
 <div class="sil-cards sil-monthly-grid">
   <article class="sil-card">
     <a class="sil-card-title" href="2026-10.md">October 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-11-09</span></div>
-    <p>AI Agentの攻撃利用、LiteLLM供給網侵害、PKI Trust、PHP2Shell、DNS KSK、PQC、国内SCS評価制度を整理。</p>
+    <div class="sil-card-meta">7 Core Themes · <span class="sil-month-reviewed">Finalized 2026-11-09</span></div>
+    <p>AI Agentの実攻撃利用、Software Supply Chain、PKI Trust、実悪用脆弱性、PQC移行、DNS運用とEvidence Governanceを横断整理。</p>
     <a class="sil-card-more" href="2026-10.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">

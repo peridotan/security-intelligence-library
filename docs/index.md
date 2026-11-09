@@ -84,8 +84,8 @@ hide:
 <div class="sil-cards">
   <article class="sil-card">
     <a class="sil-card-title" href="monthly/2026-10.md">October 2026 Intelligence</a>
-    <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-11-09</span></div>
-    <p>AI Agentの攻撃利用、LiteLLM供給網侵害、PKI Trust、PHP2Shell、DNS KSK、PQC、国内SCS評価制度を整理。</p>
+    <div class="sil-card-meta">7 Core Themes · <span class="sil-month-reviewed">Finalized 2026-11-09</span></div>
+    <p>AI Agentの実攻撃利用、Software Supply Chain、PKI Trust、実悪用脆弱性、PQC移行、DNS運用とEvidence Governanceを横断整理。</p>
     <a class="sil-card-more" href="monthly/2026-10.md">月次サマリーを見る →</a>
   </article>
   <article class="sil-card">
@@ -99,12 +99,6 @@ hide:
     <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-09-03</span></div>
     <p>攻撃時間の短縮、Identity Trust、AI Infrastructure、Frontier Cyber Capability、OT、AI規制、重要インフラを8月1日〜31日の公開情報で確定した月次Executive Summary。</p>
     <a class="sil-card-more" href="monthly/2026-08.md">月次サマリーを見る →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="monthly/2026-07.md">July 2026 Intelligence</a>
-    <div class="sil-card-meta">9 Core Themes · <span class="sil-month-reviewed">Reviewed 2026-08-26</span></div>
-    <p>Agentic Attack、Passkey登録・回復、AI Cyber Capability、AI Infrastructure、C-SCRMを横断した月次Executive Summary。</p>
-    <a class="sil-card-more" href="monthly/2026-07.md">月次サマリーを見る →</a>
   </article>
 </div>
 <!-- AUTO:HOME_MONTHLY:END -->

@@ -11,6 +11,12 @@ hide:
 <!-- AUTO:MONTHLY_INDEX:START -->
 <div class="sil-cards sil-monthly-grid">
   <article class="sil-card">
+    <a class="sil-card-title" href="2026-10.md">October 2026 Intelligence</a>
+    <div class="sil-card-meta">7 Core Themes · <span class="sil-month-reviewed">Finalized 2026-11-09</span></div>
+    <p>AI Agentの実攻撃利用、Software Supply Chain、PKI Trust、実悪用脆弱性、PQC移行、DNS運用とEvidence Governanceを横断整理。</p>
+    <a class="sil-card-more" href="2026-10.md">月次サマリーを見る →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="2026-09.md">September 2026 Intelligence</a>
     <div class="sil-card-meta">10 Core Themes · <span class="sil-month-reviewed">Finalized 2026-10-13</span></div>
     <p>AI Cyber Capability、AI-assisted Intrusion、Identity Trust、CRA報告義務、Token Protection、Cyber Dependencyを9月1〜30日の公開情報で整理。</p>

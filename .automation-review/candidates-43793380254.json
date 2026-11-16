@@ -1,0 +1,1239 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-16T02:38:33.389775+00:00",
+  "window_days": 7,
+  "candidate_count": 53,
+  "source_stats": [
+    {
+      "source_id": "nist-cybersecurity",
+      "source_name": "NIST Cybersecurity",
+      "source_type": "rss",
+      "fetched": 0
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_type": "json_feed",
+      "fetched": 109
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_type": "rss",
+      "fetched": 6
+    },
+    {
+      "source_id": "jpcert-blog",
+      "source_name": "JPCERT/CC Blog",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "ncsc-reports",
+      "source_name": "UK NCSC Reports",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "nict-security-press",
+      "source_name": "NICT Security Press Releases",
+      "source_type": "html_listing",
+      "fetched": 2
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_type": "rss",
+      "fetched": 257
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "nco-security-news",
+      "source_name": "National Cybersecurity Office (Japan) News",
+      "source_type": "csv_yearly",
+      "fetched": 74
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_type": "rss",
+      "fetched": 10
+    },
+    {
+      "source_id": "google-security-blog",
+      "source_name": "Google Security Blog",
+      "source_type": "rss",
+      "fetched": 25
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_type": "rss",
+      "fetched": 93
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_type": "rss",
+      "fetched": 20
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_type": "rss",
+      "fetched": 15
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_type": "rss",
+      "fetched": 10
+    }
+  ],
+  "source_errors": [],
+  "candidates": [
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+      "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog .",
+      "published_at": "2026-11-13T21:31:44+00:00",
+      "published_raw": "Fri, 13 Nov 2026 21:31:44 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents",
+      "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
+      "summary": "From Oct. 3 to Nov. 5, 2026, Amazon’s MadPot, a globally distributed network of decoy threat sensors, captured requests from AI agents that included operating memory from offensive campaigns that threat actors ran on ARTEX, an open-source agentic AI penetration testing framework. The ARTEX agents sent these requests to MadPot sensors configured to present as […]",
+      "published_at": "2026-11-13T20:26:42+00:00",
+      "published_raw": "Fri, 13 Nov 2026 20:26:42 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Kitesurf is now open source",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
+      "published_at": "2026-11-13T20:20:21+00:00",
+      "published_raw": "Fri, 13 Nov 2026 20:20:21 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+      "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+      "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended countermeasures.",
+      "published_at": "2026-11-13T19:26:07+00:00",
+      "published_raw": "Fri, 13 Nov 2026 19:26:07 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Jet Admin Cloud Platform Prompt Injection",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-317-01.json",
+      "summary": "A prompt injection vulnerability in all versions of Jet Admin Cloud Platform allows a remote attacker with a free account to expose sensitive .env configuration files and exfiltrate critical credentials.",
+      "published_at": "2026-11-13T16:45:20+00:00",
+      "published_raw": "2026-11-13T16:45:20Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-317-01.json",
+        "document_category": "csaf_vex",
+        "summary": "A prompt injection vulnerability in all versions of Jet Admin Cloud Platform allows a remote attacker with a free account to expose sensitive .env configuration files and exfiltrate critical credentials.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-123965"
+        ],
+        "max_cvss": 9.9,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "max CVSS 9.9 >= watch threshold 9"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Catalis WebPro SQLi",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-310-01.json",
+      "summary": "Patriot Properties WebPro 5.0 allows a remote unauthenticated attacker to execute arbitrary SQL queries against the underlying MSSQL database, enabling exfiltration of sensitive property and taxpayer information.",
+      "published_at": "2026-11-13T16:33:18+00:00",
+      "published_raw": "2026-11-13T16:33:18Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-310-01.json",
+        "document_category": "csaf_vex",
+        "summary": "Patriot Properties WebPro 5.0 allows a remote unauthenticated attacker to execute arbitrary SQL queries against the underlying MSSQL database, enabling exfiltration of sensitive property and taxpayer information.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-124041"
+        ],
+        "max_cvss": 6.5,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "product-specific CSAF advisory; source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "iDentalSoft website information exposure",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-314-01.json",
+      "summary": "Dental practice sites hosted with iDentalSoft/iDentalCloud send a JSON response to any user who loads certain pages containing sensitive information, including OAuth credentials, password hashes, and PII.",
+      "published_at": "2026-11-13T16:27:48+00:00",
+      "published_raw": "2026-11-13T16:27:48Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-314-01.json",
+        "document_category": "csaf_vex",
+        "summary": "Dental practice sites hosted with iDentalSoft/iDentalCloud send a JSON response to any user who loads certain pages containing sensitive information, including OAuth credentials, password hashes, and PII.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-126091"
+        ],
+        "max_cvss": 7.5,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "product-specific CSAF advisory; source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+      "url": "https://blog.cloudflare.com/spend-management/",
+      "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions.",
+      "published_at": "2026-11-13T14:00:00+00:00",
+      "published_raw": "Fri, 13 Nov 2026 14:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+      "url": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
+      "summary": "",
+      "published_at": "2026-11-13T06:00:00+00:00",
+      "published_raw": "Nov 13, 2026 00:00:00-0600",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "Linux Kernel TCP Flaw (CVE-2026-98432)",
+      "url": "https://sec.okta.com/articles/2026/11/linux-kernel-tcp-flaw-cve-2026-98432/",
+      "summary": "What happened? On October 25, 2026, the National Vulnerability Database published CVE-2026-98432, a vulnerability in the Linux kernel's IPv4 TCP stack. The flaw is a use-after-free: when a server handles a retransmitted SYN for a connection request, ...",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "published_raw": "Fri, 13 Nov 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "Apache HTTP Server's HTTP/2 Vulnerability (CVE-2026-119618)",
+      "url": "https://sec.okta.com/articles/2026/12/apache-http-servers-http2-vulnerability-cve-2026-119618/",
+      "summary": "What happened? On November 11, 2026, the Apache HTTP Server project released version 2.4.71 to fix a critical remote code execution vulnerability in its HTTP/2 module, mod_http2 (CVE-2026-119618). Affecting Apache HTTP Server versions 2.4.55 through ...",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "published_raw": "Fri, 13 Nov 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+      "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security Blog .",
+      "published_at": "2026-11-12T17:00:00+00:00",
+      "published_raw": "Thu, 12 Nov 2026 17:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors",
+      "url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+      "summary": "Our analysis of how attackers used the open-source Cairn AI agent framework to autonomously breach semiconductor, defense and civic targets. The post Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors appeared first on Unit 42 .",
+      "published_at": "2026-11-12T15:00:31+00:00",
+      "published_raw": "Thu, 12 Nov 2026 15:00:31 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Augmented Identity Security Solutions",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-idc-marketscape-worldwide-augmented-identity-security-solutions/",
+      "summary": "",
+      "published_at": "2026-11-12T06:00:00+00:00",
+      "published_raw": "Nov 12, 2026 00:00:00-0600",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "OpenSSH \"SSHole\" Vulnerability (CVE-2026-123158)",
+      "url": "https://sec.okta.com/articles/2026/11/openssh-sshole-vulnerability-cve-2026-123158/",
+      "summary": "Okta’s Response Our security team has reviewed the recent OpenSSH advisory and confirmed that our platform is not affected. Exploitation relies on specific configurations that are not present in our environment, and administrative access is not expos ...",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "published_raw": "Thu, 12 Nov 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "ARTEX and AI-Powered Red Teaming Tools: What Defenders Need to Know",
+      "url": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
+      "summary": "Learn what Unit 42 discovered about attacker use of AI-powered red team tools, and how to mitigate these attacks. The post ARTEX and AI-Powered Red Teaming Tools: What Defenders Need to Know appeared first on Unit 42 .",
+      "published_at": "2026-11-11T23:00:53+00:00",
+      "published_raw": "Wed, 11 Nov 2026 23:00:53 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Ease of use and secure defaults in the new AWS experience",
+      "url": "https://aws.amazon.com/blogs/security/ease-of-use-and-secure-defaults-in-the-new-aws-experience/",
+      "summary": "Starting on Amazon Web Services (AWS) is now more straightforward and more secure by default than it’s ever been. Over the past several months, we rolled out a new AWS experience that changes how you start building. It brings together a set of sensible, secure defaults, and taken one at a time, it’s easy to […]",
+      "published_at": "2026-11-11T19:57:21+00:00",
+      "published_raw": "Wed, 11 Nov 2026 19:57:21 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+      "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity. The post The global socket: how threat actors are weaponizing GSocket for stealthy C2 appeared first on Microsoft Security Blog .",
+      "published_at": "2026-11-11T19:49:57+00:00",
+      "published_raw": "Wed, 11 Nov 2026 19:49:57 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Part 4 – Cybersecurity journeys: What I’d tell my younger self",
+      "url": "https://aws.amazon.com/blogs/security/part-4-cybersecurity-journeys-what-id-tell-my-younger-self/",
+      "summary": "Over the past few weeks, I’ve introduced you to people who fell into security from the most unexpected places, who work in domains you’ve probably never heard of, and who were honest about what the job is like after the excitement fades and the real work begins. This is the final post in a four-part […]",
+      "published_at": "2026-11-11T18:21:01+00:00",
+      "published_raw": "Wed, 11 Nov 2026 18:21:01 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Lessons from 59 Linux Kernel Bug Reports",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+      "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning AI-generated findings into validated vulnerabilities and upstream fixes. The post Lessons from 59 Linux Kernel Bug Reports appeared first on Microsoft Security Blog .",
+      "published_at": "2026-11-11T16:55:00+00:00",
+      "published_raw": "Wed, 11 Nov 2026 16:55:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "unit42",
+      "source_name": "Palo Alto Networks Unit 42",
+      "source_url": "https://unit42.paloaltonetworks.com/feed/",
+      "title": "The XG Files: Falcon C2 Flying Under The (Browser) Radar",
+      "url": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/",
+      "summary": "We uncover Falcon C2, a browser-based threat framework targeting governments via malicious scripts, extensions, and the Antino implant. The post The XG Files: Falcon C2 Flying Under The (Browser) Radar appeared first on Unit 42 .",
+      "published_at": "2026-11-11T15:00:23+00:00",
+      "published_raw": "Wed, 11 Nov 2026 15:00:23 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Choosing QuePaxa, an unusual consensus algorithm",
+      "url": "https://blog.cloudflare.com/choosing-quepaxa/",
+      "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it.",
+      "published_at": "2026-11-11T14:24:46+00:00",
+      "published_raw": "Wed, 11 Nov 2026 14:24:46 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts",
+      "source_name": "JPCERT/CC Alerts",
+      "source_url": "https://www.jpcert.or.jp/english/rss/jpcert-en.rdf",
+      "title": "Security Alert: Microsoft Releases November 2026 Security Updates",
+      "url": "https://www.jpcert.or.jp/english/at/2026/at260035.html",
+      "summary": "",
+      "published_at": "2026-11-11T02:21:00+00:00",
+      "published_raw": "2026-11-11T11:21+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "注意喚起: 2026年11月マイクロソフトセキュリティ更新プログラムに関する注意喚起 (公開)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260035.html",
+      "summary": "",
+      "published_at": "2026-11-11T02:20:00+00:00",
+      "published_raw": "2026-11-11T11:20+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Cloud Software GroupのXenServerに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#1",
+      "summary": "Cloud Software GroupのXenServerに複数の脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Puppet ServerおよびOpenVoxに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#2",
+      "summary": "Puppet ServerおよびOpenVoxに複数の脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Airbyteに任意のコード実行につながる脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#3",
+      "summary": "Airbyteに任意のコード実行につながる脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Firefoxにバッファエラーの脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#4",
+      "summary": "Firefoxにバッファエラーの脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のManageEngine製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#5",
+      "summary": "複数のManageEngine製品に脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のZyxel Networks製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#6",
+      "summary": "複数のZyxel Networks製品に脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Microsoft Edgeに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#7",
+      "summary": "Microsoft Edgeに複数の脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のAbsolute Security製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#8",
+      "summary": "複数のAbsolute Security製品に脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のElastic製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#9",
+      "summary": "複数のElastic製品に脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#10",
+      "summary": "Google Chromeに複数の脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: Androidに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#11",
+      "summary": "Androidに複数の脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のBarracuda Networks製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#12",
+      "summary": "複数のBarracuda Networks製品に脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: 複数のPostgreSQL向けツールに脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#13",
+      "summary": "複数のPostgreSQL向けツールに脆弱性",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "jpcert-alerts-jp",
+      "source_name": "JPCERT/CC Alerts (Japanese)",
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "title": "Weekly Report: NCOが「個人情報の漏えい等につながる不正アクセスへの対策について - ウェブサイトやモバイルアプリに関する基本的な対策の徹底 -」を公開",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#14",
+      "summary": "NCOが「個人情報の漏えい等につながる不正アクセスへの対策について - ウェブサイトやモバイルアプリに関する基本的な対策の徹底 -」を公開",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "published_raw": "2026-11-11T09:07+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "okta-security",
+      "source_name": "Okta Security",
+      "source_url": "https://sec.okta.com/rss.xml",
+      "title": "Node.js Project: November 11 Security Releases",
+      "url": "https://sec.okta.com/articles/2026/11/node.js-project-november-11-security-releases/",
+      "summary": "On November 11, 2026, the Node.js project released security updates addressing multiple vulnerabilities across core modules. Read on for Okta's response and customer recommendations.",
+      "published_at": "2026-11-11T00:00:00+00:00",
+      "published_raw": "Wed, 11 Nov 2026 00:00:00 GMT",
+      "category_hint": "identity-security",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Reduce alert fatigue by customizing threat detection features in Amazon GuardDuty",
+      "url": "https://aws.amazon.com/blogs/security/reduce-alert-fatigue-by-customizing-threat-detection-features-in-amazon-guardduty/",
+      "summary": "The teams responsible for security today don’t have a problem with the number of alerts they receive; they have a problem turning those alerts into something truly actionable. When an analyst concludes an investigation with “this was caused by our vulnerability scanner” or “this account is configured to share Amazon Machine Images (AMIs) publicly on […]",
+      "published_at": "2026-11-10T23:04:52+00:00",
+      "published_raw": "Tue, 10 Nov 2026 23:04:52 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "Detecting sleeper agents hiding in AI model neurons",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
+      "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than ten neurons to inject a short payload; Microsoft Research has also found that this threat is detectable by frontier agents, which can identify anomalous weight edits. The post Detecting sleeper agents hiding in AI model neurons appeared first on Microsoft Security Blog .",
+      "published_at": "2026-11-10T23:00:00+00:00",
+      "published_raw": "Tue, 10 Nov 2026 23:00:00 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "AsiaInfo BSS multiple vulnerabilities",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-313-03.json",
+      "summary": "AsiaInfo Business Support System (BSS) contains multiple vulnerabilities. In the worst case, a remote, unauthenticated attacker could provision a new account with administrative privileges or take over existing accounts, and perform other administrative actions.",
+      "published_at": "2026-11-10T21:40:20+00:00",
+      "published_raw": "2026-11-10T21:40:20Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-313-03.json",
+        "document_category": "csaf_vex",
+        "summary": "AsiaInfo Business Support System (BSS) contains multiple vulnerabilities. In the worst case, a remote, unauthenticated attacker could provision a new account with administrative privileges or take over existing accounts, and perform other administrative actions.",
+        "vulnerability_count": 2,
+        "cves": [
+          "CVE-2026-125297",
+          "CVE-2026-125298"
+        ],
+        "max_cvss": 9.8,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "max CVSS 9.8 >= watch threshold 9"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS refreshes ProcessUnity Global Risk Exchange assessment to enhance customer’s third-party due diligence",
+      "url": "https://aws.amazon.com/blogs/security/aws-refreshes-processunity-global-risk-exchange-assessment-to-enhance-customers-third-party-due-diligence/",
+      "summary": "Amazon Web Services (AWS) is pleased to announce renewal of the AWS ProcessUnity Global Risk Exchange assessment. This validated assessment report helps customers perform effective cloud supplier due diligence on AWS and enhances their third-party risk management process. What is the AWS ProcessUnity Global Risk Exchange assessment Many customers use third-party cyber risk management (TPCRM) […]",
+      "published_at": "2026-11-10T21:31:14+00:00",
+      "published_raw": "Tue, 10 Nov 2026 21:31:14 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "BeeS ERP administrative console IDOR",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-313-04.json",
+      "summary": "BeeS Software Solutions ERP before 04 September 2026 allows any low-privileged user to navigate directly to the administrative dashboard endpoint and gain access to the administrative console, including unrestricted access to institutional, employee, and student data.",
+      "published_at": "2026-11-10T19:44:23+00:00",
+      "published_raw": "2026-11-10T19:44:23Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-313-04.json",
+        "document_category": "csaf_vex",
+        "summary": "BeeS Software Solutions ERP before 04 September 2026 allows any low-privileged user to navigate directly to the administrative dashboard endpoint and gain access to the administrative console, including unrestricted access to institutional, employee, and student data.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-126123"
+        ],
+        "max_cvss": 6.5,
+        "exploitation": "None"
+      },
+      "triage": {
+        "route": "vulnerability",
+        "draft_eligible": false,
+        "reasons": [
+          "product-specific CSAF advisory; source default route: vulnerability"
+        ]
+      }
+    },
+    {
+      "source_id": "cisa-csaf-it",
+      "source_name": "CISA CSAF IT Advisories",
+      "source_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
+      "title": "Chargemap Web Platform multiple vulnerabilities",
+      "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2026/va-26-313-01.json",
+      "summary": "U.S. Geological Survey Area Species Management Research Program (ARMI) accepts any uploaded file and stores the file under '/uploads/{upload-file}'. A remote, authenticated attacker could upload a crafted PHP file that executes and returns command output from the server when accessed.",
+      "published_at": "2026-11-10T19:36:29+00:00",
+      "published_raw": "2026-11-10T19:36:29Z",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {
+        "detail_type": "csaf",
+        "detail_url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2026/va-26-313-01.json",
+        "document_category": "csaf_vex",
+        "summary": "U.S. Geological Survey Area Species Management Research Program (ARMI) accepts any uploaded file and stores the file under '/uploads/{upload-file}'. A remote, authenticated attacker could upload a crafted PHP file that executes and returns command output from the server when accessed.",
+        "vulnerability_count": 1,
+        "cves": [
+          "CVE-2026-107356"
+        ],
+        "max_cvss": 8.8,
+        "exploitation": "PoC"
+      },
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "SSVC exploitation indicates PoC"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Digital sovereignty at re:Invent 2026: Sessions you won’t want to miss",
+      "url": "https://aws.amazon.com/blogs/security/digital-sovereignty-at-reinvent-2026-sessions-you-wont-want-to-miss/",
+      "summary": "AWS re:Invent returns to Las Vegas for cloud and AI’s biggest week from November 30–December 4, 2026. This year we have over 2,200 sessions, 70 percent of which are interactive, led by experts from Amazon Web Services (AWS), our customers, and our partners. With that much to choose from, we’ve pulled together the sessions built […]",
+      "published_at": "2026-11-10T18:10:41+00:00",
+      "published_raw": "Tue, 10 Nov 2026 18:10:41 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "ipa-security-alerts",
+      "source_name": "IPA Security Alerts (Japanese)",
+      "source_url": "https://www.ipa.go.jp/security/rss/alert.rdf",
+      "title": "Microsoft 製品の脆弱性対策について(2026年11月)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/1111-ms.html",
+      "summary": "",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "published_raw": "2026-11-11T00:00:00+09:00",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "crowdstrike-blog",
+      "source_name": "CrowdStrike Blog",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/feed/",
+      "title": "November 2026 Patch Tuesday: 1,252 CVEs Include One Zero-Day and 68 Critical Vulnerabilities",
+      "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
+      "summary": "",
+      "published_at": "2026-11-10T06:00:00+00:00",
+      "published_raw": "Nov 10, 2026 00:00:00-0600",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "nco-security-news",
+      "source_name": "National Cybersecurity Office (Japan) News",
+      "source_url": "https://www.cyber.go.jp/csv/2026.csv",
+      "title": "政府情報システムのためのセキュリティ評価制度（ISMAP）運営委員会第43回会合を開催",
+      "url": "https://www.cyber.go.jp/policy/group/general/ismap/unei.html#ismapunei43",
+      "summary": "",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "published_raw": "2026-11-10",
+      "category_hint": "regulation",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "microsoft-security-blog",
+      "source_name": "Microsoft Security Blog",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+      "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees. The post FORGE Lab uses agentic tools to identify memory safety issues in Rust appeared first on Microsoft Security Blog .",
+      "published_at": "2026-11-09T20:17:31+00:00",
+      "published_raw": "Mon, 09 Nov 2026 20:17:31 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Help defend against memory poisoning in Amazon Bedrock AgentCore with multi-layer write validation",
+      "url": "https://aws.amazon.com/blogs/security/help-defend-against-memory-poisoning-in-amazon-bedrock-agentcore-with-multi-layer-write-validation/",
+      "summary": "Amazon Bedrock AgentCore Memory helps AI agents maintain context across sessions through persistent short-term and long-term memory. Because memory content is automatically retrieved and injected into future conversations, the integrity of what gets written to memory directly shapes future agent behavior, which makes the write path a valuable control point to strengthen. AgentCore already provides […]",
+      "published_at": "2026-11-09T19:05:52+00:00",
+      "published_raw": "Mon, 09 Nov 2026 19:05:52 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "aws-security-blog",
+      "source_name": "AWS Security Blog",
+      "source_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "Simplify cross-partition access with AWS IAM outbound identity federation",
+      "url": "https://aws.amazon.com/blogs/security/simplify-cross-partition-access-with-aws-iam-outbound-identity-federation/",
+      "summary": "You can now use tokens from AWS Identity and Access Management (IAM) outbound federation to assume roles in other Amazon Web Services (AWS) partitions. When your workloads run across AWS partitions such as Commercial, China, GovCloud (US), and European Sovereign Cloud, a workload in one partition might need to access resources or communicate with AWS […]",
+      "published_at": "2026-11-09T16:08:30+00:00",
+      "published_raw": "Mon, 09 Nov 2026 16:08:30 +0000",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    },
+    {
+      "source_id": "cloudflare-blog",
+      "source_name": "Cloudflare Blog",
+      "source_url": "https://blog.cloudflare.com/rss/",
+      "title": "Launching the Vite Ecosystem Fund",
+      "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+      "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare.",
+      "published_at": "2026-11-09T13:00:00+00:00",
+      "published_raw": "Mon, 09 Nov 2026 13:00:00 GMT",
+      "category_hint": "cybersecurity",
+      "trust": "primary",
+      "enrichment": {},
+      "triage": {
+        "route": "watch",
+        "draft_eligible": false,
+        "reasons": [
+          "source default route: watch"
+        ]
+      }
+    }
+  ],
+  "triage_policy_version": 1,
+  "route_counts": {
+    "watch": 50,
+    "vulnerability": 3
+  }
+}

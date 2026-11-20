@@ -27,7 +27,7 @@ Security Intelligence Libraryは、公開情報に基づくサイバーセキュ
 
 初めての方は、[Security Intelligence Libraryの仕組み（How It Works）](how-it-works.md)をご覧ください。情報の収集から選定、AIと人間の役割、記事公開、月次・四半期レビューまでの流れを説明しています。
 
-この仕組みを自分で再現してみたい方は、[Build Your Own Security Intelligence Library](build-your-own.md)をご覧ください。元の記事を転載せず、MITライセンスのコードを使って独自サイトを立ち上げる手順を解説しています。
+本サイトは、セキュリティ情報を閲覧・活用するための情報提供サイトであり、同等の環境を構築するための完成済み製品や構築支援サービスとして提供するものではありません。ソフトウェア部分の利用条件は下記の「Copyright and Licensing」を参照してください。
 
 ## Editorial Policy
 

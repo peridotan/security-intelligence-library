@@ -1,0 +1,55 @@
+name: Package Agent Workflow Kit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - AGENTS.md
+      - ".agents/skills/**"
+      - "agent-kit/**"
+      - "scripts/package_agent_kit.py"
+      - "LICENSE-CODE.txt"
+      - ".github/workflows/package-agent-kit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write  # only this packaging workflow may create the named GitHub release
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Create and verify allowlisted ZIP
+        run: python scripts/package_agent_kit.py --output dist/sil-agent-kit.zip
+
+      - name: Confirm ZIP is readable
+        run: python -m zipfile -t dist/sil-agent-kit.zip
+
+      - name: Upload workflow artifact (temporary)
+        uses: actions/upload-artifact@v6
+        with:
+          name: sil-agent-kit
+          path: dist/sil-agent-kit.zip
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Publish first version as durable release asset
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Do not replace an existing, published version; use a new tag for updates.
+          if gh release view agent-kit-v1.0.0 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Existing v1.0.0 release preserved. Use a new tag for changed Kit contents."
+          else
+            gh release create agent-kit-v1.0.0 dist/sil-agent-kit.zip \
+              --repo "$GITHUB_REPOSITORY" \
+              --target "$GITHUB_SHA" \
+              --title "Security Intelligence Agent Workflow Kit v1.0.0" \
+              --notes "MIT-licensed AGENTS.md, six SKILL.md workflows and a starter prompt. No SIL articles or website clone. Read README.md and NOTICE.md inside the ZIP before reuse." \
+              --latest=false
+          fi

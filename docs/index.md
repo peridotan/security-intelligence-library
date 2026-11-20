@@ -11,6 +11,8 @@ hide:
   <p>サイバーセキュリティ、AI、Identity、規制の変化を、<strong>経営判断とセキュリティ実務につながる形で整理するナレッジベース。</strong></p>
 </section>
 
+このLibraryが**どのように情報を収集・選定・検証・公開しているか**は、[Security Intelligence Libraryの仕組み（How It Works）](about/how-it-works.md)で紹介しています。
+
 ## Current Intelligence
 
 <div class="sil-section-lead">現在注目すべき重要テーマを6件掲載しています。月ごとの動向は <a href="monthly/index.md">Monthly Intelligence</a> から確認できます。</div>

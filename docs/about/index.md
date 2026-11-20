@@ -25,6 +25,8 @@ Security Intelligence Libraryは、公開情報に基づくサイバーセキュ
 | **Topics / Tags** | 複数記事を主要論点・詳細Keywordから横断探索 |
 | **About** | Editorial Policy、Evidence、AI利用、権利、鮮度管理等の方法論を説明 |
 
+初めての方は、[Security Intelligence Libraryの仕組み（How It Works）](how-it-works.md)をご覧ください。情報の収集から選定、AIと人間の役割、記事公開、月次・四半期レビューまでの流れを説明しています。
+
 ## Editorial Policy
 
 ### 情報源の優先順位

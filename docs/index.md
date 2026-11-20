@@ -132,7 +132,6 @@ hide:
 
 ## How to use this library
 
-- **自分のLibraryを作る** — [Build Your Own](about/build-your-own.md)でサイト公開と情報収集の再現手順を確認
 - **横断検索** — 右上の検索からテーマ、製品名、技術用語を検索
 - **月次で振り返る** — Monthly Intelligenceで「その月に何が重要だったか」を確認
 - **カテゴリ / Topicから探索** — 分野別・論点別に関連記事をたどる

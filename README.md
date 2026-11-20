@@ -2,6 +2,10 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## 開発者向けAIエージェント運用指示
+
+リポジトリの開発・編集ルールは [AGENTS.md](AGENTS.md)、作業別の手順は [.agents/skills/](.agents/skills/) に整理しています。配布用の初期プロンプトと利用上の注意は [agent-kit/README.md](agent-kit/README.md) を参照してください。これらは**開発者向けの運用テンプレート**であり、SIL公開サイト自体を構築用製品として提供するものではありません。
+
 ## 情報収集・選定基準
 
 候補情報の採否、重複確認、Library / Vulnerability / Watchへの振り分け、5軸・100点の試行評価、判断理由の記録方法を [SECURITY_INTELLIGENCE_SELECTION_POLICY.md](SECURITY_INTELLIGENCE_SELECTION_POLICY.md) にまとめています。採点は人間の編集判断を支援するもので、自動公開や既存の収集ルールの変更は行いません。

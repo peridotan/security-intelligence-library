@@ -39,6 +39,9 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
+      - name: Validate distributable agent kit (no editorial content)
+        run: python scripts/package_agent_kit.py --output /tmp/sil-agent-kit.zip
+
       - name: Run official source adapter regression tests
         run: python -m unittest discover -s scripts -p "test_official_*_sources.py" -v
 

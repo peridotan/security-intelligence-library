@@ -130,6 +130,8 @@ hide:
 
 ## How to use this library
 
+まず[Security Intelligence Libraryの仕組み（How It Works）](about/how-it-works.md)で、収集・選定・出典確認・公開の流れを確認できます。
+
 - **横断検索** — 右上の検索からテーマ、製品名、技術用語を検索
 - **月次で振り返る** — Monthly Intelligenceで「その月に何が重要だったか」を確認
 - **カテゴリ / Topicから探索** — 分野別・論点別に関連記事をたどる

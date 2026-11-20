@@ -53,6 +53,12 @@ Security Intelligence Libraryは、公開情報に基づくサイバーセキュ
 
 Management ImpactとUrgencyは別概念です。
 
+### 情報の選定基準
+
+本Libraryでは、経営・事業への影響、セキュリティ対策への影響、新規性、日本企業への関連性、根拠の確かさを重視して候補情報を選定します。スコアリングは試行的な編集補助であり、点数だけで記事を公開することはありません。既存記事との重複・更新関係を照合し、個別脆弱性情報は原則としてVulnerability Intelligenceへ、判断材料が不足する情報はWatchへ振り分けます。
+
+詳しい判断フロー、5軸評価、記録方法は [Security Intelligence Selection Policy](https://github.com/peridotan/security-intelligence-library/blob/main/SECURITY_INTELLIGENCE_SELECTION_POLICY.md) にまとめています。
+
 ## 引用・画像・商標の扱い
 
 - **引用** — 第三者文章の長文転載は行わず、原則として独自の表現で要約します。原文表現そのものが必要な場合のみ、必要な範囲に限定して引用し、出典を明示します。

@@ -2,6 +2,10 @@
 
 Cybersecurity / Identity Security / AI Security / Regulation / Management View の公開情報をMarkdownで蓄積し、Zensical + GitHub Pagesで公開するナレッジベースです。
 
+## 自分のSecurity Intelligence Libraryを構築する
+
+元の記事を転載せず、MITライセンスの構築・収集コードを選んで自分のサイトを作るための[Build Your Ownガイド](docs/about/build-your-own.md)を公開しています。サイト公開から候補収集・レビューPRまでを段階的に解説し、Suite・AI連携は別途設定が必要なことも明記しています。
+
 ## 情報収集・選定基準
 
 候補情報の採否、重複確認、Library / Vulnerability / Watchへの振り分け、5軸・100点の試行評価、判断理由の記録方法を [SECURITY_INTELLIGENCE_SELECTION_POLICY.md](SECURITY_INTELLIGENCE_SELECTION_POLICY.md) にまとめています。採点は人間の編集判断を支援するもので、自動公開や既存の収集ルールの変更は行いません。

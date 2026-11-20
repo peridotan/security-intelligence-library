@@ -4,6 +4,10 @@ This document is the source-of-truth instruction for public-web discovery that s
 `config/intelligence_sources.yml`. Its purpose is to find high-signal developments missed by
 configured feeds without creating duplicate Library articles or repeating accepted triage.
 
+## Editorial selection policy
+
+For the editorial rationale and optional pilot scoring rubric (not an automation or publication gate), see [SECURITY_INTELLIGENCE_SELECTION_POLICY.md](SECURITY_INTELLIGENCE_SELECTION_POLICY.md). Keep the current content-relation, route, output cap and human-review rules below unchanged. In review records, capture the reasons for inclusion, exclusion or deferral; a score cannot override a duplicate or unverified-source decision.
+
 ## Scope
 
 Search only for recent developments in:

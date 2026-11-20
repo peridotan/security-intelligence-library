@@ -1,0 +1,32 @@
+name: Validate Build Your Own Reproduction
+
+on:
+  pull_request:
+    paths:
+      - "docs/about/build-your-own.md"
+      - "scripts/smoke_build_your_own.sh"
+      - ".github/workflows/build-your-own-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    name: Fresh project, MIT code import and local Triage
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout proposed changes
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install Zensical and YAML dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run isolated reproduction smoke test
+        run: bash scripts/smoke_build_your_own.sh

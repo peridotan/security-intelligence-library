@@ -2,6 +2,10 @@
 
 Phase 2A.5 adds deterministic routing between source collection and human review.
 
+## Editorial selection policy
+
+[SECURITY_INTELLIGENCE_SELECTION_POLICY.md](SECURITY_INTELLIGENCE_SELECTION_POLICY.md) consolidates the human editorial criteria and introduces a non-binding pilot score for comparing Library candidates. The deterministic routing in this document and `config/intelligence_triage.yml` remains authoritative for the automated workflow; scores do not change a route or make articles publication-eligible.
+
 ## Routes
 
 - `library`: eligible for the future Security Intelligence Library article-drafting phase

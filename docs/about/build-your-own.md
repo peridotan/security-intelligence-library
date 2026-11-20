@@ -211,7 +211,22 @@ GitHub Actionsの「Collect Security Intelligence Candidates」から、まず *
 - [ ] ローカルビルド、PR差分、公開ページ、モバイル表示を確認した
 - [ ] 秘密情報、顧客情報、個人情報、非公開資料を含めていない
 
-## 7. 困ったとき・今後の拡張
+## 7. どこまで再現性を確認したのか
+
+本リポジトリでは、[独立した再現テスト](https://github.com/peridotan/security-intelligence-library/blob/main/scripts/smoke_build_your_own.sh)を用意しています。GitHub Actionsの[Build Your Own Reproduction](https://github.com/peridotan/security-intelligence-library/blob/main/.github/workflows/build-your-own-smoke.yml)で、ガイドの変更時に検証します。
+
+このテストは一時ディレクトリに新規Zensicalサイトと独立したGitリポジトリを作成し、**SILのコードだけを選択取得**して、ローカルのRSS試験データを収集・Triageまで流します。テスト完了後は一時ファイルを削除し、元の公開リポジトリや記事を変更しません。
+
+実行コマンド（元のリポジトリを取得した状態で実行）：
+
+~~~bash
+python -m pip install -r requirements.txt
+bash scripts/smoke_build_your_own.sh
+~~~
+
+このテストで確認するのは**最小構成のサイト生成・ビルド、MITコードの選択取得、RSS収集とWatch振り分け**です。実際の新規GitHubリポジトリ作成、Pagesへのデプロイ、GitHub ActionsからのレビューPR作成、記事・Evidenceの本番運用、AIや他ダッシュボードとの連携は検証対象外です。これらは各自の権限・運用条件で別途確認してください。
+
+## 8. 困ったとき・今後の拡張
 
 | 症状 | 確認ポイント |
 | --- | --- |

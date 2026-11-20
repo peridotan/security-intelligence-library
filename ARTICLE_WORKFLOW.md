@@ -6,6 +6,8 @@
 
 AIの出典照合と**人間の確認・承認は異なる行為**です。CIの成功は情報の真実性や人間の実レビューを保証しません。
 
+候補の編集上の採否、評価スコア（試行）、判断理由の記録基準は [SECURITY_INTELLIGENCE_SELECTION_POLICY.md](SECURITY_INTELLIGENCE_SELECTION_POLICY.md) を参照してください。点数だけで採否や公開を決めるものではなく、従来どおり人間の判断とEvidence Reviewを必要とします。
+
 ## 全体像
 
 | Phase | 主担当 | 実施内容 | 完了条件 |

@@ -31,6 +31,7 @@ material or of elements that are not legally protectable.
 The software portions of the repository are licensed under the MIT License.
 This includes, unless otherwise stated:
 
+- `AGENTS.md`, `.agents/skills/`, and `agent-kit/` (reusable agent/workflow scaffolding)
 - `scripts/`
 - `.github/workflows/`
 - `docs/stylesheets/`

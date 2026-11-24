@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/optimjack-third-party-script.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "未解決だったモバイルExploit Kitの主張は本文・Evidenceから除外。残る主張について人間の一次情報確認が必要。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に公開を明示承認。承認対象コミット: 29e14d02c1e42cc80a7cc625d297d5f59938598a"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "2026年11月16日、Optimizely Web Experimentationの登録フローの欠陥が悪用され、対象プロジェクトのProject JavaScriptへ悪意あるコードが挿入された。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf",
+        "locator": "Section 2 Executive summary; Section 7 Attack vector and how it was closed",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "Optimizely公式の初期報告。"
+    },
+    {
+      "id": "C02",
+      "statement": "最初の悪意あるコード書き込みは07:51 UTC、検知は13:34、修正は16:10、全対象プロジェクトからの削除は22:24だった。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf",
+        "locator": "Section 4 Timeline of events",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "すべて2026年11月16日UTC。"
+    },
+    {
+      "id": "C03",
+      "statement": "Unit 42は、少なくとも178組織のサイト訪問者へ改ざんコードが配信されたと報告した。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
+        "locator": "What Happened in OPTIMJACK; Conclusion",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "確定被害組織数ではなくUnit 42の観測として記載。"
+    },
+    {
+      "id": "C05",
+      "statement": "第三者スクリプトはベンダー審査だけでなく、ページ単位の実行・通信・入力アクセス制御で封じ込めるべきである。",
+      "section": "## 推奨アクション",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "正規CDNからの配信自体はコードの安全性を保証せず、利用企業が管理できるCSP、iframe、ページ配置が被害範囲を左右するため。 CSPは許可済み配信元の改ざんを単独で防止するものではなく、ページ分離と不要タグの削除を併用する。"
+    },
+    {
+      "id": "C06",
+      "statement": "Optimizelyは11月19日更新の公式アドバイザリで、影響を受けた顧客は5%未満と報告した。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://support.optimizely.com/hc/en-us/articles/50521849710605-Security-Advisory-Web-Experimentation-Security-Incident-Updated-November-19-2026",
+        "locator": "本文第3段落（Less than 5%）",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "Unit 42の配信先組織数や実際の情報窃取被害数とは異なる指標。"
+    }
+  ]
+}

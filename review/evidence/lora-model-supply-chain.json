@@ -2,10 +2,10 @@
   "schema_version": 1,
   "article_path": "docs/ai-security/lora-model-supply-chain.md",
   "review": {
-    "status": "pending",
-    "reviewed_by": null,
-    "reviewed_at": null,
-    "notes": "16件の実験結果を一般母集団へ外挿しない。検出器の製品化・再現性・公開状況は人間が確認する。"
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "16件の実験結果を一般母集団へ外挿しない。検出器の製品化・再現性・公開状況は人間が確認する。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に公開を明示承認。承認対象コミット: 776fc52d1bc3e08387d6f9d46a98ab4df50f34c6"
   },
   "claims": [
     {

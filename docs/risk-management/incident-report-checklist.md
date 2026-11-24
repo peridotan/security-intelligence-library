@@ -3,7 +3,7 @@ title: インシデント調査報告書チェックリスト ― 「不明」�
 date: 2026-11-24
 updated: 2026-11-24
 reviewed: 2026-11-24
-review_status: Needs Review
+review_status: Current
 source_period: 2026-11
 description: JPCERT/CCのチェックリストを基に、外部委託調査の目的合意、証拠追跡、未確認事項、再発防止策を経営判断へ接続する方法を整理する。
 category: Management View
@@ -30,7 +30,7 @@ impact_types:
   - Decision Quality
 urgency: Near-term
 evidence: Confirmed
-status: draft
+status: published
 pptx: ""
 media_rights: none
 ---

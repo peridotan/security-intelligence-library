@@ -2,10 +2,10 @@
   "schema_version": 1,
   "article_path": "docs/risk-management/incident-report-checklist.md",
   "review": {
-    "status": "pending",
-    "reviewed_by": null,
-    "reviewed_at": null,
-    "notes": "チェックリストは技術的妥当性を保証しない。組織の契約・法務要件への適用は人間が確認する。"
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "チェックリストは技術的妥当性を保証しない。組織の契約・法務要件への適用は人間が確認する。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に公開を明示承認。承認対象コミット: 776fc52d1bc3e08387d6f9d46a98ab4df50f34c6"
   },
   "claims": [
     {

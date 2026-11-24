@@ -3,7 +3,7 @@ title: Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検�
 date: 2026-11-24
 updated: 2026-11-24
 reviewed: 2026-11-24
-review_status: Needs Review
+review_status: Current
 source_period: 2026-11
 description: CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。
 category: AI Security
@@ -31,7 +31,7 @@ impact_types:
   - Runtime Security
 urgency: Near-term
 evidence: Assessment
-status: draft
+status: published
 pptx: ""
 media_rights: none
 ---

@@ -3,7 +3,7 @@ title: Cairnによる自律攻撃 ― 実際の侵入活動で観測されたZer
 date: 2026-11-24
 updated: 2026-11-24
 reviewed: 2026-11-24
-review_status: Needs Review
+review_status: Current
 source_period: 2026-11
 description: Amazon Threat Intelligenceが観測したCairnによる自律的な侵入活動を基に、脆弱性発見から悪用までの時間短縮と防御側の設計課題を整理する。
 category: AI Security
@@ -31,7 +31,7 @@ impact_types:
   - Vulnerability Risk
 urgency: Immediate
 evidence: Observed
-status: draft
+status: published
 pptx: ""
 media_rights: none
 ---

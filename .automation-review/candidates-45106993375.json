@@ -232,10 +232,11 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "source default route: watch",
+          "Editorial review 2026-11-24: proposed new Library article (pilot score 93/100). AWS-reported autonomous vulnerability discovery in a distinct observed campaign; verify claims at drafting."
         ]
       }
     },
@@ -1083,10 +1084,11 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "source default route: watch",
+          "Editorial review 2026-11-24: proposed new Library article (pilot score 81/100). Japanese incident investigation reporting quality and oversight; verify original checklist at drafting."
         ]
       }
     },
@@ -1163,10 +1165,11 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "source default route: watch",
+          "Editorial review 2026-11-24: proposed new Library article (pilot score 91/100). Distinct third-party web script supply-chain case; verify scope and evidence at drafting."
         ]
       }
     },
@@ -1363,17 +1366,19 @@
       "trust": "primary",
       "enrichment": {},
       "triage": {
-        "route": "watch",
-        "draft_eligible": false,
+        "route": "library",
+        "draft_eligible": true,
         "reasons": [
-          "source default route: watch"
+          "source default route: watch",
+          "Editorial review 2026-11-24: proposed new Library article (pilot score 81/100). Model-weight supply-chain risk distinct from software dependency cases; verify research at drafting."
         ]
       }
     }
   ],
   "triage_policy_version": 1,
   "route_counts": {
-    "watch": 61,
-    "vulnerability": 1
+    "library": 4,
+    "vulnerability": 1,
+    "watch": 57
   }
 }

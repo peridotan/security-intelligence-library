@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/aws-mldsa-supply-chain-governance.md",
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": "AWSの構成例と組織固有のAlgorithm Policyを区別し、SCP/IAMの統制範囲外を人間が確認する。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "AWSは2026年10月12日、ML-DSA Software Supply Chain構築とAlgorithm Policy統制の二部構成記事を公開した。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/",
+        "locator": "記事タイトル、Byline、Part 1/Part 2の説明",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "Part 2も同日公開であることを確認済み。"
+    },
+    {
+      "id": "C02",
+      "statement": "Part 1はAWS KMS、AWS Private CA、IAM Roles Anywhere、Artifact署名、SBOM署名の5つを耐量子Supply Chainの柱として示す。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/",
+        "locator": "Architecture overview: Five pillars of a quantum-resistant supply chain",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "5つの柱と対象Artifactを確認済み。"
+    },
+    {
+      "id": "C03",
+      "statement": "AWS KMSのML-DSA Key SpecはML_DSA_44、ML_DSA_65、ML_DSA_87で、3種類ともSigning AlgorithmはML_DSA_SHAKE_256である。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "Background: Key spec compared to signing algorithm",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "表記のunderscoreとKeySpec/SigningAlgorithmの違いを確認済み。"
+    },
+    {
+      "id": "C04",
+      "statement": "Parameter Setの作成・利用制御にはkms:SigningAlgorithmではなくkms:KeySpecを使う必要がある。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "Background: Key spec compared to signing algorithm, items 1-2",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "AWSによるService挙動の説明として扱う。"
+    },
+    {
+      "id": "C05",
+      "statement": "Part 2のML-DSA-44除外はPolicy例であり、AWSはML-DSA-44をFIPS 204の有効な標準Parameter Setと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "Introduction note following the example policy, paragraphs on ML-DSA-44",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "ML-DSA-44を脆弱と誤記しない。"
+    },
+    {
+      "id": "C06",
+      "statement": "SCPはMember AccountとOUに適用できるがAWS OrganizationsのManagement Accountには適用されない。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "Organization and account-level blocking using SCPs",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "Management Accountを統制済みと誤認しない。"
+    },
+    {
+      "id": "C07",
+      "statement": "AWSのSCP/IAM例はAWS Service APIを対象とし、EC2、Container、Lambda上のApplicationやOpenSSLによる暗号処理までは統制できない。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "Scope and limitations",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "Policy適用範囲外を明示している。"
+    },
+    {
+      "id": "C08",
+      "statement": "PQC移行ではCode Signing、Firmware、Container、SBOM、Build Agent IdentityをCrypto Inventoryへ含め、長寿命Artifactから優先順位を決めるべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "AWSの構成要素とforge-laterリスクを、日本企業の移行計画へ落とし込んだLibraryの評価。"
+    },
+    {
+      "id": "C09",
+      "statement": "AWSのPolicy例はそのまま適用せず、自社の承認Algorithm、Account境界、統制外領域、例外を定義して非本番検証すべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "AWS自身が例を出発点とし非本番でのTestingと環境調整を求め、統制範囲の限界も明示しているため。"
+    },
+    {
+      "id": "C10",
+      "statement": "AWSは、将来の暗号学的に有意な量子計算機（CRQC）によって従来の公開鍵署名を偽造できるようになった場合、長寿命のFirmwareや署名済みArtifactの真正性が将来損なわれ得ると説明している。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/",
+        "locator": "Understanding the harvest now, forge later threat (paragraphs 1–4; embedded device firmware scenario)",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-20"
+      },
+      "review_note": "2026-10-20にAWS原文の節を照合。将来のCRQCが実現した場合の条件付きリスクであり、現時点での実害・実現済みとして扱わない。"
+    },
+    {
+      "id": "C11",
+      "statement": "AWS KMSではML-DSA各Parameter SetのSigningAlgorithmがML_DSA_SHAKE_256である一方、AWS Private CAのCertificateAuthorityConfigurationではKeyAlgorithmとSigningAlgorithmにML_DSA_44/65/87のParameter Set名を直接指定し、SigningAlgorithmにML_DSA_SHAKE_256を指定できない。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "AWS Private CA section: Setting the ML-DSA value in CertificateAuthorityConfiguration (and Background: Key spec compared to signing algorithm)",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-20"
+      },
+      "review_note": "2026-10-20にAWS原文のKMS/Private CA API表記の差を照合。実際の非本番API操作による検証ではなくAWS仕様の確認。"
+    },
+    {
+      "id": "C12",
+      "statement": "AWS Part 1はIAM Roles AnywhereをML-DSAのWorkload Identity構成に使用するが、Part 2はIAM Roles Anywhereに対するサービス固有のAlgorithm Policy統制を対象外としている。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "Scope and limitations: paragraph covering CloudFront, API Gateway, and IAM Roles Anywhere as out-of-scope services",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-20"
+      },
+      "review_note": "2026-10-20にAWS原文を照合。Part 1での利用とPart 2での統制対象外を区別した。"
+    },
+    {
+      "id": "C13",
+      "statement": "AWSは特定のML-DSA Variantのみを禁止するDeny-listでは将来追加される未評価Variantが既定で許可され得ると説明し、承認済みVariant以外を拒否するDefault-deny方式を代替として示している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/",
+        "locator": "A note on cryptographic agility: deny-list default-allow risk and StringNotEquals approved-set alternative",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "将来追加Variantの扱いは組織Policy選定の論点。default-denyも新Variant追加時のPolicy変更が必要。"
+    },
+    {
+      "id": "C14",
+      "statement": "AWS Part 1はCNSA 2.0の対象である米国National Security SystemsでML-DSAを署名に使う場合、ML-DSA-87 Parameter Setのみが許容され、ML-DSA-65の商用例をそのまま利用できないと説明している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/",
+        "locator": "Regulatory timeline and recommended actions: Note for NSS customers and other CNSA 2.0 adopters",
+        "published_at": "2026-10-12",
+        "accessed_at": "2026-10-29"
+      },
+      "review_note": "米国NSS向けと商用・日本国内の一般要件を明確に区別。ML-DSA署名パラメータについてのみの主張（他のCNSA-approved schemesは存在）。"
+    }
+  ]
+}

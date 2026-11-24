@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/cybersecurity/unit42-initial-access-vectors-september-2026.md",
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "notes": "Unit 42の観測範囲を日本全体・市場全体へ一般化していないことを人間が確認する。"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "Unit 42は2026年10月16日、2026年9月に観測した初期侵入ベクトルの主要5類型を公表した。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/",
+        "locator": "記事冒頭および Table 1: Top 5 Initial Access Threat Vectors",
+        "published_at": "2026-10-16",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "公開日と対象期間を確認済み。"
+    },
+    {
+      "id": "C02",
+      "statement": "Unit 42のTable 1は公開アプリケーション悪用、資格情報悪用、フィッシング、サプライチェーン侵害、Drive-by Compromise／Watering Holeを示し、1〜3は主要性・普及度、4は波及影響の大きさ、5は特殊な攻撃経路という異なる説明を付している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/",
+        "locator": "Table 1: Top 5 Initial Access Threat Vectors, 1 (Primary Entry Vector) through 5 (Specialized Delivery Vector)",
+        "published_at": "2026-10-16",
+        "accessed_at": "2026-10-20"
+      },
+      "review_note": "表の番号を5類型すべて共通の発生頻度指標による順位と解釈しない。4はHigh-Impact Systemic Vector、5はSpecialized Delivery Vector。2026-10-20に原文のTable 1を再照合。"
+    },
+    {
+      "id": "C03",
+      "statement": "Unit 42は、外部Edgeの悪用とIdentity侵害への依存が顕著で、公開Infrastructureと正規資格情報の悪用が主要な足場だったと評価している。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/",
+        "locator": "記事冒頭の概要段落",
+        "published_at": "2026-10-16",
+        "accessed_at": "2026-10-19"
+      },
+      "review_note": "発行元の評価として帰属させている。"
+    },
+    {
+      "id": "C04",
+      "statement": "Unit 42の公表ページには母集団、観測件数、類型別構成比、地域別内訳の提示がなく、日本企業全体や市場全体の発生頻度に一般化できない。",
+      "section": "## なぜ今なのか",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "一次資料のTable 1は各経路の性質を説明するが共通の発生頻度分母・件数・比率を示さないため、表示順を市場全体や日本企業の頻度順位と解釈しない。"
+    },
+    {
+      "id": "C05",
+      "statement": "Edge、Identity、メール／ブラウザ、Supply ChainをInitial Accessという共通管理単位で統合し、自社データで優先順位を補正すべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "5類型は組織横断で管理され、複合経路にもなり得るため、個別製品単位より侵入経路単位の統制が有効と判断した。"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ impact_types:
   - Model Integrity
   - Runtime Security
 urgency: Near-term
-evidence: Experimental
+evidence: Assessment
 status: draft
 pptx: ""
 media_rights: none
@@ -52,7 +52,7 @@ CrowdStrikeは、LoRAアダプターやマージ済みモデルに埋め込ま�
 
 Open-weightモデルやLoRAは、コスト、データ保護、カスタマイズ性のため企業利用が広がっている。一方、通常のベンチマークは能力と品質を測るものであり、特定のTriggerでのみ発火する悪意ある挙動を保証しない。ProjectDiscoveryは2026年10月、Qwen2.5-7Bを用いたLoRAバックドアを含む実験を総額50ドル未満で行い、特定フレーズでCoding Agentへ攻撃者管理URLへのTool callを出させたと報告した。[^projectdiscovery]
 
-本件は、既存のパッケージやAIアプリケーション依存関係の記事と異なり、モデルの「重みそのもの」がSupply Chainアーティファクトになる。安全な形式であるsafetensorsを使っていても、ロード時の任意コード実行を防ぐだけで、モデルが生成する悪意あるTool callやコードまでは保証しない。
+本件は、既存のパッケージやAIアプリケーション依存関係の記事と異なり、モデルの「重みそのもの」がSupply Chainアーティファクトになる。安全な形式であるsafetensorsを使っていても、危険なデシリアライズによるコード実行リスクを低減しても、モデルが生成する悪意あるTool callやコードまでは保証しない。
 
 ## 何が起きているのか
 
@@ -81,7 +81,7 @@ CrowdStrikeのテストセットは、Tool call、Shell injection、Typosquat im
 
 ## 日本企業への示唆
 
-国内企業でオープンモデルをローカル運用する理由は、データを外部へ出さないためであることが多い。しかし、モデル自体がTool callや生成コードを通じて外部通信・Secret参照へ到達できれば、「ローカルだから安全」という前提は崩れる。AI基盤部門とセキュリティ部門は、モデルレジストリ、承認済みベースモデル、Egress、Tool権限を共通統制にする必要がある。
+データの外部送信を避ける目的でオープンモデルをローカル運用する場合でも、しかし、モデルがTool callや生成コードを通じて外部通信・Secret参照へ到達できれば、「ローカルだから安全」という前提は崩れる。AI基盤部門とセキュリティ部門は、モデルレジストリ、承認済みベースモデル、Egress、Tool権限を共通統制にする必要がある。
 
 また、検出ツールの導入可否だけで判断せず、モデルが侵害されている前提でBlast radiusを制限する。開発端末のホームディレクトリ、`.env`、SSH鍵、Code Repositoryへ既定で到達できるAgent構成は見直すべきである。
 

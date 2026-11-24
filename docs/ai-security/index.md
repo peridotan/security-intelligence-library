@@ -15,6 +15,16 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="cairn-autonomous-zero-day.md">Cairnによる自律攻撃 ― 実際の侵入活動で観測されたZero-day探索</a>
+    <div class="sil-card-meta">November 2026 · Immediate · Observed · Threat Landscape / Operational Security</div>
+    <p>Amazon Threat Intelligenceが観測したCairnによる自律的な侵入活動を基に、脆弱性発見から悪用までの時間短縮と防御側の設計課題を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="lora-model-supply-chain.md">Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する</a>
+    <div class="sil-card-meta">November 2026 · Near-term · Assessment · AI Supply Chain / Model Integrity</div>
+    <p>CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="litellm-1-107-0-supply-chain-compromise.md">LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る</a>
     <div class="sil-card-meta">October 2026 · Immediate · Mixed · AI Infrastructure / Software Supply Chain</div>
     <p>LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Risk…</p>

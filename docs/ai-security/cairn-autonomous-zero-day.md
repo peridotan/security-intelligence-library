@@ -8,35 +8,50 @@ source_period: 2026-11
 description: Amazon Threat Intelligenceが観測したCairnによる自律的な侵入活動を基に、脆弱性発見から悪用までの時間短縮と防御側の設計課題を整理する。
 category: AI Security
 collections:
-  - ai-security
-  - cybersecurity
+- ai-security
+- cybersecurity
 topics:
-  - AI-Enabled Threats
-  - AI Cyber Capability
-  - Vulnerability Management
+- AI-Enabled Threats
+- AI Cyber Capability
+- Vulnerability Management
 tags:
-  - Cairn
-  - Agentic AI
-  - Zero-day
-  - Autonomous Attack
+- Cairn
+- Agentic AI
+- Zero-day
+- Autonomous Attack
 audience:
-  - Executive
-  - CISO
-  - SOC
-  - Vulnerability Management
+- Executive
+- CISO
+- SOC
+- Vulnerability Management
 management_impact: High
 impact_types:
-  - Threat Landscape
-  - Operational Security
-  - Vulnerability Risk
+- Threat Landscape
+- Operational Security
+- Vulnerability Risk
 urgency: Immediate
 evidence: Observed
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # Cairnによる自律攻撃 ― 実際の侵入活動で観測されたZero-day探索
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">November 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI-Enabled Threats / AI Cyber Capability / Vulnerability Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / SOC / Vulnerability Management</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Threat Landscape / Operational Security / Vulnerability Risk</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Immediate</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Observed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

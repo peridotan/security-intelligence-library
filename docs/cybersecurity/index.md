@@ -15,6 +15,21 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/cairn-autonomous-zero-day.md">Cairnによる自律攻撃 ― 実際の侵入活動で観測されたZero-day探索</a>
+    <div class="sil-card-meta">November 2026 · Immediate · Observed · Threat Landscape / Operational Security</div>
+    <p>Amazon Threat Intelligenceが観測したCairnによる自律的な侵入活動を基に、脆弱性発見から悪用までの時間短縮と防御側の設計課題を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../ai-security/lora-model-supply-chain.md">Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する</a>
+    <div class="sil-card-meta">November 2026 · Near-term · Assessment · AI Supply Chain / Model Integrity</div>
+    <p>CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="../risk-management/incident-report-checklist.md">インシデント調査報告書チェックリスト ― 「不明」を経営判断へつなぐ</a>
+    <div class="sil-card-meta">November 2026 · Near-term · Confirmed · Governance / Incident Response</div>
+    <p>JPCERT/CCのチェックリストを基に、外部委託調査の目的合意、証拠追跡、未確認事項、再発防止策を経営判断へ接続する方法を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/litellm-1-107-0-supply-chain-compromise.md">LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る</a>
     <div class="sil-card-meta">October 2026 · Immediate · Mixed · AI Infrastructure / Software Supply Chain</div>
     <p>LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Risk…</p>

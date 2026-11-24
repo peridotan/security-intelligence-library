@@ -8,34 +8,49 @@ source_period: 2026-11
 description: JPCERT/CCのチェックリストを基に、外部委託調査の目的合意、証拠追跡、未確認事項、再発防止策を経営判断へ接続する方法を整理する。
 category: Management View
 collections:
-  - risk-management
-  - cybersecurity
+- risk-management
+- cybersecurity
 topics:
-  - Security Governance & Risk Management
-  - Third-party Risk / C-SCRM
+- Security Governance & Risk Management
+- Third-party Risk / C-SCRM
 tags:
-  - JPCERT/CC
-  - Incident Response
-  - Forensics
-  - Investigation Report
+- JPCERT/CC
+- Incident Response
+- Forensics
+- Investigation Report
 audience:
-  - Executive
-  - CISO
-  - Incident Response
-  - Legal
+- Executive
+- CISO
+- Incident Response
+- Legal
 management_impact: High
 impact_types:
-  - Governance
-  - Incident Response
-  - Decision Quality
+- Governance
+- Incident Response
+- Decision Quality
 urgency: Near-term
 evidence: Confirmed
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # インシデント調査報告書チェックリスト ― 「不明」を経営判断へつなぐ
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">November 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Management View</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Security Governance &amp; Risk Management / Third-party Risk / C-SCRM</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">Executive / CISO / Incident Response / Legal</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">Governance / Incident Response / Decision Quality</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Confirmed</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

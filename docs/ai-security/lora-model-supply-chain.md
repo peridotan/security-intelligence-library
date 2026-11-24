@@ -8,35 +8,50 @@ source_period: 2026-11
 description: CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。
 category: AI Security
 collections:
-  - ai-security
-  - cybersecurity
+- ai-security
+- cybersecurity
 topics:
-  - AI Infrastructure
-  - Software Supply Chain
-  - AI Agent Security
+- AI Infrastructure
+- Software Supply Chain
+- AI Agent Security
 tags:
-  - LoRA
-  - Open-weight Model
-  - Model Backdoor
-  - Model Supply Chain
+- LoRA
+- Open-weight Model
+- Model Backdoor
+- Model Supply Chain
 audience:
-  - CISO
-  - AI Platform
-  - MLOps
-  - Product Security
+- CISO
+- AI Platform
+- MLOps
+- Product Security
 management_impact: High
 impact_types:
-  - AI Supply Chain
-  - Model Integrity
-  - Runtime Security
+- AI Supply Chain
+- Model Integrity
+- Runtime Security
 urgency: Near-term
 evidence: Assessment
 status: published
-pptx: ""
+pptx: ''
 media_rights: none
 ---
 
 # Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する
+
+<div class="sil-article-meta">
+  <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">November 2026</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">AI Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">AI Infrastructure / Software Supply Chain / AI Agent Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Audience</span><span class="sil-meta-value">CISO / AI Platform / MLOps / Product Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Impact Areas</span><span class="sil-meta-value">AI Supply Chain / Model Integrity / Runtime Security</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Management Impact</span><span class="sil-impact-high">High</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Urgency</span><span class="sil-meta-value">Near-term</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Evidence</span><span class="sil-meta-value">Assessment</span></div>
+</div>
 
 <div class="sil-executive-summary" markdown>
 

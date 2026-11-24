@@ -20,6 +20,24 @@ hide:
 <!-- AUTO:HOME_LATEST:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="ai-security/cairn-autonomous-zero-day.md">Cairnによる自律攻撃 ― 実際の侵入活動で観測されたZero-day探索</a>
+    <div class="sil-card-meta">November 2026 · AI Security · Urgency: Immediate</div>
+    <p>Amazon Threat Intelligenceが観測したCairnによる自律的な侵入活動を基に、脆弱性発見から悪用までの時間短縮と防御側の設計課題を整理する。</p>
+    <a class="sil-card-more" href="ai-security/cairn-autonomous-zero-day.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="ai-security/lora-model-supply-chain.md">Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する</a>
+    <div class="sil-card-meta">November 2026 · AI Security · Urgency: Near-term</div>
+    <p>CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。</p>
+    <a class="sil-card-more" href="ai-security/lora-model-supply-chain.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="risk-management/incident-report-checklist.md">インシデント調査報告書チェックリスト ― 「不明」を経営判断へつなぐ</a>
+    <div class="sil-card-meta">November 2026 · Management View · Urgency: Near-term</div>
+    <p>JPCERT/CCのチェックリストを基に、外部委託調査の目的合意、証拠追跡、未確認事項、再発防止策を経営判断へ接続する方法を整理する。</p>
+    <a class="sil-card-more" href="risk-management/incident-report-checklist.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="ai-security/litellm-1-107-0-supply-chain-compromise.md">LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る</a>
     <div class="sil-card-meta">October 2026 · AI Security · Urgency: Immediate</div>
     <p>LiteLLM 1.107.0のPoisoned Releaseを基に、Python Startup Hook、GitHub Owner Token、Release Pipeline、AI Gateway Credentialの連鎖的Risk…</p>
@@ -36,24 +54,6 @@ hide:
     <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Immediate</div>
     <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
     <a class="sil-card-more" href="cybersecurity/dns-root-ksk-2024-rollover.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/incident-trend-brief-2026-10-h1.md">Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧</a>
-    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
-    <p>2026年10月1〜15日に国内で公表された代表的な不正アクセス事案と公的注意喚起を基に、攻撃面・委託先への波及・復旧・被害判断の変化を整理する。</p>
-    <a class="sil-card-more" href="cybersecurity/incident-trend-brief-2026-10-h1.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/nict-a2b-backend-api-security.md">NICTのA2B攻撃注意喚起 ― 公開アプリを起点にしたBackend APIリスク</a>
-    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
-    <p>NICTが2026年10月13日に公表したA2B攻撃の注意喚起を基に、公開モバイルアプリから推測されるBackend APIへの攻撃経路と企業の確認事項を整理する。</p>
-    <a class="sil-card-more" href="cybersecurity/nict-a2b-backend-api-security.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/evidence-grounded-ai-vulnerability-triage.md">AI脆弱性トリアージを根拠ベースにする ― 3層検証とSteering Fileの実装原則</a>
-    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Near-term</div>
-    <p>AWSが公開したAI vulnerability harnessを基に、複数スキャナー合意、構造検証、配備コンテキストで誤検知を絞る設計を整理する。</p>
-    <a class="sil-card-more" href="cybersecurity/evidence-grounded-ai-vulnerability-triage.md">記事を読む →</a>
   </article>
 </div>
 <!-- AUTO:HOME_LATEST:END -->
@@ -119,14 +119,14 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">45</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">46</span></a>
 <a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">29</span></a>
+<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">20</span></a>
 <a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
-<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">16</span></a>
+<a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">17</span></a>
 <a class="sil-topic" href="topics/index.md#credential-attacks">Credential Attacks <span class="sil-topic-count">16</span></a>
-<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">15</span></a>
+<a class="sil-topic" href="topics/index.md#vulnerability-management">Vulnerability Management <span class="sil-topic-count">16</span></a>
 </div>
 <!-- AUTO:HOME_TOPICS:END -->
 

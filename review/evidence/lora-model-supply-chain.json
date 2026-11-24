@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/ai-security/lora-model-supply-chain.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "16件の実験結果を一般母集団へ外挿しない。検出器の製品化・再現性・公開状況は人間が確認する。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に公開を明示承認。承認対象コミット: 776fc52d1bc3e08387d6f9d46a98ab4df50f34c6"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "CrowdStrikeは静的な重み差分解析とTrigger recoveryを組み合わせる二段階方式を実験した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
+        "locator": "Our Approach: Detect and Confirm",
+        "published_at": "2026-11-16",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "手法の構成を確認。"
+    },
+    {
+      "id": "C02",
+      "statement": "16アーティファクトの実験で、Stage 1はバックドア8件すべてをフラグし、良性8件のうち5件をCleanと判定した。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
+        "locator": "Stage 1: Detecting Tampering from the Weights; Table 1 and reported calls",
+        "published_at": "2026-11-16",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "CrowdStrikeのラボ結果。一般性能値ではない。"
+    },
+    {
+      "id": "C03",
+      "statement": "CrowdStrikeはベースモデル参照、複数語Trigger、Full fine-tune、直接Weight editingなどを制約として挙げた。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
+        "locator": "Limitations",
+        "published_at": "2026-11-16",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "研究の適用範囲を限定する重要事項。"
+    },
+    {
+      "id": "C04",
+      "statement": "ProjectDiscoveryはQwen2.5-7Bを用いたLoRAバックドア実験を総額50ドル未満で実施したと報告した。",
+      "section": "## なぜ今なのか",
+      "classification": "source_claim",
+      "importance": "supporting",
+      "verification": "verified",
+      "source": {
+        "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+        "locator": "The poisoning pipeline; training-cost paragraph",
+        "published_at": "2026-10-06",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "研究者の自己申告コスト。"
+    },
+    {
+      "id": "C05",
+      "statement": "モデル重みは第三者コードと同様に受入審査し、Runtime権限制御を併用すべきである。",
+      "section": "## 推奨アクション",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "事前検出には未対応手法と誤検知が残り、バックドア発火後のTool、Network、Secretへの到達可能性が実被害を決めるため。"
+    }
+  ]
+}

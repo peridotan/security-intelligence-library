@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/risk-management/incident-report-checklist.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "チェックリストは技術的妥当性を保証しない。組織の契約・法務要件への適用は人間が確認する。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に公開を明示承認。承認対象コミット: 776fc52d1bc3e08387d6f9d46a98ab4df50f34c6"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "JPCERT/CCは2026年11月11日、依頼側・調査担当側のチェックリストと報告書サンプルを公開した。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.jpcert.or.jp/ir_report_checklist_20261111.html",
+        "locator": "インシデント調査報告書チェックリスト公開のお知らせ",
+        "published_at": "2026-11-11",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "公開日と目的を確認。"
+    },
+    {
+      "id": "C02",
+      "statement": "依頼側チェックリストは調査目的、対象範囲、主要結論の根拠、調査不能事項、残るリスク等を確認対象とする。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://jpcertcc.github.io/ir_report_checklist/checklist_for_customer.html",
+        "locator": "1. 調査方針の合意; 2. 調査結果のレビュー; 3.2 調査結果",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "項目の要旨を短く整理。"
+    },
+    {
+      "id": "C03",
+      "statement": "担当側チェックリストでは封じ込め・根絶・復旧は合意済みの場合に確認し、再発防止策の調査結果との対応、対象、期待効果、注意事項を確認する。再発防止策の優先度付与は推奨である。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://github.com/JPCERTCC/ir_report_checklist/blob/main/checklist_for_reporter.md",
+        "locator": "3.7（適用条件）、3.8-1〜3.8-4（必須・推奨区分）",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "必須・推奨の区分は原文確認済み。"
+    },
+    {
+      "id": "C04",
+      "statement": "JPCERT/CCは、チェックリストだけで調査や報告書の正しさは保証されず、技術的妥当性の確認には専門知識が必要と説明している。",
+      "section": "## Executive Summary",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blogs.jpcert.or.jp/ja/2026/11/ir_report_checklist.html",
+        "locator": "報告書で確認するポイント（チェックリストの限界）",
+        "published_at": "2026-11-18",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "過度な品質保証表現を避ける根拠。"
+    },
+    {
+      "id": "C05",
+      "statement": "チェックリストは発注・契約時点から調査目的、証拠、結論、不確実性、対応策を追跡するガバナンスとして使うべきである。",
+      "section": "## 日本企業への示唆",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "受領後だけの形式確認では不足証拠や対象外範囲を遡って補えず、調査開始前の合意が意思決定品質を左右するため。"
+    },
+    {
+      "id": "C06",
+      "statement": "チェックリストはマルウェア感染等を伴うネットワーク侵害を想定し、事案・目的・契約内容に応じて調整する。",
+      "section": "## 何が起きているのか",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://blogs.jpcert.or.jp/ja/2026/11/ir_report_checklist.html",
+        "locator": "チェックリストの使い方",
+        "published_at": "2026-11-18",
+        "accessed_at": "2026-11-24"
+      }
+    }
+  ]
+}

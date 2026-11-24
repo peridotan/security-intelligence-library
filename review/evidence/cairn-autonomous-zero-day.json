@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/ai-security/cairn-autonomous-zero-day.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "Amazonの観測と帰属評価を独立確認済み事実として扱わない。人間が一次情報と表現の一致、既存記事との差分を確認する。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に公開を明示承認。承認対象コミット: 776fc52d1bc3e08387d6f9d46a98ab4df50f34c6"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "Amazon Threat Intelligenceは2026年9月10日、認証なしで公開されたCairnサーバーを特定し、9月8日から約48時間の活動を分析したと報告した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+        "locator": "Discovery",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "Amazonによる観測報告として帰属させている。"
+    },
+    {
+      "id": "C02",
+      "statement": "医用画像AIアプリケーションでは、API把握からパストラバーサルによる任意ファイル書き込みまで約11分で到達したとAmazonは報告した。",
+      "section": "## Executive Summary",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+        "locator": "Zero-day discovery",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "一般的な性能値へ外挿しない。"
+    },
+    {
+      "id": "C03",
+      "statement": "Amazonは、当該脆弱性が当時未修正で既知のAdvisory等もなかったことから、Zero-dayだったと高い確度で評価した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+        "locator": "Zero-day discovery",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "Zero-dayの独立立証ではなくAmazonの高確度評価。"
+    },
+    {
+      "id": "C04",
+      "statement": "Amazonは操作者をChinese-nexus actorと中程度の確度で評価した。",
+      "section": "## 何が起きているのか",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+        "locator": "Attribution",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "帰属の妥当性自体は未独立検証。"
+    },
+    {
+      "id": "C05",
+      "statement": "SOCは高確度検知からの限定的自動封じ込めと人間による結果監督を組み合わせるべきである。",
+      "section": "## 推奨アクション",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "観測された11分の侵入進行と長時間の反復試行に対し、完全手動の逐次判断では対応時間が不足し得る一方、無制限な自動遮断は業務影響を生むため。"
+    }
+  ]
+}

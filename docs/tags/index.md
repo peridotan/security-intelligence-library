@@ -776,6 +776,7 @@ hide:
 <a class="sil-topic" href="../ai-security/openai-running-codex-safely.md">Coding Agent <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/complex-routing-domain-spoofing.md">Complex Routing <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/f5-confluence-edge-to-identity.md">Confluence <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/optimjack-third-party-script.md">Content Security Policy <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-infrastructure-control-plane-attacks.md">Control Plane <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/ai-as-tradecraft-march-2026.md">Coral Sleet <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../regulation/eu-cra-reporting-obligations-live.md">CRA <span class="sil-topic-count">1</span></a>
@@ -940,6 +941,8 @@ hide:
 <a class="sil-topic" href="../ai-security/anthropic-llm-discovered-zero-days.md">Open Source <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/kimi-k3-cyber-capabilities.md">Open-weight AI <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/lora-model-supply-chain.md">Open-weight Model <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/optimjack-third-party-script.md">Optimizely <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/optimjack-third-party-script.md">OPTIMJACK <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-infrastructure-control-plane-attacks.md">Orchestration <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/edge-ai-trust-attestation-provenance.md">OT <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/ai-agent-identity-nhi.md">PAM <span class="sil-topic-count">1</span></a>
@@ -1015,6 +1018,7 @@ hide:
 <a class="sil-topic" href="../ai-security/openai-running-codex-safely.md">Telemetry <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../risk-management/japan-scs-evaluation-operationalization.md">Third-party Assessment <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/complex-routing-domain-spoofing.md">Third-party Connector <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/optimjack-third-party-script.md">Third-party JavaScript <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../ai-security/ai-enabled-malware-reality.md">Threat Intelligence <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/enisa-threat-landscape-2026-dependencies.md">Threat Landscape <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/nist-ir8587-token-protection.md">Token Revocation <span class="sil-topic-count">1</span></a>
@@ -1041,6 +1045,7 @@ hide:
 <a class="sil-topic" href="../regulation/eu-cra-reporting-obligations-live.md">Vulnerability Reporting <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/eudi-wallet-certification.md">Wallet <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/water-ot-secure-remote-access-sp1800-45.md">Water <span class="sil-topic-count">1</span></a>
+<a class="sil-topic" href="../cybersecurity/optimjack-third-party-script.md">Web Supply Chain <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/pass-the-passkey.md">WebAuthn <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../cybersecurity/emudhra-intermediate-ca-weak-keys.md">WebPKI <span class="sil-topic-count">1</span></a>
 <a class="sil-topic" href="../identity-security/teams-it-support-remote-session-intrusion.md">WinRM <span class="sil-topic-count">1</span></a>

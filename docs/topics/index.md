@@ -11,9 +11,9 @@ hide:
 <!-- AUTO:TOPICS:START -->
 <div class="sil-topic-summary">
   <div class="sil-topic-stats">
-    <span><strong>101</strong> Articles</span>
+    <span><strong>102</strong> Articles</span>
     <span><strong>18</strong> Curated Topics</span>
-    <span><strong>433</strong> Detailed Tags</span>
+    <span><strong>438</strong> Detailed Tags</span>
   </div>
   <a class="sil-topic-cta" href="../tags/index.md">Browse Detailed Tags →</a>
 </div>
@@ -48,15 +48,15 @@ hide:
 <a class="sil-topic" href="#vulnerability-management">Vulnerability Management <span class="sil-topic-count">16</span></a>
 <a class="sil-topic" href="#ransomware-resilience">Ransomware &amp; Resilience <span class="sil-topic-count">7</span></a>
 <a class="sil-topic" href="#ot-critical-infrastructure">OT / Critical Infrastructure <span class="sil-topic-count">6</span></a>
-<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">8</span></a>
+<a class="sil-topic" href="#software-supply-chain">Software Supply Chain <span class="sil-topic-count">9</span></a>
 </div>
 </section>
 <section class="sil-topic-group">
 <div class="sil-topic-group-title">Governance &amp; Risk</div>
 <div class="sil-topic-directory">
-<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">20</span></a>
+<a class="sil-topic" href="#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">21</span></a>
 <a class="sil-topic" href="#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
-<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">46</span></a>
+<a class="sil-topic" href="#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">47</span></a>
 </div>
 </section>
 </div>
@@ -301,6 +301,7 @@ OT / ICS、重要インフラ、Remote Access、Recovery、Safety。
 
 npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 
+- [OPTIMJACK ― 第三者JavaScriptを「本番コード」として管理する](../cybersecurity/optimjack-third-party-script.md) — November 2026 · Immediate · Mixed
 - [Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する](../ai-security/lora-model-supply-chain.md) — November 2026 · Near-term · Assessment
 - [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](../ai-security/litellm-1-107-0-supply-chain-compromise.md) — October 2026 · Immediate · Mixed
 - [MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない](../ai-security/mcp-tool-poisoning-agent-supply-chain.md) — June 2026 · Immediate · Assessment
@@ -318,6 +319,7 @@ npm、Framework、Package、Tool等の開発・Software Supply Chain Risk。
 
 Supplier、委託先、Cloud / Software依存を含むCyber Supply Chain Risk。
 
+- [OPTIMJACK ― 第三者JavaScriptを「本番コード」として管理する](../cybersecurity/optimjack-third-party-script.md) — November 2026 · Immediate · Mixed
 - [インシデント調査報告書チェックリスト ― 「不明」を経営判断へつなぐ](../risk-management/incident-report-checklist.md) — November 2026 · Near-term · Confirmed
 - [eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新](../cybersecurity/emudhra-intermediate-ca-weak-keys.md) — October 2026 · Immediate · Mixed
 - [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md) — October 2026 · Near-term · Mixed
@@ -366,6 +368,7 @@ AI・Cybersecurity・重要インフラに関する法規制・政策・公的Gu
 
 技術対策を経営Risk、計画、優先順位、残余Riskへ接続する。
 
+- [OPTIMJACK ― 第三者JavaScriptを「本番コード」として管理する](../cybersecurity/optimjack-third-party-script.md) — November 2026 · Immediate · Mixed
 - [インシデント調査報告書チェックリスト ― 「不明」を経営判断へつなぐ](../risk-management/incident-report-checklist.md) — November 2026 · Near-term · Confirmed
 - [eMudhra中間CAの弱鍵問題 ― Browser修正だけでは終わらないWebPKI Trust更新](../cybersecurity/emudhra-intermediate-ca-weak-keys.md) — October 2026 · Immediate · Mixed
 - [DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する](../cybersecurity/dns-root-ksk-2024-rollover.md) — October 2026 · Immediate · Confirmed

@@ -102,7 +102,7 @@ def check_source(data: object, name: str, errors: list[str]) -> None:
         errors.append(f"{name}: source.published_at must be YYYY-MM-DD or omitted when unknown")
 
 
-def validate_dossier(payload: object, filename: str) -> tuple[str | None, list[str]]:
+def validate_dossier(payload: object, filename: str, *, check_article: bool = True) -> tuple[str | None, list[str]]:
     problems: list[str] = []
     if not isinstance(payload, dict):
         return None, [f"{filename}: dossier must be a JSON object"]
@@ -182,7 +182,9 @@ def validate_dossier(payload: object, filename: str) -> tuple[str | None, list[s
     if not has_material_source:
         problems.append(f"{filename}: at least one material source-backed claim is required")
 
-    if target:
+    # Draft reports check the draft itself, not the already-published target.
+    # The publication gate always uses the default (True).
+    if target and check_article:
         article = ROOT / target
         status = read_status(article)
         if status == "published" and state != "approved":

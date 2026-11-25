@@ -8,6 +8,7 @@ import tempfile
 import unittest
 
 import article_workflow as workflow
+import batch_review
 
 
 class ArticleWorkflowTests(unittest.TestCase):
@@ -141,6 +142,36 @@ class ArticleWorkflowTests(unittest.TestCase):
         self.assertTrue(any("section is absent" in line for line in errors))
         with self.assertRaises(ValueError):
             workflow.stage_bundle(self.root, self.collection, self.slug)
+
+    def test_batch_packet_is_read_only_and_records_hashes(self):
+        self.init()
+        paths = self.complete_sources()
+        name = paths["article"].relative_to(self.root).as_posix()
+        before = {key: p.read_bytes() for key, p in paths.items()}
+        report, unresolved = batch_review.build_report(self.root, [name])
+        self.assertEqual(unresolved, 0)
+        self.assertIn("NOT human approval", report)
+        self.assertIn(batch_review.digest(before["article"]), report)
+        self.assertIn(batch_review.digest(before["evidence"]), report)
+        self.assertEqual(before, {key: p.read_bytes() for key, p in paths.items()})
+        with self.assertRaises(ValueError):
+            batch_review.build_report(self.root, [name, name])
+
+    def test_batch_packet_reports_unresolved_and_rejects_absent_section(self):
+        self.init()
+        paths = self.complete_sources()
+        name = paths["article"].relative_to(self.root).as_posix()
+        dossier = json.loads(paths["evidence"].read_text(encoding="utf-8"))
+        claim = next(c for c in dossier["claims"] if c["classification"] == "source_fact")
+        claim["verification"] = "needs_review"
+        paths["evidence"].write_text(json.dumps(dossier), encoding="utf-8")
+        report, unresolved = batch_review.build_report(self.root, [name])
+        self.assertEqual(unresolved, 1)
+        self.assertIn("needs_review", report)
+        claim["section"] = "## Missing"
+        paths["evidence"].write_text(json.dumps(dossier), encoding="utf-8")
+        with self.assertRaises(ValueError):
+            batch_review.build_report(self.root, [name])
 
 
 if __name__ == "__main__":

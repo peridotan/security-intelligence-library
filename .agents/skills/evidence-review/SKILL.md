@@ -15,7 +15,7 @@ license: MIT
 3. `source_fact`、`source_claim`、`library_assessment`を正しく区別し、情報源の観測を普遍的事実としない。
 4. Evidence JSONに主張ID、原典URL、確認できた部分、未解決点を対応付ける。
 5. 形式・構造チェック（条件が整う場合は`python scripts/check_evidence_review.py --base-ref origin/main`）を実行する。CI成功は真偽や実際の人間承認の証明ではない。
-6. 修正案、削除候補、未解決事項を人間のレビュー表へまとめる。
+6. 修正案、削除候補、未解決事項を人間のレビュー表へまとめる。利用可能な場合は `scripts/batch_review.py --article <Draftパス>`（複数指定可）を使い、承認対象のハッシュと主張一覧を出力する。公開処理は `ARTICLE_WORKFLOW.md` の一括公開手順に従う。
 7. 実際の担当者が確認・承認するまでは`review.status: pending`を維持し、`reviewed_by`・`reviewed_at`は捏造しない。
 
 ## 禁止

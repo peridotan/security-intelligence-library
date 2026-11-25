@@ -17,6 +17,11 @@ hide:
 <!-- AUTO:CATEGORY_ARTICLES:START -->
 <div class="sil-cards sil-cards-2">
   <article class="sil-card">
+    <a class="sil-card-title" href="../cybersecurity/optimjack-third-party-script.md">OPTIMJACK ― 第三者JavaScriptを「本番コード」として管理する</a>
+    <div class="sil-card-meta">November 2026 · Immediate · Mixed · Supply Chain / Customer Data</div>
+    <p>Optimizely Web Experimentationへの不正コード挿入事案を基に、第三者JavaScript、CSP、決済画面分離、委託先監督の実務を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="incident-report-checklist.md">インシデント調査報告書チェックリスト ― 「不明」を経営判断へつなぐ</a>
     <div class="sil-card-meta">November 2026 · Near-term · Confirmed · Governance / Incident Response</div>
     <p>JPCERT/CCのチェックリストを基に、外部委託調査の目的合意、証拠追跡、未確認事項、再発防止策を経営判断へ接続する方法を整理する。</p>

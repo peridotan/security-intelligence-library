@@ -20,6 +20,11 @@ hide:
     <p>Amazon Threat Intelligenceが観測したCairnによる自律的な侵入活動を基に、脆弱性発見から悪用までの時間短縮と防御側の設計課題を整理する。</p>
   </article>
   <article class="sil-card">
+    <a class="sil-card-title" href="optimjack-third-party-script.md">OPTIMJACK ― 第三者JavaScriptを「本番コード」として管理する</a>
+    <div class="sil-card-meta">November 2026 · Immediate · Mixed · Supply Chain / Customer Data</div>
+    <p>Optimizely Web Experimentationへの不正コード挿入事案を基に、第三者JavaScript、CSP、決済画面分離、委託先監督の実務を整理する。</p>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="../ai-security/lora-model-supply-chain.md">Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する</a>
     <div class="sil-card-meta">November 2026 · Near-term · Assessment · AI Supply Chain / Model Integrity</div>
     <p>CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。</p>

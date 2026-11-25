@@ -26,6 +26,12 @@ hide:
     <a class="sil-card-more" href="ai-security/cairn-autonomous-zero-day.md">記事を読む →</a>
   </article>
   <article class="sil-card">
+    <a class="sil-card-title" href="cybersecurity/optimjack-third-party-script.md">OPTIMJACK ― 第三者JavaScriptを「本番コード」として管理する</a>
+    <div class="sil-card-meta">November 2026 · Cybersecurity · Urgency: Immediate</div>
+    <p>Optimizely Web Experimentationへの不正コード挿入事案を基に、第三者JavaScript、CSP、決済画面分離、委託先監督の実務を整理する。</p>
+    <a class="sil-card-more" href="cybersecurity/optimjack-third-party-script.md">記事を読む →</a>
+  </article>
+  <article class="sil-card">
     <a class="sil-card-title" href="ai-security/lora-model-supply-chain.md">Backdoored LoRA ― モデル重みをSoftware Supply Chainとして検証する</a>
     <div class="sil-card-meta">November 2026 · AI Security · Urgency: Near-term</div>
     <p>CrowdStrikeのLoRAバックドア検出実験を基に、モデル重みの受入審査、静的解析、Trigger確認、Runtime分離の実務を整理する。</p>
@@ -48,12 +54,6 @@ hide:
     <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Immediate</div>
     <p>eMudhraの中間CA秘密鍵が弱いEntropyから復元可能だった問題を基に、Browser、OS、Runtime、Container、Custom Trust Storeを横断するTrust更新を整理する。</p>
     <a class="sil-card-more" href="cybersecurity/emudhra-intermediate-ca-weak-keys.md">記事を読む →</a>
-  </article>
-  <article class="sil-card">
-    <a class="sil-card-title" href="cybersecurity/dns-root-ksk-2024-rollover.md">DNSルートKSK-2024ロールオーバー ― 2026年10月11日までに検証リゾルバーを確認する</a>
-    <div class="sil-card-meta">October 2026 · Cybersecurity · Urgency: Immediate</div>
-    <p>2026年10月11日のDNSルートKSK切替を前に、DNSSEC検証リゾルバーのトラストアンカー確認と運用上の注意点を整理する。</p>
-    <a class="sil-card-more" href="cybersecurity/dns-root-ksk-2024-rollover.md">記事を読む →</a>
   </article>
 </div>
 <!-- AUTO:HOME_LATEST:END -->
@@ -119,9 +119,9 @@ hide:
 
 <!-- AUTO:HOME_TOPICS:START -->
 <div class="sil-topics">
-<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">46</span></a>
+<a class="sil-topic" href="topics/index.md#security-governance-risk">Security Governance &amp; Risk Management <span class="sil-topic-count">47</span></a>
 <a class="sil-topic" href="topics/index.md#identity-security">Identity Security <span class="sil-topic-count">29</span></a>
-<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">20</span></a>
+<a class="sil-topic" href="topics/index.md#third-party-risk-c-scrm">Third-party Risk / C-SCRM <span class="sil-topic-count">21</span></a>
 <a class="sil-topic" href="topics/index.md#ai-governance">AI Governance <span class="sil-topic-count">19</span></a>
 <a class="sil-topic" href="topics/index.md#regulation-policy">Regulation &amp; Policy <span class="sil-topic-count">18</span></a>
 <a class="sil-topic" href="topics/index.md#ai-agent-security">AI Agent Security <span class="sil-topic-count">17</span></a>

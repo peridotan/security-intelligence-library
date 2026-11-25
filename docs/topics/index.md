@@ -71,8 +71,8 @@ AI Agentの自律性、Tool利用、Sandbox、Identity、停止・監視を横�
 - [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md) — September 2026 · Immediate · Observed
 - [Enterprise Frontier Safeguards ― PrivacyとMisuse Detectionを「分離」して両立する](../ai-security/enterprise-frontier-safeguards-zdr.md) — September 2026 · Near-term · Confirmed
 - [Edge AI Trust Model ― Attestation・Provenance・Deterministic Mediationで境界を作る](../ai-security/edge-ai-trust-attestation-provenance.md) — September 2026 · Strategic · Assessment
-- [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
+- [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
 - [JADEPUFFER ― Agentic Ransomwareが「実験」から攻撃オペレーションへ](../cybersecurity/jadepuffer-agentic-ransomware.md) — July 2026 · Immediate · Observed
 - [AutoJack ― 「localhostは安全」という前提をAI Agentが崩す](../ai-security/autojack-agent-localhost-rce.md) — June 2026 · Immediate · Observed
 - [MCP Tool Poisoning ― AI AgentのSupply Chainは「コード」だけではない](../ai-security/mcp-tool-poisoning-agent-supply-chain.md) — June 2026 · Immediate · Assessment
@@ -185,8 +185,8 @@ GPU、AI Data Center、Model / Dataset / RuntimeなどAI基盤の保護。
 - [Token Security Becomes Identity Control Plane ― NIST IR 8587 Final](../identity-security/nist-ir8587-token-protection.md) — September 2026 · Near-term · Confirmed
 - [ASCII Smuggling ― AI Prompt Injectionの技法がPhishing Evasionへ逆流した](../cybersecurity/ascii-smuggling-phishing-evasion.md) — September 2026 · Near-term · Observed
 - [Large-Scale Credential Attacks ― 「ログインして侵入する」攻撃へのIdentity Security](../cybersecurity/large-scale-credential-attacks.md) — August 2026 · Immediate · Mixed
-- [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
 - [AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する](../identity-security/ai-agent-identity-nhi.md) — August 2026 · Near-term · Assessment
+- [Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch](../ai-security/agentic-ai-security-controls.md) — August 2026 · Near-term · Assessment
 - [Passkeyは破られたのか ― Pass-ta-keyとPass-the-Passkeyから学ぶ](../identity-security/pass-the-passkey.md) — August 2026 · Near-term · Observed
 - [2026年7月の実悪用Zero-day ― AD FS / SharePointから見る「Trust Infrastructure」の守り方](../cybersecurity/july-2026-trust-infrastructure-zero-days.md) — July 2026 · Immediate · Confirmed
 - [Microsoft Entra IDがPasskeyを既定へ ― SMS / Voice MFA終了に向けた移行設計](../identity-security/entra-passkeys-default.md) — July 2026 · Near-term · Confirmed

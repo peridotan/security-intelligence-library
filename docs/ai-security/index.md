@@ -65,14 +65,14 @@ hide:
     <p>Microsoftが2026年8月26日に報告したLiteLLM、RAGFlow、Kestraへの侵害を基に、AI Gateway・RAG・OrchestratorがCredential・Data・Executionを集中させるControl…</p>
   </article>
   <article class="sil-card">
-    <a class="sil-card-title" href="agentic-ai-security-controls.md">Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch</a>
-    <div class="sil-card-meta">August 2026 · Near-term · Assessment · AI Governance / Operational Security</div>
-    <p>NCSCと第三者サイバー評価事例を基に、AI Agentの自律性を安全に運用するための技術・運用統制を整理する。</p>
-  </article>
-  <article class="sil-card">
     <a class="sil-card-title" href="../identity-security/ai-agent-identity-nhi.md">AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する</a>
     <div class="sil-card-meta">August 2026 · Near-term · Assessment · Identity / AI Governance</div>
     <p>AI AgentとNon-Human Identityを、人・Agent・Credential・Actionの監査可能な連鎖として管理するための考え方を整理する。</p>
+  </article>
+  <article class="sil-card">
+    <a class="sil-card-title" href="agentic-ai-security-controls.md">Agentic AIの安全設計 ― Sandbox・Identity・監視・Kill Switch</a>
+    <div class="sil-card-meta">August 2026 · Near-term · Assessment · AI Governance / Operational Security</div>
+    <p>NCSCと第三者サイバー評価事例を基に、AI Agentの自律性を安全に運用するための技術・運用統制を整理する。</p>
   </article>
   <article class="sil-card">
     <a class="sil-card-title" href="ai-enabled-malware-reality.md">AI Enabled Malwareの現実 ― 「405検体・97%」をどう読むか</a>

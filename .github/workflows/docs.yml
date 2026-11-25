@@ -76,3 +76,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Verify deployed Pages content
+        timeout-minutes: 12
+        run: python scripts/check_deployed_site.py --revision "${{ github.sha }}"

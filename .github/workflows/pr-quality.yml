@@ -51,6 +51,9 @@ jobs:
       - name: Run reusable article workflow regression tests
         run: python -m unittest discover -s scripts -p "test_article_workflow.py" -v
 
+      - name: Run deployment verification regression tests
+        run: python -m unittest discover -s scripts -p "test_deployed_site.py" -v
+
       - name: Run Incident Trend Brief regression tests
         run: python -m unittest discover -s scripts -p "test_incident_trends.py" -v
 

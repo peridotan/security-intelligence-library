@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/identity-security/ai-agent-identity-nhi.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "既存記事への追加部分のみの差分レビュー。人間の承認前。既存本文全体の再検証ではない。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に追加部分の公開を明示承認。承認対象コミット: eb02d60710f2928df56fa2e2e1566f4abc02553d"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "AWSは2026年11月20日にGetScopedCredentialsを紹介した。",
+      "section": "## 2026年11月の追加知見：権限縮小によるAgentへの委譲",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
+        "locator": "記事冒頭の日付および導入部",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C02",
+      "statement": "既存の一時認証情報を基に、元の有効権限と縮小ポリシーの共通部分に権限を限定できる。",
+      "section": "## 2026年11月の追加知見：権限縮小によるAgentへの委譲",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
+        "locator": "導入部：resulting permissions の説明",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C03",
+      "statement": "新たなセッションの有効期間は呼出元セッションの残存期間を超えない。",
+      "section": "## 2026年11月の追加知見：権限縮小によるAgentへの委譲",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
+        "locator": "導入部：session duration の説明",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C04",
+      "statement": "発行される認証情報は呼出元のIAM Identityを維持する。",
+      "section": "## 2026年11月の追加知見：権限縮小によるAgentへの委譲",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
+        "locator": "導入部：caller’s IAM identity の説明",
+        "published_at": "2026-11-20",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C05",
+      "statement": "Agent固有IDの発行とは区別し、元の認証情報をサブエージェントから隔離する。",
+      "section": "## 2026年11月の追加知見：権限縮小によるAgentへの委譲",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "元のIAM Identityは維持される。権限縮小の効果を維持するには広い権限を持つ元の認証情報へのアクセスを制限する必要がある。AWSのLimit what AI agents can doも隔離を推奨する。"
+    },
+    {
+      "id": "C06",
+      "statement": "信頼できるコンポーネントでタスク単位の権限と有効期間を決定し、Agent固有ID・委任元・操作履歴の関連付けは別途設計する。",
+      "section": "## 2026年11月の追加知見：権限縮小によるAgentへの委譲",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "認証情報の縮小だけでは操作主体の識別や委任の妥当性、監査をすべて保証できない。 呼出元のIAM Identityが維持されるため、個々のAgentへの操作帰属には発行記録やタスクとの関連付けを設計する。"
+    }
+  ]
+}

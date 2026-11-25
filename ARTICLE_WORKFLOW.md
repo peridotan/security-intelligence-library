@@ -33,6 +33,40 @@ python scripts/batch_review.py --article drafts/ai-security/example-article.md -
 
 実際のDraftパスを明示する。対応する `drafts/evidence/<Draftファイル名>.json` が必要。新規・既存記事更新の両方を扱う。標準出力には本文/EvidenceのSHA-256、主張、分類、検証状態、参照箇所、URL、独自評価理由、未解決件数が出る。結果は人間向けレビュー資料であり、承認記録ではない。未解決主張がある場合は表を出力した上で終了コード2を返す。構造不正は終了コード1。
 
+### 承認後の公開ファイル準備（任意CLI）
+
+人間がレビュー表を確認した後、承認記録JSONを作成する。新規記事は original_sha256 と original_evidence_sha256 を null、更新は現行原本のSHA-256（既存Evidenceがなければ後者はnull）にする。レビューMarkdownのSHA-256も記録する。ハッシュは実ファイルから取得し、承認後に再計算して承認済みと見なさない。
+
+~~~json
+{
+  "schema_version": 1,
+  "base_commit": "<実際の40桁のmainコミットSHA>",
+  "articles": [
+    {
+      "draft": "drafts/ai-security/example-article.md",
+      "decision": "approved",
+      "reviewed_by": "<実際の人間の担当者>",
+      "reviewed_at": "YYYY-MM-DD",
+      "publication_date": "YYYY-MM-DD",
+      "article_sha256": "<承認時のSHA-256>",
+      "evidence_sha256": "<承認時のSHA-256>",
+      "review_sha256": "<承認時のSHA-256>",
+      "original_sha256": null,
+      "original_evidence_sha256": null
+    }
+  ]
+}
+~~~
+
+上記は記入例であり承認ではない。最新mainをfetchし、そのコミットから作成した公開用ブランチで次を実行する。原本docs/reviewは未変更であること。Draftは別途配置する。
+
+~~~bash
+git fetch origin main
+python scripts/batch_prepare.py --manifest /path/to/human-approved.json --output /path/to/new-publication-bundle
+~~~
+
+出力はリポジトリ外の新規ディレクトリに限定し、原本は変更しない。全件の承認・ハッシュ・未解決主張・更新元の整合性を先に確認し、不一致なら全体を拒否する。出力したdocs、review/evidence、review/pilots、review/publication-batchesを確認して公開用ブランチへ取り込み、第5節の生成・CIを実行する。既存記事の更新は初回公開日を保持する。旧Evidenceの差分レビューでは過去の主張の保持も人間が確認する。承認記録は人間の申告であり、CLIは本人性や実質レビューを証明しない。取り込み直前にmainの変化を確認し、競合時は再レビューする。
+
 ### 一括公開の実施
 
 1. 人間が対象記事とレビュー表を確認し、記事ごとに公開を明示承認する。承認者・日付・対象ファイルのハッシュを編集レビュー記録に残す。
@@ -149,7 +183,7 @@ Draft解除でCIが再実行されます。**最新チェックが成功**し、
 
 公開ページをブラウザで開き、タイトル、日付・メタデータ、本文、目次、脚注・出典リンク、関連記事、モバイル表示を確認します。**CIの成功は見た目や参照先の正しさまで保証しません**。問題があれば別PRで修正します。
 
-## このCLIが自動化しないこと
+## 単一記事CLI（article_workflow.py）が自動化しないこと
 
 AIやWebへの問い合わせ、記事自動作成、内容の真偽判定、人間のEvidence Review承認、承認日・承認者の記入、PRの自動作成、publishedへの変更、マージ、Pagesへのデプロイ、既存記事の上書き。
 

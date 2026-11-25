@@ -1,8 +1,8 @@
 ---
 title: AI-enabled Device Code Phishing ― Passwordを盗まずTokenを取る攻撃がScaleする
 date: 2026-08-27
-updated: 2026-08-27
-reviewed: 2026-08-27
+updated: 2026-11-24
+reviewed: 2026-11-24
 review_status: Current
 source_period: 2026-04
 description: Microsoftが2026年4月6日に報告したDevice Code Phishing Campaignを基に、Dynamic Code
@@ -57,8 +57,8 @@ media_rights: none
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-27</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">April 2026</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-27</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-08-27</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-11-24</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security / OAuth Abuse</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Credential Attacks / Identity Security</span></div>
@@ -92,6 +92,21 @@ Device Code FlowはSmart TVやCLI等、Keyboard入力が難しいDevice向けの
 5. VictimがPassword / MFAを含む正規認証を実施
 6. Attack BackendがAccess Tokenを取得
 7. Device Registration、Inbox Rule、Mail Exfiltration等へ展開
+
+## 2026年11月の追加知見：AI Coding Agentへの影響
+
+Microsoftは2026年11月17日、GitHub Copilot CLIを例にDevice Code認証の悪用がAI Coding Agentへ及ぼす影響を検証した研究を公開した。以下の4つの結果は管理された実験環境で確認されたもので、実際の攻撃で観測された事象ではない。[^nov2026]
+
+Microsoftの報告によれば、有効なRemote Session、組織ポリシー、ローカル権限、承認設定によっては遠隔操作が可能となる。これは認証不要のリモートコード実行脆弱性ではなく、対象セッションが稼働中で遠隔操作が有効な場合に成立する機能の悪用である。メモリの改変は機能とポリシーに依存し、同期されたSessionの閲覧は同期設定に、RepositoryへのアクセスはOAuthの認可Scopeとアカウント権限に依存します。
+
+Libraryは、認証方式だけではなく、認証後に利用可能な機能、権限、保存情報を一体で評価する必要があると評価する。
+
+### 追加の推奨アクション
+
+- 自ら開始していないDevice Code認証要求を承認しないよう教育する。
+- 遠隔操作、クラウド同期、メモリ機能の必要性と組織ポリシーを見直す。
+- OAuth認可とRepositoryへのアクセス権限を定期的に確認する。
+- アカウント侵害時はAgentの保存情報、操作履歴も調査対象に含める。
 
 <!-- AUTO:MITRE:START -->
 ## MITRE ATT&CK® Mapping
@@ -152,6 +167,11 @@ Device Code Flowを業務で使わない組織はConditional AccessでBlockす�
 
 ## 参考情報
 
+- [Microsoft Security Blog — The risks of device code authentication for AI coding agents（2026-11-17）](https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/)
+
 - [Microsoft Security Blog, Inside an AI-enabled device code phishing campaign](https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/)
 
 [^source]: [Microsoft Security Blog, AI-enabled Device Code Phishing](https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/)
+
+
+[^nov2026]: [追加一次情報（2026-11-17）](https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/)。

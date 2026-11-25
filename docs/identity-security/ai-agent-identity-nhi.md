@@ -1,8 +1,8 @@
 ---
 title: AI Agent Identity / NHI ― AI Agentを「操作主体」として統制する
 date: 2026-08-26
-updated: 2026-08-26
-reviewed: '2026-09-03'
+updated: 2026-11-24
+reviewed: 2026-11-24
 review_status: Current
 source_period: 2026-08
 description: AI AgentとNon-Human Identityを、人・Agent・Credential・Actionの監査可能な連鎖として管理するための考え方を整理する。
@@ -39,8 +39,8 @@ media_rights: none
 <div class="sil-article-meta">
   <div class="sil-meta-item"><span class="sil-meta-label">Published</span><span class="sil-meta-value">2026-08-26</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Source Period</span><span class="sil-meta-value">August 2026</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-08-26</span></div>
-  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-09-03</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Updated</span><span class="sil-meta-value">2026-11-24</span></div>
+  <div class="sil-meta-item"><span class="sil-meta-label">Last Reviewed</span><span class="sil-meta-value">2026-11-24</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Review Status</span><span class="sil-review-current">Current</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Category</span><span class="sil-meta-value">Identity Security</span></div>
   <div class="sil-meta-item"><span class="sil-meta-label">Topics</span><span class="sil-meta-value">Identity Security / AI Agent Security</span></div>
@@ -120,6 +120,21 @@ AI AgentとNHIは重なる場合がありますが、同一概念ではありま
 
 特に重要なのは**Standing Privilegeを減らすこと**です。長期有効なAPI Keyや広すぎるService AccountをAgentへ渡すと、Agentの誤動作、Prompt Injection、Credential漏えいのいずれでも被害範囲が大きくなります。
 
+## 2026年11月の追加知見：権限縮小によるAgentへの委譲
+
+AWSは2026年11月20日、AWS STSのGetScopedCredentialsを紹介した。既存の一時認証情報を基に、元の有効権限と縮小ポリシーの共通部分に権限を限定した認証情報を発行するAPIである。新しいセッションの有効期間は呼出元セッションの残存期間を超えず、呼出元のIAM Identityは維持される。[^nov2026]
+
+親AgentやCredential Brokerがタスクごとに限定された権限をSub-Agentへ渡す設計に利用できる。ただし、Agent固有IDを新たに発行する仕組みではない。元の認証情報をSub-Agentから隔離し、縮小ポリシーを信頼できるコンポーネントで決定する必要がある。
+
+LibraryはこのAPIをAgent IAM全体の解決策ではなく、最小権限と動的な権限委譲の構成要素として位置付ける。呼出元のIAM Identityが維持されることから、個々のAgentへの操作帰属をIAM Identityだけで判断せず、発行記録・Agent固有ID・タスク・操作ログを関連付ける設計が必要である。
+
+### 追加の推奨アクション
+
+- タスク単位で必要な権限と有効期間を定義する。
+- 権限を制限するポリシーは信頼できるコンポーネントで決定する。
+- 元の認証情報をSub-Agentから隔離する。
+- Agent固有ID、委任元、認証情報、操作履歴の関連付けを別途設計する。
+
 ## 経営インパクト
 
 | 観点 | リスク | 経営上の意味 |
@@ -185,8 +200,12 @@ Just-in-Time Credential。必要な操作時に限定して発行される短期
 
 ## 参考情報
 
+- [AWS Security Blog — Scope down permissions of existing sessions using AWS STS GetScopedCredentials（2026-11-20）](https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/)
+
 - [1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20)](https://1password.com/blog/how-agentic-ai-is-redefining-identity-security)
 - [Cloud Security Alliance, Defining Non-Human Identity (2026-07-22)](https://cloudsecurityalliance.org/artifacts/defining-non-human-identity)
 - [OWASP Gen AI Security Project, Top 10 for Agentic Applications for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
 - [OWASP Gen AI Security Project, Agentic Security Initiative](https://genai.owasp.org/initiatives/agentic-security-initiative/)
 [^source]: [1Password, 451 Research report: How agentic AI is redefining identity security (2026-08-20)](https://1password.com/blog/how-agentic-ai-is-redefining-identity-security)
+
+[^nov2026]: [追加一次情報（2026-11-20）](https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/)。

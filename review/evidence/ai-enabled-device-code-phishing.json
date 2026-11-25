@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "article_path": "docs/identity-security/ai-enabled-device-code-phishing.md",
+  "review": {
+    "status": "approved",
+    "reviewed_by": "peridotan",
+    "reviewed_at": "2026-11-24",
+    "notes": "既存記事への追加部分のみの差分レビュー。人間の承認前。既存本文全体の再検証ではない。 人間の編集担当者が本文・一次情報・Evidence Reviewを確認し、2026-11-24に追加部分の公開を明示承認。承認対象コミット: eb02d60710f2928df56fa2e2e1566f4abc02553d"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "Microsoftは2026年11月17日にGitHub Copilot CLIを例とする研究を公表した。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+        "locator": "記事冒頭の日付および導入部",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C02",
+      "statement": "研究は実験環境での検証であり、報告された4つの結果は実際の攻撃で観測されていない。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "source_fact",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+        "locator": "From a familiar phishing technique to an AI coding agent の末尾",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C03",
+      "statement": "遠隔操作の可能性は有効なセッション、組織ポリシー、ローカル権限と承認設定に依存する。 対象セッションが稼働中で遠隔操作が有効なことが前提であり、認証不要のリモートコード実行ではない。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+        "locator": "One approval, four ways the impact can spread / 1. An attacker can steer an enabled remote session",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C04",
+      "statement": "メモリ改変の影響は機能とポリシーに依存する。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+        "locator": "2. Memory can carry the attack forward",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C05",
+      "statement": "クラウド同期されたセッションの閲覧およびリポジトリへのアクセスが実験で報告された。後者は認可スコープとアカウント権限に依存する。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "source_claim",
+      "importance": "material",
+      "verification": "verified",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+        "locator": "3. Synced sessions reveal earlier context; 4. Repository access follows the account",
+        "published_at": "2026-11-17",
+        "accessed_at": "2026-11-24"
+      },
+      "review_note": "前回の差分Evidence Reviewで一次情報の記載を確認。人間の確認は未実施。"
+    },
+    {
+      "id": "C06",
+      "statement": "認証後に利用可能な機能・権限・保存情報を一体で評価する。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "認証の不正承認による影響はエージェントに付与された機能と権限によって変化する。"
+    },
+    {
+      "id": "C07",
+      "statement": "自ら開始した認証のみ承認し、不要な遠隔操作・同期・メモリ機能とOAuth認可を見直し、侵害時は保存情報・操作履歴を調査する。",
+      "section": "## 2026年11月の追加知見：AI Coding Agentへの影響",
+      "classification": "library_assessment",
+      "importance": "material",
+      "verification": "not_applicable",
+      "rationale": "MicrosoftのMitigation and protection guidanceおよび4つの実験結果を企業向け統制に展開する。"
+    }
+  ]
+}

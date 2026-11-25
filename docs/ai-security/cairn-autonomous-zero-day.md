@@ -115,9 +115,9 @@ Amazonは、医用画像AIアプリケーションの脆弱性について、当
 
 ## 関連記事
 
-- [anthropic llm discovered zero days](anthropic-llm-discovered-zero-days.md)
-- [mdash ai vulnerability discovery](../cybersecurity/mdash-ai-vulnerability-discovery.md)
-- [ai assisted intrusion 10 hours](../cybersecurity/ai-assisted-intrusion-10-hours.md)
+- [LLM-discovered Zero-days ― AIのVulnerability Discoveryが「人間の処理能力」を超え始める](anthropic-llm-discovered-zero-days.md)
+- [MDASH ― AIによる脆弱性発見をBenchmarkからProduction Defenseへ](../cybersecurity/mdash-ai-vulnerability-discovery.md)
+- [AI-assisted Intrusion ― 2週間相当の攻撃工程が10時間未満へ](../cybersecurity/ai-assisted-intrusion-10-hours.md)
 
 ## 参考情報
 

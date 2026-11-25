@@ -121,9 +121,9 @@ JPCERT/CCは、依頼側向けチェックリスト、調査担当側向けチ�
 
 ## 関連記事
 
-- [incident trend brief 2026 10 h1](../cybersecurity/incident-trend-brief-2026-10-h1.md)
-- [unit42 global ir 2026](../cybersecurity/unit42-global-ir-2026.md)
-- [c scrm due diligence sp1326](c-scrm-due-diligence-sp1326.md)
+- [Incident Trend Brief 2026年10月前半 ― APIリスク・委託先波及・クラウド復旧](../cybersecurity/incident-trend-brief-2026-10-h1.md)
+- [Unit 42 Global IR 2026 ― 72分・Identity 90%・SaaS 23%が示す「境界防御の限界」](../cybersecurity/unit42-global-ir-2026.md)
+- [NIST SP 1326 ― Supply Chain Securityを「契約後の監査」から「契約前のDue Diligence」へ](c-scrm-due-diligence-sp1326.md)
 
 ## 参考情報
 

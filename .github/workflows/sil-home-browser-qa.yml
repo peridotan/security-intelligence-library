@@ -54,7 +54,49 @@ jobs:
                         titles:cards.every(c=>{const a=c.querySelector('.sil-card-title');return a && a.getAttribute('href') && a.getBoundingClientRect().height>0;}),
                         duplicateHidden:cards.every(c=>getComputedStyle(c.querySelector('.sil-card-more')).display==='none')};
                       }""")
-                      row={"width":w,"height":h,"size":size,**info,"fits":info["bottom"]<=h+1}
+                      lower = page.evaluate("""() => {
+                        const current=document.querySelector('#current-intelligence + .sil-section-lead + .sil-cards-2');
+                        const baseline=current.querySelector('.sil-card');
+                        const baselineTitle=getComputedStyle(baseline.querySelector('.sil-card-title')).fontSize;
+                        const baselineBody=getComputedStyle(baseline.querySelector('p')).fontSize;
+                        const baselinePad=getComputedStyle(baseline).padding;
+                        const groups=[
+                          ['quarterly','#quarterly-review + .sil-section-lead + .sil-cards'],
+                          ['monthly','#monthly-intelligence + .sil-cards'],
+                          ['category','#explore-by-category + .sil-cards']
+                        ];
+                        const report=groups.map(([name, selector])=>{
+                          const grid=document.querySelector(selector);
+                          if(!grid) return {name,count:0,overflow:true,consistent:false,links:false};
+                          const cards=[...grid.querySelectorAll(':scope > .sil-card')];
+                          return {
+                            name,count:cards.length,
+                            columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,
+                            overflow:cards.some(c=>c.scrollWidth>c.clientWidth+2 || c.scrollHeight>c.clientHeight+2),
+                            consistent:cards.every(c=>getComputedStyle(c).padding===baselinePad &&
+                              getComputedStyle(c.querySelector('.sil-card-title')).fontSize===baselineTitle &&
+                              getComputedStyle(c.querySelector('p')).fontSize===baselineBody),
+                            links:cards.every(c=>{
+                              const a=c.querySelector('.sil-card-title'), more=c.querySelector('.sil-card-more');
+                              return a && a.getAttribute('href') && a.getBoundingClientRect().height>0 &&
+                                (name==='category' ? !more : more && a.href===more.href && getComputedStyle(more).display==='none');
+                            })
+                          };
+                        });
+                        const topics=document.querySelector('#featured-topics + .sil-topics');
+                        const help=document.querySelector('#how-to-use-this-library + ul');
+                        const visible=e=>e && e.getBoundingClientRect().height>0;
+                        return {groups:report,topics:!!(visible(topics) && topics.querySelectorAll('.sil-topic[href]').length>=1 &&
+                          topics.scrollWidth<=topics.clientWidth+2),help:!!(visible(help) && help.querySelectorAll('li').length===5 &&
+                          help.scrollWidth<=help.clientWidth+2 && visible(help.nextElementSibling) && help.nextElementSibling.querySelector('a[href]'))};
+                      }""")
+                      row={"width":w,"height":h,"size":size,**info,"fits":info["bottom"]<=h+1,"lower":lower}
+                      expected_counts={"quarterly":2,"monthly":3,"category":5}
+                      for group in lower["groups"]:
+                          if group["count"]!=expected_counts[group["name"]] or group["overflow"] or not group["consistent"] or not group["links"]:
+                              errors.append({"lower_section":group,"viewport":[w,h,size]})
+                      if not lower["topics"] or not lower["help"]:
+                          errors.append({"topics_or_help":lower,"viewport":[w,h,size]})
                       results.append(row)
                       print(json.dumps(row), flush=True)
                       if info["count"]!=6 or info["cardOverflow"] or info["horizontalOverflow"] or not info["titles"] or not info["duplicateHidden"] or info["font"]!=size:
@@ -63,6 +105,8 @@ jobs:
                           errors.append({"desktop_fit":row})
                       if size=="standard" and w in (1686,1366,390):
                           page.screenshot(path=f"qa-home/home-{w}-{h}.png", full_page=False)
+                      if size=="standard" and w in (1686,390):
+                          page.screenshot(path=f"qa-home/home-full-{w}-{h}.png", full_page=True)
                       page.close()
               browser.close()
           pathlib.Path("qa-home/results.json").write_text(json.dumps(results,indent=2))

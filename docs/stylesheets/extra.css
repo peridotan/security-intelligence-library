@@ -836,3 +836,106 @@ a.sil-topic:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Home: extend the compact Current Intelligence visual rhythm to the
+ * remaining landing-page sections. Keep article and archive pages unchanged.
+ */
+.md-typeset:has(.sil-hero) :is(#quarterly-review, #monthly-intelligence, #explore-by-category, #featured-topics, #how-to-use-this-library) {
+  margin: 0.8rem 0 0.18rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.md-typeset:has(.sil-hero) #quarterly-review + .sil-section-lead {
+  margin: 0;
+  max-width: none;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset:has(.sil-hero) :is(#quarterly-review + .sil-section-lead + .sil-cards, #monthly-intelligence + .sil-cards, #explore-by-category + .sil-cards) {
+  gap: 0.35rem;
+  margin: 0.28rem 0 0.8rem;
+}
+
+.md-typeset:has(.sil-hero) :is(#quarterly-review + .sil-section-lead + .sil-cards, #monthly-intelligence + .sil-cards, #explore-by-category + .sil-cards) .sil-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0.6rem;
+  overflow-wrap: anywhere;
+}
+
+.md-typeset:has(.sil-hero) :is(#quarterly-review + .sil-section-lead + .sil-cards, #monthly-intelligence + .sil-cards, #explore-by-category + .sil-cards) .sil-card-title {
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.md-typeset:has(.sil-hero) :is(#quarterly-review + .sil-section-lead + .sil-cards, #monthly-intelligence + .sil-cards) .sil-card-meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.66rem;
+  line-height: 1.3;
+}
+
+.md-typeset:has(.sil-hero) :is(#quarterly-review + .sil-section-lead + .sil-cards, #monthly-intelligence + .sil-cards, #explore-by-category + .sil-cards) .sil-card p {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset:has(.sil-hero) :is(#quarterly-review + .sil-section-lead + .sil-cards, #monthly-intelligence + .sil-cards) .sil-card-more {
+  /* The card title already links to the identical review. */
+  display: none;
+}
+
+.md-typeset:has(.sil-hero) #quarterly-review + .sil-section-lead + .sil-cards .sil-quarter-reviewed,
+.md-typeset:has(.sil-hero) #monthly-intelligence + .sil-cards .sil-month-reviewed {
+  white-space: normal;
+}
+
+.md-typeset:has(.sil-hero) #monthly-intelligence + .sil-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md-typeset:has(.sil-hero) #explore-by-category + .sil-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md-typeset:has(.sil-hero) #featured-topics + .sil-topics {
+  margin: 0.28rem 0 0.8rem;
+}
+
+.md-typeset:has(.sil-hero) #how-to-use-this-library + ul {
+  margin-block: 0.3rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.md-typeset:has(.sil-hero) #how-to-use-this-library + ul > li {
+  margin-block: 0.18rem;
+}
+
+.md-typeset:has(.sil-hero) #how-to-use-this-library + ul + p {
+  margin-block: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+@media screen and (min-width: 64em) {
+  .md-typeset:has(.sil-hero) #monthly-intelligence + .sil-cards,
+  .md-typeset:has(.sil-hero) #explore-by-category + .sil-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-typeset:has(.sil-hero) #explore-by-category + .sil-cards {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset:has(.sil-hero) #monthly-intelligence + .sil-cards,
+  .md-typeset:has(.sil-hero) #explore-by-category + .sil-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -56,7 +56,7 @@ When a matching triage pull request is merged:
    - read `templates/article-template.md`
    - read `config/topics.yml`
    - inspect existing articles for duplication and related context
-5. Draft one Japanese Markdown article per candidate.
+5. Draft one Japanese Markdown article per candidate. For related articles, read the target article title and use the canonical title as the link label, not a slug-derived label. Follow the batch review handoff in ARTICLE_WORKFLOW.md; never create approvals.
 6. Create a **claim-level Evidence Review dossier** using
    `templates/evidence-review-template.json` and the instructions in
    `EVIDENCE_REVIEW.md`. Return one UTF-8 JSON artifact per article,

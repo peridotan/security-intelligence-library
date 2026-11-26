@@ -4,6 +4,7 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - docs/stylesheets/extra.css
+      - docs/index.md
       - .github/workflows/sil-home-browser-qa.yml
 permissions:
   contents: read
@@ -61,8 +62,8 @@ jobs:
                         const baselineBody=getComputedStyle(baseline.querySelector('p')).fontSize;
                         const baselinePad=getComputedStyle(baseline).padding;
                         const groups=[
-                          ['quarterly','#quarterly-review + .sil-section-lead + .sil-cards'],
-                          ['monthly','#monthly-intelligence + .sil-cards'],
+                          ['quarterly','.sil-home-review-heading:has(> #quarterly-review) + .sil-section-lead + .sil-cards'],
+                          ['monthly','.sil-home-review-heading:has(> #monthly-intelligence) + .sil-cards'],
                           ['category','#explore-by-category + .sil-cards']
                         ];
                         const report=groups.map(([name, selector])=>{
@@ -90,7 +91,30 @@ jobs:
                           topics.scrollWidth<=topics.clientWidth+2),help:!!(visible(help) && help.querySelectorAll('li').length===5 &&
                           help.scrollWidth<=help.clientWidth+2 && visible(help.nextElementSibling) && help.nextElementSibling.querySelector('a[href]'))};
                       }""")
-                      row={"width":w,"height":h,"size":size,**info,"fits":info["bottom"]<=h+1,"lower":lower}
+                      archives = page.evaluate("""() => {
+                        return ['quarterly','monthly'].map(folder=>{
+                          const id=folder==='quarterly'?'quarterly-review':'monthly-intelligence';
+                          const heading=document.getElementById(id);
+                          const wrapper=heading?.parentElement;
+                          const link=wrapper?.querySelector('.sil-home-archive-link');
+                          if(!link) return {folder,valid:false};
+                          const r=link.getBoundingClientRect(), h=heading.getBoundingClientRect();
+                          const path=new URL(link.href).pathname;
+                          const separated=r.left>=h.right-1 || r.top>=h.bottom-1;
+                          return {folder,href:link.href,valid:wrapper.classList.contains('sil-home-review-heading') &&
+                            (path.endsWith('/'+folder+'/') || path.endsWith('/'+folder+'/index.html')) &&
+                            r.width>0 && r.height>0 && r.left>=-1 && r.right<=innerWidth+1 &&
+                            separated && link.scrollWidth<=link.clientWidth+2};
+                        });
+                      }""")
+                      for archive in archives:
+                          if not archive["valid"]:
+                              errors.append({"archive":archive,"viewport":[w,h,size]})
+                          elif size=="standard" and w in (1686,390):
+                              response=page.request.get(archive["href"])
+                              if not response.ok:
+                                  errors.append({"archive_http":archive,"status":response.status})
+                      row={"width":w,"height":h,"size":size,**info,"fits":info["bottom"]<=h+1,"lower":lower,"archives":archives}
                       expected_counts={"quarterly":2,"monthly":3,"category":5}
                       for group in lower["groups"]:
                           if group["count"]!=expected_counts[group["name"]] or group["overflow"] or not group["consistent"] or not group["links"]:

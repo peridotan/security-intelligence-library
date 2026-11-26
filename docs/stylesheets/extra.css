@@ -784,7 +784,7 @@ a.sil-topic:hover {
 .md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 .sil-card {
   display: flex;
   flex-direction: column;
-  padding: 0.38rem 0.6rem;
+  padding: 0.25rem 0.6rem;
   overflow-wrap: anywhere;
 }
 

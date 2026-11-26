@@ -1,0 +1,78 @@
+name: SIL Home browser QA (PR only)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - docs/stylesheets/extra.css
+      - .github/workflows/sil-home-browser-qa.yml
+permissions:
+  contents: read
+jobs:
+  home-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Build actual site and install browser
+        run: |
+          python -m pip install -r requirements.txt playwright
+          zensical build --clean --strict
+          python -m playwright install --with-deps chromium
+      - name: Verify actual homepage in Chromium
+        run: |
+          mkdir -p qa-home
+          python - <<'PY'
+          import functools, http.server, threading, json, pathlib
+          from playwright.sync_api import sync_playwright
+          handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory="site")
+          server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+          threading.Thread(target=server.serve_forever, daemon=True).start()
+          url = f"http://127.0.0.1:{server.server_port}/"
+          results, errors = [], []
+          sizes = [(1920,940),(1686,764),(1600,760),(1366,630),(1280,580),(1024,700),(768,800),(390,844),(320,640)]
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              for w,h in sizes:
+                  for size in ["standard","large","xlarge"]:
+                      page = browser.new_page(viewport={"width":w,"height":h}, device_scale_factor=1)
+                      page.add_init_script(f"localStorage.setItem('peridotan-security-suite-font-size-v1', '{size}')")
+                      page.goto(url, wait_until="networkidle")
+                      page.locator("#security-intelligence-suite-font-size").wait_for()
+                      page.evaluate("document.fonts.ready")
+                      grid = page.locator("#current-intelligence + .sil-section-lead + .sil-cards-2")
+                      grid.wait_for()
+                      info = grid.evaluate("""g => {
+                        const cards=[...g.querySelectorAll(':scope > .sil-card')];
+                        return {count:cards.length, columns:getComputedStyle(g).gridTemplateColumns.split(' ').length,
+                        bottom:Math.max(...cards.map(c=>c.getBoundingClientRect().bottom)),
+                        cardOverflow:cards.some(c=>c.scrollWidth>c.clientWidth+2 || c.scrollHeight>c.clientHeight+2),
+                        horizontalOverflow:document.documentElement.scrollWidth>innerWidth+2,
+                        font:document.documentElement.dataset.fontSize,
+                        titles:cards.every(c=>{const a=c.querySelector('.sil-card-title');return a && a.getAttribute('href') && a.getBoundingClientRect().height>0;}),
+                        duplicateHidden:cards.every(c=>getComputedStyle(c.querySelector('.sil-card-more')).display==='none')};
+                      }""")
+                      row={"width":w,"height":h,"size":size,**info,"fits":info["bottom"]<=h+1}
+                      results.append(row)
+                      print(json.dumps(row), flush=True)
+                      if info["count"]!=6 or info["cardOverflow"] or info["horizontalOverflow"] or not info["titles"] or not info["duplicateHidden"] or info["font"]!=size:
+                          errors.append(row)
+                      if size=="standard" and w>=1600 and (info["columns"]!=3 or not row["fits"]):
+                          errors.append({"desktop_fit":row})
+                      if size=="standard" and w in (1686,1366,390):
+                          page.screenshot(path=f"qa-home/home-{w}-{h}.png", full_page=False)
+                      page.close()
+              browser.close()
+          pathlib.Path("qa-home/results.json").write_text(json.dumps(results,indent=2))
+          if errors:
+              print("FAILURES:", json.dumps(errors,indent=2))
+              raise SystemExit(1)
+          PY
+      - name: Upload QA evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: sil-home-browser-qa
+          path: qa-home/

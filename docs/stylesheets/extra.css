@@ -716,3 +716,123 @@ a.sil-topic:hover {
   color: var(--md-default-fg-color);
   letter-spacing: 0.035em;
 }
+
+/* Home: prioritize the six Current Intelligence cards above the fold.
+ * Scope by the existing homepage hero and the generated latest-card block.
+ * Keep the generator, card content, article links and shared Suite chrome intact.
+ */
+.md-main__inner:has(.sil-hero) {
+  margin-top: 0.2rem;
+}
+
+.md-content__inner:has(.sil-hero) {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.md-content__inner:has(.sil-hero)::before {
+  height: 0;
+}
+
+.md-typeset:has(.sil-hero) .sil-hero {
+  margin: 0.15rem 0 0.3rem;
+  padding: 0.35rem 0.9rem;
+}
+
+.md-typeset:has(.sil-hero) .sil-kicker {
+  margin-bottom: 0.08rem;
+  font-size: 0.68rem;
+}
+
+.md-typeset:has(.sil-hero) .sil-hero h1 {
+  margin: 0 0 0.12rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.md-typeset:has(.sil-hero) .sil-hero p {
+  max-width: none;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.md-typeset:has(.sil-hero) .sil-hero + p {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence {
+  margin: 0.35rem 0 0.18rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead {
+  margin: 0;
+  max-width: none;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0.28rem 0 1.25rem;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 .sil-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0.6rem;
+  overflow-wrap: anywhere;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 .sil-card-title {
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 .sil-card-meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.66rem;
+  line-height: 1.3;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 .sil-card p {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 .sil-card-more {
+  /* The linked title already leads to the same article. */
+  display: none;
+}
+
+/* Desktop tabs provide primary navigation; reclaim the unused Home sidebar.
+ * Do not hide the mobile navigation drawer.
+ */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner:has(.sil-hero) > .md-sidebar--primary {
+    display: none;
+  }
+
+  .md-main__inner:has(.sil-hero) > .md-content {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Larger type and narrow screens may scroll instead of truncating content. */
+@media screen and (max-width: 44.984375em) {
+  .md-typeset:has(.sil-hero) #current-intelligence + .sil-section-lead + .sil-cards-2 {
+    grid-template-columns: 1fr;
+  }
+}

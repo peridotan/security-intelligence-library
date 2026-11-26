@@ -106,3 +106,7 @@ jobs:
         uses: actions/deploy-pages@v5
         with:
           artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Verify deployed Pages content
+        timeout-minutes: 12
+        run: python scripts/check_deployed_site.py --revision "${{ github.sha }}"

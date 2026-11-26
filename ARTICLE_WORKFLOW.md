@@ -21,6 +21,64 @@ AIの出典照合と**人間の確認・承認は異なる行為**です。CIの
 
 NICT試験では説明のためPRを2本に分けました。今後は**同じDraft PRを更新してPhase 3→5まで進めても構いません**。
 
+## 複数記事の一括公開（標準）
+
+同じ編集サイクルの候補は記事単位でレビューし、承認済みの記事だけを最新mainから作成した1本の公開PRに集約する。単独公開が必要な場合は従来の単一記事手順も利用できる。未承認記事、watch候補、未解決の根拠を含む記事は公開PRから除外する。
+
+### 承認前のレビュー表
+
+```bash
+python scripts/batch_review.py --article drafts/ai-security/example-article.md --article drafts/identity-security/example-existing-update.md
+```
+
+実際のDraftパスを明示する。対応する `drafts/evidence/<Draftファイル名>.json` と `drafts/reviews/<Draftファイル名>.md` が必要。新規・既存記事更新の両方を扱う。標準出力には本文/Evidence/編集レビュー表と更新元本文・既存EvidenceのSHA-256（原本が存在しない場合はnull）、主張、分類、検証状態、参照箇所、URL、独自評価理由、未解決件数が出る。結果は人間向けレビュー資料であり、承認記録ではない。未解決主張がある場合は表を出力した上で終了コード2を返す。構造不正は終了コード1。
+
+### 承認後の公開ファイル準備（任意CLI）
+
+人間がレビュー表を確認した後、承認記録JSONを作成する。新規記事は original_sha256 と original_evidence_sha256 を null、更新は現行原本のSHA-256（既存Evidenceがなければ後者はnull）にする。レビューMarkdownのSHA-256も記録する。ハッシュは実ファイルから取得し、承認後に再計算して承認済みと見なさない。
+
+~~~json
+{
+  "schema_version": 1,
+  "base_commit": "<実際の40桁のmainコミットSHA>",
+  "articles": [
+    {
+      "draft": "drafts/ai-security/example-article.md",
+      "decision": "approved",
+      "reviewed_by": "<実際の人間の担当者>",
+      "reviewed_at": "YYYY-MM-DD",
+      "publication_date": "YYYY-MM-DD",
+      "article_sha256": "<承認時のSHA-256>",
+      "evidence_sha256": "<承認時のSHA-256>",
+      "review_sha256": "<承認時のSHA-256>",
+      "original_sha256": null,
+      "original_evidence_sha256": null
+    }
+  ]
+}
+~~~
+
+上記は記入例であり承認ではない。最新mainをfetchし、そのコミットから作成した公開用ブランチで次を実行する。原本docs/reviewは未変更であること。Draftは別途配置する。
+
+~~~bash
+git fetch origin main
+python scripts/batch_prepare.py --manifest /path/to/human-approved.json --output /path/to/new-publication-bundle
+~~~
+
+出力はリポジトリ外の新規ディレクトリに限定し、原本は変更しない。全件の承認・ハッシュ・未解決主張・更新元の整合性を先に確認し、不一致なら全体を拒否する。出力したdocs、review/evidence、review/pilots、review/publication-batchesを確認して公開用ブランチへ取り込み、第5節の生成・CIを実行する。一括公開のコミットには必ず `git add review/publication-batches/` で監査記録を含める。既存記事の更新は初回公開日を保持する。旧Evidenceの差分レビューでは過去の主張の保持も人間が確認する。承認記録は人間の申告であり、CLIは本人性や実質レビューを証明しない。取り込み直前にmainの変化を確認し、競合時は再レビューする。
+
+### 一括公開の実施
+
+1. 人間が対象記事とレビュー表を確認し、記事ごとに公開を明示承認する。承認者・日付・対象ファイルのハッシュを編集レビュー記録に残す。
+2. 最新mainから一つの公開ブランチを作成する。承認時のハッシュと取り込むDraft/Evidenceを照合する。変更があれば再レビューする。
+3. 新規記事は既存ファイルへの衝突を確認して掲載パスへ移す。既存記事更新は承認時の元記事と現在のmainを比較し、変更があれば再レビューする。既存URLと初回公開日は保持する。承認済みファイルだけを取り込む。
+4. Evidenceをapprovedにし、実際の担当者・日付を記録する。承認前の注意書きは履歴と明示し、現時点の状態と矛盾させない。承認対象の主張・根拠は変更しない。
+5. 全記事を取り込んだ後に第5節の生成コマンドを一括で実行する。一つの公開PRにまとめ、最新CI成功・最終差分確認後、人間がマージする。
+6. mainが途中で進んだ場合は再同期し、既存記事の競合と承認対象の変更を確認し、生成とCIを再実行する。生成差分の手書きやCIの迂回は不可。
+7. 第6節の公開確認を行う。公開PRに取り込まなかったDraftは未公開のまま管理し、公開済みの個別Draft PRは重複マージしない。
+
+この手順は公開PRの作成・承認・マージを自動化するものではない。レビュー表生成は読み取り専用であり、実質的な根拠確認や承認を代行しない。
+
 ## 0. 収集・記事採用判断
 
 通常は [WORK_AI_DRAFTING.md](WORK_AI_DRAFTING.md) の条件に従い、マージ済みTriage PRから **triage.route = library** かつ **triage.draft_eligible = true** の候補を選びます。
@@ -109,6 +167,8 @@ python scripts/check_content.py
 python scripts/check_evidence_review.py --base-ref origin/main
 git diff --check
 git add docs/ review/evidence/ review/pilots/
+# 一括公開の場合は監査記録も追加する（単一記事の場合は不要）
+# git add review/publication-batches/
 git commit -m "Publish reviewed article with Evidence Review"
 git push
 ~~~
@@ -123,9 +183,9 @@ Draft解除でCIが再実行されます。**最新チェックが成功**し、
 
 ## 6. デプロイと公開ページを確認する
 
-公開ページをブラウザで開き、タイトル、日付・メタデータ、本文、目次、脚注・出典リンク、関連記事、モバイル表示を確認します。**CIの成功は見た目や参照先の正しさまで保証しません**。問題があれば別PRで修正します。
+Pagesデプロイ後に `scripts/check_deployed_site.py` が生成HTMLとContext Index JSONを公開URLから取得し、ビルド成果物とのSHA-256一致を確認する。キャッシュ・一時的な失敗は限定回数再試行し、継続する不一致はActionsを失敗として記録する。デプロイ自体を取り消す仕組みではない。Actionsの結果を確認した上で、公開ページをブラウザで開き、タイトル、日付・メタデータ、本文、目次、脚注・出典リンク、関連記事、モバイル表示を確認します。**CIの成功は見た目や参照先の正しさまで保証しません**。問題があれば別PRで修正します。
 
-## このCLIが自動化しないこと
+## 単一記事CLI（article_workflow.py）が自動化しないこと
 
 AIやWebへの問い合わせ、記事自動作成、内容の真偽判定、人間のEvidence Review承認、承認日・承認者の記入、PRの自動作成、publishedへの変更、マージ、Pagesへのデプロイ、既存記事の上書き。
 

@@ -8,6 +8,8 @@ import tempfile
 import unittest
 
 import article_workflow as workflow
+import batch_review
+import batch_prepare
 
 
 class ArticleWorkflowTests(unittest.TestCase):
@@ -141,6 +143,84 @@ class ArticleWorkflowTests(unittest.TestCase):
         self.assertTrue(any("section is absent" in line for line in errors))
         with self.assertRaises(ValueError):
             workflow.stage_bundle(self.root, self.collection, self.slug)
+
+    def test_batch_packet_is_read_only_and_records_hashes(self):
+        self.init()
+        paths = self.complete_sources()
+        name = paths["article"].relative_to(self.root).as_posix()
+        before = {key: p.read_bytes() for key, p in paths.items()}
+        report, unresolved = batch_review.build_report(self.root, [name])
+        self.assertEqual(unresolved, 0)
+        self.assertIn("NOT human approval", report)
+        self.assertIn(batch_review.digest(before["article"]), report)
+        self.assertIn(batch_review.digest(before["evidence"]), report)
+        self.assertEqual(before, {key: p.read_bytes() for key, p in paths.items()})
+        with self.assertRaises(ValueError):
+            batch_review.build_report(self.root, [name, name])
+
+    def test_batch_packet_reports_unresolved_and_rejects_absent_section(self):
+        self.init()
+        paths = self.complete_sources()
+        name = paths["article"].relative_to(self.root).as_posix()
+        dossier = json.loads(paths["evidence"].read_text(encoding="utf-8"))
+        claim = next(c for c in dossier["claims"] if c["classification"] == "source_fact")
+        claim["verification"] = "needs_review"
+        paths["evidence"].write_text(json.dumps(dossier), encoding="utf-8")
+        report, unresolved = batch_review.build_report(self.root, [name])
+        self.assertEqual(unresolved, 1)
+        self.assertIn("needs_review", report)
+        claim["section"] = "## Missing"
+        paths["evidence"].write_text(json.dumps(dossier), encoding="utf-8")
+        with self.assertRaises(ValueError):
+            batch_review.build_report(self.root, [name])
+
+    def approved_record(self, paths):
+        return {
+            "draft": paths["article"].relative_to(self.root).as_posix(),
+            "decision": "approved", "reviewed_by": "test-fixture-human",
+            "reviewed_at": "2026-10-16", "publication_date": "2026-10-17",
+            "article_sha256": batch_review.digest(paths["article"].read_bytes()),
+            "evidence_sha256": batch_review.digest(paths["evidence"].read_bytes()),
+            "review_sha256": batch_review.digest(paths["review"].read_bytes()),
+            "original_sha256": None, "original_evidence_sha256": None,
+        }
+
+    def test_batch_prepare_isolated_and_preserves_claims(self):
+        self.init()
+        paths = self.complete_sources()
+        record = self.approved_record(paths)
+        manifest = {"schema_version": 1, "base_commit": "a" * 40, "articles": [record]}
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "bundle"
+            before = {k: p.read_bytes() for k, p in paths.items()}
+            files = batch_prepare.prepare(self.root, manifest, output)
+            self.assertEqual(len(files), 4)
+            published = output / "docs" / self.collection / f"{self.slug}.md"
+            self.assertIn("status: published", published.read_text(encoding="utf-8"))
+            dossier = json.loads((output / "review" / "evidence" / f"{self.slug}.json").read_text(encoding="utf-8"))
+            self.assertEqual(dossier["review"]["status"], "approved")
+            self.assertEqual(dossier["claims"], json.loads(before["evidence"])["claims"])
+            self.assertEqual(before, {k: p.read_bytes() for k, p in paths.items()})
+            self.assertFalse((self.root / "docs").exists())
+            with self.assertRaises(ValueError):
+                batch_prepare.prepare(self.root, manifest, output)
+
+    def test_batch_prepare_refuses_changed_or_unapproved_input(self):
+        self.init()
+        paths = self.complete_sources()
+        record = self.approved_record(paths)
+        manifest = {"schema_version": 1, "base_commit": "a" * 40, "articles": [record]}
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "bundle"
+            record["decision"] = "pending"
+            with self.assertRaises(ValueError):
+                batch_prepare.prepare(self.root, manifest, output)
+            self.assertFalse(output.exists())
+            record["decision"] = "approved"
+            paths["article"].write_text(paths["article"].read_text(encoding="utf-8") + "\\nChanged", encoding="utf-8")
+            with self.assertRaises(ValueError):
+                batch_prepare.prepare(self.root, manifest, output)
+            self.assertFalse(output.exists())
 
 
 if __name__ == "__main__":

@@ -119,9 +119,9 @@ CrowdStrikeのテストセットは、Tool call、Shell injection、Typosquat im
 
 ## 関連記事
 
-- [openai huggingface evaluation incident](openai-huggingface-evaluation-incident.md)
-- [litellm 1 107 0 supply chain compromise](litellm-1-107-0-supply-chain-compromise.md)
-- [langgrinch ai application supply chain](langgrinch-ai-application-supply-chain.md)
+- [OpenAI / Hugging Face評価インシデント ― AI Cyber評価環境をどう隔離するか](openai-huggingface-evaluation-incident.md)
+- [LiteLLM 1.107.0 Supply Chain Compromise ― Python起動だけでCredential Theftが走る](litellm-1-107-0-supply-chain-compromise.md)
+- [LangGrinch ― AI Application Supply ChainはPromptだけでなくFrameworkも攻撃面になる](langgrinch-ai-application-supply-chain.md)
 
 ## 参考情報
 

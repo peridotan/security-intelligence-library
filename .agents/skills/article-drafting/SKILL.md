@@ -16,7 +16,7 @@ license: MIT
 4. 重要主張を`source_fact`、`source_claim`、`library_assessment`で分け、出典URLと該当節・ページを紐付ける。
 5. `scripts/article_workflow.py`を使える場合、`init`と`check`の仕様・上書き禁止を先に確認し、記事・Evidence JSON・レビュー表を用意する。
 6. `status: draft`とEvidenceの`review.status: pending`を維持し、未解決主張と人間確認事項を添える。
-7. Evidence Reviewへ引き渡し、実際の人間の承認を待つ。
+7. 関連記事の表示名はリンク先の正式タイトルを確認して使用する。Evidence Reviewへ引き渡し、実際の人間の承認を待つ。一括公開は ARTICLE_WORKFLOW.md に従う。
 
 ## 禁止
 出典・確認日・レビュー担当者・承認を捏造しない。Work／AIによる直接公開やPRマージを実施しない。

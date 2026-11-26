@@ -51,6 +51,14 @@ jobs:
       - name: Run reusable article workflow regression tests
         run: python -m unittest discover -s scripts -p "test_article_workflow.py" -v
 
+      - name: Replay historical six-article publication batch
+        run: |
+          git fetch --no-tags origin d71c7f82f151590a8120267c293a736703c9dcbc 776fc52d1bc3e08387d6f9d46a98ab4df50f34c6 29e14d02c1e42cc80a7cc625d297d5f59938598a eb02d60710f2928df56fa2e2e1566f4abc02553d
+          python -m unittest discover -s scripts -p "test_batch_historical.py" -v
+
+      - name: Run deployment verification regression tests
+        run: python -m unittest discover -s scripts -p "test_deployed_site.py" -v
+
       - name: Run Incident Trend Brief regression tests
         run: python -m unittest discover -s scripts -p "test_incident_trends.py" -v
 

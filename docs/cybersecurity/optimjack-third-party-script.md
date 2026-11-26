@@ -118,9 +118,9 @@ Unit 42の「少なくとも178組織」とOptimizelyの「顧客の5%未満」�
 
 ## 関連記事
 
-- [openai axios signing supply chain](openai-axios-signing-supply-chain.md)
-- [mastra npm ai supply chain](mastra-npm-ai-supply-chain.md)
-- [mini shai hulud antv](mini-shai-hulud-antv.md)
+- [Axios Supply Chain Compromise ― Build Dependency侵害がCode Signing Trustまで到達した](openai-axios-signing-supply-chain.md)
+- [Mastra npm Supply Chain Compromise ― AI Frameworkも「開発者のTrust」を狙われる](mastra-npm-ai-supply-chain.md)
+- [Mini Shai-Hulud ― npm Supply ChainがCI/CD Credential Theftへ直結する](mini-shai-hulud-antv.md)
 
 ## 参考情報
 

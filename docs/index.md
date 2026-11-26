@@ -59,7 +59,10 @@ hide:
 <!-- AUTO:HOME_LATEST:END -->
 
 
-## Quarterly Review
+<div class="sil-home-review-heading">
+  <h2 id="quarterly-review">Quarterly Review</h2>
+  <a class="sil-home-archive-link" href="quarterly/index.md">すべての四半期レビュー →</a>
+</div>
 
 <div class="sil-section-lead">月次テーマを3か月単位で再分析し、短期ニュースでは見えにくい構造変化を整理します。</div>
 
@@ -80,7 +83,10 @@ hide:
 </div>
 <!-- AUTO:HOME_QUARTERLY:END -->
 
-## Monthly Intelligence
+<div class="sil-home-review-heading">
+  <h2 id="monthly-intelligence">Monthly Intelligence</h2>
+  <a class="sil-home-archive-link" href="monthly/index.md">すべての月次レビュー →</a>
+</div>
 
 <!-- AUTO:HOME_MONTHLY:START -->
 <div class="sil-cards">

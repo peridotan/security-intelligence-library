@@ -104,7 +104,17 @@ def prepare(root: Path, manifest: dict, output: Path) -> list[str]:
         meta, _ = workflow.split_frontmatter(article)
         if any(marker in article for marker in workflow.PLACEHOLDERS):
             raise ValueError(f"template placeholders remain: {name}")
-        if meta.get("category") != workflow.CATEGORIES[p.parts[1]] or p.parts[1] not in (meta.get("collections") or []):
+        # Existing articles may have legacy composite category labels.
+        # Preserve their category and collection membership rather than forcing
+        # the new-article taxonomy onto an approved update.
+        collections = meta.get("collections")
+        if not isinstance(collections, list) or p.parts[1] not in collections:
+            raise ValueError(f"collection mismatch: {name}")
+        if update:
+            original_meta, _ = workflow.split_frontmatter(old.decode("utf-8"))
+            if meta.get("category") != original_meta.get("category") or collections != original_meta.get("collections"):
+                raise ValueError(f"existing article category/collections changed: {name}")
+        elif meta.get("category") != workflow.CATEGORIES[p.parts[1]]:
             raise ValueError(f"collection mismatch: {name}")
         changes = {"status": "published", "review_status": "Current", "reviewed": day, "updated": published}
         if not update:

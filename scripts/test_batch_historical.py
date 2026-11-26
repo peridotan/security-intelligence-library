@@ -106,6 +106,8 @@ class HistoricalBatchTests(unittest.TestCase):
             self.assertEqual(meta["review_status"], "Current")
             self.assertEqual(str(meta["date"]), str(draft_meta["date"]))
             self.assertEqual(body, draft_body)
+            self.assertEqual(meta["category"], draft_meta["category"])
+            self.assertEqual(meta["collections"], draft_meta["collections"])
             src = json.loads((self.root / f"drafts/evidence/{slug}.json").read_text())
             dst = json.loads((self.output / f"review/evidence/{target_slug}.json").read_text())
             self.assertEqual(src["claims"], dst["claims"])
@@ -141,7 +143,7 @@ class HistoricalBatchTests(unittest.TestCase):
     def test_T10_unresolved(self):
         path = "drafts/evidence/cairn-autonomous-zero-day.json"
         data = json.loads((self.root / path).read_bytes())
-        next(c for c in data["claims"] if c["classification"] == "source_fact")["verification"] = "needs_review"
+        next(c for c in data["claims"] if c["classification"] in {"source_fact", "source_claim"})["verification"] = "needs_review"
         self.write(path, json.dumps(data).encode())
         self.reject("unresolved claims")
 

@@ -55,6 +55,11 @@ def build_report(root: Path, articles: list[str]) -> tuple[str, int]:
         ep = root / "drafts" / "evidence" / f"{slug}.json"
         article_bytes = read_safe(root, root / p)
         evidence_bytes = read_safe(root, ep)
+        review_bytes = read_safe(root, root / "drafts" / "reviews" / f"{slug}.md")
+        original_evidence_path = root / "review" / "evidence" / f"{target_slug}.json"
+        original_evidence = read_safe(root, original_evidence_path) if original_evidence_path.exists() else None
+        if not update and original_evidence is not None:
+            raise ValueError(f"new evidence target exists: {original_evidence_path}")
         meta, body = workflow.split_frontmatter(article_bytes.decode("utf-8"))
         if meta.get("status") != "draft" or meta.get("review_status") != "Needs Review":
             raise ValueError(f"expected pending draft: {name}")
@@ -83,9 +88,13 @@ def build_report(root: Path, articles: list[str]) -> tuple[str, int]:
                   f"- Target: `{target}` ({'update' if update else 'new'})",
                   f"- Article SHA-256: `{digest(article_bytes)}`",
                   f"- Evidence SHA-256: `{digest(evidence_bytes)}`",
+                  f"- Editorial review SHA-256: `{digest(review_bytes)}`",
                   f"- Unresolved claims: {missing}", ""]
         if update:
-            lines += [f"- Current original SHA-256: `{digest(original)}`", ""]
+            lines += [f"- Current original SHA-256: `{digest(original)}`",
+                      f"- Current original Evidence SHA-256: `{digest(original_evidence) if original_evidence is not None else 'null'}`", ""]
+        else:
+            lines += ["- Current original SHA-256: `null`", "- Current original Evidence SHA-256: `null`", ""]
         lines += ["| ID | Claim | Section | Classification / importance | Recorded verification | Source / locator / rationale |",
                   "| --- | --- | --- | --- | --- | --- |"]
         for c in claims:

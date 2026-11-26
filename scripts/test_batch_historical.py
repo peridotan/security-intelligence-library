@@ -91,6 +91,12 @@ class HistoricalBatchTests(unittest.TestCase):
         report, count = review.build_report(self.root, [r["draft"] for r in self.records])
         self.assertEqual(count, 0)
         self.assertIn("Articles: 6; claims: 34; unresolved: 0.", report)
+        for record in self.records:
+            for key in ("article_sha256", "evidence_sha256", "review_sha256", "original_sha256", "original_evidence_sha256"):
+                if record[key] is not None:
+                    self.assertIn(record[key], report)
+        self.assertEqual(report.count("Editorial review SHA-256:"), 6)
+        self.assertEqual(report.count("Current original Evidence SHA-256:"), 6)
 
     def test_T02_T03_T04_T12_prepare_all_preserve_dates_claims_and_originals(self):
         before = self.snapshot()

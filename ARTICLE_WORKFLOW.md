@@ -31,7 +31,7 @@ NICT試験では説明のためPRを2本に分けました。今後は**同じDr
 python scripts/batch_review.py --article drafts/ai-security/example-article.md --article drafts/identity-security/example-existing-update.md
 ```
 
-実際のDraftパスを明示する。対応する `drafts/evidence/<Draftファイル名>.json` が必要。新規・既存記事更新の両方を扱う。標準出力には本文/EvidenceのSHA-256、主張、分類、検証状態、参照箇所、URL、独自評価理由、未解決件数が出る。結果は人間向けレビュー資料であり、承認記録ではない。未解決主張がある場合は表を出力した上で終了コード2を返す。構造不正は終了コード1。
+実際のDraftパスを明示する。対応する `drafts/evidence/<Draftファイル名>.json` と `drafts/reviews/<Draftファイル名>.md` が必要。新規・既存記事更新の両方を扱う。標準出力には本文/Evidence/編集レビュー表と更新元本文・既存EvidenceのSHA-256（原本が存在しない場合はnull）、主張、分類、検証状態、参照箇所、URL、独自評価理由、未解決件数が出る。結果は人間向けレビュー資料であり、承認記録ではない。未解決主張がある場合は表を出力した上で終了コード2を返す。構造不正は終了コード1。
 
 ### 承認後の公開ファイル準備（任意CLI）
 
@@ -65,7 +65,7 @@ git fetch origin main
 python scripts/batch_prepare.py --manifest /path/to/human-approved.json --output /path/to/new-publication-bundle
 ~~~
 
-出力はリポジトリ外の新規ディレクトリに限定し、原本は変更しない。全件の承認・ハッシュ・未解決主張・更新元の整合性を先に確認し、不一致なら全体を拒否する。出力したdocs、review/evidence、review/pilots、review/publication-batchesを確認して公開用ブランチへ取り込み、第5節の生成・CIを実行する。既存記事の更新は初回公開日を保持する。旧Evidenceの差分レビューでは過去の主張の保持も人間が確認する。承認記録は人間の申告であり、CLIは本人性や実質レビューを証明しない。取り込み直前にmainの変化を確認し、競合時は再レビューする。
+出力はリポジトリ外の新規ディレクトリに限定し、原本は変更しない。全件の承認・ハッシュ・未解決主張・更新元の整合性を先に確認し、不一致なら全体を拒否する。出力したdocs、review/evidence、review/pilots、review/publication-batchesを確認して公開用ブランチへ取り込み、第5節の生成・CIを実行する。一括公開のコミットには必ず `git add review/publication-batches/` で監査記録を含める。既存記事の更新は初回公開日を保持する。旧Evidenceの差分レビューでは過去の主張の保持も人間が確認する。承認記録は人間の申告であり、CLIは本人性や実質レビューを証明しない。取り込み直前にmainの変化を確認し、競合時は再レビューする。
 
 ### 一括公開の実施
 
@@ -167,6 +167,8 @@ python scripts/check_content.py
 python scripts/check_evidence_review.py --base-ref origin/main
 git diff --check
 git add docs/ review/evidence/ review/pilots/
+# 一括公開の場合は監査記録も追加する（単一記事の場合は不要）
+# git add review/publication-batches/
 git commit -m "Publish reviewed article with Evidence Review"
 git push
 ~~~
